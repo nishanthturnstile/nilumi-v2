@@ -1,9 +1,28 @@
+import { createApiDependencies, createTestTransports } from "@nilumi/server";
 import { buildApp } from "./app.js";
 import { parseApiEnv } from "./config/env.js";
 
 try {
   const config = parseApiEnv(process.env);
-  const app = buildApp(config);
+  const transports = createTestTransports(config);
+  const dependencies = createApiDependencies(
+    config.NILUMI_API_DATABASE_URL,
+    config.NILUMI_AUTH_DATABASE_URL,
+    [config.NILUMI_STORAGE_HEALTH_URL, config.NILUMI_MAIL_HEALTH_URL].filter(
+      (value): value is string => Boolean(value),
+    ),
+  );
+  const app = buildApp(config, { isReady: dependencies.isReady });
+  app.addHook("onClose", async () => {
+    transports.close();
+    await dependencies.dispose();
+  });
+  try {
+    await dependencies.prepare();
+  } catch {
+    await app.close();
+    throw new Error("api_dependencies_failed");
+  }
   let stopping = false;
   const stop = async () => {
     if (stopping) return;
@@ -20,7 +39,12 @@ try {
   };
   process.once("SIGINT", stop);
   process.once("SIGTERM", stop);
-  await app.listen({ host: config.HOST, port: config.PORT });
+  try {
+    await app.listen({ host: config.HOST, port: config.PORT });
+  } catch {
+    await stop();
+    throw new Error("api_listen_failed");
+  }
   app.log.info({ code: "api_started" }, "shell_started");
 } catch {
   process.stderr.write("API startup failed: configuration_or_startup\n");

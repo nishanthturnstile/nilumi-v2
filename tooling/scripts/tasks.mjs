@@ -30,6 +30,23 @@ async function types() {
 await main(async () => {
   const [command, ...args] = process.argv.slice(2);
   switch (command) {
+    case "diagnostics:check":
+      await (await import("./diagnostics.mjs")).diagnostics();
+      break;
+    case "infra:up":
+    case "infra:down":
+    case "dev:reset":
+      await (await import("./infra.mjs")).infra(command, args);
+      break;
+    case "db:provision":
+    case "db:migrate":
+      await compile("build", "@nilumi/db");
+      await (await import("./database.mjs")).database(command);
+      break;
+    case "test:integration":
+      await compile("build");
+      await (await import("./integration.mjs")).integration();
+      break;
     case "setup:check":
       await (await import("./preflight.mjs")).preflight();
       break;

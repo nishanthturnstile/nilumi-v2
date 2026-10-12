@@ -26,39 +26,28 @@ test("process roots reject missing config without printing values", async () => 
   }
 });
 
-test("worker root is an independent process, starts unready and reports a heartbeat", async () => {
+test("worker process refuses unavailable dependencies without leaking credentials", async () => {
   const child = spawn(process.execPath, ["apps/worker/dist/main.js"], {
     env: {
       NILUMI_ENV: "test",
       NILUMI_WORKER_DATABASE_URL:
-        "postgresql://nilumi_worker:synthetic-password@127.0.0.1:5432/synthetic",
+        "postgresql://nilumi_worker:synthetic-password@127.0.0.1:1/synthetic",
       NILUMI_QUEUE_DATABASE_URL:
-        "postgresql://nilumi_queue:synthetic-password@127.0.0.1:5432/synthetic",
+        "postgresql://nilumi_queue:synthetic-password@127.0.0.1:1/synthetic",
     },
     windowsHide: true,
   });
   let output = "";
-  const closed = once(child, "close");
-  const deadline = setTimeout(() => child.kill(), 5000);
-  try {
-    await new Promise((resolve, reject) => {
-      child.on("error", reject);
-      child.on("exit", () => reject(new Error("worker_exited_before_heartbeat")));
-      child.stdout.on("data", (data) => {
-        output += data;
-        if (output.includes("worker_heartbeat")) resolve();
-      });
-    });
-    assert.ok(output.includes("worker_started"));
-    assert.ok(output.includes('"ready":false'));
-    assert.ok(!output.includes("synthetic-password"));
-    child.kill("SIGTERM");
-    await closed;
-    if (process.platform !== "win32") assert.ok(output.includes("worker_stopped"));
-  } finally {
-    clearTimeout(deadline);
-    child.kill();
-  }
+  child.stdout.on("data", (data) => {
+    output += data;
+  });
+  child.stderr.on("data", (data) => {
+    output += data;
+  });
+  const [code] = await once(child, "close");
+  assert.equal(code, 1);
+  assert.match(output, /configuration_or_startup/);
+  assert.ok(!output.includes("synthetic-password"));
 });
 
 import { createApiClient } from "../../packages/api-client/dist/index.js";

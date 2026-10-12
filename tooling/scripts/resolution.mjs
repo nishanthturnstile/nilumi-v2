@@ -35,7 +35,7 @@ export function copyWorkspace(destination, { git = false } = {}) {
   const filter = (source) =>
     !ignored.has(source.split(/[\\/]/).at(-1)) &&
     !/^\.env(?!\.example$)/.test(source.split(/[\\/]/).at(-1));
-  for (const directory of ["apps", "packages", "tooling", "docs"])
+  for (const directory of ["apps", "packages", "tooling", "docs", "infra"])
     cpSync(join(root, directory), join(destination, directory), { recursive: true, filter });
   for (const file of [
     "package.json",
@@ -297,7 +297,7 @@ export async function checkResolution() {
       "Synthetic TSX/package entry resolution only; no shared UI rendering, APK, service or device qualification.",
   };
   writeFileSync(
-    join(root, `docs/development/evidence/setup-04-2026-10-12/resolution-${process.platform}.json`),
+    join(root, `docs/development/evidence/setup-05-2026-10-12/resolution-${process.platform}.json`),
     `${JSON.stringify(evidence, null, 2)}\n`,
   );
 }

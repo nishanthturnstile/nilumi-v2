@@ -36,12 +36,39 @@ export class ConfigurationError extends Error {
   }
 }
 
-const schema = z.object({
-  NILUMI_ENV: mode,
-  LOG_LEVEL: logLevel,
-  NILUMI_WORKER_DATABASE_URL: databaseUrl("nilumi_worker"),
-  NILUMI_QUEUE_DATABASE_URL: databaseUrl("nilumi_queue"),
-});
+const schema = z
+  .object({
+    NILUMI_ENV: mode,
+    NILUMI_TEST_TRANSPORTS: z.enum(["disabled", "synthetic"]).default("disabled"),
+    NILUMI_MAIL_TRANSPORT: z.enum(["disabled", "mailpit"]).default("disabled"),
+    NILUMI_SMTP_HOST: z.enum(["127.0.0.1", "localhost", "mailpit"]).optional(),
+    NILUMI_SMTP_PORT: z.coerce.number().int().min(1).max(65535).optional(),
+    NILUMI_STORAGE_HEALTH_URL: z.url().optional(),
+    NILUMI_MAIL_HEALTH_URL: z.url().optional(),
+    LOG_LEVEL: logLevel,
+    NILUMI_WORKER_DATABASE_URL: databaseUrl("nilumi_worker"),
+    NILUMI_QUEUE_DATABASE_URL: databaseUrl("nilumi_queue"),
+  })
+  .superRefine((value, context) => {
+    if (
+      ["pilot", "production"].includes(value.NILUMI_ENV) &&
+      (value.NILUMI_TEST_TRANSPORTS !== "disabled" || value.NILUMI_MAIL_TRANSPORT !== "disabled")
+    )
+      context.addIssue({
+        code: "custom",
+        path: ["NILUMI_TEST_TRANSPORTS"],
+        message: "test_transport_forbidden",
+      });
+    if (
+      value.NILUMI_MAIL_TRANSPORT === "mailpit" &&
+      (!value.NILUMI_SMTP_HOST || !value.NILUMI_SMTP_PORT)
+    )
+      context.addIssue({
+        code: "custom",
+        path: ["NILUMI_SMTP_HOST"],
+        message: "mailpit_endpoint_required",
+      });
+  });
 
 export type Configuration = Readonly<z.output<typeof schema>>;
 export function parseWorkerEnv(input: Record<string, string | undefined>): Configuration {

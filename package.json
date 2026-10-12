@@ -25,7 +25,14 @@
     "check:linux": "node tooling/scripts/tasks.mjs check:linux",
     "contracts:generate": "node tooling/scripts/tasks.mjs contracts:generate",
     "contracts:check": "node tooling/scripts/tasks.mjs contracts:check",
-    "android:dev-build": "node tooling/scripts/android.mjs"
+    "android:dev-build": "node tooling/scripts/android.mjs",
+    "infra:up": "node tooling/scripts/tasks.mjs infra:up",
+    "infra:down": "node tooling/scripts/tasks.mjs infra:down",
+    "dev:reset": "node tooling/scripts/tasks.mjs dev:reset",
+    "db:provision": "node tooling/scripts/tasks.mjs db:provision",
+    "db:migrate": "node tooling/scripts/tasks.mjs db:migrate",
+    "test:integration": "node tooling/scripts/tasks.mjs test:integration",
+    "diagnostics:check": "node tooling/scripts/tasks.mjs diagnostics:check"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",

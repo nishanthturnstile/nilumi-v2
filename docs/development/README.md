@@ -1,6 +1,6 @@
 # Developer runbook
 
-The [SETUP-03 plan](../implementation/setup-03-workspace-and-standards.md) supplies workspace infrastructure. [Validation](setup-03-validation.md) records observed checks; [toolchain history](toolchain.md) retains SETUP-02 outcomes. SETUP-04–07 supply application/native/device/database/CI acceptance.
+The [SETUP-03 plan](../implementation/setup-03-workspace-and-standards.md) supplies workspace infrastructure. [SETUP-04](setup-04-runbook.md) supplies application shells. [SETUP-05](setup-05-runbook.md) supplies local dependencies, restricted DB/queue release steps and real process readiness. [Toolchain history](toolchain.md) retains earlier qualification outcomes; device/CI and product acceptance remain separate gates.
 
 ## Prepare and install
 
@@ -24,16 +24,21 @@ On Linux, explicitly prepare the manager with the same script or the native-arti
 | `format` / `format:check` | Explicit authored-file formatting / read-only check |
 | `audit:dependencies` | Registry snapshot and exact-pin/exception review; explicitly writes audit evidence |
 | `config:check --target <target>` | Validate selected configuration; values never displayed |
+| `infra:up` / `infra:down` | Guarded local dependency startup / stop, retaining named volumes |
+| `dev:reset -- --confirm-disposable` | Explicit destruction of only the disposable-development volumes |
+| `db:provision` / `db:migrate` | Separate provisioning and checked release-only migration |
+| `test:integration` | Actual runtime credentials, disposable DB, queue restart, local S3/SMTP |
+| `diagnostics:check` | Optional pinned local collector and synthetic OTLP check |
 
-Normal check/test commands may write ignored build/cache output, never authored source, lock or index. Registry audit, preparation, installation and formatting are explicitly mutating commands. There are no SETUP-03 app-start, migration, infrastructure, generated-contract or deployment commands.
+Normal check/test commands may write ignored build/cache output, never authored source, lock or index. Registry audit, preparation, installation, formatting and integration qualification evidence are explicit operations. SETUP-05 adds local infrastructure and DB release commands; deployment remains outside this foundation.
 
 ## Environment files
 
-Copy the intended target's `.env.example` to `.env.local` only when configuring it. Client config has two public values; API, worker and migrator credentials remain separate. Blank private examples intentionally fail validation until SETUP-05 supplies local credentials. Normal check/test uses synthetic inputs and needs no service.
+Copy the intended target's `.env.example` to `.env.local` only when configuring it. Client config has two public values; API, worker, migrator and provisioning credentials remain separate. Blank private examples intentionally fail validation; use the SETUP-05 runbook to provision independent local credentials. Normal check/test uses synthetic inputs and needs no service; `test:integration` explicitly starts isolated dependencies.
 
 `config:check --target api` optionally reads `apps/api/.env.local`; `--env-file <path>` requires that explicit file to exist. Process environment overrides file values. Client/worker/migrator follow the same target-specific rule. No root catch-all file or universal DATABASE_URL is loaded. Client HTTP is allowed only in development/test; pilot/production public URLs require HTTPS. Username checks are configuration hygiene, not grant qualification.
 
-For a host/web fixture use `http://127.0.0.1:3001`. Actual emulator/LAN/phone URL and HTTPS trust are SETUP-04/07 work; there is no API listening yet.
+For a host/web fixture use `http://127.0.0.1:3001`. Follow the SETUP-04/05 runbooks for process startup and emulator reverse ports; physical-phone/LAN and HTTPS trust remain separate qualification.
 
 ## Troubleshooting and preservation
 

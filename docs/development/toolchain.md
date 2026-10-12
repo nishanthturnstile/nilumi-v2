@@ -81,3 +81,11 @@ All image references below include immutable multi-platform index digests; Linux
 | axllent/mailpit:v1.31.5 | sha256:94f6b70c1436defae6799d9ac7ff0eeff9540465b842026d5cdb018f1c0234ea |
 
 Disposable Compose probes passed PostgreSQL/auth/queue, S3 upload/read/delete and SMTP capture. Qualification containers use tmpfs; the actual development foundation must use named volumes as specified by SETUP-05. Existing WSL limits are retained. Start with PostgreSQL 512 MiB/1 CPU, SeaweedFS 1 GiB/2 CPUs and Mailpit 256 MiB/0.5 CPU; build with two Gradle workers and a 3 GiB heap, then revisit with real workload measurements.
+
+## SETUP-05 application qualification
+
+12 October 2026. The application now pins Drizzle ORM 0.45.4, Drizzle Kit 0.31.11, pg 8.23.1, pg-boss 12.37.1 (schema 45) and nodemailer 10.1.0, with exact `@types/pg` 8.23.1 and `@types/nodemailer` 8.0.2. The current dependency audit records 48 exact selections and their engines/peers/integrities. Existing Fastify 5.12.5, Zod 4.6.6 and scoped Fastify Zod provider 1.0.1 remain unchanged. Drizzle Kit brings upstream deprecated esbuild-kit loaders; Expo retains uuid 7.0.3. No incompatible transitive override was forced.
+
+The optional development collector is `otel/opentelemetry-collector-contrib:0.162.0@sha256:39923a8e431bd1f57be82411999d389fcfe40857492e4365456d97a4c1f74be6`. Its stable release and multi-platform index digest were checked against the [official release](https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.162.0) and Docker manifest; Linux/amd64 validation, health and synthetic OTLP ingestion pass. It has no external exporter or application SDK auto-instrumentation.
+
+See [SETUP-05 validation](setup-05-validation.md), [the runbook](setup-05-runbook.md) and [its new evidence](evidence/setup-05-2026-10-12/README.md) for actual runtime grants, dependency reachability, readiness and restart recovery. The earlier probe matrices remain historical evidence, not product readiness.

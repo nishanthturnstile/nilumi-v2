@@ -1,0 +1,24 @@
+{
+  "platform": "win32",
+  "node": "24.21.0",
+  "checks": [
+    "install --frozen-lockfile",
+    "run setup:check",
+    "run check",
+    "run test",
+    "run test:integration",
+    "run boundaries",
+    "run contracts:generate",
+    "run contracts:check",
+    "run typecheck:compat",
+    "run audit:dependencies",
+    "run diagnostics:check",
+    "run check:resolution"
+  ],
+  "preservation": {
+    "protectedFiles": 124,
+    "stagedBlobs": 255,
+    "indexUnchanged": true
+  },
+  "note": "Final functional commands all succeeded. Index stat metadata refreshed during qualification; original bytes restored only after exact staged-blob verification."
+}

@@ -1,0 +1,88 @@
+
+$ node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 19m ago)
+Lockfile is up to date, resolution step is skipped
+Done in 147ms using pnpm v12.11.2
+
+$ node tooling/scripts/pnpm-local.mjs run setup:check
+Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.
+$ node tooling/scripts/tasks.mjs setup:check
+
+$ node tooling/scripts/pnpm-local.mjs run check
+Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.
+Checked 100 files in 78ms. No fixes applied.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+Contract drift check passes.
+$ node tooling/scripts/tasks.mjs check
+
+$ node tooling/scripts/pnpm-local.mjs run test
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (179.5014ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (1632.4888ms)
+✔ unreexported public source participates in complete closure (138.5535ms)
+✔ unused illegal manifest dependency and package cycles fail (135.1509ms)
+✔ source policy allows only the two exact public env reads (3.062ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (1.072ms)
+✔ API parser defaults safely and has no connection side effects (4.722ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (4.7942ms)
+✔ worker and migration roles cannot be substituted (2.7427ms)
+✔ public URLs and variable allowlist follow deployment mode (2.293ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (16.797ms)
+✔ test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs (7.0066ms)
+✔ blank private templates fail configuration; infrastructure reset guards fail closed (1.7571ms)
+✔ Pino removes OTP, content and credentials while retaining codes and request IDs (1397.9943ms)
+✔ store ownership keeps foreign and unmarked directories intact (45.7729ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.3459ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (22.8873ms)
+✔ argument arrays preserve spaces and shell metacharacters (92.844ms)
+✔ child failure and interruption produce non-success results (172.789ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (24.7964ms)
+✔ process roots reject missing config without printing values (2017.6723ms)
+✔ worker process refuses unavailable dependencies without leaking credentials (790.1935ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (189.2411ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (29.361ms)
+✔ invalid handler output fails response validation with a safe Problem (4.398ms)
+✔ generated transport round-trips real loopback health and validates data (27.7424ms)
+✔ schema generation is deterministic and independent of process config (13.5561ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (17.4436ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (30.7299ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4235.9198
+$ node tooling/scripts/tasks.mjs test
+
+$ node tooling/scripts/pnpm-local.mjs run test:integration
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+$ node tooling/scripts/tasks.mjs test:integration
+The operation was aborted due to timeout
+[ELIFECYCLE] Command failed with exit code 1.

@@ -7,6 +7,7 @@ import {
   type ZodTypeProvider,
 } from "@fastify/type-provider-zod";
 import { healthSchema, problemSchema, readinessSchema } from "@nilumi/contracts";
+import { redactedPaths } from "@nilumi/server";
 import Fastify, { LogController } from "fastify";
 import { z } from "zod";
 import type { Configuration } from "./config/env.js";
@@ -24,7 +25,7 @@ export function buildApp(
   const app = Fastify({
     logger: {
       level: config.LOG_LEVEL,
-      redact: { paths: ["req", "res", "err", "config", "headers"], remove: true },
+      redact: { paths: redactedPaths, remove: true },
       serializers: {
         req: () => ({}),
         res: () => ({}),

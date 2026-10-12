@@ -1,0 +1,219 @@
+
+$ node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 31m ago)
+Lockfile is up to date, resolution step is skipped
+Done in 159ms using pnpm v12.11.2
+
+$ node tooling/scripts/pnpm-local.mjs run setup:check
+Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.
+$ node tooling/scripts/tasks.mjs setup:check
+
+$ node tooling/scripts/pnpm-local.mjs run check
+Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.
+Checked 100 files in 71ms. No fixes applied.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+Contract drift check passes.
+$ node tooling/scripts/tasks.mjs check
+
+$ node tooling/scripts/pnpm-local.mjs run test
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (166.1433ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (1521.4162ms)
+✔ unreexported public source participates in complete closure (124.3815ms)
+✔ unused illegal manifest dependency and package cycles fail (127.4361ms)
+✔ source policy allows only the two exact public env reads (2.2174ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (0.7292ms)
+✔ API parser defaults safely and has no connection side effects (5.3896ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (4.1792ms)
+✔ worker and migration roles cannot be substituted (2.4491ms)
+✔ public URLs and variable allowlist follow deployment mode (1.8755ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (7.5138ms)
+✔ test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs (7.4106ms)
+✔ blank private templates fail configuration; infrastructure reset guards fail closed (1.8336ms)
+✔ Pino removes OTP, content and credentials while retaining codes and request IDs (1218.9075ms)
+✔ store ownership keeps foreign and unmarked directories intact (52.515ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.3884ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (25.614ms)
+✔ argument arrays preserve spaces and shell metacharacters (92.1217ms)
+✔ child failure and interruption produce non-success results (181.0517ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (26.8919ms)
+✔ process roots reject missing config without printing values (1915.3343ms)
+✔ worker process refuses unavailable dependencies without leaking credentials (811.5208ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (188.8517ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (18.9962ms)
+✔ invalid handler output fails response validation with a safe Problem (4.2786ms)
+✔ generated transport round-trips real loopback health and validates data (27.7884ms)
+✔ schema generation is deterministic and independent of process config (14.1404ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (15.6037ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (30.2191ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4202.3227
+$ node tooling/scripts/tasks.mjs test
+
+$ node tooling/scripts/pnpm-local.mjs run test:integration
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+PASS: Seaweed S3 synthetic put/read/delete and service reachability
+PASS: repeatable provision and checked migration
+PASS: runtime identities, grants and privileged role rejection
+PASS: test-only forced RLS denies missing context; commit/rollback clear pooled settings
+PASS: pending migration and missing grant fail readiness without runtime repair
+PASS: restricted enqueue, supervision and eligible synthetic job survive consumer restart
+PASS: local SMTP captured by Mailpit; synthetic SMS/AI/speech have no live effects
+PASS: API listener failure closes prepared dependencies and exits safely
+PASS: independent worker process restart recovers eligible synthetic job
+PASS: host API ready endpoint and worker heartbeat reach dependencies; pending migration returns 503
+$ node tooling/scripts/tasks.mjs test:integration
+
+$ node tooling/scripts/pnpm-local.mjs run boundaries
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+$ node tooling/scripts/tasks.mjs boundaries
+
+$ node tooling/scripts/pnpm-local.mjs run contracts:generate
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Generated public schema and client types.
+$ node tooling/scripts/tasks.mjs contracts:generate
+
+$ node tooling/scripts/pnpm-local.mjs run contracts:check
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Contract drift check passes.
+$ node tooling/scripts/tasks.mjs contracts:check
+
+$ node tooling/scripts/pnpm-local.mjs run typecheck:compat
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+build: @nilumi/contracts → classic5 5.9.3
+build: @nilumi/db → classic5 5.9.3
+build: @nilumi/api-client → classic5 5.9.3
+build: @nilumi/server → classic5 5.9.3
+build: @nilumi/api → classic5 5.9.3
+build: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/contracts → classic5 5.9.3
+typecheck: @nilumi/db → classic5 5.9.3
+typecheck: @nilumi/api-client → classic5 5.9.3
+typecheck: @nilumi/server → classic5 5.9.3
+typecheck: @nilumi/api → classic5 5.9.3
+typecheck: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/ui → classic6 6.0.3
+typecheck: @nilumi/client → classic6 6.0.3
+$ node tooling/scripts/tasks.mjs typecheck:compat
+
+$ node tooling/scripts/pnpm-local.mjs run audit:dependencies
+Audited 48 exact dependency selections; all non-latest selections have explicit constraints.
+$ node tooling/scripts/tasks.mjs audit:dependencies
+
+$ node tooling/scripts/pnpm-local.mjs run diagnostics:check
+Optional local OTel collector validates, accepts synthetic trace and excludes content sentinel.
+$ node tooling/scripts/tasks.mjs diagnostics:check
+
+$ node tooling/scripts/pnpm-local.mjs run check:resolution
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 33m ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: C:\Users\Nishanth Murugan\AppData\Local\pnpm\store\v11
+  Virtual store is at:             ../../../../../../../../pnpm/nv2-788ab71e
+Progress: resolved 84, reused 84, downloaded 0, added 69
+Progress: resolved 141, reused 141, downloaded 0, added 126
+Progress: resolved 201, reused 201, downloaded 0, added 186
+Progress: resolved 245, reused 245, downloaded 0, added 230
+Progress: resolved 288, reused 288, downloaded 0, added 273
+Progress: resolved 333, reused 333, downloaded 0, added 318
+Progress: resolved 374, reused 374, downloaded 0, added 359
+Progress: resolved 401, reused 401, downloaded 0, added 386
+Progress: resolved 442, reused 442, downloaded 0, added 427
+Progress: resolved 463, reused 463, downloaded 0, added 448
+Progress: resolved 478, reused 478, downloaded 0, added 463
+Progress: resolved 502, reused 502, downloaded 0, added 487
+Progress: resolved 532, reused 532, downloaded 0, added 517
+Progress: resolved 565, reused 565, downloaded 0, added 550
+Progress: resolved 604, reused 604, downloaded 0, added 589
+Progress: resolved 624, reused 624, downloaded 0, added 609
+Progress: resolved 654, reused 654, downloaded 0, added 639
+Progress: resolved 702, reused 702, downloaded 0, added 688
+Progress: resolved 729, reused 729, downloaded 0, added 715
+Progress: resolved 780, reused 780, downloaded 0, added 767
+Progress: resolved 820, reused 820, downloaded 0, added 805
+Progress: resolved 843, reused 843, downloaded 0, added 835
+Progress: resolved 843, reused 843, downloaded 0, added 836
+Progress: resolved 843, reused 843, downloaded 0, added 838
+Packages: +843
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 843, reused 843, downloaded 0, added 843, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.18.20/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+.../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+.../esbuild@0.18.20/node_modules/esbuild postinstall: Done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
+
+Done in 34s using pnpm v12.11.2
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Public declarations and deliberate type/ambient/export errors verified with classic5.
+Public declarations and deliberate type/ambient/export errors verified with classic6.
+Public declarations and deliberate type/ambient/export errors verified with native7.
+Dependencies are up to date
+android Expo export: actual public entries and synthetic TSX verified.
+web Expo export: actual public entries and synthetic TSX verified.
+$ node tooling/scripts/tasks.mjs check:resolution

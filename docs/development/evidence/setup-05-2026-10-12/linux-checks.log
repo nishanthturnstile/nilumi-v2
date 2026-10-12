@@ -1,0 +1,206 @@
+Scope: all 9 workspace projects
+? Verifying lockfile against supply-chain policies (949 entries)...
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 843, reused 0, downloaded 159, added 151
+Progress: resolved 843, reused 0, downloaded 236, added 224
+Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+Progress: resolved 843, reused 0, downloaded 489, added 480
+Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+Progress: resolved 843, reused 0, downloaded 717, added 704
+Progress: resolved 843, reused 0, downloaded 806, added 800
+[WARN] Tarball download average speed 40 KiB/s (size 112 KiB) is below 50 KiB/s: https://registry.npmjs.org/metro-file-map/-/metro-file-map-0.84.5.tgz (GET)
+Downloading @expo-google-fonts/material-symbols@0.4.49: 2.33 MB/8.87 MB
+Progress: resolved 843, reused 0, downloaded 830, added 825
+✓ Lockfile passes supply-chain policies (949 entries in 12.5s)
+Lockfile is up to date, resolution step is skipped
+Downloading hermes-compiler@250829098.0.17: 9.16 MB/19.18 MB
+Downloading hermes-compiler@250829098.0.17: 11.58 MB/19.18 MB
+Downloading hermes-compiler@250829098.0.17: 15.48 MB/19.18 MB
+Downloading expo-modules-core@57.0.21: 29.77 MB/30.79 MB
+Packages: +843
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 843, reused 0, downloaded 841, added 843, done
+.../esbuild@0.18.20/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.18.20/node_modules/esbuild postinstall: Done
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+.../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
+
+Done in 15s using pnpm v12.11.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 5s ago)
+Lockfile is up to date, resolution step is skipped
+Done in 151ms using pnpm v12.11.2
+Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.
+Checked 98 files in 70ms. No fixes applied.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+Contract drift check passes.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (40.591166ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (301.567535ms)
+✔ unreexported public source participates in complete closure (26.994282ms)
+✔ unused illegal manifest dependency and package cycles fail (25.581019ms)
+✔ source policy allows only the two exact public env reads (7.413687ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (1.945482ms)
+✔ API parser defaults safely and has no connection side effects (5.701463ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (5.397108ms)
+✔ worker and migration roles cannot be substituted (3.303802ms)
+✔ public URLs and variable allowlist follow deployment mode (2.100084ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (3.752916ms)
+✔ test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs (14.396553ms)
+✔ blank private templates fail configuration; infrastructure reset guards fail closed (2.897339ms)
+✔ Pino removes OTP, content and credentials while retaining codes and request IDs (1460.969062ms)
+✔ store ownership keeps foreign and unmarked directories intact (10.708458ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.748266ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (8.449821ms)
+✔ argument arrays preserve spaces and shell metacharacters (62.311796ms)
+✔ child failure and interruption produce non-success results (75.118289ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (10.891741ms)
+✔ process roots reject missing config without printing values (2324.447416ms)
+✔ worker process refuses unavailable dependencies without leaking credentials (1055.985238ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (162.442971ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (25.940196ms)
+✔ invalid handler output fails response validation with a safe Problem (7.778223ms)
+✔ generated transport round-trips real loopback health and validates data (52.467179ms)
+✔ schema generation is deterministic and independent of process config (29.985925ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (10.182323ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (12.445833ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5408.27689
+PASS: Seaweed S3 synthetic put/read/delete and service reachability
+PASS: repeatable provision and checked migration
+PASS: runtime identities, grants and privileged role rejection
+PASS: test-only forced RLS denies missing context; commit/rollback clear pooled settings
+PASS: pending migration and missing grant fail readiness without runtime repair
+PASS: restricted enqueue, supervision and eligible synthetic job survive consumer restart
+PASS: local SMTP captured by Mailpit; synthetic SMS/AI/speech have no live effects
+PASS: API listener failure closes prepared dependencies and exits safely
+PASS: independent worker process restart recovers eligible synthetic job
+PASS: host API ready endpoint and worker heartbeat reach dependencies; pending migration returns 503
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Generated public schema and client types.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Contract drift check passes.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+build: @nilumi/contracts → classic5 5.9.3
+build: @nilumi/db → classic5 5.9.3
+build: @nilumi/api-client → classic5 5.9.3
+build: @nilumi/server → classic5 5.9.3
+build: @nilumi/api → classic5 5.9.3
+build: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/contracts → classic5 5.9.3
+typecheck: @nilumi/db → classic5 5.9.3
+typecheck: @nilumi/api-client → classic5 5.9.3
+typecheck: @nilumi/server → classic5 5.9.3
+typecheck: @nilumi/api → classic5 5.9.3
+typecheck: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/ui → classic6 6.0.3
+typecheck: @nilumi/client → classic6 6.0.3
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 1m ago)
+Lockfile is up to date, resolution step is skipped
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 467, reused 467, downloaded 0, added 460
+Progress: resolved 794, reused 794, downloaded 0, added 787
+Packages: +843
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 843, reused 843, downloaded 0, added 843, done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
+
+Done in 3.1s using pnpm v12.11.2
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Public declarations and deliberate type/ambient/export errors verified with classic5.
+Public declarations and deliberate type/ambient/export errors verified with classic6.
+Public declarations and deliberate type/ambient/export errors verified with native7.
+Dependencies are up to date
+android Expo export: actual public entries and synthetic TSX verified.
+web Expo export: actual public entries and synthetic TSX verified.
+Using src/app as the root directory for Expo Router.
+Expo Autolinking module resolution enabled
+Starting Metro Bundler
+
+Static rendering is enabled. Learn more: https://docs.expo.dev/router/web/static-rendering/
+λ Bundled 1683ms node_modules/.pnpm/_4c8de158e5b8d60fb42c84f967289168/node_modules/@expo/router-server/node/render.js (1463 modules)
+Web Bundled 9389ms node_modules/.pnpm/_370248c039596dadc773faa4c1e08b2b/node_modules/expo-router/entry.js (1450 modules)
+
+› web bundles (1):
+_expo/static/js/web/entry-7ece10f0a3005845ab9b76153b4d3c80.js (2.7MB)
+
+› Static routes (3):
+/ (index) (1.7MB)
+/_sitemap (17KB)
+/+not-found (17KB)
+
+Exported: dist
+debconf: delaying package configuration, since apt-utils is not installed
+$ node tooling/scripts/tasks.mjs check
+$ node tooling/scripts/tasks.mjs test
+$ node tooling/scripts/tasks.mjs contracts:generate
+$ node tooling/scripts/tasks.mjs contracts:check
+$ node tooling/scripts/tasks.mjs typecheck:compat
+$ node tooling/scripts/tasks.mjs check:resolution

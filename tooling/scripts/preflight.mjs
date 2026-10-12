@@ -10,7 +10,7 @@ export const hashFile = (path) =>
   createHash("sha256").update(readFileSync(path)).digest("hex").toUpperCase();
 export async function preservationCheck() {
   const baseline = readJson(
-    join(root, "docs/development/evidence/setup-04-2026-10-12/preservation-baseline.json"),
+    join(root, "docs/development/evidence/setup-05-2026-10-12/preservation-baseline.json"),
   );
   const permitted = new Set([
     "docs/development/toolchain.md",
