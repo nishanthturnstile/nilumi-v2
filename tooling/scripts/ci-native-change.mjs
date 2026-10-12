@@ -10,7 +10,7 @@ await main(async () => {
       .split(/\r?\n/)
       .some(
         (path) =>
-          /^(apps\/client\/|packages\/ui\/|packages\/api-client\/|packages\/contracts\/|package\.json$|pnpm-|biome\.json$|tooling\/|\.github\/workflows\/)/.test(
+          /^(apps\/client\/|packages\/ui\/|packages\/api-client\/|packages\/contracts\/|patches\/|package\.json$|pnpm-|biome\.json$|tooling\/|\.github\/workflows\/)/.test(
             path,
           ) || /(^|\/)(package\.json|tsconfig[^/]*\.json|babel\.config\.[^/]+)$/.test(path),
       );

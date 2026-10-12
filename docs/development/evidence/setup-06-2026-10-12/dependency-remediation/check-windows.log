@@ -1,0 +1,72 @@
+Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+Checked 123 files in 160ms. No fixes applied.
+Found 2 infos.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+Contract drift check passes.
+$ node tooling/scripts/tasks.mjs check
+tooling\scripts\containers.mjs:207:55 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i Template literals are preferred over string concatenation.
+  
+    205 │     );
+    206 │     mkdirSync(evidence, { recursive: true });
+  > 207 │     writeFileSync(join(evidence, "image-smoke.json"), JSON.stringify(result, null, 2) + "\n");
+        │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    208 │     console.log("Container health/readiness/packaging/shutdown smoke passes.");
+    209 │   } finally {
+  
+  i Unsafe fix: Use a template literal.
+  
+    205 205 │       );
+    206 206 │       mkdirSync(evidence, { recursive: true });
+    207     │ - ····writeFileSync(join(evidence,·"image-smoke.json"),·JSON.stringify(result,·null,·2)·+·"\n");
+        207 │ + ····writeFileSync(join(evidence,·"image-smoke.json"),·`${JSON.stringify(result,·null,·2)}\n`);
+    208 208 │       console.log("Container health/readiness/packaging/shutdown smoke passes.");
+    209 209 │     } finally {
+  
+
+tooling\scripts\release.mjs:60:5 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i Template literals are preferred over string concatenation.
+  
+    58 │   writeFileSync(
+    59 │     join(destination, "manifest.json"),
+  > 60 │     JSON.stringify(
+       │     ^^^^^^^^^^^^^^^
+  > 61 │       { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+  > 62 │       null,
+  > 63 │       2,
+  > 64 │     ) + "\n",
+       │     ^^^^^^^^
+    65 │     { flag: "wx" },
+    66 │   );
+  
+  i Unsafe fix: Use a template literal.
+  
+    58 58 │     writeFileSync(
+    59 59 │       join(destination, "manifest.json"),
+    60    │ - ····JSON.stringify(
+       60 │ + ····`${JSON.stringify(
+    61 61 │         { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+    62 62 │         null,
+    63 63 │         2,
+    64    │ - ····)·+·"\n",
+       64 │ + ····)}\n`,
+    65 65 │       { flag: "wx" },
+    66 66 │     );
+  
+

@@ -1,6 +1,12 @@
 {
   "version": 1,
   "exceptions": {
+    "expo@57.0.27": "Qualified SDK family retained for targeted security remediation; 57.0.28 published today is subject to the 1440-minute maturity policy. Revisit with coordinated Expo patch qualification.",
+    "expo-router@57.0.25": "Qualified SDK family retained for targeted security remediation; 57.0.26 published today is subject to the 1440-minute maturity policy. Revisit with coordinated Expo patch qualification.",
+    "expo-dev-client@57.0.19": "Qualified SDK family retained for targeted security remediation; 57.0.20 published today is subject to the 1440-minute maturity policy. Revisit with coordinated Expo patch qualification.",
+    "expo-splash-screen@57.0.9": "Qualified SDK family retained for targeted security remediation; 57.0.10 published today is subject to the 1440-minute maturity policy. Revisit with coordinated Expo patch qualification.",
+    "jest-expo@57.0.5": "Qualified SDK test preset retained for targeted security remediation; 57.0.6 published today is subject to the 1440-minute maturity policy. Revisit with coordinated Expo patch qualification.",
+    "babel-preset-expo@57.0.14": "Qualified Expo 57 preset retained during the focused dependency-security change; 57.0.15 appeared during validation. Revisit in the next Expo patch qualification, including native tests and Android build.",
     "react-native-svg@15.15.4": "Exact Expo 57 bundled native SVG pin; revisit with Expo's SDK native-module qualification.",
     "react-native-screens@4.26.2": "Latest patch in Expo 57's ~4.26.0 native compatibility range; revisit with Expo SDK qualification.",
     "typescript@5.9.3": "Compiler-API compatibility: openapi-typescript requires ^5.x; dependency-cruiser requires <7. Revisit when their APIs support native TypeScript.",

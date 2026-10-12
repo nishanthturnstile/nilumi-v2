@@ -1,0 +1,4 @@
+Built api image from c941e03d504abd1024c43e1dc7a47e8c205bb431.
+Built worker image from c941e03d504abd1024c43e1dc7a47e8c205bb431.
+Built web image from c941e03d504abd1024c43e1dc7a47e8c205bb431.
+$ node tooling/scripts/tasks.mjs build:containers

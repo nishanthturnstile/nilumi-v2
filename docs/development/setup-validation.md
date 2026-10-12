@@ -157,3 +157,29 @@ SETUP-07 device checks and product/pilot readiness remain unfinished. The manual
 release record captures image IDs/commit/schema hashes and rejects ID reuse;
 the release Compose scaffold validates with synthetic configuration. No rollout
 or pilot/production migration was performed.
+
+## Dependency remediation follow-up — 12 October 2026
+
+See [the dependency security record](dependency-security.md) and new evidence under
+`evidence/setup-06-2026-10-12/dependency-remediation/`. The original SETUP-06 audit and
+qualification evidence remain historical and unchanged.
+
+The decoder has a committed CommonJS patch with bounded UTF-8 scanning and removal
+of the outer quadratic replacement map. Parent-scoped exact overrides remove the
+vulnerable esbuild, UUID and sprintf-js paths. The raw audit is now **2 high, 1 moderate**;
+the moderate decoder alert is version-based despite the installed patch. Forge and
+braces remain active upstream advisories, with conditional local acceptance until
+12 November 2026 under the documented exposure restrictions.
+
+Windows frozen install, check, test, test:integration, contracts:check, direct-selection
+audit, web export, three Playwright tests, native Jest parser/component tests, and fresh
+Android/web resolution exports passed. Seven focused dependency tests verify malformed
+queries and ordinary behavior, real Drizzle SQL generation, xcode IDs, YAML config loading
+and the installed Expo native matrix. Local image health/readiness/shutdown passed;
+its artifacts identify the base commit plus dirty working tree, not an immutable release.
+
+Fresh Linux and hosted CI qualification are pending at this checkpoint. The first Linux
+live-Expo-metadata attempt failed when new same-day SDK patches appeared; its failure
+log is retained. The qualified family is held by the existing maturity policy, and
+compatibility uses the installed SDK matrix while registry freshness remains separately
+audited. No global audit ignore, incompatible native major or stack migration was added.

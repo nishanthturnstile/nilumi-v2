@@ -1,6 +1,10 @@
 packages:
   - apps/*
   - packages/*
+overrides:
+  '@esbuild-kit/core-utils@3.3.2>esbuild': 0.28.2
+  'xcode@3.0.1>uuid': 11.1.1
+  '@istanbuljs/load-nyc-config@1.1.0>js-yaml': 4.3.2
 nodeLinker: isolated
 sharedWorkspaceLockfile: true
 strictPeerDependencies: true
@@ -134,3 +138,5 @@ minimumReleaseAgeExclude:
   - '@tamagui/create-system-font@3.0.3'
   - '@tamagui/create-theme@3.0.3'
   - '@tamagui/themes@3.0.3'
+patchedDependencies:
+  decode-uri-component@0.2.2: patches/decode-uri-component@0.2.2.patch

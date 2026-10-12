@@ -3,6 +3,8 @@
 !pnpm-lock.yaml
 !pnpm-workspace.yaml
 !biome.json
+!patches/
+!patches/**
 !apps/
 !apps/**
 !packages/

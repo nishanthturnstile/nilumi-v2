@@ -1,0 +1,8 @@
+{
+  "fixture": "synthetic malformed %EA repeated 10000 times",
+  "version": "0.2.2 unpatched upstream",
+  "timeoutMs": 3000,
+  "status": 1,
+  "signal": null,
+  "stderr": "C:\\Users\\Nishanth Murugan\\projects\\nishanth - projects win\\nilumi-v2\\.cache\\original-decoder.cjs:21\r\n\tvar left = components.slice(0, split);\r\n\t                      ^\r\n\r\nRangeError: Maximum call stack size exceeded\r\n    at Array.slice (<anonymous>)\r\n    at decodeComponents (C:\\Users\\Nishanth Murugan\\projects\\nishanth - projects win\\nilumi-v2\\.cache\\original-decoder.cjs:21:24)\r\n    at decodeComponents (C:\\Users\\Nishanth Murugan\\projects\\nishanth - projects win\\nilumi-v2\\.cache\\original-decoder.cjs:24:65)\r\n    at decodeComponents (C:\\Users\\Nishanth Murugan\\projects\\nishanth - projects win\\nilumi-v2\\.cache\\original-decoder.cjs:24:65)\r\n    at decodeComponents (C:\\Users\\Nishanth Murugan\\projects\\nishanth - projects win\\nilumi-v2\\.cache\\original-decoder.cjs:24:65)\r\n    at decodeComponents (C:\\Users\\Nishanth Murugan\\projects\\nishanth - projects win\\nilumi-v2\\.cache\\original-decoder.cjs:24:65)\r\n    at decodeComponents (C:\\Users\\Nishanth Murugan\\projects\\nishanth - projects win\\nilumi-v2\\.cache\\original-decoder.cjs:24:65)\r\n    at decodeComponents (C:\\Users\\Nishanth Murugan\\projects\\nishanth - projects win\\nilumi-v2\\.cache\\original-decoder.cjs:24:65)\r\n    at decodeComponents (C:\\Users\\Nishan"
+}

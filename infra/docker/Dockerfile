@@ -1,6 +1,7 @@
 FROM node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 AS build
 WORKDIR /workspace
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml biome.json ./
+COPY patches ./patches
 COPY tooling/scripts/ci-prepare.mjs tooling/scripts/pnpm-local.mjs tooling/scripts/process.mjs ./tooling/scripts/
 COPY apps/api/package.json ./apps/api/
 COPY apps/worker/package.json ./apps/worker/

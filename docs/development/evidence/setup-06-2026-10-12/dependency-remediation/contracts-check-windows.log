@@ -1,0 +1,4 @@
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Contract drift check passes.
+$ node tooling/scripts/tasks.mjs contracts:check
