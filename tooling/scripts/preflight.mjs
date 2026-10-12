@@ -10,7 +10,7 @@ export const hashFile = (path) =>
   createHash("sha256").update(readFileSync(path)).digest("hex").toUpperCase();
 export async function preservationCheck() {
   const baseline = readJson(
-    join(root, "docs/development/evidence/setup-03-2026-10-12/preservation-baseline.json"),
+    join(root, "docs/development/evidence/setup-04-2026-10-12/preservation-baseline.json"),
   );
   const permitted = new Set([
     "docs/development/toolchain.md",
@@ -30,7 +30,7 @@ export async function preservationCheck() {
   if (JSON.stringify(staged.stdout.trim().split(/\r?\n/)) !== JSON.stringify(baseline.staged))
     throw new Error("Original staged blobs changed.");
   return {
-    protectedFiles: baseline.files.length - permitted.size,
+    protectedFiles: baseline.files.filter((entry) => !permitted.has(entry.path)).length,
     stagedBlobs: baseline.staged.length,
     indexUnchanged: true,
   };

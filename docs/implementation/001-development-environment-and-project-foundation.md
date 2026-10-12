@@ -1,7 +1,7 @@
 # Nilumi implementation plan: development environment and project foundation
 
 **Plan ID:** SETUP-001 · **Version:** 1.4 · **Date:** 12 October 2026
-**Status:** SETUP-01/02 host qualification and SETUP-03 workspace acceptance passed; application shells and SETUP-04–07 not started
+**Status:** SETUP-01/02 host qualification and SETUP-03 workspace acceptance passed; SETUP-04 shells/contracts implemented and qualified; SETUP-05–07 not started
 **Owner:** Founder with Codex · **Requirements baseline:** Nilumi v2.4
 **Format:** [Implementation-plan template](IMPLEMENTATION-PLAN-TEMPLATE.md)
 
@@ -251,7 +251,8 @@ The plan was created on 11 October. The founder has since copied the checkout an
 | SETUP-01 | Host/preservation acceptance passed: native execution, inventory, matching docs and staged entries, WSL recovery copy retained; exact iPhone OS remains user-reported |
 | SETUP-02 | Acceptance passed: exact matrix/image digests recorded; strict/frozen installs, Expo Doctor 21/21, Windows + Linux backend checks, local dependency integration, Java 25 APK, emulator runtime/Maestro and Metro refresh pass. Windows short-path/CNG/JVM settings documented; Tamagui 3.0.3 qualified after correcting the initial probe configuration |
 | SETUP-03 | Complete: eight private packages, pnpm 12.11.2, native TypeScript 7.0.2, strict/frozen Windows/Linux installs, 17 behavior tests, boundaries and synthetic Node/Expo exports; see the dedicated plan and evidence |
-| SETUP-04–07 | Not started |
+| SETUP-04 | Complete within shell scope: Expo development client, Nilumi component check, independent API/worker roots, generated contracts, Windows/Linux checks, clean CNG emulator APK and Metro refresh; see [validation](../development/setup-04-validation.md). Product/infrastructure/device release gates remain later |
+| SETUP-05–07 | Not started |
 
 ### SETUP-01 — Inventory and preserve the existing workspace
 

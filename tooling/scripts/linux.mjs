@@ -33,10 +33,13 @@ node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
 node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
 node tooling/scripts/pnpm-local.mjs run check
 node tooling/scripts/pnpm-local.mjs run test
+node tooling/scripts/pnpm-local.mjs run contracts:generate
+node tooling/scripts/pnpm-local.mjs run contracts:check
 node tooling/scripts/pnpm-local.mjs run typecheck:compat
 node tooling/scripts/pnpm-local.mjs run check:resolution
-cp docs/development/evidence/setup-03-2026-10-12/resolution-linux.json /out/resolution-linux.json
-node --input-type=module -e "import {writeFileSync} from 'node:fs'; import {preservationCheck} from './tooling/scripts/preflight.mjs'; writeFileSync('/out/linux-acceptance.json', JSON.stringify({platform:process.platform,node:process.versions.node,pnpm:'12.11.2',checks:['frozen-install','check','test','typecheck:compat','check:resolution'],preservation:await preservationCheck()},null,2));"
+EXPO_NO_DOTENV=1 EXPO_NO_TELEMETRY=1 EXPO_PUBLIC_NILUMI_ENV=test EXPO_PUBLIC_API_BASE_URL=http://127.0.0.1:3001 node tooling/scripts/pnpm-local.mjs --filter @nilumi/client exec expo export --platform web
+cp docs/development/evidence/setup-04-2026-10-12/resolution-linux.json /out/resolution-linux.json
+node --input-type=module -e "import {writeFileSync} from 'node:fs'; import {preservationCheck} from './tooling/scripts/preflight.mjs'; writeFileSync('/out/linux-acceptance.json', JSON.stringify({platform:process.platform,node:process.versions.node,pnpm:'12.11.2',checks:['frozen-install','check','test','contracts:generate','contracts:check','typecheck:compat','check:resolution','web-export'],preservation:await preservationCheck()},null,2));"
 `;
   const result = await run(
     process.platform === "win32" ? "docker.exe" : "docker",
@@ -44,7 +47,7 @@ node --input-type=module -e "import {writeFileSync} from 'node:fs'; import {pres
       "run",
       "--rm",
       "--name",
-      `nilumi-setup03-${Date.now()}`,
+      `nilumi-setup04-${Date.now()}`,
       "--cpus",
       "4",
       "--memory",
@@ -60,7 +63,7 @@ node --input-type=module -e "import {writeFileSync} from 'node:fs'; import {pres
     ],
     { capture: true, allowFailure: true },
   );
-  const evidenceDirectory = join(root, "docs/development/evidence/setup-03-2026-10-12");
+  const evidenceDirectory = join(root, "docs/development/evidence/setup-04-2026-10-12");
   writeFileSync(join(evidenceDirectory, "linux-checks.log"), result.stdout + result.stderr);
   if (result.code)
     throw new Error(`Linux acceptance failed (${result.code}); see linux-checks.log.`);

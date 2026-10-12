@@ -1,6 +1,6 @@
 # Nilumi v2
 
-Nilumi's Android and responsive web/PWA client share contracts with one backend and a separate worker. The authoritative product, architecture and design requirements live in [docs/core](docs/core/). SETUP-03 supplies workspace infrastructure; application screens, endpoints and service startup begin in SETUP-04.
+Nilumi's Android and responsive web/PWA client share contracts with one backend and a separate worker. The authoritative product, architecture and design requirements live in [docs/core](docs/core/). SETUP-03 supplies workspace infrastructure; SETUP-04 adds the Expo development shell, API liveness/readiness, independent worker and generated public contracts.
 
 Use Node **24.21.0**, pnpm **12.11.2**, TypeScript **7.0.2** for primary checks/builds, and Biome **2.5.15**. Classic TypeScript 5.9.3/6.0.3 remains isolated for compiler-API tools and compatibility checks.
 
@@ -38,4 +38,6 @@ Linux keeps its own dependencies. Do not reuse Windows `node_modules`, stores or
 
 Client → UI/API-client/contracts; API/worker → server/DB/contracts; server → DB/contracts; API-client → contracts. UI, contracts and DB have no Nilumi package dependencies. The [workspace standards](docs/development/workspace-standards.md) describe exports, compiler selection and enforcement.
 
-`check` runs safe preflight, Biome, compilation/typechecks and boundaries. `test` runs synthetic tooling/configuration behavior tests. `check:resolution` verifies real package entrypoints and synthetic Expo Android/web bundling in an isolated copy. These checks do not certify a running application, native APK, database privileges, physical device or pilot release.
+`check` runs safe preflight, Biome, compilation/typechecks and boundaries. `test` runs synthetic tooling/configuration and API/worker behavior tests. Contract drift is included in `check`. `check:resolution` verifies real package entrypoints and synthetic Expo Android/web bundling in an isolated copy. These checks do not certify a running application, native APK, database privileges, physical device or pilot release.
+
+Run the application shells using the [SETUP-04 runbook](docs/development/setup-04-runbook.md). See [shell validation](docs/development/setup-04-validation.md) for observed gates and limitations.

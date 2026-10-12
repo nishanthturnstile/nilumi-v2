@@ -36,6 +36,12 @@ await main(async () => {
     case "build":
       await compile("build");
       break;
+    case "contracts:generate":
+    case "contracts:check":
+      await compile("build", "@nilumi/contracts");
+      await compile("build", "@nilumi/api");
+      await (await import("./contracts.mjs")).contracts({ check: command === "contracts:check" });
+      break;
     case "typecheck":
       await types();
       break;
@@ -53,6 +59,7 @@ await main(async () => {
       await pnpm(["exec", "biome", "check", "."]);
       await types();
       await (await import("./boundaries.mjs")).checkBoundaries();
+      await (await import("./contracts.mjs")).contracts({ check: true });
       break;
     case "test": {
       await compile("build");

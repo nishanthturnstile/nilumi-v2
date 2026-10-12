@@ -1,0 +1,190 @@
+Scope: all 9 workspace projects
+? Verifying lockfile against supply-chain policies (837 entries)...
+Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 803, reused 0, downloaded 96, added 74
+Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+Downloading @biomejs/cli-linux-x64@2.5.15: 998.58 kB/24.65 MB
+Progress: resolved 803, reused 0, downloaded 256, added 239
+Progress: resolved 803, reused 0, downloaded 256, added 255
+[WARN] Tarball download average speed 41 KiB/s (size 63 KiB) is below 50 KiB/s: https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz (GET)
+[WARN] Tarball download average speed 42 KiB/s (size 65 KiB) is below 50 KiB/s: https://registry.npmjs.org/@fastify/swagger/-/swagger-9.9.2.tgz (GET)
+Progress: resolved 803, reused 0, downloaded 351, added 352
+Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+Progress: resolved 803, reused 0, downloaded 648, added 640
+Downloading expo-modules-core@57.0.21: 11.67 MB/30.79 MB
+Progress: resolved 803, reused 0, downloaded 780, added 768
+✓ Lockfile passes supply-chain policies (837 entries in 13.8s)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 803, reused 0, downloaded 794, added 768
+Progress: resolved 803, reused 0, downloaded 798, added 768
+Downloading @biomejs/cli-linux-x64@2.5.15: 13.72 MB/24.65 MB
+Downloading expo-modules-core@57.0.21: 29.87 MB/30.79 MB
+Packages: +803
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 803, reused 0, downloaded 801, added 803, done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
+
+Done in 17.2s using pnpm v12.11.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 3s ago)
+Lockfile is up to date, resolution step is skipped
+Done in 343ms using pnpm v12.11.2
+Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.
+Checked 84 files in 145ms. No fixes applied.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+Contract drift check passes.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (78.011407ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (525.503029ms)
+✔ unreexported public source participates in complete closure (36.422836ms)
+✔ unused illegal manifest dependency and package cycles fail (39.670141ms)
+✔ source policy allows only the two exact public env reads (7.259654ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (2.538685ms)
+✔ API parser defaults safely and has no connection side effects (8.788002ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (9.946177ms)
+✔ worker and migration roles cannot be substituted (4.865579ms)
+✔ public URLs and variable allowlist follow deployment mode (5.618288ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (6.790342ms)
+✔ store ownership keeps foreign and unmarked directories intact (19.734132ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.702431ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (12.910614ms)
+✔ argument arrays preserve spaces and shell metacharacters (97.238724ms)
+✔ child failure and interruption produce non-success results (137.721001ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (20.250622ms)
+✔ process roots reject missing config without printing values (759.628753ms)
+✔ worker root is an independent process, starts unready and reports a heartbeat (319.73725ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (316.548948ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (48.319832ms)
+✔ invalid handler output fails response validation with a safe Problem (14.575555ms)
+✔ generated transport round-trips real loopback health and validates data (130.089287ms)
+✔ schema generation is deterministic and independent of process config (47.264949ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (14.224256ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (14.631772ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2598.308791
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Generated public schema and client types.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Contract drift check passes.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+build: @nilumi/contracts → classic5 5.9.3
+build: @nilumi/db → classic5 5.9.3
+build: @nilumi/api-client → classic5 5.9.3
+build: @nilumi/server → classic5 5.9.3
+build: @nilumi/api → classic5 5.9.3
+build: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/contracts → classic5 5.9.3
+typecheck: @nilumi/db → classic5 5.9.3
+typecheck: @nilumi/api-client → classic5 5.9.3
+typecheck: @nilumi/server → classic5 5.9.3
+typecheck: @nilumi/api → classic5 5.9.3
+typecheck: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/ui → classic6 6.0.3
+typecheck: @nilumi/client → classic6 6.0.3
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 1m ago)
+Lockfile is up to date, resolution step is skipped
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 221, reused 221, downloaded 0, added 214
+Progress: resolved 492, reused 492, downloaded 0, added 485
+Progress: resolved 714, reused 714, downloaded 0, added 707
+Packages: +803
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 803, reused 803, downloaded 0, added 803, done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
+
+Done in 5s using pnpm v12.11.2
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Public declarations and deliberate type/ambient/export errors verified with classic5.
+Public declarations and deliberate type/ambient/export errors verified with classic6.
+Public declarations and deliberate type/ambient/export errors verified with native7.
+Dependencies are up to date
+android Expo export: actual public entries and synthetic TSX verified.
+web Expo export: actual public entries and synthetic TSX verified.
+Using src/app as the root directory for Expo Router.
+Expo Autolinking module resolution enabled
+Starting Metro Bundler
+
+Static rendering is enabled. Learn more: https://docs.expo.dev/router/web/static-rendering/
+λ Bundled 4410ms node_modules/.pnpm/_4c8de158e5b8d60fb42c84f967289168/node_modules/@expo/router-server/node/render.js (1463 modules)
+Web Bundled 20720ms node_modules/.pnpm/_370248c039596dadc773faa4c1e08b2b/node_modules/expo-router/entry.js (1450 modules)
+
+› web bundles (1):
+_expo/static/js/web/entry-7ece10f0a3005845ab9b76153b4d3c80.js (2.7MB)
+
+› Static routes (3):
+/ (index) (1.7MB)
+/_sitemap (17KB)
+/+not-found (17KB)
+
+Exported: dist
+debconf: delaying package configuration, since apt-utils is not installed
+$ node tooling/scripts/tasks.mjs check
+$ node tooling/scripts/tasks.mjs test
+$ node tooling/scripts/tasks.mjs contracts:generate
+$ node tooling/scripts/tasks.mjs contracts:check
+$ node tooling/scripts/tasks.mjs typecheck:compat
+$ node tooling/scripts/tasks.mjs check:resolution

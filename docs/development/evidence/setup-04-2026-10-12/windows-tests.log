@@ -1,0 +1,41 @@
+$ node tooling/scripts/tasks.mjs test
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (1037.8163ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (4359.7423ms)
+✔ unreexported public source participates in complete closure (306.0889ms)
+✔ unused illegal manifest dependency and package cycles fail (331.4855ms)
+✔ source policy allows only the two exact public env reads (6.118ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (2.6622ms)
+✔ API parser defaults safely and has no connection side effects (9.8309ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (13.1168ms)
+✔ worker and migration roles cannot be substituted (4.9253ms)
+✔ public URLs and variable allowlist follow deployment mode (4.4855ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (46.7992ms)
+✔ store ownership keeps foreign and unmarked directories intact (117.3737ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.7253ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (66.9988ms)
+✔ argument arrays preserve spaces and shell metacharacters (239.8306ms)
+✔ child failure and interruption produce non-success results (415.1716ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (63.1502ms)
+✔ process roots reject missing config without printing values (2139.1192ms)
+✔ worker root is an independent process, starts unready and reports a heartbeat (671.6425ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (711.5047ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (54.0863ms)
+✔ invalid handler output fails response validation with a safe Problem (18.7288ms)
+✔ generated transport round-trips real loopback health and validates data (170.1494ms)
+✔ schema generation is deterministic and independent of process config (51.6361ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (14.4483ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (20.7305ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7125.7243

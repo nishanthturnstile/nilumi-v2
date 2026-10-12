@@ -297,7 +297,7 @@ export async function checkResolution() {
       "Synthetic TSX/package entry resolution only; no shared UI rendering, APK, service or device qualification.",
   };
   writeFileSync(
-    join(root, `docs/development/evidence/setup-03-2026-10-12/resolution-${process.platform}.json`),
+    join(root, `docs/development/evidence/setup-04-2026-10-12/resolution-${process.platform}.json`),
     `${JSON.stringify(evidence, null, 2)}\n`,
   );
 }

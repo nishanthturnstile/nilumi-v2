@@ -1,0 +1,19 @@
+{
+  "browser": "155.0.4283.45",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "layout": {
+    "width": 390,
+    "scrollWidth": 390,
+    "fonts": true
+  },
+  "errors": [],
+  "interaction": "pass",
+  "disabled": "pass",
+  "themes": [
+    "light",
+    "dark"
+  ]
+}

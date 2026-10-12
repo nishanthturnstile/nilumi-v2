@@ -1,0 +1,126 @@
+{
+  "template": "Official expo-template-blank-typescript 57.0.29 adapted to Expo Router; product demo omitted",
+  "sources": [
+    {
+      "name": "@expo-google-fonts/noto-sans-tamil",
+      "version": "0.4.3",
+      "integrity": "sha512-1TBkwJ8gJPnt1UIC+um987hYb/QmRDATGKbtwDW6dajISxr8b7+EVjwMESMJaQxfNS8VWE4IBT2jYmpBGw4D+w==",
+      "tarball": "https://registry.npmjs.org/@expo-google-fonts/noto-sans-tamil/-/noto-sans-tamil-0.4.3.tgz"
+    },
+    {
+      "name": "@expo-google-fonts/nunito",
+      "version": "0.4.2",
+      "integrity": "sha512-1KCWphw/I2ugqfs9iRHUCkPTnomNgGPtF4AvqVquoEKxr0EL+mcLNLgeixsslbaSFevRR6/KJAE3sc8g0VaY0Q==",
+      "tarball": "https://registry.npmjs.org/@expo-google-fonts/nunito/-/nunito-0.4.2.tgz"
+    },
+    {
+      "name": "expo-template-blank-typescript",
+      "version": "57.0.29",
+      "integrity": "sha512-l/KH9Tb7ejQOath9M6lCA5XxLQwviy8J+cp+3CxT5h/E38gK2MpkfrBPSmc92hE0Uw//X2IaoueZYgl2swugiw==",
+      "tarball": "https://registry.npmjs.org/expo-template-blank-typescript/-/expo-template-blank-typescript-57.0.29.tgz"
+    },
+    {
+      "name": "@phosphor-icons/core",
+      "version": "2.1.1",
+      "integrity": "sha512-v4ARvrip4qBCImOE5rmPUylOEK4iiED9ZyKjcvzuezqMaiRASCHKcRIuvvxL/twvLpkfnEODCOJp5dM4eZilxQ==",
+      "tarball": "https://registry.npmjs.org/@phosphor-icons/core/-/core-2.1.1.tgz"
+    }
+  ],
+  "variableFontSource": {
+    "repository": "google/fonts",
+    "commit": "8b0a1d0f5983c89bc2b93f1b5fb55f9e252744b5",
+    "fonttools": "4.66.1",
+    "axes": {
+      "wght": 750,
+      "wdth": 100
+    },
+    "files": [
+      {
+        "file": "nunito-variable.ttf",
+        "sha256": "bb55a5ca5c2042335b3991af27c4d0705d0ef41cac6164ac737fd8f2a1e85207"
+      },
+      {
+        "file": "tamil-variable.ttf",
+        "sha256": "aa3a9b321f4b0bb2c40203ffbde9af89713227866e0e13f76e5b9eeea727cf88"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "path": "apps/client/assets/fonts/noto-sans-tamil-500.ttf",
+      "sha256": "f487adb6475e71720fc18bdc55b293941ac249bc8849cb4e01dd995955d46149"
+    },
+    {
+      "path": "apps/client/assets/fonts/noto-sans-tamil-600.ttf",
+      "sha256": "4b9fe16bb719d439d9c6935e6e1ffe502ad5c3d58363f113f73dd5f3e7e1f6ab"
+    },
+    {
+      "path": "apps/client/assets/fonts/noto-sans-tamil-750.ttf",
+      "sha256": "4a884b811782e07071a3d5ff1ac1bdd9276d6b80750b1cf9849ec9cc6392c5fe"
+    },
+    {
+      "path": "apps/client/assets/fonts/noto-sans-tamil-800.ttf",
+      "sha256": "39a8b773fb9596a05d54c36dd648a6704dea5e81ca667c1061987ab36199615a"
+    },
+    {
+      "path": "apps/client/assets/fonts/NotoSansTamil-OFL.txt",
+      "sha256": "f8ff8ce7d0a81bf8d5e121c635ef027250c531f2fd37d5988b8dd6e45f19d7f1"
+    },
+    {
+      "path": "apps/client/assets/fonts/nunito-500.ttf",
+      "sha256": "2590799f71eef8d473a63bf86f8f37729395faa3ac8552b7b93b2c03ccab110c"
+    },
+    {
+      "path": "apps/client/assets/fonts/nunito-600.ttf",
+      "sha256": "c7fd194467c320db02afd5ebf09262ff900ab6065c61fc2eaa300f0236a48a74"
+    },
+    {
+      "path": "apps/client/assets/fonts/nunito-750.ttf",
+      "sha256": "fcebb60e3dc62a19fe26da3e0b6e6323e1c68a8682ff4a949b6578619d241d19"
+    },
+    {
+      "path": "apps/client/assets/fonts/nunito-800.ttf",
+      "sha256": "33834506fb216047a70654dce857e073412d78943678052024a9d1cf89cec724"
+    },
+    {
+      "path": "apps/client/assets/fonts/Nunito-OFL.txt",
+      "sha256": "580df76c95a1ec5ab878ceb25bb3d85c6a076804e9c970c8c6972aea775fdf65"
+    },
+    {
+      "path": "apps/client/assets/icons/flask-duotone.svg",
+      "sha256": "b2cf38d3f93f48c0b69ae44e7cc674b5769a9cc66df0753f6e8cafa39acba991"
+    },
+    {
+      "path": "apps/client/assets/icons/Phosphor-LICENSE.txt",
+      "sha256": "ddbe6082ec3cf979db47e5af549d2849c5d6182b3e005ef91ce1dbb9eb122f11"
+    },
+    {
+      "path": "apps/client/assets/template/android-icon-background.png",
+      "sha256": "fb139c2dee362ebf2070e23b96da6fc0d43f8492de38b8af1fd7223e19b5861d"
+    },
+    {
+      "path": "apps/client/assets/template/android-icon-foreground.png",
+      "sha256": "9e3d0315a33c6799de601dd34cd8bf8cc3a8d16f3bf75592baec2ceb7240b391"
+    },
+    {
+      "path": "apps/client/assets/template/android-icon-monochrome.png",
+      "sha256": "6371fc2c12e33ad2215a86c281db3d682a81bebe7c957a842c13b8bf00cceb83"
+    },
+    {
+      "path": "apps/client/assets/template/favicon.png",
+      "sha256": "a4e030697a7571b3e95d31860e4da55d2f98e5e861e2b55e414f45a8556828ba"
+    },
+    {
+      "path": "apps/client/assets/template/icon.png",
+      "sha256": "119462bb78eb240a65c869fc067ee599639b3cb5a41953f25c07b17d2a8c7e0f"
+    },
+    {
+      "path": "apps/client/assets/template/LICENSE.txt",
+      "sha256": "fb3ca4a837f5779e83cef89b78253a8949cfb9429c340309f62d0465ec6610b4"
+    },
+    {
+      "path": "apps/client/assets/template/splash-icon.png",
+      "sha256": "5f4c0a732b6325bf4071d9124d2ae67e037cb24fcc9c482ef82bea742109a3b8"
+    }
+  ]
+}

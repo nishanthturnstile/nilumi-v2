@@ -1,6 +1,8 @@
 {
   "version": 1,
   "exceptions": {
+    "react-native-svg@15.15.4": "Exact Expo 57 bundled native SVG pin; revisit with Expo's SDK native-module qualification.",
+    "react-native-screens@4.26.2": "Latest patch in Expo 57's ~4.26.0 native compatibility range; revisit with Expo SDK qualification.",
     "typescript@5.9.3": "Compiler-API compatibility: openapi-typescript requires ^5.x; dependency-cruiser requires <7. Revisit when their APIs support native TypeScript.",
     "typescript@6.0.3": "Qualified Expo classic compiler and TypeScript 7 comparison; revisit after Expo/compiler integration qualification.",
     "@types/node@24.19.2": "Match the selected Node 24 runtime; revisit with an explicitly qualified runtime-major upgrade.",
@@ -16,6 +18,7 @@
     "react-native-safe-area-context@5.7.0": "Latest patch within Expo 57's ~5.7.0 constraint."
   },
   "freshReleaseExceptions": {
+    "@fastify/type-provider-zod@1.0.1": "Exact stable patch reviewed against Fastify/Zod/Swagger peers; schema, failure and codegen tests required on Windows/Linux in SETUP-04.",
     "zod@4.6.6": "Exact version qualified in SETUP-02 on Windows/Linux; configuration and compiler tests required here.",
     "dependency-cruiser@18.6.0": "Exact stable version reviewed for Node 24 and classic TypeScript; negative boundary qualification required here.",
     "@tamagui/*@3.0.3": "Workspace entries are individually exact version selectors from SETUP-02 v3 qualification, not wildcard approvals."

@@ -1,0 +1,19 @@
+{
+  "platform": "win32",
+  "node": "24.21.0",
+  "identity": "dev.nilumi.shell",
+  "scheme": "nilumi-dev",
+  "architecture": "x86_64",
+  "cng": "clean regeneration",
+  "gradle": "9.3.1",
+  "java": "25.0.4.1",
+  "buildTasks": 660,
+  "buildDuration": "13m49s",
+  "apkSha256": "f11724474d20b9890aef9b5c0e88f6e7dcd25931fd09b520a34f342fb1359fb7",
+  "metroReload": {
+    "markerObserved": true,
+    "apkRebuilt": false,
+    "sourceRestored": true,
+    "method": "Metro Fast Refresh after source edit; Maestro assertion"
+  }
+}

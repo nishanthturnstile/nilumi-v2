@@ -7,15 +7,17 @@
     "@nilumi/contracts": "workspace:*",
     "@nilumi/db": "workspace:*",
     "@nilumi/server": "workspace:*",
+    "pino": "10.4.0",
     "zod": "4.6.6"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
-    "typescript": "5.9.3",
-    "@types/node": "24.19.2"
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
   },
   "scripts": {
     "typecheck": "node ../../tooling/scripts/typescript.mjs typecheck @nilumi/worker",
-    "build": "node ../../tooling/scripts/typescript.mjs build @nilumi/worker"
+    "build": "node ../../tooling/scripts/typescript.mjs build @nilumi/worker",
+    "start": "node dist/main.js"
   }
 }

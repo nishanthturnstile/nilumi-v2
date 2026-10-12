@@ -22,7 +22,10 @@
     "lint": "biome check .",
     "format": "biome format --write .",
     "format:check": "biome format .",
-    "check:linux": "node tooling/scripts/tasks.mjs check:linux"
+    "check:linux": "node tooling/scripts/tasks.mjs check:linux",
+    "contracts:generate": "node tooling/scripts/tasks.mjs contracts:generate",
+    "contracts:check": "node tooling/scripts/tasks.mjs contracts:check",
+    "android:dev-build": "node tooling/scripts/android.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
