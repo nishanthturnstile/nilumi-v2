@@ -130,6 +130,13 @@ and no provider/deployment secrets. The stable `Foundation required` check gates
   changes require it. It cleanly regenerates CNG and builds x86_64 assembleDebug,
   with two Gradle workers and a 3 GiB heap; no per-PR emulator matrix or signing.
 
+The exact Temurin 25.0.4.1+1 Linux archive is SHA-256 pinned and explicitly
+prepared by `ci-java-prepare.mjs`, then supplied to the pinned setup-java action
+using its local-file mode. The action's `25.0.4` input is a SemVer cache label;
+the actual JVM version is the verified archive's four-part version, printed in
+the job log. This avoids setup-java rejecting a four-part-plus-build selector,
+without resolving a range or substituting another JVM.
+
 Android may skip only when the change detector proves no relevant change. An
 unknown base builds conservatively; an unavailable base/detector failure fails
 the Linux gate. A failed/cancelled dependency makes the aggregate fail.
