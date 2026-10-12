@@ -1,0 +1,17 @@
+{
+  "platform": "linux",
+  "node": "24.21.0",
+  "pnpm": "12.11.2",
+  "checks": [
+    "frozen-install",
+    "check",
+    "test",
+    "typecheck:compat",
+    "check:resolution"
+  ],
+  "preservation": {
+    "protectedFiles": 93,
+    "stagedBlobs": 5,
+    "indexUnchanged": true
+  }
+}

@@ -1,0 +1,29 @@
+appId: dev.nilumi.setup02probe
+---
+- launchApp
+- openLink: "nilumi-setup02-probe://expo-development-client/?url=http%3A%2F%2F127.0.0.1%3A8081"
+- runFlow:
+    when:
+      visible: "Continue"
+    commands:
+      - tapOn: "Continue"
+- runFlow:
+    when:
+      visible: "Open React Native dev menu"
+    commands:
+      - pressKey: Back
+- extendedWaitUntil:
+    visible: "Nilumi setup qualification"
+    timeout: 60000
+- tapOn: "Synthetic input"
+- inputText: "setup"
+- runFlow:
+    when:
+      visible: "Try out your stylus"
+    commands:
+      - tapOn: "Cancel"
+      - eraseText
+      - inputText: "setup"
+- hideKeyboard
+- tapOn: "Validate input"
+- assertVisible: "Qualification passed"

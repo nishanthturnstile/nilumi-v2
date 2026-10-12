@@ -1,0 +1,60 @@
+import { useState } from "react";
+import { Button, Input, Text, YStack } from "tamagui";
+import { authTransport, transport } from "../contract-probe";
+
+void authTransport;
+void transport;
+export default function Probe() {
+  const [value, setValue] = useState("");
+  const [saved, setSaved] = useState(false);
+  return (
+    <YStack
+      flex={1}
+      padding={24}
+      paddingTop={80}
+      gap={16}
+      backgroundColor="#fffdf7"
+    >
+      <Text fontSize={24} color="#253447">
+        Nilumi setup qualification
+      </Text>
+      <Text fontSize={18} color="#253447">
+        வணக்கம் · Windows native
+      </Text>
+      <Input
+        minHeight={44}
+        fontSize={18}
+        borderWidth={1}
+        borderColor="#366851"
+        paddingHorizontal={12}
+        accessibilityLabel="Synthetic input"
+        placeholder="Synthetic input"
+        value={value}
+        onChangeText={setValue}
+      />
+      <Button
+        minHeight={44}
+        fontSize={18}
+        padding={12}
+        borderRadius={8}
+        color="#fffdf7"
+        backgroundColor="#366851"
+        accessibilityLabel="Validate input"
+        onPress={() => setSaved(value === "setup")}
+      >
+        Validate input
+      </Button>
+      <Text
+        fontSize={18}
+        color="#253447"
+        accessibilityLabel={
+          saved ? "Qualification passed" : "Waiting for input"
+        }
+      >
+        {saved ? "Qualification passed" : "Waiting for input"}
+      </Text>
+    </YStack>
+  );
+}
+
+

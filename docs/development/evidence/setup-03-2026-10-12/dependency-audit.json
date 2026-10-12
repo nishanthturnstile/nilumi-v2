@@ -1,0 +1,429 @@
+{
+  "checkedAt": "2026-10-12T09:07:00.682Z",
+  "policy": "latest compatible stable",
+  "packages": [
+    {
+      "name": "@babel/core",
+      "selected": "7.29.7",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "8.0.7",
+      "exception": "Latest Babel 7 branch; Expo 57 and native tooling still require Babel 7 plugins.",
+      "published": "2026-05-25T11:16:53.499Z",
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peers": {},
+      "integrity": "sha512-RgHBCvtjbOK2gXSNBNIkNoEc9qoVEtau3hj8gEqKQuL3HZAibKarWFEI3Lfm6EYKkLalOh8eSrj9b+ch9H/VBA=="
+    },
+    {
+      "name": "@biomejs/biome",
+      "selected": "2.5.15",
+      "owners": [
+        "nilumi-v2",
+        "@nilumi/contracts",
+        "@nilumi/db",
+        "@nilumi/api-client",
+        "@nilumi/server",
+        "@nilumi/api",
+        "@nilumi/worker",
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "2.5.15",
+      "exception": null,
+      "published": "2026-09-30T15:23:18.673Z",
+      "engines": {
+        "node": ">=14.21.3"
+      },
+      "peers": {},
+      "integrity": "sha512-WZTW4slm/pdkh92K6t/3aEN++44JD1PQ7squ7RCMLI1flHGl43DVOIGXvCjHiZgBMO1V4uYxoFNtqrIA4qGuIQ=="
+    },
+    {
+      "name": "@react-native/metro-config",
+      "selected": "0.86.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "0.87.1",
+      "exception": "Match the Expo-selected RN version.",
+      "published": "2026-08-24T13:30:52.037Z",
+      "engines": {
+        "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0"
+      },
+      "peers": {},
+      "integrity": "sha512-qdzDMepV2xdUhsO4XC7idnnbt8K6+Hd59AjeK9y4KS86fxSQq5oL0TAbqUuajDGR7beNQoYTuS6AowN/zP0oaQ=="
+    },
+    {
+      "name": "@tamagui/config",
+      "selected": "3.0.3",
+      "owners": [
+        "@nilumi/ui"
+      ],
+      "latest": "3.0.3",
+      "exception": null,
+      "published": "2026-10-11T10:45:12.350Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-rbVu21Lq3v3vLUefi3Dv0vbQ5U78gdRGGEK4bLekscaWz6SadMiJ0tFH6aEIGc+p6/bFaeFDjbuzUzIYtzrxfQ=="
+    },
+    {
+      "name": "@tamagui/core",
+      "selected": "3.0.3",
+      "owners": [
+        "@nilumi/ui"
+      ],
+      "latest": "3.0.3",
+      "exception": null,
+      "published": "2026-10-11T10:42:41.038Z",
+      "engines": {},
+      "peers": {
+        "react": ">=19"
+      },
+      "integrity": "sha512-nbDSpEgGTLYbD7kVtlSIwRdiZjAaq2bSeJ4SHPOPQr99x/K35h6lQ/+PzRIXBzf6rB4eX8theqnigQG5cNTvEQ=="
+    },
+    {
+      "name": "@types/node",
+      "selected": "24.19.2",
+      "owners": [
+        "nilumi-v2",
+        "@nilumi/db",
+        "@nilumi/server",
+        "@nilumi/api",
+        "@nilumi/worker"
+      ],
+      "latest": "26.6.5",
+      "exception": "Match the selected Node 24 runtime; revisit with an explicitly qualified runtime-major upgrade.",
+      "published": "2026-10-09T18:44:25.189Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ=="
+    },
+    {
+      "name": "@types/react",
+      "selected": "19.2.18",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "19.3.0",
+      "exception": "Latest React 19.2 type patch matches the Expo-selected React 19.2 runtime; revisit with Expo's React family.",
+      "published": "2026-07-30T21:54:03.456Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-AnzbBERsrLKtk2XSfTbYRLjQPdy116Sty4q+T+Bp3IC4l6jNBvreVPAHmpq9qhXQM7CXZPjLVmGMw9sy+hxQ3w=="
+    },
+    {
+      "name": "babel-preset-expo",
+      "selected": "57.0.14",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "57.0.14",
+      "exception": null,
+      "published": "2026-10-06T12:09:29.704Z",
+      "engines": {},
+      "peers": {
+        "expo": "*",
+        "expo-widgets": "^57.0.23",
+        "react-refresh": ">=0.14.0 <1.0.0",
+        "@babel/runtime": "^7.20.0"
+      },
+      "integrity": "sha512-ALhPgXS0pvMcuORYh3THz4qYhQlOsRIw6FB+AbawM81tvP9V9pZpiK+Au9wihyYIb/Hdv2Z7Zwud4tFXF1ysJQ=="
+    },
+    {
+      "name": "dependency-cruiser",
+      "selected": "18.6.0",
+      "owners": [
+        "nilumi-v2"
+      ],
+      "latest": "18.6.0",
+      "exception": null,
+      "published": "2026-10-11T19:35:10.681Z",
+      "engines": {
+        "node": "^22||^24||>=26"
+      },
+      "peers": {},
+      "integrity": "sha512-It7NW5AmCDBCLMq7I91Nfu8VRKzrIE6S+M/FMQzALDceJ0B1PWRHo77q9YJg/HwyBBEWHVtOuTptIQki+xecOw=="
+    },
+    {
+      "name": "expo",
+      "selected": "57.0.27",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.27",
+      "exception": null,
+      "published": "2026-10-06T12:10:58.345Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-dom": "*",
+        "react-native": "*",
+        "react-native-web": "*",
+        "@expo/dom-webview": "*",
+        "@expo/metro-runtime": "*",
+        "react-native-webview": "*"
+      },
+      "integrity": "sha512-Jc3nByHsmzjakvIrqV3/3viVj+jFw1OCfMc+WpClemwL3/hSrS7ktkVCACSTI7/j+1uH+eHmBJwe1kujDLMnbQ=="
+    },
+    {
+      "name": "expo-doctor",
+      "selected": "1.20.4",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "1.20.4",
+      "exception": null,
+      "published": "2026-08-26T20:04:51.396Z",
+      "engines": {
+        "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0"
+      },
+      "peers": {},
+      "integrity": "sha512-Jm1lIqVdO8br9wiqTg5QhJ1u4zLWAhoue4bXsEuzW543vC3XY+U0cpEOmiLkvJhTTgZgIK+24l4i8VzyZ2VLMg=="
+    },
+    {
+      "name": "openapi-fetch",
+      "selected": "0.17.0",
+      "owners": [
+        "@nilumi/api-client"
+      ],
+      "latest": "0.17.0",
+      "exception": null,
+      "published": "2026-02-11T16:02:21.454Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-PsbZR1wAPcG91eEthKhN+Zn92FMHxv+/faECIwjXdxfTODGSGegYv0sc1Olz+HYPvKOuoXfp+0pA2XVt2cI0Ig=="
+    },
+    {
+      "name": "react",
+      "selected": "19.2.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "19.3.0",
+      "exception": "Expo 57 bundled exact React pin, including matching native test renderer; revisit with Expo's supported pair.",
+      "published": "2025-12-11T22:55:28.598Z",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peers": {},
+      "integrity": "sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA=="
+    },
+    {
+      "name": "react-dom",
+      "selected": "19.2.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "19.3.0",
+      "exception": "Match Expo 57's exact React pin; revisit with the Expo pair.",
+      "published": "2025-12-11T22:55:37.826Z",
+      "engines": {},
+      "peers": {
+        "react": "^19.2.3"
+      },
+      "integrity": "sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg=="
+    },
+    {
+      "name": "react-native",
+      "selected": "0.86.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "0.87.1",
+      "exception": "Expo 57 targets RN 0.86.3; revisit with a qualified Expo SDK update.",
+      "published": "2026-08-24T16:16:06.034Z",
+      "engines": {
+        "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0"
+      },
+      "peers": {
+        "react": "^19.2.3",
+        "@types/react": "^19.1.1",
+        "@react-native/jest-preset": "0.86.3"
+      },
+      "integrity": "sha512-JR5s3bM9ezud+Mw24GlNXNfthqPIKwrQgPPJcam+L97t2sKjjEavhCzBn+fyqZZRcM5+XlhYxpTxVkK7e1n38Q=="
+    },
+    {
+      "name": "react-native-gesture-handler",
+      "selected": "2.32.0",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "3.3.0",
+      "exception": "Latest patch within Expo 57's ~2.32.0 constraint.",
+      "published": "2026-06-11T12:51:41.850Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-uYIMOKlKENORq2SABE+jIjbPU+h5I/sQKcq2v16zRq848nwEp1fWRVwML4QWqijc8UcXJC25o54S8GQd4Mf2OA=="
+    },
+    {
+      "name": "react-native-reanimated",
+      "selected": "4.5.1",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "4.7.1",
+      "exception": "Expo 57 bundled exact native dependency; revisit with Expo's native family.",
+      "published": "2026-07-02T18:14:45.684Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "0.83 - 0.86",
+        "react-native-worklets": "0.10.x"
+      },
+      "integrity": "sha512-RnMvtDuR+68ig864gAvZCOdZehqhC5rFmMo0kn+ARfgVSTvFeF6IFLBVgMPUu0KwihaapEyW24WRi6nEyy1kSA=="
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "selected": "5.7.0",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "5.10.1",
+      "exception": "Latest patch within Expo 57's ~5.7.0 constraint.",
+      "published": "2026-02-24T20:53:59.356Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-/9/MtQz8ODphjsLdZ+GZAIcC/RtoqW9EeShf7Uvnfgm/pzYrJ75y3PV/J1wuAV1T5Dye5ygq4EAW20RoBq0ABQ=="
+    },
+    {
+      "name": "react-native-web",
+      "selected": "0.21.4",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "0.21.4",
+      "exception": null,
+      "published": "2026-10-08T13:34:10.933Z",
+      "engines": {},
+      "peers": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+      },
+      "integrity": "sha512-77B6KlalB4osNIck91TNFixPkYPsTbuNEvw8P7IV+4v4/5wZSBRKZnw0Zhx6YjuauDTz71gc8IW+fVhcBMjr5A=="
+    },
+    {
+      "name": "react-native-worklets",
+      "selected": "0.10.1",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "0.13.0",
+      "exception": "Expo 57 bundled exact dependency and Reanimated peer family.",
+      "published": "2026-07-01T11:25:36.954Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "@babel/core": "*",
+        "react-native": "0.83 - 0.86",
+        "@react-native/metro-config": "*"
+      },
+      "integrity": "sha512-62mRM19bDpfpdI8HLkEErcdOsrAPDtE9lA/sw+5lLRpzBHNhxaoj9QyY2KjXqUmirelxkX4zuPGTC3VdA0feJA=="
+    },
+    {
+      "name": "tamagui",
+      "selected": "3.0.3",
+      "owners": [
+        "@nilumi/ui"
+      ],
+      "latest": "3.0.3",
+      "exception": null,
+      "published": "2026-10-11T10:41:42.317Z",
+      "engines": {},
+      "peers": {
+        "react": ">=19",
+        "react-native-safe-area-context": "*"
+      },
+      "integrity": "sha512-FqHaUJHSUDkLco765XzVQR+izvOzBToDnJwMutabVHXAt2oR83ibO3wM4DY0ZECPJpU+5MqaznUzeVEDzxp52g=="
+    },
+    {
+      "name": "typescript",
+      "selected": "5.9.3",
+      "owners": [
+        "nilumi-v2",
+        "@nilumi/contracts",
+        "@nilumi/db",
+        "@nilumi/api-client",
+        "@nilumi/server",
+        "@nilumi/api",
+        "@nilumi/worker"
+      ],
+      "latest": "7.0.2",
+      "exception": "Compiler-API compatibility: openapi-typescript requires ^5.x; dependency-cruiser requires <7. Revisit when their APIs support native TypeScript.",
+      "published": "2025-09-30T21:19:38.784Z",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peers": {},
+      "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="
+    },
+    {
+      "name": "typescript",
+      "selected": "6.0.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "7.0.2",
+      "exception": "Qualified Expo classic compiler and TypeScript 7 comparison; revisit after Expo/compiler integration qualification.",
+      "published": "2026-04-16T23:38:27.905Z",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peers": {},
+      "integrity": "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="
+    },
+    {
+      "name": "typescript",
+      "selected": "7.0.2",
+      "owners": [
+        "nilumi-v2"
+      ],
+      "latest": "7.0.2",
+      "exception": null,
+      "published": "2026-07-08T15:55:18.431Z",
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "peers": {},
+      "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA=="
+    },
+    {
+      "name": "zod",
+      "selected": "4.6.6",
+      "owners": [
+        "@nilumi/contracts",
+        "@nilumi/db",
+        "@nilumi/api",
+        "@nilumi/worker",
+        "@nilumi/client"
+      ],
+      "latest": "4.6.6",
+      "exception": null,
+      "published": "2026-10-11T16:18:23.878Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA=="
+    }
+  ]
+}

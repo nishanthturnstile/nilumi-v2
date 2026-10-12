@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="Medium_Phone_API_37.0" tests="1" failures="0" time="27.384" timestamp="2026-10-12T13:23:08">
+    <testcase id="maestro" name="maestro" classname="maestro" file="maestro.yaml" time="27.37" timestamp="2026-10-12T13:23:08" status="SUCCESS"/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,11 @@
+{
+  "config": "@tamagui/config/v6",
+  "nativeModulesChanged": false,
+  "reactNative": "0.86.3",
+  "build": "incremental; 455 tasks, 19 executed, 436 up-to-date; 1m03s",
+  "runtime": "API 37 / Android 17 emulator; Fabric; Maestro 1/1 passed",
+  "expo": "57.0.27",
+  "apkSHA256": "63EB3D7BC96E88CE383E0DF0E42E5A32F79C0E8DE0E808E44700A86EDA3CDB4F",
+  "tamaguiVersion": "3.0.3",
+  "architecture": "x86_64"
+}

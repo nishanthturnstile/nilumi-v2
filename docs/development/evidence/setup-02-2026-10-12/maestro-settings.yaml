@@ -1,0 +1,17 @@
+appId: com.android.settings
+---
+- launchApp
+- assertVisible: "Search settings"
+- tapOn: "Search settings"
+- inputText: "display"
+- runFlow:
+    when:
+      visible: "Try out your stylus"
+    commands:
+      - tapOn: "Cancel"
+- eraseText
+- inputText: "display"
+- hideKeyboard
+- assertVisible: "(?i).*display.*"
+- pressKey: Back
+
