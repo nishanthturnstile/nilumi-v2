@@ -1,0 +1,14 @@
+{
+  "id": "setup06-local-34ea8b8",
+  "sha": "34ea8b8a51a7f4f737cefd93cd2af34267903ccc",
+  "images": {
+    "api": "sha256:e7c009a346a888541a8483f92a77dc374da969de17d188c21955b91299e8a76d",
+    "worker": "sha256:aa51b9aced0becd7475569a7521ae49e0a3d8acfc0bcc3c1f03ad09464414657",
+    "web": "sha256:33212b74f62f39ae5bcd63b1514333da7142ff626cc8d28c4fb80d13dcb8b9c5"
+  },
+  "contracts": {
+    "openapi.json": "2aa4bf427533a717fa18c8795cb6f9aa70d23131ea387aba1560e679eed29948",
+    "schema.ts": "f62f7f5e817403e8e5c7fe90569382b34c5d02926d1fe254983441cf5e6d01aa"
+  },
+  "deployment": "manual-only; not deployed"
+}
