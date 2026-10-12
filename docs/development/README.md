@@ -47,3 +47,10 @@ Missing manager/store ownership or moved checkout: run explicit prepare; never d
 Historical foundation snapshots retain the original `.git/index` hash, staged blobs and protected-file hashes as evidence. The exported `preservationCheck` is an opt-in audit of that original transition; it is expected to reject later commits or staged work and is excluded from routine preflight and Linux acceptance. Routine checks work in committed and freshly cloned checkouts. Preserve core documents, historical evidence and unrelated staged work when making changes; do not refresh historical snapshots to make a check pass.
 
 Windows native build handoff remains the tested SDK junction, separate short CXX staging, command-scoped Java socket/native-access flags and IPv4 Metro options from SETUP-02. Preserve existing JVM/Node options; implement/requalify the actual CNG wrapper during SETUP-04.
+
+## SETUP-06 CI and artifacts
+
+See [the CI/image runbook](setup-06-runbook.md), [manual release scaffold](release-scaffold.md)
+and [current validation](setup-validation.md) for frozen platform checks, contracts,
+non-root images, required PR checks and the distinction between local and observed
+GitHub acceptance. SETUP-06 adds no automatic deployment, signing or OTA.

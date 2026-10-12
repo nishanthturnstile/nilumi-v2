@@ -1,0 +1,474 @@
+﻿2026-10-12T15:59:44.2825006Z Current runner version: '2.337.0'
+2026-10-12T15:59:44.2849501Z ##[group]Runner Image Provisioner
+2026-10-12T15:59:44.2850396Z Hosted Compute Agent
+2026-10-12T15:59:44.2851056Z Version: 20261002.596
+2026-10-12T15:59:44.2851706Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-12T15:59:44.2852431Z Build Date: 2026-10-02T22:28:27Z
+2026-10-12T15:59:44.2853231Z Worker ID: {26b1b7f9-7de8-43e0-b3d4-b2a39855809d}
+2026-10-12T15:59:44.2853946Z Region: westus2
+2026-10-12T15:59:44.2854521Z Cloud: Azure
+2026-10-12T15:59:44.2855068Z ##[endgroup]
+2026-10-12T15:59:44.2856728Z ##[group]Operating System
+2026-10-12T15:59:44.2857472Z Ubuntu
+2026-10-12T15:59:44.2858031Z 24.04.5
+2026-10-12T15:59:44.2858525Z LTS
+2026-10-12T15:59:44.2859095Z ##[endgroup]
+2026-10-12T15:59:44.2859636Z ##[group]Runner Image
+2026-10-12T15:59:44.2860331Z Image: ubuntu-24.04
+2026-10-12T15:59:44.2860890Z Version: 20261004.327.1
+2026-10-12T15:59:44.2862170Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-12T15:59:44.2863721Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-12T15:59:44.2864760Z ##[endgroup]
+2026-10-12T15:59:44.2866181Z ##[group]GITHUB_TOKEN Permissions
+2026-10-12T15:59:44.2868177Z Contents: read
+2026-10-12T15:59:44.2868787Z Metadata: read
+2026-10-12T15:59:44.2869326Z ##[endgroup]
+2026-10-12T15:59:44.2871439Z Secret source: Actions
+2026-10-12T15:59:44.2872379Z Cache mode: write
+2026-10-12T15:59:44.2873151Z Prepare workflow directory
+2026-10-12T15:59:44.3311917Z Prepare all required actions
+2026-10-12T15:59:44.3374107Z Getting action download info
+2026-10-12T15:59:44.7106240Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-12T15:59:44.7983136Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-10-12T15:59:45.1169710Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-10-12T15:59:45.5257853Z Complete job name: Restricted role integration
+2026-10-12T15:59:45.6075362Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-12T15:59:45.6076716Z with:
+2026-10-12T15:59:45.6077188Z   persist-credentials: false
+2026-10-12T15:59:45.6077739Z   repository: nishanthturnstile/nilumi-v2
+2026-10-12T15:59:45.6081737Z   token: ***
+2026-10-12T15:59:45.6082178Z   ssh-strict: true
+2026-10-12T15:59:45.6082621Z   ssh-user: git
+2026-10-12T15:59:45.6083036Z   clean: true
+2026-10-12T15:59:45.6083479Z   sparse-checkout-cone-mode: true
+2026-10-12T15:59:45.6083995Z   fetch-depth: 1
+2026-10-12T15:59:45.6084417Z   fetch-tags: false
+2026-10-12T15:59:45.6084862Z   show-progress: true
+2026-10-12T15:59:45.6085299Z   lfs: false
+2026-10-12T15:59:45.6085897Z   submodules: false
+2026-10-12T15:59:45.6086407Z   set-safe-directory: true
+2026-10-12T15:59:45.6086941Z   allow-unsafe-pr-checkout: false
+2026-10-12T15:59:45.6087724Z env:
+2026-10-12T15:59:45.6088128Z   CI: 1
+2026-10-12T15:59:45.6088516Z   EXPO_NO_DOTENV: 1
+2026-10-12T15:59:45.6089009Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T15:59:45.6089467Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T15:59:45.6090026Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T15:59:45.6090610Z ##[endgroup]
+2026-10-12T15:59:45.7099187Z Syncing repository: nishanthturnstile/nilumi-v2
+2026-10-12T15:59:45.7101887Z ##[group]Getting Git version info
+2026-10-12T15:59:45.7103296Z Working directory is '/home/runner/work/nilumi-v2/nilumi-v2'
+2026-10-12T15:59:45.7105359Z [command]/usr/bin/git version
+2026-10-12T15:59:45.7189234Z git version 2.55.0
+2026-10-12T15:59:45.7217646Z ##[endgroup]
+2026-10-12T15:59:45.7230689Z Temporarily overriding HOME='/home/runner/work/_temp/9c28ccf1-203c-4719-a3fc-9950fbb701b7' before making global git config changes
+2026-10-12T15:59:45.7247388Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T15:59:45.7250068Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilumi-v2/nilumi-v2
+2026-10-12T15:59:45.7289755Z Deleting the contents of '/home/runner/work/nilumi-v2/nilumi-v2'
+2026-10-12T15:59:45.7292536Z ##[group]Determining repository object format
+2026-10-12T15:59:45.7300066Z ##[endgroup]
+2026-10-12T15:59:45.7307762Z ##[group]Initializing the repository
+2026-10-12T15:59:45.7309245Z [command]/usr/bin/git init /home/runner/work/nilumi-v2/nilumi-v2
+2026-10-12T15:59:45.7413918Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-12T15:59:45.7416779Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-12T15:59:45.7419094Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-12T15:59:45.7421081Z hint: call:
+2026-10-12T15:59:45.7422341Z hint:
+2026-10-12T15:59:45.7423259Z hint: 	git config --global init.defaultBranch <name>
+2026-10-12T15:59:45.7424391Z hint:
+2026-10-12T15:59:45.7425318Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-12T15:59:45.7427748Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-12T15:59:45.7428988Z hint:
+2026-10-12T15:59:45.7429549Z hint: 	git branch -m <name>
+2026-10-12T15:59:45.7430261Z hint:
+2026-10-12T15:59:45.7431075Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-12T15:59:45.7432316Z Initialized empty Git repository in /home/runner/work/nilumi-v2/nilumi-v2/.git/
+2026-10-12T15:59:45.7436657Z [command]/usr/bin/git remote add origin https://github.com/nishanthturnstile/nilumi-v2
+2026-10-12T15:59:45.7489195Z ##[endgroup]
+2026-10-12T15:59:45.7490911Z ##[group]Disabling automatic garbage collection
+2026-10-12T15:59:45.7492253Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-12T15:59:45.7528373Z ##[endgroup]
+2026-10-12T15:59:45.7530654Z ##[group]Setting up auth
+2026-10-12T15:59:45.7531771Z Removing SSH command configuration
+2026-10-12T15:59:45.7534590Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:59:45.7572248Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T15:59:45.7930739Z Removing HTTP extra header
+2026-10-12T15:59:45.7938084Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:59:45.7976283Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T15:59:45.8198823Z Removing includeIf entries pointing to credentials config files
+2026-10-12T15:59:45.8204808Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:59:45.8271079Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T15:59:45.8499428Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-12T15:59:45.8539208Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git.path /home/runner/work/_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config
+2026-10-12T15:59:45.8573033Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config
+2026-10-12T15:59:45.8612274Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config
+2026-10-12T15:59:45.8647641Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config
+2026-10-12T15:59:45.8679525Z ##[endgroup]
+2026-10-12T15:59:45.8680651Z ##[group]Fetching the repository
+2026-10-12T15:59:45.8686984Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +186451175a6a0845f4ec462f6f0f48ada9565a64:refs/remotes/pull/3/merge
+2026-10-12T15:59:46.2994404Z From https://github.com/nishanthturnstile/nilumi-v2
+2026-10-12T15:59:46.2996675Z  * [new ref]         186451175a6a0845f4ec462f6f0f48ada9565a64 -> pull/3/merge
+2026-10-12T15:59:46.3001457Z ##[endgroup]
+2026-10-12T15:59:46.3003273Z ##[group]Determining the checkout info
+2026-10-12T15:59:46.3005240Z ##[endgroup]
+2026-10-12T15:59:46.3006812Z [command]/usr/bin/git sparse-checkout disable
+2026-10-12T15:59:46.3061017Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-12T15:59:46.3093745Z ##[group]Checking out the ref
+2026-10-12T15:59:46.3096207Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/3/merge
+2026-10-12T15:59:46.3520095Z Note: switching to 'refs/remotes/pull/3/merge'.
+2026-10-12T15:59:46.3521162Z 
+2026-10-12T15:59:46.3521988Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-12T15:59:46.3524058Z changes and commit them, and you can discard any commits you make in this
+2026-10-12T15:59:46.3526417Z state without impacting any branches by switching back to a branch.
+2026-10-12T15:59:46.3527588Z 
+2026-10-12T15:59:46.3528388Z If you want to create a new branch to retain commits you create, you may
+2026-10-12T15:59:46.3530587Z do so (now or later) by using -c with the switch command. Example:
+2026-10-12T15:59:46.3531952Z 
+2026-10-12T15:59:46.3532589Z   git switch -c <new-branch-name>
+2026-10-12T15:59:46.3533501Z 
+2026-10-12T15:59:46.3534145Z Or undo this operation with:
+2026-10-12T15:59:46.3535035Z 
+2026-10-12T15:59:46.3535955Z   git switch -
+2026-10-12T15:59:46.3537080Z 
+2026-10-12T15:59:46.3538382Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-12T15:59:46.3540090Z 
+2026-10-12T15:59:46.3542334Z HEAD is now at 1864511 Merge 1bc787ae658b40481eda3e5f7a3d5ccaecb47711 into c941e03d504abd1024c43e1dc7a47e8c205bb431
+2026-10-12T15:59:46.3549082Z ##[endgroup]
+2026-10-12T15:59:46.3649118Z [command]/usr/bin/git log -1 --format=%H
+2026-10-12T15:59:46.3652131Z 186451175a6a0845f4ec462f6f0f48ada9565a64
+2026-10-12T15:59:46.3662980Z ##[group]Removing auth
+2026-10-12T15:59:46.3665027Z Removing SSH command configuration
+2026-10-12T15:59:46.3668596Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:59:46.3712132Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T15:59:46.3969048Z Removing HTTP extra header
+2026-10-12T15:59:46.3973390Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:59:46.4016571Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T15:59:46.4259468Z Removing includeIf entries pointing to credentials config files
+2026-10-12T15:59:46.4262754Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:59:46.4293753Z includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git.path
+2026-10-12T15:59:46.4297069Z includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git/worktrees/*.path
+2026-10-12T15:59:46.4299659Z includeif.gitdir:/github/workspace/.git.path
+2026-10-12T15:59:46.4301489Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-12T15:59:46.4306643Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git.path
+2026-10-12T15:59:46.4331714Z /home/runner/work/_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config
+2026-10-12T15:59:46.4342952Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-1be220f4\-cedf\-4aff\-afde\-dbf5dc245326\.config
+2026-10-12T15:59:46.4380795Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git/worktrees/*.path
+2026-10-12T15:59:46.4408006Z /home/runner/work/_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config
+2026-10-12T15:59:46.4421656Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-1be220f4\-cedf\-4aff\-afde\-dbf5dc245326\.config
+2026-10-12T15:59:46.4459764Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-12T15:59:46.4489974Z /github/runner_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config
+2026-10-12T15:59:46.4508007Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-1be220f4\-cedf\-4aff\-afde\-dbf5dc245326\.config
+2026-10-12T15:59:46.4535695Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-12T15:59:46.4562520Z /github/runner_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config
+2026-10-12T15:59:46.4576459Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-1be220f4\-cedf\-4aff\-afde\-dbf5dc245326\.config
+2026-10-12T15:59:46.4622049Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T15:59:46.4851642Z Removing credentials config '/home/runner/work/_temp/git-credentials-1be220f4-cedf-4aff-afde-dbf5dc245326.config'
+2026-10-12T15:59:46.4861337Z ##[endgroup]
+2026-10-12T15:59:46.5224538Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-10-12T15:59:46.5226625Z with:
+2026-10-12T15:59:46.5227519Z   node-version: 24.21.0
+2026-10-12T15:59:46.5228708Z   package-manager-cache: false
+2026-10-12T15:59:46.5230161Z   check-latest: false
+2026-10-12T15:59:46.5242136Z   token: ***
+2026-10-12T15:59:46.5243055Z env:
+2026-10-12T15:59:46.5243859Z   CI: 1
+2026-10-12T15:59:46.5244688Z   EXPO_NO_DOTENV: 1
+2026-10-12T15:59:46.5245829Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T15:59:46.5246849Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T15:59:46.5248079Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T15:59:46.5249388Z ##[endgroup]
+2026-10-12T15:59:46.6589126Z Found in cache @ /opt/hostedtoolcache/node/24.21.0/x64
+2026-10-12T15:59:46.7374862Z ##[group]Environment details
+2026-10-12T15:59:47.0815718Z node: v24.21.0
+2026-10-12T15:59:47.0817771Z npm: 11.19.0
+2026-10-12T15:59:47.0819845Z yarn: 1.22.22
+2026-10-12T15:59:47.0823359Z ##[endgroup]
+2026-10-12T15:59:47.1008173Z ##[group]Run node tooling/scripts/ci-prepare.mjs
+2026-10-12T15:59:47.1009690Z node tooling/scripts/ci-prepare.mjs
+2026-10-12T15:59:47.1301082Z shell: /usr/bin/bash -e {0}
+2026-10-12T15:59:47.1302239Z env:
+2026-10-12T15:59:47.1303128Z   CI: 1
+2026-10-12T15:59:47.1304036Z   EXPO_NO_DOTENV: 1
+2026-10-12T15:59:47.1305055Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T15:59:47.1306355Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T15:59:47.1307665Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T15:59:47.1309089Z ##[endgroup]
+2026-10-12T15:59:47.9294771Z ##[group]Run node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+2026-10-12T15:59:47.9295444Z node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+2026-10-12T15:59:47.9362700Z shell: /usr/bin/bash -e {0}
+2026-10-12T15:59:47.9363012Z env:
+2026-10-12T15:59:47.9363243Z   CI: 1
+2026-10-12T15:59:47.9363482Z   EXPO_NO_DOTENV: 1
+2026-10-12T15:59:47.9363982Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T15:59:47.9364272Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T15:59:47.9364630Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T15:59:47.9364994Z ##[endgroup]
+2026-10-12T15:59:48.0107373Z Scope: all 9 workspace projects
+2026-10-12T15:59:48.0719364Z ? Verifying lockfile against supply-chain policies (1195 entries)...
+2026-10-12T15:59:48.2504996Z Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+2026-10-12T15:59:48.2928383Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-10-12T15:59:48.2930723Z   Content-addressable store is at: /home/runner/.local/share/pnpm/store/v11
+2026-10-12T15:59:48.2932172Z   Virtual store is at:             node_modules/.pnpm
+2026-10-12T15:59:48.4851765Z Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+2026-10-12T15:59:49.4857434Z Progress: resolved 1100, reused 0, downloaded 413, added 401
+2026-10-12T15:59:49.5580463Z Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+2026-10-12T15:59:50.0720144Z Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 0.00 B/8.18 MB
+2026-10-12T15:59:50.2784525Z Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+2026-10-12T15:59:50.4901782Z Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+2026-10-12T15:59:50.8116237Z Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+2026-10-12T15:59:51.7467752Z ✓ Lockfile passes supply-chain policies (1195 entries in 3.7s)
+2026-10-12T15:59:51.7469260Z Lockfile is up to date, resolution step is skipped
+2026-10-12T15:59:52.7473855Z Progress: resolved 1100, reused 0, downloaded 1094, added 1094
+2026-10-12T15:59:52.8590082Z Packages: +1100
+2026-10-12T15:59:52.8591086Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-10-12T15:59:52.9490222Z Progress: resolved 1100, reused 0, downloaded 1094, added 1100, done
+2026-10-12T15:59:52.9647162Z .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+2026-10-12T15:59:52.9648160Z .../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+2026-10-12T15:59:53.0245972Z .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+2026-10-12T15:59:53.0299062Z .../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+2026-10-12T15:59:53.1309193Z 
+2026-10-12T15:59:53.1309760Z devDependencies:
+2026-10-12T15:59:53.1310266Z + @biomejs/biome 2.5.15
+2026-10-12T15:59:53.1310931Z + @nilumi/typescript-native <- typescript 7.0.2
+2026-10-12T15:59:53.1311570Z + @playwright/test 1.64.0
+2026-10-12T15:59:53.1312014Z + @types/node 24.19.2
+2026-10-12T15:59:53.1312520Z + dependency-cruiser 18.6.0
+2026-10-12T15:59:53.1316562Z + typescript 5.9.3
+2026-10-12T15:59:53.1316949Z + vite 8.3.4
+2026-10-12T15:59:53.1317352Z + vitest 5.0.3
+2026-10-12T15:59:53.1317566Z 
+2026-10-12T15:59:53.1821811Z Done in 5.2s using pnpm v12.11.2
+2026-10-12T15:59:53.2173503Z ##[group]Run node tooling/scripts/ci-services.mjs
+2026-10-12T15:59:53.2173913Z node tooling/scripts/ci-services.mjs
+2026-10-12T15:59:53.2237853Z shell: /usr/bin/bash -e {0}
+2026-10-12T15:59:53.2238118Z env:
+2026-10-12T15:59:53.2238305Z   CI: 1
+2026-10-12T15:59:53.2238486Z   EXPO_NO_DOTENV: 1
+2026-10-12T15:59:53.2238697Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T15:59:53.2238930Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T15:59:53.2239226Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T15:59:53.2239534Z ##[endgroup]
+2026-10-12T15:59:53.9979012Z docker.io/library/postgres@sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c: Pulling from library/postgres
+2026-10-12T15:59:54.2652213Z 7fd1ebe418b5: Pulling fs layer
+2026-10-12T15:59:54.2653193Z 0f0fb0a9ae5b: Pulling fs layer
+2026-10-12T15:59:54.2654029Z d3f84db5dc4c: Pulling fs layer
+2026-10-12T15:59:54.2655869Z e590c436acb0: Pulling fs layer
+2026-10-12T15:59:54.2656515Z 4597e57da557: Pulling fs layer
+2026-10-12T15:59:54.2657035Z 748f1c7b1aa5: Pulling fs layer
+2026-10-12T15:59:54.2657562Z 6f76e9d43497: Pulling fs layer
+2026-10-12T15:59:54.2658080Z 3367705c2f4b: Pulling fs layer
+2026-10-12T15:59:54.2659125Z 8dca3c457775: Pulling fs layer
+2026-10-12T15:59:54.2659650Z 1b8e0581bcf1: Pulling fs layer
+2026-10-12T15:59:54.2660170Z 9b2148361c22: Pulling fs layer
+2026-10-12T15:59:54.2660696Z 5e3d1f2c4d0f: Pulling fs layer
+2026-10-12T15:59:54.2661413Z 99ce35cabaf9: Pulling fs layer
+2026-10-12T15:59:54.2661918Z 748f1c7b1aa5: Waiting
+2026-10-12T15:59:54.2662351Z 6f76e9d43497: Waiting
+2026-10-12T15:59:54.2662755Z 3367705c2f4b: Waiting
+2026-10-12T15:59:54.2663165Z 8dca3c457775: Waiting
+2026-10-12T15:59:54.2663566Z 1b8e0581bcf1: Waiting
+2026-10-12T15:59:54.2663964Z 9b2148361c22: Waiting
+2026-10-12T15:59:54.2664365Z 5e3d1f2c4d0f: Waiting
+2026-10-12T15:59:54.2664771Z 99ce35cabaf9: Waiting
+2026-10-12T15:59:54.2665191Z e590c436acb0: Waiting
+2026-10-12T15:59:54.2665871Z 4597e57da557: Waiting
+2026-10-12T15:59:54.4886434Z 0f0fb0a9ae5b: Verifying Checksum
+2026-10-12T15:59:54.4887306Z 0f0fb0a9ae5b: Download complete
+2026-10-12T15:59:54.5458469Z d3f84db5dc4c: Verifying Checksum
+2026-10-12T15:59:54.5459058Z d3f84db5dc4c: Download complete
+2026-10-12T15:59:54.6246671Z 7fd1ebe418b5: Verifying Checksum
+2026-10-12T15:59:54.6247324Z 7fd1ebe418b5: Download complete
+2026-10-12T15:59:54.7469638Z e590c436acb0: Verifying Checksum
+2026-10-12T15:59:54.7473723Z e590c436acb0: Download complete
+2026-10-12T15:59:54.8374407Z 4597e57da557: Verifying Checksum
+2026-10-12T15:59:54.8376586Z 4597e57da557: Download complete
+2026-10-12T15:59:54.8989389Z 748f1c7b1aa5: Verifying Checksum
+2026-10-12T15:59:54.8990015Z 748f1c7b1aa5: Download complete
+2026-10-12T15:59:54.9737574Z 6f76e9d43497: Verifying Checksum
+2026-10-12T15:59:54.9738514Z 6f76e9d43497: Download complete
+2026-10-12T15:59:55.0541891Z 3367705c2f4b: Verifying Checksum
+2026-10-12T15:59:55.0543649Z 3367705c2f4b: Download complete
+2026-10-12T15:59:55.2008361Z 1b8e0581bcf1: Verifying Checksum
+2026-10-12T15:59:55.2009009Z 1b8e0581bcf1: Download complete
+2026-10-12T15:59:55.2751020Z 9b2148361c22: Verifying Checksum
+2026-10-12T15:59:55.2755939Z 9b2148361c22: Download complete
+2026-10-12T15:59:55.4171996Z 5e3d1f2c4d0f: Verifying Checksum
+2026-10-12T15:59:55.4172761Z 5e3d1f2c4d0f: Download complete
+2026-10-12T15:59:55.4877665Z 99ce35cabaf9: Verifying Checksum
+2026-10-12T15:59:55.4883551Z 99ce35cabaf9: Download complete
+2026-10-12T15:59:55.5390783Z 8dca3c457775: Verifying Checksum
+2026-10-12T15:59:55.5391326Z 8dca3c457775: Download complete
+2026-10-12T15:59:55.8708993Z 7fd1ebe418b5: Pull complete
+2026-10-12T15:59:59.1503758Z 0f0fb0a9ae5b: Pull complete
+2026-10-12T15:59:59.2799705Z d3f84db5dc4c: Pull complete
+2026-10-12T15:59:59.3173658Z e590c436acb0: Pull complete
+2026-10-12T15:59:59.6128916Z 4597e57da557: Pull complete
+2026-10-12T15:59:59.6834342Z 748f1c7b1aa5: Pull complete
+2026-10-12T15:59:59.6900800Z 6f76e9d43497: Pull complete
+2026-10-12T15:59:59.6996775Z 3367705c2f4b: Pull complete
+2026-10-12T16:00:02.9915305Z 8dca3c457775: Pull complete
+2026-10-12T16:00:03.0052825Z 1b8e0581bcf1: Pull complete
+2026-10-12T16:00:03.0157129Z 9b2148361c22: Pull complete
+2026-10-12T16:00:03.0247011Z 5e3d1f2c4d0f: Pull complete
+2026-10-12T16:00:03.0322564Z 99ce35cabaf9: Pull complete
+2026-10-12T16:00:03.0357564Z Digest: sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c
+2026-10-12T16:00:03.0366248Z Status: Downloaded newer image for postgres@sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c
+2026-10-12T16:00:03.0392942Z docker.io/library/postgres:18.6-bookworm@sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c
+2026-10-12T16:00:05.6509943Z docker.io/chrislusf/seaweedfs@sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d: Pulling from chrislusf/seaweedfs
+2026-10-12T16:00:06.0709664Z e2de96513ba9: Already exists
+2026-10-12T16:00:06.0726067Z c9cf6c474246: Pulling fs layer
+2026-10-12T16:00:06.0726650Z 06f78157834e: Pulling fs layer
+2026-10-12T16:00:06.0727198Z ef46eb9efd0f: Pulling fs layer
+2026-10-12T16:00:06.0727692Z 4c5b400698d3: Pulling fs layer
+2026-10-12T16:00:06.0728187Z 8991998e810d: Pulling fs layer
+2026-10-12T16:00:06.0728664Z 78ce754e1a8c: Pulling fs layer
+2026-10-12T16:00:06.0729447Z 47d8de606ec4: Pulling fs layer
+2026-10-12T16:00:06.0729928Z 7e69747e8729: Pulling fs layer
+2026-10-12T16:00:06.0730364Z 4f4fb700ef54: Pulling fs layer
+2026-10-12T16:00:06.0730641Z 8991998e810d: Waiting
+2026-10-12T16:00:06.0730908Z 78ce754e1a8c: Waiting
+2026-10-12T16:00:06.0731159Z 47d8de606ec4: Waiting
+2026-10-12T16:00:06.0731397Z 7e69747e8729: Waiting
+2026-10-12T16:00:06.0731633Z 4f4fb700ef54: Waiting
+2026-10-12T16:00:06.0731868Z 4c5b400698d3: Waiting
+2026-10-12T16:00:06.5086299Z 06f78157834e: Verifying Checksum
+2026-10-12T16:00:06.5127166Z 06f78157834e: Download complete
+2026-10-12T16:00:06.7418894Z ef46eb9efd0f: Verifying Checksum
+2026-10-12T16:00:06.7419652Z ef46eb9efd0f: Download complete
+2026-10-12T16:00:06.7623551Z c9cf6c474246: Verifying Checksum
+2026-10-12T16:00:06.7624316Z c9cf6c474246: Download complete
+2026-10-12T16:00:06.9708500Z 4c5b400698d3: Verifying Checksum
+2026-10-12T16:00:06.9709149Z 4c5b400698d3: Download complete
+2026-10-12T16:00:07.0202724Z 8991998e810d: Verifying Checksum
+2026-10-12T16:00:07.0203671Z 8991998e810d: Download complete
+2026-10-12T16:00:07.0782894Z 78ce754e1a8c: Download complete
+2026-10-12T16:00:07.3061614Z 7e69747e8729: Verifying Checksum
+2026-10-12T16:00:07.3062498Z 7e69747e8729: Download complete
+2026-10-12T16:00:07.4350204Z 4f4fb700ef54: Verifying Checksum
+2026-10-12T16:00:07.4351003Z 4f4fb700ef54: Download complete
+2026-10-12T16:00:07.4491740Z 47d8de606ec4: Verifying Checksum
+2026-10-12T16:00:07.4492863Z 47d8de606ec4: Download complete
+2026-10-12T16:00:08.1434462Z c9cf6c474246: Pull complete
+2026-10-12T16:00:08.3329653Z 06f78157834e: Pull complete
+2026-10-12T16:00:09.6917432Z ef46eb9efd0f: Pull complete
+2026-10-12T16:00:09.7045996Z 4c5b400698d3: Pull complete
+2026-10-12T16:00:09.7150228Z 8991998e810d: Pull complete
+2026-10-12T16:00:09.7221802Z 78ce754e1a8c: Pull complete
+2026-10-12T16:00:09.7926525Z 47d8de606ec4: Pull complete
+2026-10-12T16:00:09.8008810Z 7e69747e8729: Pull complete
+2026-10-12T16:00:09.8072471Z 4f4fb700ef54: Pull complete
+2026-10-12T16:00:09.8112639Z Digest: sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d
+2026-10-12T16:00:09.8119438Z Status: Downloaded newer image for chrislusf/seaweedfs@sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d
+2026-10-12T16:00:09.8129046Z docker.io/chrislusf/seaweedfs:4.48@sha256:4e61d15fd35994cb1e43e1e553dff106794841fd9a99ade2fc8c8bfce4d7872d
+2026-10-12T16:00:10.5675067Z docker.io/axllent/mailpit@sha256:94f6b70c1436defae6799d9ac7ff0eeff9540465b842026d5cdb018f1c0234ea: Pulling from axllent/mailpit
+2026-10-12T16:00:10.8319691Z e2de96513ba9: Already exists
+2026-10-12T16:00:10.8332423Z 981cb98fba88: Pulling fs layer
+2026-10-12T16:00:10.8332955Z db80d1247d7c: Pulling fs layer
+2026-10-12T16:00:11.1594424Z db80d1247d7c: Verifying Checksum
+2026-10-12T16:00:11.1595123Z db80d1247d7c: Download complete
+2026-10-12T16:00:11.2819236Z 981cb98fba88: Verifying Checksum
+2026-10-12T16:00:11.2820127Z 981cb98fba88: Download complete
+2026-10-12T16:00:11.4195982Z 981cb98fba88: Pull complete
+2026-10-12T16:00:11.5995467Z db80d1247d7c: Pull complete
+2026-10-12T16:00:11.6032573Z Digest: sha256:94f6b70c1436defae6799d9ac7ff0eeff9540465b842026d5cdb018f1c0234ea
+2026-10-12T16:00:11.6037977Z Status: Downloaded newer image for axllent/mailpit@sha256:94f6b70c1436defae6799d9ac7ff0eeff9540465b842026d5cdb018f1c0234ea
+2026-10-12T16:00:11.6046236Z docker.io/axllent/mailpit:v1.31.5@sha256:94f6b70c1436defae6799d9ac7ff0eeff9540465b842026d5cdb018f1c0234ea
+2026-10-12T16:00:11.6151603Z ##[group]Run node tooling/scripts/pnpm-local.mjs run test:integration
+2026-10-12T16:00:11.6152117Z node tooling/scripts/pnpm-local.mjs run test:integration
+2026-10-12T16:00:11.6214752Z shell: /usr/bin/bash -e {0}
+2026-10-12T16:00:11.6215014Z env:
+2026-10-12T16:00:11.6215194Z   CI: 1
+2026-10-12T16:00:11.6215373Z   EXPO_NO_DOTENV: 1
+2026-10-12T16:00:11.6215850Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T16:00:11.6216090Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T16:00:11.6216376Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T16:00:11.6216894Z ##[endgroup]
+2026-10-12T16:00:11.6912450Z $ node tooling/scripts/tasks.mjs test:integration
+2026-10-12T16:00:11.7723779Z build: @nilumi/contracts → native7 7.0.2
+2026-10-12T16:00:11.9021544Z build: @nilumi/db → native7 7.0.2
+2026-10-12T16:00:12.1186272Z build: @nilumi/api-client → native7 7.0.2
+2026-10-12T16:00:12.2734035Z build: @nilumi/server → native7 7.0.2
+2026-10-12T16:00:12.4744981Z build: @nilumi/api → native7 7.0.2
+2026-10-12T16:00:12.7772344Z build: @nilumi/worker → native7 7.0.2
+2026-10-12T16:00:21.3134537Z PASS: Seaweed S3 synthetic put/read/delete and service reachability
+2026-10-12T16:00:21.5171900Z PASS: repeatable provision and checked migration
+2026-10-12T16:00:21.6799268Z PASS: runtime identities, grants and privileged role rejection
+2026-10-12T16:00:21.7652027Z PASS: test-only forced RLS denies missing context; commit/rollback clear pooled settings
+2026-10-12T16:00:21.8253016Z PASS: pending migration and missing grant fail readiness without runtime repair
+2026-10-12T16:00:22.1684322Z PASS: restricted enqueue, supervision and eligible synthetic job survive consumer restart
+2026-10-12T16:00:22.2094388Z PASS: local SMTP captured by Mailpit; synthetic SMS/AI/speech have no live effects
+2026-10-12T16:00:24.1586868Z PASS: API listener failure closes prepared dependencies and exits safely
+2026-10-12T16:00:24.9681494Z PASS: independent worker process restart recovers eligible synthetic job
+2026-10-12T16:00:34.9950640Z PASS: host API ready endpoint and worker heartbeat reach dependencies; pending migration returns 503
+2026-10-12T16:00:45.4517218Z ##[group]Run node tooling/scripts/pnpm-local.mjs run test:backend
+2026-10-12T16:00:45.4517767Z node tooling/scripts/pnpm-local.mjs run test:backend
+2026-10-12T16:00:45.4580045Z shell: /usr/bin/bash -e {0}
+2026-10-12T16:00:45.4580294Z env:
+2026-10-12T16:00:45.4580486Z   CI: 1
+2026-10-12T16:00:45.4580673Z   EXPO_NO_DOTENV: 1
+2026-10-12T16:00:45.4580885Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T16:00:45.4581111Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T16:00:45.4581422Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T16:00:45.4581738Z ##[endgroup]
+2026-10-12T16:00:45.5295039Z $ node tooling/scripts/tasks.mjs test:backend
+2026-10-12T16:00:45.6074339Z build: @nilumi/contracts → native7 7.0.2
+2026-10-12T16:00:45.7394679Z build: @nilumi/db → native7 7.0.2
+2026-10-12T16:00:45.9416630Z build: @nilumi/api-client → native7 7.0.2
+2026-10-12T16:00:46.0799735Z build: @nilumi/server → native7 7.0.2
+2026-10-12T16:00:46.2820396Z build: @nilumi/api → native7 7.0.2
+2026-10-12T16:00:46.6021497Z build: @nilumi/worker → native7 7.0.2
+2026-10-12T16:00:47.0664564Z 
+2026-10-12T16:00:47.0668958Z  RUN  v5.0.3 /home/runner/work/nilumi-v2/nilumi-v2
+2026-10-12T16:00:47.0669451Z 
+2026-10-12T16:00:48.0464074Z  ✓ tooling/vitest/api.test.mjs (2 tests) 145ms
+2026-10-12T16:00:48.0516221Z 
+2026-10-12T16:00:48.0527161Z  Test Files  1 passed (1)
+2026-10-12T16:00:48.0531170Z       Tests  2 passed (2)
+2026-10-12T16:00:48.0532688Z    Start at  16:00:47
+2026-10-12T16:00:48.0534142Z    Duration  977ms (import 73%, tests 17%, transform 10%, worker 1%)
+2026-10-12T16:00:48.0535046Z 
+2026-10-12T16:00:48.1074894Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-12T16:00:48.1075325Z with:
+2026-10-12T16:00:48.1075958Z   name: restricted-roles-186451175a6a0845f4ec462f6f0f48ada9565a64
+2026-10-12T16:00:48.1076465Z   path: docs/development/evidence/setup-06-2026-10-12/integration-linux.json
+2026-10-12T16:00:48.1076858Z   if-no-files-found: warn
+2026-10-12T16:00:48.1077089Z   compression-level: 6
+2026-10-12T16:00:48.1077321Z   overwrite: false
+2026-10-12T16:00:48.1077548Z   include-hidden-files: false
+2026-10-12T16:00:48.1077785Z   archive: true
+2026-10-12T16:00:48.1077969Z env:
+2026-10-12T16:00:48.1078137Z   CI: 1
+2026-10-12T16:00:48.1078517Z   EXPO_NO_DOTENV: 1
+2026-10-12T16:00:48.1078718Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T16:00:48.1078934Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T16:00:48.1079216Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T16:00:48.1079510Z ##[endgroup]
+2026-10-12T16:00:48.2521778Z With the provided path, there will be 1 file uploaded
+2026-10-12T16:00:48.2523861Z Artifact name is valid!
+2026-10-12T16:00:48.2524835Z Root directory input is valid!
+2026-10-12T16:00:48.6270882Z Uploading artifact: restricted-roles-186451175a6a0845f4ec462f6f0f48ada9565a64.zip
+2026-10-12T16:00:48.6317076Z Beginning upload of artifact content to blob storage
+2026-10-12T16:00:48.9871600Z Uploaded bytes 602
+2026-10-12T16:00:49.0678105Z Finished uploading artifact content to blob storage!
+2026-10-12T16:00:49.0679478Z SHA256 digest of uploaded artifact is 4e67026404dde03bc0f6162fbb6eb96890194a76a0013163f20211869339dda1
+2026-10-12T16:00:49.0680522Z Finalizing artifact upload
+2026-10-12T16:00:49.5053338Z Artifact restricted-roles-186451175a6a0845f4ec462f6f0f48ada9565a64 successfully finalized. Artifact ID 11758571503
+2026-10-12T16:00:49.5055714Z Artifact restricted-roles-186451175a6a0845f4ec462f6f0f48ada9565a64 has been successfully uploaded! Final size is 602 bytes. Artifact ID is 11758571503
+2026-10-12T16:00:49.5058017Z Artifact download URL: https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/artifacts/11758571503
+2026-10-12T16:00:49.5218777Z Post job cleanup.
+2026-10-12T16:00:49.6418005Z Post job cleanup.
+2026-10-12T16:00:49.7310734Z [command]/usr/bin/git version
+2026-10-12T16:00:49.7363502Z git version 2.55.0
+2026-10-12T16:00:49.7405000Z Temporarily overriding HOME='/home/runner/work/_temp/93911437-5902-4128-9cea-88edb45b588d' before making global git config changes
+2026-10-12T16:00:49.7407640Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T16:00:49.7411784Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilumi-v2/nilumi-v2
+2026-10-12T16:00:49.7443689Z Removing SSH command configuration
+2026-10-12T16:00:49.7453943Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T16:00:49.7486641Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T16:00:49.7724561Z Removing HTTP extra header
+2026-10-12T16:00:49.7731184Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T16:00:49.7769935Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T16:00:49.8019121Z Removing includeIf entries pointing to credentials config files
+2026-10-12T16:00:49.8029229Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T16:00:49.8064442Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T16:00:49.8514898Z Cleaning up orphan processes

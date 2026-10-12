@@ -24,5 +24,8 @@
     "typecheck": "node ../../tooling/scripts/typescript.mjs typecheck @nilumi/api",
     "build": "node ../../tooling/scripts/typescript.mjs build @nilumi/api",
     "start": "node dist/main.js"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

@@ -1,0 +1,5 @@
+{
+  "bootstrapBaseCommit": "f471e4f08d2d8e6cd677b6bae355bb573afec6bd",
+  "sha256": "2aa4bf427533a717fa18c8795cb6f9aa70d23131ea387aba1560e679eed29948",
+  "policy": "First SETUP-06 baseline only. All later missing base contracts fail closed. Retain prior release schemas and client types by immutable artifact ID."
+}

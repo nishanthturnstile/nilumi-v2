@@ -19,5 +19,8 @@
     "typecheck": "node ../../tooling/scripts/typescript.mjs typecheck @nilumi/worker",
     "build": "node ../../tooling/scripts/typescript.mjs build @nilumi/worker",
     "start": "node dist/main.js"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

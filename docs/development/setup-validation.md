@@ -74,3 +74,141 @@ Output: `{"platform":"linux","arch":"x64","node":"v24.21.0"}`. The locally inspe
 - Record the exact iPhone OS and perform actual Safari/PWA checks in SETUP-07.
 
 No manifests, workspace, application source or generated Android project were added. SETUP-03–07 remain unstarted; full F01–F13 completion is not claimed.
+
+## SETUP-06 qualification — 12 October 2026
+
+The preceding sections retain the original preflight observations. SETUP-03–05
+are implemented with separate retained evidence. SETUP-06 CI, images, contract
+compatibility and manual release scaffolding are implemented. **SETUP-06 functional
+acceptance passes:** all seven required jobs were observed green in the real
+[PR run](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992).
+The tested implementation head is `31beb6b0a622c4fd025f7e628510a47e333826d1`;
+GitHub tested merge commit `7abd0df28444a24617429d3abd96fc4814505fbb` against
+base `f471e4f08d2d8e6cd677b6bae355bb573afec6bd`. The subsequent `main` ancestry
+merge changes no files; this evidence commit records the observed result.
+
+| Check | Observed result |
+|---|---|
+| Windows frozen install/check/native7/boundaries | Pass |
+| Windows Node behavior tests / API Vitest / native Jest+RNTL | 32 / 2 / 2 pass |
+| Windows restricted-role integration | Pass; actual isolated API/auth/worker/queue roles |
+| Fresh Linux frozen install/check/test/integration/contracts | Pass; independent modules in pinned Node container |
+| Classic compiler comparisons/public export closure | Fresh Linux pass |
+| Generated schema/type byte drift | Pass; negative drift in both outputs rejected and restored |
+| oasdiff 1.33.0 vs PR base `f471e4f08d2d8e6cd677b6bae355bb573afec6bd` | Pass; removed v1 endpoint negative qualification fails as expected |
+| Windows Playwright exported shell/direct-link/reload/API forwarding | 2 pass |
+| Non-root API/worker/web packaging and health/ready/shutdown | Pass on local Linux engine; exact IDs in image-smoke.json |
+| Clean CNG Windows Android x86_64 debug build | Pass, Java 25.0.4.1 / Gradle 9.3.1; 660 tasks, BUILD SUCCESSFUL |
+| Protected `main` | Applied: up-to-date PR, `Foundation required`, enforced admins, resolved conversations, no force/deletion |
+| Real GitHub Linux + Windows + integration/browser/images/Android | **All pass**, including `Foundation required`; links below |
+
+| Real GitHub job | Observed result |
+|---|---|
+| [Linux foundation](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354654) | Pass: frozen install, Biome, native7, boundaries, Node/Vitest/Jest, generation/drift/compatibility, web export |
+| [Windows smoke](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354863) | Pass: portable commands, client/server compile, tests and contracts |
+| [Restricted-role integration](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354977) | Pass: ephemeral PostgreSQL/pg-boss, actual role/grant/context/recovery/readiness checks and backend Vitest |
+| [Web shell browser](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354777) | Pass: exported shell, direct link/reload/input/liveness and API-path isolation |
+| [Linux image smoke](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354926) | Pass: privileged migration/queue job before startup, non-root production closure, health/ready/marker loss and SIGTERM exit 0 |
+| [Android debug smoke](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866980253) | Pass: exact JDK/SDK preparation, clean CNG/x86_64 assembleDebug; BUILD SUCCESSFUL in 9m45s, all 660 tasks executed |
+| [Foundation required](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114871292843) | Pass: every required result green; Android ran rather than skipped |
+
+[PR #2](https://github.com/nishanthturnstile/nilumi-v2/pull/2) remains open for review.
+Protected `main` requires the GitHub Actions app's `Foundation required`, strict
+up-to-date branches and resolved conversations, including for admins. Development
+now includes main's prior merge commit; no core/historical file changed.
+
+Hosted [image-smoke output](evidence/setup-06-2026-10-12/github-image-smoke.json)
+records exact API/worker/web image IDs, required workspace exports/SQL and absence
+of compiler/Biome/Drizzle Kit/Vitest runtime resolution. Health/ready, pending
+migration rejection, worker heartbeat and all shutdown exit codes passed.
+[Contract compatibility output](evidence/setup-06-2026-10-12/github-contract-compat.json)
+is `code: 0`, `output: []` against the exact PR base. The Linux job also observed
+both generated artifacts' byte drift rejected/restored and a removed v1 endpoint
+rejected by oasdiff. The complete hosted
+[Android log](evidence/setup-06-2026-10-12/github-android-debug-build.log),
+[job metadata](evidence/setup-06-2026-10-12/github-ci.json) and
+[artifact IDs/digests](evidence/setup-06-2026-10-12/github-artifacts.json) are retained.
+Contract/web artifact ID is `11754227955`, image-smoke `11754522300`, and Android
+debug `11755067203`; artifacts identify the exact tested merge commit above.
+
+New evidence is under [SETUP-06](evidence/setup-06-2026-10-12/README.md).
+The clean local Android build log is
+[android-debug-build.log](evidence/setup-06-2026-10-12/android-debug-build.log);
+prior local emulator/Metro interaction evidence remains in SETUP-04 and is not
+counted as a new physical-device/iPhone qualification. Packaging attempts that
+failed legacy offline resolution and declaration-only dependency lookup, and
+the initial Linux Jest transform-path failure, are retained separately from the
+passing results. Hosted attempts also rejected the initial Java version
+selector and exposed Linux AGP/CMake's Java 25 native-access warning; the final
+run uses a checksum-pinned exact archive and the command-scoped flag already
+qualified on Windows. Both failed required runs remain in the evidence and were
+not counted as acceptance. Strict peers/age checks were retained; test-renderer 1.2.0 is the
+latest compatible React 19.2 selection, and mature Vitest 5.0.3 is selected.
+
+Git Credential Manager's existing GitHub session permits pushes/API operations
+without writing or displaying its token; `gh` has no independently stored login.
+The existing GitHub repository reports `private=false`; its visibility was
+preserved. All eight workspace packages remain private. No provider/deployment
+secrets, signing, auto-deployment, pilot/production migrations or OTA were added.
+The advisory audit remains **non-clean: 2 high, 4 moderate**. It retains the prior
+five advisories and adds `sprintf-js` in the test tooling tree; no incompatible
+override was forced. Dependency-security acceptance remains separate and open.
+SETUP-07 device checks and product/pilot readiness remain unfinished. The manual
+release record captures image IDs/commit/schema hashes and rejects ID reuse;
+the release Compose scaffold validates with synthetic configuration. No rollout
+or pilot/production migration was performed.
+
+## Dependency remediation follow-up — 12 October 2026
+
+See [the dependency security record](dependency-security.md) and new evidence under
+`evidence/setup-06-2026-10-12/dependency-remediation/`. The original SETUP-06 audit and
+qualification evidence remain historical and unchanged.
+
+The decoder has a committed CommonJS patch with bounded UTF-8 scanning and removal
+of the outer quadratic replacement map. Parent-scoped exact overrides remove the
+vulnerable esbuild, UUID and sprintf-js paths. The raw audit is now **2 high, 1 moderate**;
+the moderate decoder alert is version-based despite the installed patch. Forge and
+braces remain active upstream advisories, with conditional local acceptance until
+12 November 2026 under the documented exposure restrictions.
+
+Windows frozen install, check, test, test:integration, contracts:check, direct-selection
+audit, web export, three Playwright tests, native Jest parser/component tests, and fresh
+Android/web resolution exports passed. Seven focused dependency tests verify malformed
+queries and ordinary behavior, real Drizzle SQL generation, xcode IDs, YAML config loading
+and the installed Expo native matrix. Local image health/readiness/shutdown passed;
+its artifacts identify the base commit plus dirty working tree, not an immutable release.
+
+Fresh pinned Linux qualification passed. The hosted PR run
+[38274234393](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393)
+completed successfully with all seven jobs green for source head
+`1bc787ae658b40481eda3e5f7a3d5ccaecb47711`, qualified as PR merge
+`186451175a6a0845f4ec462f6f0f48ada9565a64` against exact development base
+`c941e03d504abd1024c43e1dc7a47e8c205bb431`.
+
+| Observed check | Job URL |
+|---|---|
+| Linux foundation | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692236) |
+| Windows smoke | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692468) |
+| Restricted role integration | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692245) |
+| Web shell browser | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692505) |
+| Linux image smoke | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692456) |
+| Android debug smoke | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114896406828) |
+| Foundation required | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114900563823) |
+
+Hosted contract byte-drift qualification passed; oasdiff 1.33.0 comparison returned
+code 0 and `[]` against the exact PR base. Hosted image artifacts include immutable
+merge SHA/image IDs and successful health/readiness/shutdown assertions. Android's
+debug build passed; its log and artifact IDs/digests are retained in the new evidence.
+The Linux/Windows jobs run the seven focused dependency regressions and native parser
+test at the committed revision. The cancelled duplicate push run is not counted.
+
+The first Linux live-Expo-metadata attempt failed when new same-day SDK patches
+appeared; its failure log is retained. The qualified family is held by the existing
+maturity policy, and compatibility uses the installed SDK matrix while registry
+freshness remains separately audited. All 173 previously tracked core/evidence files
+remain unchanged. No global audit ignore, incompatible native major or stack migration
+was added.
+
+The four remediations can be closed for the qualified graph. Dependency-security
+acceptance is conditional on the two dated exceptions; the upstream highs remain
+unresolved and the audit is not clean. Physical device qualification remains SETUP-07.

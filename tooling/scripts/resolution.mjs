@@ -35,7 +35,7 @@ export function copyWorkspace(destination, { git = false } = {}) {
   const filter = (source) =>
     !ignored.has(source.split(/[\\/]/).at(-1)) &&
     !/^\.env(?!\.example$)/.test(source.split(/[\\/]/).at(-1));
-  for (const directory of ["apps", "packages", "tooling", "docs", "infra"])
+  for (const directory of ["apps", "packages", "tooling", "docs", "infra", "patches"])
     cpSync(join(root, directory), join(destination, directory), { recursive: true, filter });
   for (const file of [
     "package.json",
@@ -47,6 +47,9 @@ export function copyWorkspace(destination, { git = false } = {}) {
     ".gitattributes",
     ".editorconfig",
     ".node-version",
+    "vitest.config.mjs",
+    "playwright.config.mjs",
+    ".dockerignore",
   ])
     cpSync(join(root, file), join(destination, file));
   for (const file of ["README.md", "CONTRIBUTING.md", "AGENTS.md"])
@@ -216,8 +219,10 @@ export async function checkResolution() {
   const secret = "NILUMI-PRIVATE-SENTINEL-DO-NOT-BUNDLE";
   // This synthetic inherited private value must not be referenced or appear in artifacts.
   env.NILUMI_API_DATABASE_URL = secret;
+  // Qualify against the installed SDK's bundled native-module matrix. Live Expo
+  // metadata can select same-day patches that our maturity policy excludes.
+  // Registry freshness remains an explicit, separate audit:dependencies check.
   const validationEnvironment = { ...env };
-  delete validationEnvironment.EXPO_OFFLINE;
   await run(
     prepared.pnpmExecutable,
     ["--dir", "apps/client", "exec", "expo", "install", "--check"],
@@ -297,7 +302,11 @@ export async function checkResolution() {
       "Synthetic TSX/package entry resolution only; no shared UI rendering, APK, service or device qualification.",
   };
   writeFileSync(
-    join(root, `docs/development/evidence/setup-05-2026-10-12/resolution-${process.platform}.json`),
+    join(
+      root,
+      process.env.NILUMI_EVIDENCE_DIRECTORY ?? "docs/development/evidence/setup-06-2026-10-12",
+      `resolution-${process.platform}.json`,
+    ),
     `${JSON.stringify(evidence, null, 2)}\n`,
   );
 }

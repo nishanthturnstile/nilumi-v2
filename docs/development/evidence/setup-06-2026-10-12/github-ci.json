@@ -1,0 +1,52 @@
+{
+  "observedAt": "2026-10-12T15:04:53.448Z",
+  "headSha": "31beb6b0a622c4fd025f7e628510a47e333826d1",
+  "mergeCommitSha": "7abd0df28444a24617429d3abd96fc4814505fbb",
+  "status": "completed",
+  "conclusion": "success",
+  "url": "https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992",
+  "jobs": [
+    {
+      "name": "Linux foundation",
+      "conclusion": "success",
+      "url": "https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354654",
+      "completedAt": "2026-10-12T14:48:49Z"
+    },
+    {
+      "name": "Web shell browser",
+      "conclusion": "success",
+      "url": "https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354777",
+      "completedAt": "2026-10-12T14:49:03Z"
+    },
+    {
+      "name": "Windows smoke",
+      "conclusion": "success",
+      "url": "https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354863",
+      "completedAt": "2026-10-12T14:48:36Z"
+    },
+    {
+      "name": "Linux image smoke",
+      "conclusion": "success",
+      "url": "https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354926",
+      "completedAt": "2026-10-12T14:49:28Z"
+    },
+    {
+      "name": "Restricted role integration",
+      "conclusion": "success",
+      "url": "https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866354977",
+      "completedAt": "2026-10-12T14:48:26Z"
+    },
+    {
+      "name": "Android debug smoke",
+      "conclusion": "success",
+      "url": "https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114866980253",
+      "completedAt": "2026-10-12T14:59:24Z"
+    },
+    {
+      "name": "Foundation required",
+      "conclusion": "success",
+      "url": "https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38265453992/job/114871292843",
+      "completedAt": "2026-10-12T14:59:28Z"
+    }
+  ]
+}

@@ -9,3 +9,15 @@
 - Use exact latest-compatible stable pins, isolated dependencies and strict peers. Never force incompatible native or compiler-API versions. Update the audit and run Windows/Linux checks for dependency/tooling changes.
 - Runtime configuration is process-specific, pure and redacted. No universal privileged DB URL, production fallback, real provider calls or household data in tooling tests.
 - Follow naming, explicit injection, synthetic fixtures and generated-artifact guidance in CONTRIBUTING.md. Run meaningful checks appropriate to changes, report limitations honestly and do not count probes as product readiness.
+
+## Agent skills
+
+### Issue tracker
+
+Track issues and specs in GitHub Issues for `nishanthturnstile/nilumi-v2`.
+See `docs/agents/issue-tracker.md`.
+
+### Domain docs
+
+Use a single-context layout: root `GLOSSARY.md` and `docs/adr/`.
+See `docs/agents/domain.md`.

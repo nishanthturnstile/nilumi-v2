@@ -1,0 +1,16 @@
+{
+  "platform": "win32",
+  "node": "24.21.0",
+  "pnpm": "12.11.2",
+  "checks": [
+    "install --frozen-lockfile",
+    "run check",
+    "run test",
+    "run contracts:check",
+    "run contracts:qualify",
+    "run contracts:qualify-drift",
+    "run contracts:compat f471e4f08d2d8e6cd677b6bae355bb573afec6bd",
+    "run audit:dependencies"
+  ],
+  "exitCode": 0
+}

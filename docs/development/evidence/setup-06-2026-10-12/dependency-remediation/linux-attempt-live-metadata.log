@@ -1,0 +1,293 @@
+Scope: all 9 workspace projects
+? Verifying lockfile against supply-chain policies (1198 entries)...
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 1103, reused 0, downloaded 133, added 128
+Progress: resolved 1103, reused 0, downloaded 183, added 160
+Progress: resolved 1103, reused 0, downloaded 286, added 288
+Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+Progress: resolved 1103, reused 0, downloaded 318, added 319
+[WARN] Tarball download average speed 9 KiB/s (size 10 KiB) is below 50 KiB/s: https://registry.npmjs.org/@tamagui/normalize-css-color/-/normalize-css-color-3.0.3.tgz (GET)
+Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+Downloading @typescript/typescript-linux-x64@7.0.2: 925.67 kB/9.66 MB
+Downloading @typescript/typescript-linux-x64@7.0.2: 1.66 MB/9.66 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 0.00 B/8.18 MB
+Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+Progress: resolved 1103, reused 0, downloaded 826, added 800
+Downloading hermes-compiler@250829098.0.17: 8.88 MB/19.18 MB
+[WARN] Tarball download average speed 35 KiB/s (size 75 KiB) is below 50 KiB/s: https://registry.npmjs.org/entities/-/entities-4.5.0.tgz (GET)
+[WARN] Tarball download average speed 27 KiB/s (size 29 KiB) is below 50 KiB/s: https://registry.npmjs.org/@expo/devtools/-/devtools-57.0.1.tgz (GET)
+Downloading @typescript/typescript-linux-x64@7.0.2: 7.22 MB/9.66 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 3.05 MB/8.18 MB
+Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 4.26 MB/8.18 MB
+✓ Lockfile passes supply-chain policies (1198 entries in 17s)
+Lockfile is up to date, resolution step is skipped
+Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 7.75 MB/8.18 MB
+Downloading expo-modules-core@57.0.21: 24.21 MB/30.79 MB
+Progress: resolved 1103, reused 0, downloaded 1097, added 1090
+Packages: +1103
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1103, reused 0, downloaded 1097, added 1103, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+.../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @playwright/test 1.64.0
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
++ vite 8.3.4
++ vitest 5.0.3
+
+Done in 18.5s using pnpm v12.11.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 4s ago)
+Lockfile is up to date, resolution step is skipped
+Done in 155ms using pnpm v12.11.2
+Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+Checked 120 files in 77ms. No fixes applied.
+Found 2 infos.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+Contract drift check passes.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (70.646013ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (297.48924ms)
+✔ unreexported public source participates in complete closure (24.278578ms)
+✔ unused illegal manifest dependency and package cycles fail (28.321242ms)
+✔ source policy allows only the two exact public env reads (5.131327ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (1.230565ms)
+✔ API parser defaults safely and has no connection side effects (5.442768ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (4.574685ms)
+✔ worker and migration roles cannot be substituted (2.709073ms)
+✔ public URLs and variable allowlist follow deployment mode (2.214283ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (3.988334ms)
+✔ patched decoder preserves CommonJS, plus handling and multilingual query semantics (4.127816ms)
+✔ malformed UTF-8 retains tolerant decoding without recursive splitting (1.303711ms)
+✔ malformed attacker queries finish inside an isolated bounded process (629.458625ms)
+✔ xcode uses patched CommonJS UUID and retains its 24-character ID contract (85.761082ms)
+✔ Drizzle SQL generation and config transformation work with patched nested esbuild (1724.328422ms)
+Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+✔ routine preflight accepts a checkout after the historical foundation snapshot (59.48228ms)
+✔ test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs (9.932627ms)
+✔ blank private templates fail configuration; infrastructure reset guards fail closed (2.679257ms)
+✔ Pino removes OTP, content and credentials while retaining codes and request IDs (1237.738368ms)
+✔ store ownership keeps foreign and unmarked directories intact (7.456988ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.409824ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (7.41241ms)
+✔ argument arrays preserve spaces and shell metacharacters (52.768173ms)
+✔ child failure and interruption produce non-success results (68.426764ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (11.920501ms)
+✔ process roots reject missing config without printing values (1904.670424ms)
+✔ worker process refuses unavailable dependencies without leaking credentials (879.849973ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (131.261131ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (22.423257ms)
+✔ invalid handler output fails response validation with a safe Problem (7.177497ms)
+✔ generated transport round-trips real loopback health and validates data (40.771401ms)
+✔ development health CORS allows only documented loopback web origins (13.700198ms)
+✔ health CORS is disabled outside explicitly selected development mode (17.322006ms)
+✔ schema generation is deterministic and independent of process config (19.731291ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (6.833566ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (11.721753ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5286.598085
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.3 [39m[90m/workspace[39m
+
+ [32m✓[39m tooling/vitest/api.test.mjs [2m([22m[2m2 tests[22m[2m)[22m[33m 693[2mms[22m[39m
+   [32m✓[39m schema-validated API adapter [2m(2)[22m
+     [33m[2m✓[22m[39m live transport uses generated client; private request inputs stay out of errors[33m 642[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m   Start at [22m 15:47:17
+[2m   Duration [22m 3.83s[2m (import 68%, tests 19%, transform 13%)[22m
+
+PASS: Seaweed S3 synthetic put/read/delete and service reachability
+PASS: repeatable provision and checked migration
+PASS: runtime identities, grants and privileged role rejection
+PASS: test-only forced RLS denies missing context; commit/rollback clear pooled settings
+PASS: pending migration and missing grant fail readiness without runtime repair
+PASS: restricted enqueue, supervision and eligible synthetic job survive consumer restart
+PASS: local SMTP captured by Mailpit; synthetic SMS/AI/speech have no live effects
+PASS: API listener failure closes prepared dependencies and exits safely
+PASS: independent worker process restart recovers eligible synthetic job
+PASS: host API ready endpoint and worker heartbeat reach dependencies; pending migration returns 503
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Generated public schema and client types.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Contract drift check passes.
+Prepared checksum-verified oasdiff 1.33.0.
+Checker qualification passes: unchanged accepted; removed v1 endpoint rejected.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+build: @nilumi/contracts → classic5 5.9.3
+build: @nilumi/db → classic5 5.9.3
+build: @nilumi/api-client → classic5 5.9.3
+build: @nilumi/server → classic5 5.9.3
+build: @nilumi/api → classic5 5.9.3
+build: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/contracts → classic5 5.9.3
+typecheck: @nilumi/db → classic5 5.9.3
+typecheck: @nilumi/api-client → classic5 5.9.3
+typecheck: @nilumi/server → classic5 5.9.3
+typecheck: @nilumi/api → classic5 5.9.3
+typecheck: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/ui → classic6 6.0.3
+typecheck: @nilumi/client → classic6 6.0.3
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 1m ago)
+Lockfile is up to date, resolution step is skipped
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 500, reused 500, downloaded 0, added 493
+Progress: resolved 1000, reused 1000, downloaded 0, added 992
+Packages: +1103
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1103, reused 1103, downloaded 0, added 1103, done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @playwright/test 1.64.0
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
++ vite 8.3.4
++ vitest 5.0.3
+
+Done in 3.3s using pnpm v12.11.2
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Public declarations and deliberate type/ambient/export errors verified with classic5.
+Public declarations and deliberate type/ambient/export errors verified with classic6.
+Public declarations and deliberate type/ambient/export errors verified with native7.
+debconf: delaying package configuration, since apt-utils is not installed
+$ node tooling/scripts/tasks.mjs check
+tooling/scripts/containers.mjs:207:55 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i Template literals are preferred over string concatenation.
+  
+    205 │     );
+    206 │     mkdirSync(evidence, { recursive: true });
+  > 207 │     writeFileSync(join(evidence, "image-smoke.json"), JSON.stringify(result, null, 2) + "\n");
+        │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    208 │     console.log("Container health/readiness/packaging/shutdown smoke passes.");
+    209 │   } finally {
+  
+  i Unsafe fix: Use a template literal.
+  
+    205 205 │       );
+    206 206 │       mkdirSync(evidence, { recursive: true });
+    207     │ - ····writeFileSync(join(evidence,·"image-smoke.json"),·JSON.stringify(result,·null,·2)·+·"\n");
+        207 │ + ····writeFileSync(join(evidence,·"image-smoke.json"),·`${JSON.stringify(result,·null,·2)}\n`);
+    208 208 │       console.log("Container health/readiness/packaging/shutdown smoke passes.");
+    209 209 │     } finally {
+  
+
+tooling/scripts/release.mjs:60:5 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i Template literals are preferred over string concatenation.
+  
+    58 │   writeFileSync(
+    59 │     join(destination, "manifest.json"),
+  > 60 │     JSON.stringify(
+       │     ^^^^^^^^^^^^^^^
+  > 61 │       { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+  > 62 │       null,
+  > 63 │       2,
+  > 64 │     ) + "\n",
+       │     ^^^^^^^^
+    65 │     { flag: "wx" },
+    66 │   );
+  
+  i Unsafe fix: Use a template literal.
+  
+    58 58 │     writeFileSync(
+    59 59 │       join(destination, "manifest.json"),
+    60    │ - ····JSON.stringify(
+       60 │ + ····`${JSON.stringify(
+    61 61 │         { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+    62 62 │         null,
+    63 63 │         2,
+    64    │ - ····)·+·"\n",
+       64 │ + ····)}\n`,
+    65 65 │       { flag: "wx" },
+    66 66 │     );
+  
+
+$ node tooling/scripts/tasks.mjs test
+PASS tests/primitives.test.tsx (20.893 s)
+  ✓ native field and button render mixed text and execute callbacks (423 ms)
+  ✓ native controls expose disabled, busy and error states (19 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        20.517 s
+Ran all test suites.
+$ node tooling/scripts/tasks.mjs contracts:generate
+$ node tooling/scripts/tasks.mjs contracts:check
+$ node tooling/scripts/contract-compat.mjs prepare
+$ node tooling/scripts/tasks.mjs contracts:qualify
+$ node tooling/scripts/tasks.mjs typecheck:compat
+$ node tooling/scripts/tasks.mjs check:resolution
+The following packages should be updated for best compatibility with the installed expo version:
+  expo@57.0.27 - expected version: ~57.0.28
+  expo-dev-client@57.0.19 - expected version: ~57.0.20
+  expo-router@57.0.25 - expected version: ~57.0.26
+  expo-splash-screen@57.0.9 - expected version: ~57.0.10
+  jest-expo@57.0.5 - expected version: ~57.0.6
+Your project may not work correctly until you install the expected versions of the packages.
+Found outdated dependencies
+Command failed (1): /workspace/.local/tools/pnpm-12.11.2/pnpm
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,0 +1,163 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.10kB 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#2 ...
+
+#3 [auth] library/node:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#2 DONE 2.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 383B done
+#4 DONE 0.0s
+
+#5 [build  1/19] FROM docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#5 resolve docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 0.1s done
+#5 DONE 0.1s
+
+#6 [internal] load build context
+#6 transferring context: 622.60kB 0.1s done
+#6 DONE 0.1s
+
+#7 [build  2/19] WORKDIR /workspace
+#7 CACHED
+
+#8 [build  3/19] COPY package.json pnpm-lock.yaml pnpm-workspace.yaml biome.json ./
+#8 DONE 0.1s
+
+#9 [build  4/19] COPY patches ./patches
+#9 DONE 0.1s
+
+#10 [build  5/19] COPY tooling/scripts/ci-prepare.mjs tooling/scripts/pnpm-local.mjs tooling/scripts/process.mjs ./tooling/scripts/
+#10 DONE 0.1s
+
+#11 [build  6/19] COPY apps/api/package.json ./apps/api/
+#11 DONE 0.1s
+
+#12 [build  7/19] COPY apps/worker/package.json ./apps/worker/
+#12 DONE 0.1s
+
+#13 [build  8/19] COPY apps/client/package.json ./apps/client/
+#13 DONE 0.1s
+
+#14 [build  9/19] COPY packages/contracts/package.json ./packages/contracts/
+#14 DONE 0.1s
+
+#15 [build 10/19] COPY packages/db/package.json ./packages/db/
+#15 DONE 0.1s
+
+#16 [build 11/19] COPY packages/server/package.json ./packages/server/
+#16 DONE 0.1s
+
+#17 [build 12/19] COPY packages/api-client/package.json ./packages/api-client/
+#17 DONE 0.1s
+
+#18 [build 13/19] COPY packages/ui/package.json ./packages/ui/
+#18 DONE 0.1s
+
+#19 [build 14/19] RUN node tooling/scripts/ci-prepare.mjs     && node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+#19 4.613 Scope: all 9 workspace projects
+#19 4.749 ? Verifying lockfile against supply-chain policies (1195 entries)...
+#19 5.514 Packages are hard linked from the content-addressable store to the virtual store.
+#19 5.514   Content-addressable store is at: /root/.local/share/pnpm/store/v11
+#19 5.514   Virtual store is at:             node_modules/.pnpm
+#19 6.515 Progress: resolved 1100, reused 0, downloaded 158, added 157
+#19 7.196 Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+#19 7.699 Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+#19 5.990 Progress: resolved 1100, reused 0, downloaded 346, added 351
+#19 7.284 Progress: resolved 1100, reused 0, downloaded 410, added 416
+#19 7.305 [WARN] Tarball download average speed 38 KiB/s (size 48 KiB) is below 50 KiB/s: https://registry.npmjs.org/@tamagui/context-menu/-/context-menu-3.0.3.tgz (GET)
+#19 7.371 [WARN] Tarball download average speed 28 KiB/s (size 31 KiB) is below 50 KiB/s: https://registry.npmjs.org/expect-type/-/expect-type-1.4.0.tgz (GET)
+#19 7.485 [WARN] Tarball download average speed 35 KiB/s (size 47 KiB) is below 50 KiB/s: https://registry.npmjs.org/get-tsconfig/-/get-tsconfig-4.14.3.tgz (GET)
+#19 7.519 [WARN] Tarball download average speed 23 KiB/s (size 26 KiB) is below 50 KiB/s: https://registry.npmjs.org/nwsapi/-/nwsapi-2.2.28.tgz (GET)
+#19 7.699 Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+#19 8.190 Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+#19 9.190 Progress: resolved 1100, reused 0, downloaded 625, added 608
+#19 9.694 Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+#19 10.70 Progress: resolved 1100, reused 0, downloaded 698, added 680
+#19 11.71 Progress: resolved 1100, reused 0, downloaded 731, added 736
+#19 12.72 Progress: resolved 1100, reused 0, downloaded 851, added 832
+#19 12.73 Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+#19 13.73 Progress: resolved 1100, reused 0, downloaded 954, added 949
+#19 14.35 Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 0.00 B/8.18 MB
+#19 15.37 Progress: resolved 1100, reused 0, downloaded 1071, added 1056
+#19 16.37 Progress: resolved 1100, reused 0, downloaded 1082, added 1082
+#19 16.99 ✓ Lockfile passes supply-chain policies (1195 entries in 15s)
+#19 16.99 Lockfile is up to date, resolution step is skipped
+#19 18.10 Downloading hermes-compiler@250829098.0.17: 7.19 MB/19.18 MB
+#19 19.11 Downloading hermes-compiler@250829098.0.17: 9.59 MB/19.18 MB
+#19 20.11 Downloading hermes-compiler@250829098.0.17: 11.99 MB/19.18 MB
+#19 21.18 Downloading hermes-compiler@250829098.0.17: 14.61 MB/19.18 MB
+#19 22.18 Downloading hermes-compiler@250829098.0.17: 17.72 MB/19.18 MB
+#19 23.14 Packages: +1100
+#19 23.14 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#19 23.40 Progress: resolved 1100, reused 0, downloaded 1094, added 1100, done
+#19 23.43 .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+#19 23.43 .../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+#19 23.52 .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+#19 23.53 .../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+#19 23.70 
+#19 23.70 devDependencies:
+#19 23.70 + @biomejs/biome 2.5.15
+#19 23.70 + @nilumi/typescript-native <- typescript 7.0.2
+#19 23.70 + @playwright/test 1.64.0
+#19 23.70 + @types/node 24.19.2
+#19 23.70 + dependency-cruiser 18.6.0
+#19 23.70 + typescript 5.9.3
+#19 23.70 + vite 8.3.4
+#19 23.70 + vitest 5.0.3
+#19 23.70 
+#19 23.77 Done in 19.2s using pnpm v12.11.2
+#19 DONE 24.2s
+
+#20 [build 15/19] COPY tooling ./tooling
+#20 DONE 1.5s
+
+#21 [build 16/19] COPY packages ./packages
+#21 DONE 0.1s
+
+#22 [build 17/19] COPY apps ./apps
+#22 DONE 0.1s
+
+#23 [build 18/19] RUN node tooling/scripts/pnpm-local.mjs run build
+#23 0.557 $ node tooling/scripts/tasks.mjs build
+#23 0.707 build: @nilumi/contracts → native7 7.0.2
+#23 1.001 build: @nilumi/db → native7 7.0.2
+#23 1.275 build: @nilumi/api-client → native7 7.0.2
+#23 1.504 build: @nilumi/server → native7 7.0.2
+#23 1.760 build: @nilumi/api → native7 7.0.2
+#23 2.181 build: @nilumi/worker → native7 7.0.2
+#23 DONE 2.4s
+
+#24 [build 19/19] RUN node tooling/scripts/package-runtime.mjs api /out/api     && node tooling/scripts/package-runtime.mjs worker /out/worker
+#24 2.972 Packaged api: 89 installed production packages and workspace exports.
+#24 4.622 Packaged worker: 46 installed production packages and workspace exports.
+#24 DONE 4.7s
+
+#25 [api 3/4] COPY --from=build --chown=node:node /out/api ./
+#25 CACHED
+
+#26 [api 2/4] WORKDIR /app
+#26 CACHED
+
+#27 [api 4/4] COPY --chown=node:node infra/docker/migrate.mjs ./migrate.mjs
+#27 CACHED
+
+#28 exporting to image
+#28 exporting layers done
+#28 exporting manifest sha256:f7890ce302ccd30b7d4f3c4eeb68b53e41353ed5beb48c2a233c289bd314e340 0.0s done
+#28 exporting config sha256:d4b1022f717d7b0632de7f3f6b3730d4bb6419d90fcb82342e2a194f9a8b4870 0.0s done
+#28 exporting attestation manifest sha256:a2b41dc92d5a3ce799e35076398e94fa924c698882d2a849fbb67ab8b0eaa60e 0.0s done
+#28 exporting manifest list sha256:69c90907977127d8c65a0ded16348f5860d8ed571f7e29950fb988fd9334d1c9
+#28 exporting manifest list sha256:69c90907977127d8c65a0ded16348f5860d8ed571f7e29950fb988fd9334d1c9 0.0s done
+#28 naming to docker.io/library/nilumi-setup06-api:c941e03d504abd1024c43e1dc7a47e8c205bb431 done
+#28 unpacking to docker.io/library/nilumi-setup06-api:c941e03d504abd1024c43e1dc7a47e8c205bb431 0.0s done
+#28 DONE 0.2s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/0s1lv5czgw9usa8ti9054htwt

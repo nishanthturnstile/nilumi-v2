@@ -1,0 +1,65 @@
+# Reviewed manual scaffold only. No host, credentials, registry or deployment target defaults.
+services:
+  migrate:
+    image: ${NILUMI_API_IMAGE:?Use reviewed immutable API image ID or digest}
+    command: ["node", "migrate.mjs"]
+    restart: 'no'
+    environment:
+      NILUMI_ENV: ${NILUMI_ENV:?Explicit environment required}
+      NILUMI_RELEASE_REVIEWED: 'YES'
+      NILUMI_MIGRATOR_DATABASE_URL: ${NILUMI_MIGRATOR_DATABASE_URL:?Release-only role required}
+    networks: [dependencies]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  api:
+    image: ${NILUMI_API_IMAGE:?Use reviewed immutable API image ID or digest}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      NILUMI_ENV: ${NILUMI_ENV:?Explicit environment required}
+      HOST: 0.0.0.0
+      PORT: '3001'
+      NILUMI_API_DATABASE_URL: ${NILUMI_API_DATABASE_URL:?Restricted API role required}
+      NILUMI_AUTH_DATABASE_URL: ${NILUMI_AUTH_DATABASE_URL:?Restricted auth role required}
+      NILUMI_STORAGE_HEALTH_URL: ${NILUMI_STORAGE_HEALTH_URL:?Explicit dependency required}
+      NILUMI_MAIL_HEALTH_URL: ${NILUMI_MAIL_HEALTH_URL:?Explicit dependency required}
+    networks: [dependencies]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  worker:
+    image: ${NILUMI_WORKER_IMAGE:?Use reviewed immutable worker image ID or digest}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      NILUMI_ENV: ${NILUMI_ENV:?Explicit environment required}
+      NILUMI_WORKER_DATABASE_URL: ${NILUMI_WORKER_DATABASE_URL:?Restricted worker role required}
+      NILUMI_QUEUE_DATABASE_URL: ${NILUMI_QUEUE_DATABASE_URL:?Restricted queue role required}
+      NILUMI_STORAGE_HEALTH_URL: ${NILUMI_STORAGE_HEALTH_URL:?Explicit dependency required}
+      NILUMI_MAIL_HEALTH_URL: ${NILUMI_MAIL_HEALTH_URL:?Explicit dependency required}
+    networks: [dependencies]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+  web:
+    image: ${NILUMI_WEB_IMAGE:?Use reviewed immutable web image ID or digest}
+    depends_on:
+      api:
+        condition: service_healthy
+    environment:
+      NILUMI_API_UPSTREAM: http://api:3001
+    networks: [dependencies]
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+networks:
+  dependencies:
+    external: true
+    name: ${NILUMI_RELEASE_NETWORK:?Reviewed existing dependency network required}

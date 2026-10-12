@@ -1,0 +1,14 @@
+✔ patched decoder preserves CommonJS, plus handling and multilingual query semantics (6.3789ms)
+✔ malformed UTF-8 retains tolerant decoding without recursive splitting (1.4196ms)
+✔ malformed attacker queries finish inside an isolated bounded process (2963.9222ms)
+✔ xcode uses patched CommonJS UUID and retains its 24-character ID contract (210.2588ms)
+✔ Istanbul loads ordinary and extended YAML configuration without the sprintf dependency (144.9916ms)
+✔ Drizzle SQL generation and config transformation work with patched nested esbuild (3026.6188ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6584.5973

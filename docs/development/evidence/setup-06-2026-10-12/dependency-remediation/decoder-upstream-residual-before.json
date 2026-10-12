@@ -1,0 +1,9 @@
+{
+  "fixture": "32000 distinct encoded digit runs separated by invalid percent token",
+  "inputCharacters": 576000,
+  "upstream": "decode-uri-component0.5.0",
+  "timeoutMs": 3000,
+  "status": null,
+  "error": "ETIMEDOUT",
+  "signal": "SIGTERM"
+}

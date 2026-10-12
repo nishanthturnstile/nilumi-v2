@@ -1,0 +1,248 @@
+Scope: all 9 workspace projects
+? Verifying lockfile against supply-chain policies (1221 entries)...
+Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+Progress: resolved 1105, reused 0, downloaded 128, added 113
+Progress: resolved 1105, reused 0, downloaded 159, added 155
+[WARN] Tarball download average speed 43 KiB/s (size 47 KiB) is below 50 KiB/s: https://registry.npmjs.org/openapi-fetch/-/openapi-fetch-0.17.0.tgz (GET)
+Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 0.00 B/8.18 MB
+Progress: resolved 1105, reused 0, downloaded 210, added 192
+Progress: resolved 1105, reused 0, downloaded 286, added 257
+Progress: resolved 1105, reused 0, downloaded 349, added 321
+Progress: resolved 1105, reused 0, downloaded 381, added 384
+Progress: resolved 1105, reused 0, downloaded 445, added 447
+Progress: resolved 1105, reused 0, downloaded 508, added 511
+Progress: resolved 1105, reused 0, downloaded 630, added 608
+Progress: resolved 1105, reused 0, downloaded 699, added 704
+Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+Progress: resolved 1105, reused 0, downloaded 1068, added 1056
+✓ Lockfile passes supply-chain policies (1221 entries in 16s)
+Lockfile is up to date, resolution step is skipped
+Downloading expo-modules-core@57.0.21: 220.63 kB/30.79 MB
+Downloading expo-modules-core@57.0.21: 630.23 kB/30.79 MB
+Downloading expo-modules-core@57.0.21: 1.40 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 2.35 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 4.13 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 7.29 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 9.58 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 11.61 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 14.97 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 18.00 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 19.77 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 21.33 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 23.84 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 26.53 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 27.84 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 28.94 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 29.85 MB/30.79 MB
+Downloading expo-modules-core@57.0.21: 30.55 MB/30.79 MB
+Progress: resolved 1105, reused 0, downloaded 1099, added 1102
+Progress: resolved 1105, reused 0, downloaded 1099, added 1105
+Packages: +1105
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1105, reused 0, downloaded 1099, added 1105, done
+.../esbuild@0.18.20/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.18.20/node_modules/esbuild postinstall: Done
+.../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @playwright/test 1.64.0
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
++ vite 8.3.4
++ vitest 5.0.3
+
+Done in 36s using pnpm v12.11.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 20s ago)
+Lockfile is up to date, resolution step is skipped
+Done in 451ms using pnpm v12.11.2
+Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+Checked 116 files in 282ms. No fixes applied.
+Found 2 infos.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+Contract drift check passes.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (127.927235ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (1144.103795ms)
+✔ unreexported public source participates in complete closure (62.054488ms)
+✔ unused illegal manifest dependency and package cycles fail (73.497713ms)
+✔ source policy allows only the two exact public env reads (7.707394ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (2.956102ms)
+✔ API parser defaults safely and has no connection side effects (11.196784ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (9.620925ms)
+✔ worker and migration roles cannot be substituted (10.090265ms)
+✔ public URLs and variable allowlist follow deployment mode (5.398342ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (31.396382ms)
+Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+✔ routine preflight accepts a checkout after the historical foundation snapshot (123.564944ms)
+✔ test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs (33.008548ms)
+✔ blank private templates fail configuration; infrastructure reset guards fail closed (7.29523ms)
+✔ Pino removes OTP, content and credentials while retaining codes and request IDs (3697.34756ms)
+✔ store ownership keeps foreign and unmarked directories intact (36.989597ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.860361ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (47.035963ms)
+✔ argument arrays preserve spaces and shell metacharacters (412.543694ms)
+✔ child failure and interruption produce non-success results (189.716519ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (41.271708ms)
+✔ process roots reject missing config without printing values (10277.437001ms)
+✔ worker process refuses unavailable dependencies without leaking credentials (3288.924299ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (991.022217ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (79.792337ms)
+✔ invalid handler output fails response validation with a safe Problem (37.390916ms)
+✔ generated transport round-trips real loopback health and validates data (188.912283ms)
+✔ development health CORS allows only documented loopback web origins (36.301146ms)
+✔ health CORS is disabled outside explicitly selected development mode (70.053053ms)
+✔ schema generation is deterministic and independent of process config (74.563465ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (26.23826ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (12.648114ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20121.632295
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.3 [39m[90m/workspace[39m
+
+ [32m✓[39m tooling/vitest/api.test.mjs [2m([22m[2m2 tests[22m[2m)[22m[33m 651[2mms[22m[39m
+   [32m✓[39m schema-validated API adapter [2m(2)[22m
+     [33m[2m✓[22m[39m live transport uses generated client; private request inputs stay out of errors[33m 622[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m   Start at [22m 14:14:20
+[2m   Duration [22m 5.25s[2m (import 75%, tests 14%, transform 11%)[22m
+
+debconf: delaying package configuration, since apt-utils is not installed
+$ node tooling/scripts/tasks.mjs check
+tooling/scripts/containers.mjs:177:55 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i Template literals are preferred over string concatenation.
+  
+    175 │     );
+    176 │     mkdirSync(evidence, { recursive: true });
+  > 177 │     writeFileSync(join(evidence, "image-smoke.json"), JSON.stringify(result, null, 2) + "\n");
+        │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    178 │     console.log("Container health/readiness/packaging/shutdown smoke passes.");
+    179 │   } finally {
+  
+  i Unsafe fix: Use a template literal.
+  
+    175 175 │       );
+    176 176 │       mkdirSync(evidence, { recursive: true });
+    177     │ - ····writeFileSync(join(evidence,·"image-smoke.json"),·JSON.stringify(result,·null,·2)·+·"\n");
+        177 │ + ····writeFileSync(join(evidence,·"image-smoke.json"),·`${JSON.stringify(result,·null,·2)}\n`);
+    178 178 │       console.log("Container health/readiness/packaging/shutdown smoke passes.");
+    179 179 │     } finally {
+  
+
+tooling/scripts/release.mjs:56:5 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i Template literals are preferred over string concatenation.
+  
+    54 │   writeFileSync(
+    55 │     join(destination, "manifest.json"),
+  > 56 │     JSON.stringify(
+       │     ^^^^^^^^^^^^^^^
+  > 57 │       { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+  > 58 │       null,
+  > 59 │       2,
+  > 60 │     ) + "\n",
+       │     ^^^^^^^^
+    61 │     { flag: "wx" },
+    62 │   );
+  
+  i Unsafe fix: Use a template literal.
+  
+    54 54 │     writeFileSync(
+    55 55 │       join(destination, "manifest.json"),
+    56    │ - ····JSON.stringify(
+       56 │ + ····`${JSON.stringify(
+    57 57 │         { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+    58 58 │         null,
+    59 59 │         2,
+    60    │ - ····)·+·"\n",
+       60 │ + ····)}\n`,
+    61 61 │       { flag: "wx" },
+    62 62 │     );
+  
+
+$ node tooling/scripts/tasks.mjs test
+FAIL tests/primitives.test.tsx
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /workspace/node_modules/.pnpm/_9be26d0661a0b709b053f25d9cdd5c63/node_modules/@react-native/jest-preset/jest/setup.js:16
+    import '@react-native/js-polyfills/error-guard';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      at Runtime.createScriptFromCode (../../node_modules/.pnpm/_a2b273fc8fcc84586d3119cb7e8423a7/node_modules/jest-runtime/build/index.js:1505:14)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.311 s
+Ran all test suites.
+Error: ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL
+
+  × "pnpm recursive exec" failed in /workspace/apps/client
+
+Command failed (1): /workspace/.local/tools/pnpm-12.11.2/pnpm
+[ELIFECYCLE] Test failed. See above for more details.

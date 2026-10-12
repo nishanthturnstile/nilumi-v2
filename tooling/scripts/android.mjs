@@ -21,6 +21,10 @@ await main(async () => {
     EXPO_NO_TELEMETRY: "1",
     EXPO_NO_GIT_STATUS: "1",
   };
+  // Java 25 native tool access is required by AGP/CMake on both hosts. Preserve
+  // caller options and scope the flag to this build; never change global JVM configuration.
+  env.JAVA_TOOL_OPTIONS =
+    `${env.JAVA_TOOL_OPTIONS ?? ""} --enable-native-access=ALL-UNNAMED`.trim();
   await pnpm(
     [
       "--filter",
@@ -53,7 +57,7 @@ await main(async () => {
     env.ANDROID_HOME = sdk;
     env.ANDROID_SDK_ROOT = sdk;
     env.JAVA_TOOL_OPTIONS =
-      `${env.JAVA_TOOL_OPTIONS ?? ""} -Djdk.net.unixdomain.tmpdir=C:\\Windows\\Temp --enable-native-access=ALL-UNNAMED`.trim();
+      `${env.JAVA_TOOL_OPTIONS ?? ""} -Djdk.net.unixdomain.tmpdir=C:\\Windows\\Temp`.trim();
     const id = createHash("sha256").update(root).digest("hex").slice(0, 8);
     args.push(`-PnilumiWindowsCxxDir=C:/nc/nilumi-${id}`);
     await run("cmd.exe", ["/d", "/c", "gradlew.bat", ...args], { cwd: android, env });

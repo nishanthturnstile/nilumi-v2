@@ -1,0 +1,2 @@
+Container health/readiness/packaging/shutdown smoke passes.
+$ node tooling/scripts/tasks.mjs test:containers

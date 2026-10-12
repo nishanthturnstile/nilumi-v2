@@ -1,0 +1,6 @@
+{
+  "syntheticConfig": "valid",
+  "migrationDependency": "service_completed_successfully",
+  "deployment": "not run",
+  "credentials": "synthetic only; not emitted"
+}

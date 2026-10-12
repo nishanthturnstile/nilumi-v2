@@ -1,0 +1,35 @@
+{
+  "rawAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 1,
+    "high": 2,
+    "critical": 0
+  },
+  "closedByUpgrade": [
+    "esbuild",
+    "uuid",
+    "sprintf-js"
+  ],
+  "locallyPatched": {
+    "name": "decode-uri-component",
+    "version": "0.2.2",
+    "patch": "patches/decode-uri-component@0.2.2.patch",
+    "auditStillFlagsVersion": true
+  },
+  "temporarilyAccepted": [
+    {
+      "name": "node-forge",
+      "version": "1.4.0",
+      "severity": "high"
+    },
+    {
+      "name": "braces",
+      "version": "3.0.3",
+      "severity": "high"
+    }
+  ],
+  "reviewBy": "2026-11-12",
+  "owner": "repository maintainer",
+  "conditions": "See docs/development/dependency-security.md; any changed exposure or upstream fix triggers earlier review."
+}

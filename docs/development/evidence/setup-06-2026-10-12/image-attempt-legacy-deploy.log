@@ -1,0 +1,153 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.63kB 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#2 ...
+
+#3 [auth] library/node:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#2 DONE 2.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 361B done
+#4 DONE 0.0s
+
+#5 [build 1/8] FROM docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#5 resolve docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 0.0s done
+#5 CACHED
+
+#6 [api 2/3] WORKDIR /app
+#6 CACHED
+
+#7 [build 2/8] WORKDIR /workspace
+#7 DONE 0.1s
+
+#8 [internal] load build context
+#8 transferring context: 2.19MB 0.1s done
+#8 DONE 0.2s
+
+#9 [build 3/8] COPY package.json pnpm-lock.yaml pnpm-workspace.yaml biome.json ./
+#9 DONE 0.1s
+
+#10 [build 4/8] COPY tooling ./tooling
+#10 DONE 0.1s
+
+#11 [build 5/8] COPY packages ./packages
+#11 DONE 0.1s
+
+#12 [build 6/8] COPY apps ./apps
+#12 DONE 0.1s
+
+#13 [build 7/8] RUN node tooling/scripts/ci-prepare.mjs     && node tooling/scripts/pnpm-local.mjs install --frozen-lockfile     && node tooling/scripts/pnpm-local.mjs run build
+#13 6.940 Scope: all 9 workspace projects
+#13 7.027 ? Verifying lockfile against supply-chain policies (1221 entries)...
+#13 7.507 Packages are hard linked from the content-addressable store to the virtual store.
+#13 7.507   Content-addressable store is at: /root/.local/share/pnpm/store/v11
+#13 7.507   Virtual store is at:             node_modules/.pnpm
+#13 7.626 Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+#13 7.954 Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+#13 8.964 Progress: resolved 1105, reused 0, downloaded 191, added 177
+#13 9.976 Progress: resolved 1105, reused 0, downloaded 229, added 224
+#13 9.977 [WARN] Tarball download average speed 10 KiB/s (size 13 KiB) is below 50 KiB/s: https://registry.npmjs.org/v8-to-istanbul/-/v8-to-istanbul-9.3.0.tgz (GET)
+#13 10.48 Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+#13 11.48 Progress: resolved 1105, reused 0, downloaded 411, added 384
+#13 12.48 Progress: resolved 1105, reused 0, downloaded 507, added 488
+#13 13.49 Progress: resolved 1105, reused 0, downloaded 593, added 576
+#13 14.49 Progress: resolved 1105, reused 0, downloaded 667, added 669
+#13 14.90 [WARN] Tarball download average speed 5 KiB/s (size 8 KiB) is below 50 KiB/s: https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz (GET)
+#13 15.49 [WARN] Tarball download average speed 9 KiB/s (size 12 KiB) is below 50 KiB/s: https://registry.npmjs.org/domhandler/-/domhandler-5.0.3.tgz (GET)
+#13 15.50 [WARN] Tarball download average speed 26 KiB/s (size 42 KiB) is below 50 KiB/s: https://registry.npmjs.org/@tamagui/animation-helpers/-/animation-helpers-3.0.3.tgz (GET)
+#13 15.52 Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 0.00 B/8.18 MB
+#13 16.52 Progress: resolved 1105, reused 0, downloaded 857, added 832
+#13 17.37 Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+#13 17.38 Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+#13 17.38 Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+#13 18.53 Progress: resolved 1105, reused 0, downloaded 1018, added 1024
+#13 19.54 Progress: resolved 1105, reused 0, downloaded 1082, added 1070
+#13 21.00 Downloading expo-modules-core@57.0.21: 11.97 MB/30.79 MB
+#13 21.07 ✓ Lockfile passes supply-chain policies (1221 entries in 14s)
+#13 21.07 Lockfile is up to date, resolution step is skipped
+#13 22.56 Downloading hermes-compiler@250829098.0.17: 7.04 MB/19.18 MB
+#13 23.60 Downloading hermes-compiler@250829098.0.17: 9.01 MB/19.18 MB
+#13 21.90 Downloading hermes-compiler@250829098.0.17: 10.22 MB/19.18 MB
+#13 22.92 Downloading hermes-compiler@250829098.0.17: 11.93 MB/19.18 MB
+#13 23.95 Downloading hermes-compiler@250829098.0.17: 13.16 MB/19.18 MB
+#13 25.01 Downloading hermes-compiler@250829098.0.17: 14.14 MB/19.18 MB
+#13 26.05 Downloading hermes-compiler@250829098.0.17: 15.75 MB/19.18 MB
+#13 27.07 Downloading hermes-compiler@250829098.0.17: 17.25 MB/19.18 MB
+#13 28.10 Downloading hermes-compiler@250829098.0.17: 19.15 MB/19.18 MB
+#13 29.25 Downloading @biomejs/cli-linux-x64@2.5.15: 24.38 MB/24.65 MB
+#13 30.42 Downloading expo-modules-core@57.0.21: 30.79 MB/30.79 MB, done
+#13 34.06 Progress: resolved 1105, reused 0, downloaded 1099, added 1105
+#13 34.15 Packages: +1105
+#13 34.15 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#13 37.08 Progress: resolved 1105, reused 0, downloaded 1099, added 1105, done
+#13 37.19 .../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+#13 37.19 .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+#13 37.19 .../esbuild@0.18.20/node_modules/esbuild postinstall$ node install.js
+#13 37.51 .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+#13 37.55 .../esbuild@0.18.20/node_modules/esbuild postinstall: Done
+#13 37.70 .../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+#13 38.32 
+#13 38.32 devDependencies:
+#13 38.32 + @biomejs/biome 2.5.15
+#13 38.32 + @nilumi/typescript-native <- typescript 7.0.2
+#13 38.32 + @playwright/test 1.64.0
+#13 38.32 + @types/node 24.19.2
+#13 38.32 + dependency-cruiser 18.6.0
+#13 38.32 + typescript 5.9.3
+#13 38.32 + vite 8.3.4
+#13 38.32 + vitest 5.0.3
+#13 38.32 
+#13 38.97 Done in 32s using pnpm v12.11.2
+#13 39.57 $ node tooling/scripts/tasks.mjs build
+#13 40.08 build: @nilumi/contracts → native7 7.0.2
+#13 40.84 build: @nilumi/db → native7 7.0.2
+#13 41.91 build: @nilumi/api-client → native7 7.0.2
+#13 42.82 build: @nilumi/server → native7 7.0.2
+#13 44.08 build: @nilumi/api → native7 7.0.2
+#13 46.30 build: @nilumi/worker → native7 7.0.2
+#13 DONE 48.9s
+
+#14 [build 8/8] RUN node tooling/scripts/pnpm-local.mjs --filter @nilumi/api deploy --legacy --prod --offline --frozen-lockfile /out/api     && node tooling/scripts/pnpm-local.mjs --filter @nilumi/worker deploy --legacy --prod --offline --frozen-lockfile /out/worker
+#14 3.522 [WARN] Shared workspace lockfile detected but configuration forces legacy deploy implementation.
+#14 3.846 Error: ERR_PNPM_NO_OFFLINE_META
+#14 3.846 
+#14 3.846   × installing deployed dependencies
+#14 3.846   ├─▶ Failed to resolve dependency tree: Failed to resolve fastify@5.12.5 in
+#14 3.846   │   package mirror "/root/.cache/pnpm/v12/metadata/
+#14 3.846   │   https%3A+registry.npmjs.org/fastify.jsonl"
+#14 3.846   │   
+#14 3.846   │   Failed to resolve fastify@5.12.5
+#14 3.846   ╰─▶ Failed to resolve fastify@5.12.5 in package mirror "/root/.cache/pnpm/
+#14 3.846       v12/metadata/https%3A+registry.npmjs.org/fastify.jsonl"
+#14 3.846 
+#14 ERROR: process "/bin/sh -c node tooling/scripts/pnpm-local.mjs --filter @nilumi/api deploy --legacy --prod --offline --frozen-lockfile /out/api     && node tooling/scripts/pnpm-local.mjs --filter @nilumi/worker deploy --legacy --prod --offline --frozen-lockfile /out/worker" did not complete successfully: exit code: 1
+------
+ > [build 8/8] RUN node tooling/scripts/pnpm-local.mjs --filter @nilumi/api deploy --legacy --prod --offline --frozen-lockfile /out/api     && node tooling/scripts/pnpm-local.mjs --filter @nilumi/worker deploy --legacy --prod --offline --frozen-lockfile /out/worker:
+3.846 
+3.846   × installing deployed dependencies
+3.846   ├─▶ Failed to resolve dependency tree: Failed to resolve fastify@5.12.5 in
+3.846   │   package mirror "/root/.cache/pnpm/v12/metadata/
+3.846   │   https%3A+registry.npmjs.org/fastify.jsonl"
+3.846   │   
+3.846   │   Failed to resolve fastify@5.12.5
+3.846   ╰─▶ Failed to resolve fastify@5.12.5 in package mirror "/root/.cache/pnpm/
+3.846       v12/metadata/https%3A+registry.npmjs.org/fastify.jsonl"
+3.846 
+------
+Dockerfile:10
+--------------------
+   9 |         && node tooling/scripts/pnpm-local.mjs run build
+  10 | >>> RUN node tooling/scripts/pnpm-local.mjs --filter @nilumi/api deploy --legacy --prod --offline --frozen-lockfile /out/api \
+  11 | >>>     && node tooling/scripts/pnpm-local.mjs --filter @nilumi/worker deploy --legacy --prod --offline --frozen-lockfile /out/worker
+  12 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c node tooling/scripts/pnpm-local.mjs --filter @nilumi/api deploy --legacy --prod --offline --frozen-lockfile /out/api     && node tooling/scripts/pnpm-local.mjs --filter @nilumi/worker deploy --legacy --prod --offline --frozen-lockfile /out/worker" did not complete successfully: exit code: 1
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/pup995yu67azxme98z1g70fn8
