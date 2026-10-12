@@ -157,3 +157,58 @@ SETUP-07 device checks and product/pilot readiness remain unfinished. The manual
 release record captures image IDs/commit/schema hashes and rejects ID reuse;
 the release Compose scaffold validates with synthetic configuration. No rollout
 or pilot/production migration was performed.
+
+## Dependency remediation follow-up — 12 October 2026
+
+See [the dependency security record](dependency-security.md) and new evidence under
+`evidence/setup-06-2026-10-12/dependency-remediation/`. The original SETUP-06 audit and
+qualification evidence remain historical and unchanged.
+
+The decoder has a committed CommonJS patch with bounded UTF-8 scanning and removal
+of the outer quadratic replacement map. Parent-scoped exact overrides remove the
+vulnerable esbuild, UUID and sprintf-js paths. The raw audit is now **2 high, 1 moderate**;
+the moderate decoder alert is version-based despite the installed patch. Forge and
+braces remain active upstream advisories, with conditional local acceptance until
+12 November 2026 under the documented exposure restrictions.
+
+Windows frozen install, check, test, test:integration, contracts:check, direct-selection
+audit, web export, three Playwright tests, native Jest parser/component tests, and fresh
+Android/web resolution exports passed. Seven focused dependency tests verify malformed
+queries and ordinary behavior, real Drizzle SQL generation, xcode IDs, YAML config loading
+and the installed Expo native matrix. Local image health/readiness/shutdown passed;
+its artifacts identify the base commit plus dirty working tree, not an immutable release.
+
+Fresh pinned Linux qualification passed. The hosted PR run
+[38274234393](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393)
+completed successfully with all seven jobs green for source head
+`1bc787ae658b40481eda3e5f7a3d5ccaecb47711`, qualified as PR merge
+`186451175a6a0845f4ec462f6f0f48ada9565a64` against exact development base
+`c941e03d504abd1024c43e1dc7a47e8c205bb431`.
+
+| Observed check | Job URL |
+|---|---|
+| Linux foundation | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692236) |
+| Windows smoke | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692468) |
+| Restricted role integration | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692245) |
+| Web shell browser | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692505) |
+| Linux image smoke | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114895692456) |
+| Android debug smoke | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114896406828) |
+| Foundation required | [success](https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38274234393/job/114900563823) |
+
+Hosted contract byte-drift qualification passed; oasdiff 1.33.0 comparison returned
+code 0 and `[]` against the exact PR base. Hosted image artifacts include immutable
+merge SHA/image IDs and successful health/readiness/shutdown assertions. Android's
+debug build passed; its log and artifact IDs/digests are retained in the new evidence.
+The Linux/Windows jobs run the seven focused dependency regressions and native parser
+test at the committed revision. The cancelled duplicate push run is not counted.
+
+The first Linux live-Expo-metadata attempt failed when new same-day SDK patches
+appeared; its failure log is retained. The qualified family is held by the existing
+maturity policy, and compatibility uses the installed SDK matrix while registry
+freshness remains separately audited. All 173 previously tracked core/evidence files
+remain unchanged. No global audit ignore, incompatible native major or stack migration
+was added.
+
+The four remediations can be closed for the qualified graph. Dependency-security
+acceptance is conditional on the two dated exceptions; the upstream highs remain
+unresolved and the audit is not clean. Physical device qualification remains SETUP-07.

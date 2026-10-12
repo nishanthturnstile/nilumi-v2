@@ -7,6 +7,10 @@ import { copyWorkspace } from "./resolution.mjs";
 export const nodeImage =
   "node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20";
 export async function checkLinux() {
+  const evidencePath =
+    process.env.NILUMI_EVIDENCE_DIRECTORY ?? "docs/development/evidence/setup-06-2026-10-12";
+  const evidenceDirectory = join(root, evidencePath);
+  mkdirSync(evidenceDirectory, { recursive: true });
   const parent = join(root, ".cache/linux");
   mkdirSync(parent, { recursive: true });
   const source = mkdtempSync(join(parent, "source "));
@@ -31,6 +35,7 @@ apt-get install -y -qq --no-install-recommends git ca-certificates >/dev/null
 mkdir /workspace
 cp -a /input/. /workspace/
 cd /workspace
+export NILUMI_EVIDENCE_DIRECTORY='${evidencePath.replaceAll("'", "'\\''")}'
 node .cache/bootstrap-linux.mjs
 node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
 node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
@@ -44,7 +49,7 @@ node tooling/scripts/pnpm-local.mjs run contracts:qualify
 node tooling/scripts/pnpm-local.mjs run typecheck:compat
 node tooling/scripts/pnpm-local.mjs run check:resolution
 EXPO_NO_DOTENV=1 EXPO_NO_TELEMETRY=1 EXPO_PUBLIC_NILUMI_ENV=test EXPO_PUBLIC_API_BASE_URL=http://127.0.0.1:3001 node tooling/scripts/pnpm-local.mjs --filter @nilumi/client exec expo export --platform web
-cp docs/development/evidence/setup-06-2026-10-12/resolution-linux.json /out/resolution-linux.json
+cp "$NILUMI_EVIDENCE_DIRECTORY/resolution-linux.json" /out/resolution-linux.json
 node --input-type=module -e "import {writeFileSync} from 'node:fs'; writeFileSync('/out/linux-acceptance.json', JSON.stringify({platform:process.platform,node:process.versions.node,pnpm:'12.11.2',checks:['frozen-install','check','test','test:integration','contracts:generate','contracts:check','typecheck:compat','check:resolution','web-export']},null,2));"
 `;
   let result;
@@ -76,7 +81,6 @@ node --input-type=module -e "import {writeFileSync} from 'node:fs'; writeFileSyn
   } finally {
     await sandbox.stop();
   }
-  const evidenceDirectory = join(root, "docs/development/evidence/setup-06-2026-10-12");
   writeFileSync(join(evidenceDirectory, "linux-checks.log"), result.stdout + result.stderr);
   if (result.code)
     throw new Error(`Linux acceptance failed (${result.code}); see linux-checks.log.`);

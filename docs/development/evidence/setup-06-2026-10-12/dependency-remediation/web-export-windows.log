@@ -1,0 +1,26 @@
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Using src/app as the root directory for Expo Router.
+Expo Autolinking module resolution enabled
+Starting Metro Bundler
+
+Static rendering is enabled. Learn more: https://docs.expo.dev/router/web/static-rendering/
+| (node:18520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+λ Bundled 23210ms ..\..\..\..\..\pnpm\nv2-f091dec9\_4c8de158e5b8d60fb42c84f967289168\node_modules\@expo\router-server\node\render.js (1482 modules)
+Web Bundled 23967ms ..\..\..\..\..\pnpm\nv2-f091dec9\_bbd36ab4def23a21ef25d3d70fecd00b\node_modules\expo-router\entry.js (1450 modules)
+
+› web bundles (1):
+_expo/static/js/web/entry-ecd0efc53da691c31ad1406c12d414c9.js (2.7MB)
+
+› Static routes (3):
+/ (index) (1.7MB)
+/_sitemap (17KB)
+/+not-found (17KB)
+
+Exported: dist
+$ node tooling/scripts/tasks.mjs web:export

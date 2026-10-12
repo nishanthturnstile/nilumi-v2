@@ -23,3 +23,12 @@ test("API paths never fall back to cached/static shell content", async ({ reques
   expect((await response.json()).code).toBe("not_ready");
   expect((await request.get("/api/v1/missing")).status()).toBe(404);
 });
+
+test("malformed deep-link query does not prevent shell interaction or reload", async ({ page }) => {
+  await page.goto(`/?component-check=synthetic&malformed=${"%EA".repeat(1000)}`);
+  await expect(page.getByRole("heading", { name: "Nilumi · வணக்கம்" })).toBeVisible();
+  await page.getByRole("button", { name: "Check interaction", exact: true }).click();
+  await expect(page.getByText("Interaction checked · சரி")).toBeVisible();
+  await page.reload();
+  await expect(page.getByRole("heading", { name: "Nilumi · வணக்கம்" })).toBeVisible();
+});

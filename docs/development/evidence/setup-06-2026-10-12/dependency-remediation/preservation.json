@@ -1,0 +1,7 @@
+{
+  "baselineCommit": "c941e03d504abd1024c43e1dc7a47e8c205bb431",
+  "qualifiedCommit": "1bc787ae658b40481eda3e5f7a3d5ccaecb47711",
+  "protectedTrackedFiles": 173,
+  "changedProtectedFiles": [],
+  "scope": "All core and previously tracked evidence files; new remediation evidence excluded."
+}

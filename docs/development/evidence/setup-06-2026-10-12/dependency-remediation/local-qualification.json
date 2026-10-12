@@ -1,0 +1,19 @@
+{
+  "baseCommit": "c941e03d504abd1024c43e1dc7a47e8c205bb431",
+  "builtFromDirtyWorkingTree": true,
+  "note": "Local image tags/labels record the base commit before this remediation commit; exact immutable-head images are qualified separately by hosted CI. Do not identify these local images as release artifacts.",
+  "changedTrackedPaths": [
+    ".dockerignore",
+    "infra/docker/Dockerfile",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "tooling/dependency-policy.json",
+    "tooling/playwright/shell.spec.mjs",
+    "tooling/scripts/audit-dependencies.mjs",
+    "tooling/scripts/ci-native-change.mjs",
+    "tooling/scripts/integration.mjs",
+    "tooling/scripts/linux.mjs",
+    "tooling/scripts/resolution.mjs"
+  ],
+  "protectedCoreAndPriorSetupEvidence": "git diff --exit-code HEAD passed for docs/core and SETUP-02/03/04/05 evidence"
+}

@@ -1,0 +1,12 @@
+{
+  "upstreamURL": "https://github.com/SamVerschueren/decode-uri-component/commit/fa479da",
+  "upstreamVersion": "0.5.0",
+  "upstreamFileSha256": "9401353df38f8010ad7035fe8d666bce6a4902bc1cff809afc4ab23fa2e0bdaa",
+  "installedPatchedFileSha256": "da2cdae1bec5340f291b5aa5b57e60d333190da34b7af94968f0b0d330790474",
+  "strategy": "Backport bounded UTF-8 scanner; retain CommonJS/plus; replace outer quadratic map with whole-input scanning and linear BOM/C2 compatibility replacements; preserve package MIT license.",
+  "overrides": {
+    "@esbuild-kit/core-utils@3.3.2>esbuild": "0.28.2",
+    "xcode@3.0.1>uuid": "11.1.1",
+    "@istanbuljs/load-nyc-config@1.1.0>js-yaml": "4.3.2"
+  }
+}

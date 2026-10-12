@@ -1,0 +1,433 @@
+﻿2026-10-12T15:59:43.7937586Z Current runner version: '2.337.0'
+2026-10-12T15:59:43.7967081Z ##[group]Runner Image Provisioner
+2026-10-12T15:59:43.7968251Z Hosted Compute Agent
+2026-10-12T15:59:43.7969053Z Version: 20260901.588
+2026-10-12T15:59:43.7969900Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-12T15:59:43.7970858Z Build Date: 2026-09-01T19:56:44Z
+2026-10-12T15:59:43.7971836Z Worker ID: {030c6402-4422-4303-a2af-92833d49719b}
+2026-10-12T15:59:43.7972800Z Azure Region: centralus
+2026-10-12T15:59:43.7973775Z ##[endgroup]
+2026-10-12T15:59:43.7975962Z ##[group]Operating System
+2026-10-12T15:59:43.7976808Z Microsoft Windows Server 2025
+2026-10-12T15:59:43.7977713Z 10.0.26100
+2026-10-12T15:59:43.7978423Z Datacenter
+2026-10-12T15:59:43.7979122Z ##[endgroup]
+2026-10-12T15:59:43.7979936Z ##[group]Runner Image
+2026-10-12T15:59:43.7980832Z Image: windows-2025-vs2026
+2026-10-12T15:59:43.7981714Z Version: 20260925.250.1
+2026-10-12T15:59:43.7984106Z Included Software: https://github.com/actions/runner-images/blob/win25-vs2026/20260925.250/images/windows/Windows2025-VS2026-Readme.md
+2026-10-12T15:59:43.7986959Z Image Release: https://github.com/actions/runner-images/releases/tag/win25-vs2026%2F20260925.250
+2026-10-12T15:59:43.7988354Z ##[endgroup]
+2026-10-12T15:59:43.7989927Z ##[group]GITHUB_TOKEN Permissions
+2026-10-12T15:59:43.7992512Z Contents: read
+2026-10-12T15:59:43.7993338Z Metadata: read
+2026-10-12T15:59:43.7994194Z ##[endgroup]
+2026-10-12T15:59:43.7996913Z Secret source: Actions
+2026-10-12T15:59:43.7998140Z Cache mode: write
+2026-10-12T15:59:43.7999192Z Prepare workflow directory
+2026-10-12T15:59:43.8395416Z Prepare all required actions
+2026-10-12T15:59:43.8455915Z Getting action download info
+2026-10-12T15:59:44.0788335Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-12T15:59:44.1918142Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-10-12T15:59:44.8571942Z Complete job name: Windows smoke
+2026-10-12T15:59:45.0016670Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-12T15:59:45.0018202Z with:
+2026-10-12T15:59:45.0018598Z   persist-credentials: false
+2026-10-12T15:59:45.0019077Z   repository: nishanthturnstile/nilumi-v2
+2026-10-12T15:59:45.0023243Z   token: ***
+2026-10-12T15:59:45.0023608Z   ssh-strict: true
+2026-10-12T15:59:45.0023970Z   ssh-user: git
+2026-10-12T15:59:45.0024319Z   clean: true
+2026-10-12T15:59:45.0024696Z   sparse-checkout-cone-mode: true
+2026-10-12T15:59:45.0025151Z   fetch-depth: 1
+2026-10-12T15:59:45.0025509Z   fetch-tags: false
+2026-10-12T15:59:45.0025875Z   show-progress: true
+2026-10-12T15:59:45.0026260Z   lfs: false
+2026-10-12T15:59:45.0026598Z   submodules: false
+2026-10-12T15:59:45.0026974Z   set-safe-directory: true
+2026-10-12T15:59:45.0027398Z   allow-unsafe-pr-checkout: false
+2026-10-12T15:59:45.0028174Z env:
+2026-10-12T15:59:45.0028499Z   CI: 1
+2026-10-12T15:59:45.0028854Z   EXPO_NO_DOTENV: 1
+2026-10-12T15:59:45.0029705Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T15:59:45.0030138Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T15:59:45.0030634Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T15:59:45.0031153Z ##[endgroup]
+2026-10-12T15:59:45.1735495Z Syncing repository: nishanthturnstile/nilumi-v2
+2026-10-12T15:59:45.1738116Z ##[group]Getting Git version info
+2026-10-12T15:59:45.1738815Z Working directory is 'D:\a\nilumi-v2\nilumi-v2'
+2026-10-12T15:59:45.2584125Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-10-12T15:59:45.7580920Z git version 2.55.0.windows.5
+2026-10-12T15:59:45.7629190Z ##[endgroup]
+2026-10-12T15:59:45.7646910Z Temporarily overriding HOME='D:\a\_temp\d48aa348-da0c-41f9-8bb3-46300e4b6cb8' before making global git config changes
+2026-10-12T15:59:45.7650430Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T15:59:45.7657055Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\nilumi-v2\nilumi-v2
+2026-10-12T15:59:45.8344963Z Deleting the contents of 'D:\a\nilumi-v2\nilumi-v2'
+2026-10-12T15:59:45.8352992Z ##[group]Determining repository object format
+2026-10-12T15:59:45.8355944Z ##[endgroup]
+2026-10-12T15:59:45.8358575Z ##[group]Initializing the repository
+2026-10-12T15:59:45.8366746Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\nilumi-v2\nilumi-v2
+2026-10-12T15:59:45.9290517Z Initialized empty Git repository in D:/a/nilumi-v2/nilumi-v2/.git/
+2026-10-12T15:59:45.9345271Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/nishanthturnstile/nilumi-v2
+2026-10-12T15:59:46.0010036Z ##[endgroup]
+2026-10-12T15:59:46.0012922Z ##[group]Disabling automatic garbage collection
+2026-10-12T15:59:46.0021817Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2026-10-12T15:59:46.0339536Z ##[endgroup]
+2026-10-12T15:59:46.0342204Z ##[group]Setting up auth
+2026-10-12T15:59:46.0343896Z Removing SSH command configuration
+2026-10-12T15:59:46.0350805Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:59:46.0667025Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-10-12T15:59:47.6273435Z Removing HTTP extra header
+2026-10-12T15:59:47.6286548Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:59:47.6593913Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-10-12T15:59:48.2041880Z Removing includeIf entries pointing to credentials config files
+2026-10-12T15:59:48.2057507Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:59:48.2397909Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-10-12T15:59:48.8219446Z [command]"C:\Program Files\Git\bin\git.exe" config --file D:\a\_temp\git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2026-10-12T15:59:48.8553186Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/nilumi-v2/nilumi-v2/.git.path D:\a\_temp\git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config
+2026-10-12T15:59:48.8918026Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:D:/a/nilumi-v2/nilumi-v2/.git/worktrees/*.path D:\a\_temp\git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config
+2026-10-12T15:59:48.9290385Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config
+2026-10-12T15:59:48.9602459Z [command]"C:\Program Files\Git\bin\git.exe" config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config
+2026-10-12T15:59:48.9924420Z ##[endgroup]
+2026-10-12T15:59:48.9925195Z ##[group]Fetching the repository
+2026-10-12T15:59:48.9944534Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +186451175a6a0845f4ec462f6f0f48ada9565a64:refs/remotes/pull/3/merge
+2026-10-12T15:59:50.2716348Z From https://github.com/nishanthturnstile/nilumi-v2
+2026-10-12T15:59:50.2718697Z  * [new ref]         186451175a6a0845f4ec462f6f0f48ada9565a64 -> pull/3/merge
+2026-10-12T15:59:50.2776734Z ##[endgroup]
+2026-10-12T15:59:50.2777766Z ##[group]Determining the checkout info
+2026-10-12T15:59:50.2780760Z ##[endgroup]
+2026-10-12T15:59:50.2790131Z [command]"C:\Program Files\Git\bin\git.exe" sparse-checkout disable
+2026-10-12T15:59:50.3283709Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all extensions.worktreeConfig
+2026-10-12T15:59:50.3615251Z ##[group]Checking out the ref
+2026-10-12T15:59:50.3623858Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force refs/remotes/pull/3/merge
+2026-10-12T15:59:50.5177427Z Note: switching to 'refs/remotes/pull/3/merge'.
+2026-10-12T15:59:50.5178224Z 
+2026-10-12T15:59:50.5178546Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-12T15:59:50.5179354Z changes and commit them, and you can discard any commits you make in this
+2026-10-12T15:59:50.5180059Z state without impacting any branches by switching back to a branch.
+2026-10-12T15:59:50.5180438Z 
+2026-10-12T15:59:50.5180681Z If you want to create a new branch to retain commits you create, you may
+2026-10-12T15:59:50.5181201Z do so (now or later) by using -c with the switch command. Example:
+2026-10-12T15:59:50.5181570Z 
+2026-10-12T15:59:50.5181815Z   git switch -c <new-branch-name>
+2026-10-12T15:59:50.5182025Z 
+2026-10-12T15:59:50.5182183Z Or undo this operation with:
+2026-10-12T15:59:50.5182405Z 
+2026-10-12T15:59:50.5182514Z   git switch -
+2026-10-12T15:59:50.5182711Z 
+2026-10-12T15:59:50.5182938Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-12T15:59:50.5183344Z 
+2026-10-12T15:59:50.5183789Z HEAD is now at 1864511 Merge 1bc787ae658b40481eda3e5f7a3d5ccaecb47711 into c941e03d504abd1024c43e1dc7a47e8c205bb431
+2026-10-12T15:59:50.5314181Z ##[endgroup]
+2026-10-12T15:59:50.5780374Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format=%H
+2026-10-12T15:59:50.6055959Z 186451175a6a0845f4ec462f6f0f48ada9565a64
+2026-10-12T15:59:50.6104164Z ##[group]Removing auth
+2026-10-12T15:59:50.6104804Z Removing SSH command configuration
+2026-10-12T15:59:50.6112812Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T15:59:50.6421502Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-10-12T15:59:51.2368070Z Removing HTTP extra header
+2026-10-12T15:59:51.2376760Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T15:59:51.2687450Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-10-12T15:59:51.8702031Z Removing includeIf entries pointing to credentials config files
+2026-10-12T15:59:51.8709071Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T15:59:51.8999698Z includeif.gitdir:D:/a/nilumi-v2/nilumi-v2/.git.path
+2026-10-12T15:59:51.9000552Z includeif.gitdir:D:/a/nilumi-v2/nilumi-v2/.git/worktrees/*.path
+2026-10-12T15:59:51.9001142Z includeif.gitdir:/github/workspace/.git.path
+2026-10-12T15:59:51.9001754Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-12T15:59:51.9059314Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/nilumi-v2/nilumi-v2/.git.path
+2026-10-12T15:59:51.9345994Z D:\a\_temp\git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config
+2026-10-12T15:59:51.9403474Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/nilumi-v2/nilumi-v2/.git.path D\:\\a\\_temp\\git\-credentials\-0de630cc\-f788\-4b82\-af55\-c3dbe39848b5\.config
+2026-10-12T15:59:51.9746303Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:D:/a/nilumi-v2/nilumi-v2/.git/worktrees/*.path
+2026-10-12T15:59:52.0030661Z D:\a\_temp\git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config
+2026-10-12T15:59:52.0085256Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:D:/a/nilumi-v2/nilumi-v2/.git/worktrees/*.path D\:\\a\\_temp\\git\-credentials\-0de630cc\-f788\-4b82\-af55\-c3dbe39848b5\.config
+2026-10-12T15:59:52.0441953Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-12T15:59:52.0719574Z /github/runner_temp/git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config
+2026-10-12T15:59:52.0768702Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-0de630cc\-f788\-4b82\-af55\-c3dbe39848b5\.config
+2026-10-12T15:59:52.1104370Z [command]"C:\Program Files\Git\bin\git.exe" config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-12T15:59:52.1383516Z /github/runner_temp/git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config
+2026-10-12T15:59:52.1447253Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-0de630cc\-f788\-4b82\-af55\-c3dbe39848b5\.config
+2026-10-12T15:59:52.1812390Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-10-12T15:59:52.7390463Z Removing credentials config 'D:\a\_temp\git-credentials-0de630cc-f788-4b82-af55-c3dbe39848b5.config'
+2026-10-12T15:59:52.7406328Z ##[endgroup]
+2026-10-12T15:59:52.7838487Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-10-12T15:59:52.7839023Z with:
+2026-10-12T15:59:52.7839346Z   node-version: 24.21.0
+2026-10-12T15:59:52.7839674Z   package-manager-cache: false
+2026-10-12T15:59:52.7840038Z   check-latest: false
+2026-10-12T15:59:52.7843039Z   token: ***
+2026-10-12T15:59:52.7843327Z env:
+2026-10-12T15:59:52.7843626Z   CI: 1
+2026-10-12T15:59:52.7843895Z   EXPO_NO_DOTENV: 1
+2026-10-12T15:59:52.7844169Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T15:59:52.7844537Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T15:59:52.7844914Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T15:59:52.7845288Z ##[endgroup]
+2026-10-12T15:59:52.9521861Z Found in cache @ C:\hostedtoolcache\windows\node\24.21.0\x64
+2026-10-12T15:59:54.0905168Z ##[group]Environment details
+2026-10-12T15:59:58.0608868Z node: v24.21.0
+2026-10-12T15:59:58.0609535Z npm: 11.19.0
+2026-10-12T15:59:58.0609997Z yarn: 1.22.22
+2026-10-12T15:59:58.0610922Z ##[endgroup]
+2026-10-12T15:59:58.0980815Z ##[group]Run node tooling/scripts/ci-prepare.mjs
+2026-10-12T15:59:58.0981615Z node tooling/scripts/ci-prepare.mjs
+2026-10-12T15:59:58.1558000Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-10-12T15:59:58.1558477Z env:
+2026-10-12T15:59:58.1558803Z   CI: 1
+2026-10-12T15:59:58.1559088Z   EXPO_NO_DOTENV: 1
+2026-10-12T15:59:58.1559408Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T15:59:58.1559703Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T15:59:58.1560115Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T15:59:58.1560499Z ##[endgroup]
+2026-10-12T16:00:00.4083180Z ##[group]Run node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+2026-10-12T16:00:00.4083967Z node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+2026-10-12T16:00:00.4148644Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-10-12T16:00:00.4149107Z env:
+2026-10-12T16:00:00.4149392Z   CI: 1
+2026-10-12T16:00:00.4149709Z   EXPO_NO_DOTENV: 1
+2026-10-12T16:00:00.4150020Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T16:00:00.4150324Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T16:00:00.4150695Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T16:00:00.4151062Z ##[endgroup]
+2026-10-12T16:00:00.9146616Z Scope: all 9 workspace projects
+2026-10-12T16:00:01.0194430Z ? Verifying lockfile against supply-chain policies (1195 entries)...
+2026-10-12T16:00:01.3769464Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-10-12T16:00:01.3770549Z   Content-addressable store is at: D:\.pnpm-store\v11
+2026-10-12T16:00:01.3776587Z   Virtual store is at:             node_modules/.pnpm
+2026-10-12T16:00:01.7449947Z Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+2026-10-12T16:00:02.5654219Z Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+2026-10-12T16:00:03.5574262Z Progress: resolved 1100, reused 0, downloaded 187, added 172
+2026-10-12T16:00:04.5041393Z [WARN] Tarball download average speed 19 KiB/s (size 19 KiB) is below 50 KiB/s: https://registry.npmjs.org/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.4.17.tgz (GET)
+2026-10-12T16:00:04.6072533Z Downloading @rolldown/binding-win32-x64-msvc@1.2.13: 0.00 B/8.25 MB
+2026-10-12T16:00:05.3805999Z Downloading @biomejs/cli-win32-x64@2.5.15: 0.00 B/26.30 MB
+2026-10-12T16:00:06.3838488Z Progress: resolved 1100, reused 0, downloaded 315, added 297
+2026-10-12T16:00:07.3959594Z Progress: resolved 1100, reused 0, downloaded 398, added 384
+2026-10-12T16:00:07.6211410Z Downloading @typescript/typescript-win32-x64@7.0.2: 0.00 B/9.77 MB
+2026-10-12T16:00:07.9468840Z Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+2026-10-12T16:00:09.0064337Z Progress: resolved 1100, reused 0, downloaded 467, added 448
+2026-10-12T16:00:09.9385784Z Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+2026-10-12T16:00:11.0135834Z Downloading hermes-compiler@250829098.0.17: 7.41 MB/19.18 MB
+2026-10-12T16:00:11.9410504Z ✓ Lockfile passes supply-chain policies (1195 entries in 10.9s)
+2026-10-12T16:00:11.9411632Z Lockfile is up to date, resolution step is skipped
+2026-10-12T16:00:12.9438398Z Progress: resolved 1100, reused 0, downloaded 602, added 582
+2026-10-12T16:00:13.9532913Z Progress: resolved 1100, reused 0, downloaded 602, added 592
+2026-10-12T16:00:14.9981363Z Progress: resolved 1100, reused 0, downloaded 634, added 640
+2026-10-12T16:00:16.2390065Z Progress: resolved 1100, reused 0, downloaded 794, added 799
+2026-10-12T16:00:17.2456554Z Progress: resolved 1100, reused 0, downloaded 890, added 886
+2026-10-12T16:00:18.2578927Z Progress: resolved 1100, reused 0, downloaded 922, added 918
+2026-10-12T16:00:19.3173270Z Progress: resolved 1100, reused 0, downloaded 954, added 944
+2026-10-12T16:00:20.4303036Z Progress: resolved 1100, reused 0, downloaded 1050, added 1047
+2026-10-12T16:00:21.3471171Z Packages: +1100
+2026-10-12T16:00:21.3471751Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-10-12T16:00:22.1393868Z Progress: resolved 1100, reused 0, downloaded 1094, added 1100, done
+2026-10-12T16:00:22.1602237Z .../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+2026-10-12T16:00:22.1603277Z .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+2026-10-12T16:00:22.3464179Z .../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+2026-10-12T16:00:22.3465090Z .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+2026-10-12T16:00:22.4870389Z 
+2026-10-12T16:00:22.4871310Z devDependencies:
+2026-10-12T16:00:22.4871913Z + @biomejs/biome 2.5.15
+2026-10-12T16:00:22.4874975Z + @nilumi/typescript-native <- typescript 7.0.2
+2026-10-12T16:00:22.4875689Z + @playwright/test 1.64.0
+2026-10-12T16:00:22.4876232Z + @types/node 24.19.2
+2026-10-12T16:00:22.4876668Z + dependency-cruiser 18.6.0
+2026-10-12T16:00:22.4877145Z + typescript 5.9.3
+2026-10-12T16:00:22.4877548Z + vite 8.3.4
+2026-10-12T16:00:22.4877898Z + vitest 5.0.3
+2026-10-12T16:00:22.4878158Z 
+2026-10-12T16:00:22.5920254Z Done in 21.7s using pnpm v12.11.2
+2026-10-12T16:00:22.7295186Z ##[group]Run node tooling/scripts/pnpm-local.mjs run check
+2026-10-12T16:00:22.7295890Z node tooling/scripts/pnpm-local.mjs run check
+2026-10-12T16:00:22.7369446Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-10-12T16:00:22.7369902Z env:
+2026-10-12T16:00:22.7371223Z   CI: 1
+2026-10-12T16:00:22.7371500Z   EXPO_NO_DOTENV: 1
+2026-10-12T16:00:22.7371817Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T16:00:22.7372181Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T16:00:22.7372549Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T16:00:22.7372945Z ##[endgroup]
+2026-10-12T16:00:23.1787010Z $ node tooling/scripts/tasks.mjs check
+2026-10-12T16:00:23.5181065Z Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+2026-10-12T16:00:23.8142191Z tooling\scripts\containers.mjs:207:55 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-10-12T16:00:23.8143587Z 
+2026-10-12T16:00:23.8144368Z   i Template literals are preferred over string concatenation.
+2026-10-12T16:00:23.8144919Z   
+2026-10-12T16:00:23.8145528Z     205 │     );
+2026-10-12T16:00:23.8146893Z     206 │     mkdirSync(evidence, { recursive: true });
+2026-10-12T16:00:23.8148191Z   > 207 │     writeFileSync(join(evidence, "image-smoke.json"), JSON.stringify(result, null, 2) + "\n");
+2026-10-12T16:00:23.8150240Z         │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-12T16:00:23.8153467Z     208 │     console.log("Container health/readiness/packaging/shutdown smoke passes.");
+2026-10-12T16:00:23.8154472Z     209 │   } finally {
+2026-10-12T16:00:23.8155173Z   
+2026-10-12T16:00:23.8155700Z   i Unsafe fix: Use a template literal.
+2026-10-12T16:00:23.8156244Z   
+2026-10-12T16:00:23.8156984Z     205 205 │       );
+2026-10-12T16:00:23.8159288Z     206 206 │       mkdirSync(evidence, { recursive: true });
+2026-10-12T16:00:23.8164810Z     207     │ - ····writeFileSync(join(evidence,·"image-smoke.json"),·JSON.stringify(result,·null,·2)·+·"\n");
+2026-10-12T16:00:23.8167144Z         207 │ + ····writeFileSync(join(evidence,·"image-smoke.json"),·`${JSON.stringify(result,·null,·2)}\n`);
+2026-10-12T16:00:23.8169464Z     208 208 │       console.log("Container health/readiness/packaging/shutdown smoke passes.");
+2026-10-12T16:00:23.8170471Z     209 209 │     } finally {
+2026-10-12T16:00:23.8171049Z   
+2026-10-12T16:00:23.8171229Z 
+2026-10-12T16:00:23.8172153Z tooling\scripts\release.mjs:60:5 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2026-10-12T16:00:23.8172873Z 
+2026-10-12T16:00:23.8173122Z   i Template literals are preferred over string concatenation.
+2026-10-12T16:00:23.8173548Z   
+2026-10-12T16:00:23.8174059Z     58 │   writeFileSync(
+2026-10-12T16:00:23.8174715Z     59 │     join(destination, "manifest.json"),
+2026-10-12T16:00:23.8175626Z   > 60 │     JSON.stringify(
+2026-10-12T16:00:23.8176230Z        │     ^^^^^^^^^^^^^^^
+2026-10-12T16:00:23.8177934Z   > 61 │       { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+2026-10-12T16:00:23.8178811Z   > 62 │       null,
+2026-10-12T16:00:23.8179494Z   > 63 │       2,
+2026-10-12T16:00:23.8179936Z   > 64 │     ) + "\n",
+2026-10-12T16:00:23.8180496Z        │     ^^^^^^^^
+2026-10-12T16:00:23.8181099Z     65 │     { flag: "wx" },
+2026-10-12T16:00:23.8181868Z     66 │   );
+2026-10-12T16:00:23.8182480Z   
+2026-10-12T16:00:23.8183412Z   i Unsafe fix: Use a template literal.
+2026-10-12T16:00:23.8183895Z   
+2026-10-12T16:00:23.8184406Z     58 58 │     writeFileSync(
+2026-10-12T16:00:23.8184994Z     59 59 │       join(destination, "manifest.json"),
+2026-10-12T16:00:23.8186239Z     60    │ - ····JSON.stringify(
+2026-10-12T16:00:23.8186843Z        60 │ + ····`${JSON.stringify(
+2026-10-12T16:00:23.8188649Z     61 61 │         { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+2026-10-12T16:00:23.8189744Z     62 62 │         null,
+2026-10-12T16:00:23.8190415Z     63 63 │         2,
+2026-10-12T16:00:23.8194313Z     64    │ - ····)·+·"\n",
+2026-10-12T16:00:23.8194897Z        64 │ + ····)}\n`,
+2026-10-12T16:00:23.8195755Z     65 65 │       { flag: "wx" },
+2026-10-12T16:00:23.8196135Z     66 66 │     );
+2026-10-12T16:00:23.8196439Z   
+2026-10-12T16:00:23.8196668Z 
+2026-10-12T16:00:23.8196987Z Checked 122 files in 126ms. No fixes applied.
+2026-10-12T16:00:23.8197610Z Found 2 infos.
+2026-10-12T16:00:23.9519969Z build: @nilumi/contracts → native7 7.0.2
+2026-10-12T16:00:24.2104447Z build: @nilumi/db → native7 7.0.2
+2026-10-12T16:00:24.5649073Z build: @nilumi/api-client → native7 7.0.2
+2026-10-12T16:00:24.8245161Z build: @nilumi/server → native7 7.0.2
+2026-10-12T16:00:25.1725483Z build: @nilumi/api → native7 7.0.2
+2026-10-12T16:00:25.6531692Z build: @nilumi/worker → native7 7.0.2
+2026-10-12T16:00:25.9459735Z typecheck: @nilumi/contracts → native7 7.0.2
+2026-10-12T16:00:26.2074181Z typecheck: @nilumi/db → native7 7.0.2
+2026-10-12T16:00:26.5756465Z typecheck: @nilumi/api-client → native7 7.0.2
+2026-10-12T16:00:26.8356350Z typecheck: @nilumi/server → native7 7.0.2
+2026-10-12T16:00:27.2060752Z typecheck: @nilumi/api → native7 7.0.2
+2026-10-12T16:00:27.6753273Z typecheck: @nilumi/worker → native7 7.0.2
+2026-10-12T16:00:27.9584057Z typecheck: @nilumi/ui → native7 7.0.2
+2026-10-12T16:00:28.6539994Z typecheck: @nilumi/client → native7 7.0.2
+2026-10-12T16:00:31.4347589Z Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+2026-10-12T16:00:32.6044138Z Contract drift check passes.
+2026-10-12T16:00:32.8279485Z ##[group]Run node tooling/scripts/pnpm-local.mjs run test
+2026-10-12T16:00:32.8280363Z node tooling/scripts/pnpm-local.mjs run test
+2026-10-12T16:00:32.8356467Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-10-12T16:00:32.8356899Z env:
+2026-10-12T16:00:32.8357177Z   CI: 1
+2026-10-12T16:00:32.8357507Z   EXPO_NO_DOTENV: 1
+2026-10-12T16:00:32.8357788Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T16:00:32.8358330Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T16:00:32.8358832Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T16:00:32.8359367Z ##[endgroup]
+2026-10-12T16:00:33.2371033Z $ node tooling/scripts/tasks.mjs test
+2026-10-12T16:00:33.4138990Z build: @nilumi/contracts → native7 7.0.2
+2026-10-12T16:00:33.6754229Z build: @nilumi/db → native7 7.0.2
+2026-10-12T16:00:34.0434346Z build: @nilumi/api-client → native7 7.0.2
+2026-10-12T16:00:34.2900800Z build: @nilumi/server → native7 7.0.2
+2026-10-12T16:00:34.6517309Z build: @nilumi/api → native7 7.0.2
+2026-10-12T16:00:35.1511368Z build: @nilumi/worker → native7 7.0.2
+2026-10-12T16:00:37.4720001Z ✔ permitted manifest and authored-source graph passes (80.1394ms)
+2026-10-12T16:00:37.4736369Z ✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (631.6902ms)
+2026-10-12T16:00:37.4737807Z ✔ unreexported public source participates in complete closure (46.155ms)
+2026-10-12T16:00:37.4738978Z ✔ unused illegal manifest dependency and package cycles fail (51.6118ms)
+2026-10-12T16:00:37.4739997Z ✔ source policy allows only the two exact public env reads (2.6721ms)
+2026-10-12T16:00:37.4746474Z ✔ future domain restrictions and resolved dist ownership cannot be bypassed (1.0407ms)
+2026-10-12T16:00:37.4910179Z ✔ API parser defaults safely and has no connection side effects (7.0883ms)
+2026-10-12T16:00:37.4912917Z ✔ missing and malformed inputs fail without rejected values in diagnostics (4.4549ms)
+2026-10-12T16:00:37.4915518Z ✔ worker and migration roles cannot be substituted (3.2397ms)
+2026-10-12T16:00:37.4916828Z ✔ public URLs and variable allowlist follow deployment mode (2.9198ms)
+2026-10-12T16:00:37.4918177Z ✔ optional and explicit files, inherited precedence and unrelated variables (10.841ms)
+2026-10-12T16:00:38.5198979Z ✔ frozen client pins match the installed Expo SDK native compatibility matrix (45.8747ms)
+2026-10-12T16:00:38.5219335Z ✔ patched decoder preserves CommonJS, plus handling and multilingual query semantics (20.3342ms)
+2026-10-12T16:00:38.5221279Z ✔ malformed UTF-8 retains tolerant decoding without recursive splitting (0.9622ms)
+2026-10-12T16:00:38.5222700Z ✔ malformed attacker queries finish inside an isolated bounded process (2019.6226ms)
+2026-10-12T16:00:38.5226621Z ✔ xcode uses patched CommonJS UUID and retains its 24-character ID contract (95.2867ms)
+2026-10-12T16:00:40.3799252Z ✔ Istanbul loads ordinary and extended YAML configuration without the sprintf dependency (46.5301ms)
+2026-10-12T16:00:40.3800801Z ✔ Drizzle SQL generation and config transformation work with patched nested esbuild (1832.3784ms)
+2026-10-12T16:00:40.3983983Z Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+2026-10-12T16:00:40.3989738Z ✔ routine preflight accepts a checkout after the historical foundation snapshot (329.7491ms)
+2026-10-12T16:00:40.3992051Z ✔ test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs (9.4017ms)
+2026-10-12T16:00:40.3993699Z ✔ blank private templates fail configuration; infrastructure reset guards fail closed (2.4443ms)
+2026-10-12T16:00:40.3994542Z ✔ Pino removes OTP, content and credentials while retaining codes and request IDs (1457.7499ms)
+2026-10-12T16:00:40.3996441Z ✔ store ownership keeps foreign and unmarked directories intact (11.559ms)
+2026-10-12T16:00:40.3997532Z ✔ child environment drops bootstrap overrides and preserves user options (0.3725ms)
+2026-10-12T16:00:40.3998352Z ✔ internal store ownership survives pnpm replacing its dependency directory (6.3192ms)
+2026-10-12T16:00:40.4002316Z ✔ argument arrays preserve spaces and shell metacharacters (80.3729ms)
+2026-10-12T16:00:40.4004118Z ✔ child failure and interruption produce non-success results (153.7731ms)
+2026-10-12T16:00:40.4004847Z ✔ all selections route to pinned native7 independently of ambiguous tsc bins (14.3919ms)
+2026-10-12T16:00:41.1758636Z ✔ process roots reject missing config without printing values (2110.0092ms)
+2026-10-12T16:00:42.2325170Z ✔ worker process refuses unavailable dependencies without leaking credentials (937.4423ms)
+2026-10-12T16:00:42.3035676Z ✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (195.4769ms)
+2026-10-12T16:00:42.3250676Z ✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (21.73ms)
+2026-10-12T16:00:42.3304759Z ✔ invalid handler output fails response validation with a safe Problem (6.0439ms)
+2026-10-12T16:00:42.3720725Z ✔ generated transport round-trips real loopback health and validates data (40.7396ms)
+2026-10-12T16:00:42.3824378Z ✔ development health CORS allows only documented loopback web origins (11.2215ms)
+2026-10-12T16:00:42.3954275Z ✔ health CORS is disabled outside explicitly selected development mode (12.9945ms)
+2026-10-12T16:00:42.4096009Z ✔ schema generation is deterministic and independent of process config (15.319ms)
+2026-10-12T16:00:42.4413128Z ✔ worker heartbeat responds to readiness loss and shutdown is idempotent (31.8745ms)
+2026-10-12T16:00:42.4706017Z ✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (29.2194ms)
+2026-10-12T16:00:42.5053228Z ℹ tests 39
+2026-10-12T16:00:42.5053661Z ℹ suites 0
+2026-10-12T16:00:42.5053977Z ℹ pass 39
+2026-10-12T16:00:42.5054281Z ℹ fail 0
+2026-10-12T16:00:42.5054644Z ℹ cancelled 0
+2026-10-12T16:00:42.5054968Z ℹ skipped 0
+2026-10-12T16:00:42.5055345Z ℹ todo 0
+2026-10-12T16:00:42.5055698Z ℹ duration_ms 6315.7248
+2026-10-12T16:00:43.0728931Z 
+2026-10-12T16:00:43.0734106Z  RUN  v5.0.3 D:/a/nilumi-v2/nilumi-v2
+2026-10-12T16:00:43.0734510Z 
+2026-10-12T16:00:44.5082650Z  ✓ tooling/vitest/api.test.mjs (2 tests) 232ms
+2026-10-12T16:00:44.5132242Z 
+2026-10-12T16:00:44.5138714Z  Test Files  1 passed (1)
+2026-10-12T16:00:44.5140061Z       Tests  2 passed (2)
+2026-10-12T16:00:44.5141199Z    Start at  16:00:43
+2026-10-12T16:00:44.5145770Z    Duration  1.43s (import 65%, tests 19%, transform 15%, worker 1%)
+2026-10-12T16:00:44.5159387Z 
+2026-10-12T16:01:03.3900069Z PASS tests/primitives.test.tsx (16.745 s)
+2026-10-12T16:01:03.6215650Z PASS tests/deep-link-security.test.tsx
+2026-10-12T16:01:03.6238055Z 
+2026-10-12T16:01:03.6252663Z Test Suites: 2 passed, 2 total
+2026-10-12T16:01:03.6253477Z Tests:       3 passed, 3 total
+2026-10-12T16:01:03.6253971Z Snapshots:   0 total
+2026-10-12T16:01:03.6254513Z Time:        18.352 s
+2026-10-12T16:01:03.6255056Z Ran all test suites.
+2026-10-12T16:01:03.9629900Z ##[group]Run node tooling/scripts/pnpm-local.mjs run contracts:check
+2026-10-12T16:01:03.9630656Z node tooling/scripts/pnpm-local.mjs run contracts:check
+2026-10-12T16:01:03.9700962Z shell: C:\Program Files\PowerShell\7\pwsh.EXE -command ". '{0}'"
+2026-10-12T16:01:03.9701539Z env:
+2026-10-12T16:01:03.9701821Z   CI: 1
+2026-10-12T16:01:03.9702123Z   EXPO_NO_DOTENV: 1
+2026-10-12T16:01:03.9702434Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T16:01:03.9702756Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T16:01:03.9703145Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T16:01:03.9703508Z ##[endgroup]
+2026-10-12T16:01:04.4096835Z $ node tooling/scripts/tasks.mjs contracts:check
+2026-10-12T16:01:04.5869707Z build: @nilumi/contracts → native7 7.0.2
+2026-10-12T16:01:04.8582982Z build: @nilumi/api → native7 7.0.2
+2026-10-12T16:01:06.5695483Z Contract drift check passes.
+2026-10-12T16:01:06.7788634Z Post job cleanup.
+2026-10-12T16:01:07.0028937Z Post job cleanup.
+2026-10-12T16:01:07.2008256Z [command]"C:\Program Files\Git\bin\git.exe" version
+2026-10-12T16:01:07.2360995Z git version 2.55.0.windows.5
+2026-10-12T16:01:07.2427136Z Temporarily overriding HOME='D:\a\_temp\f846edb5-833a-4069-929c-e7c415edc217' before making global git config changes
+2026-10-12T16:01:07.2430233Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T16:01:07.2440725Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\nilumi-v2\nilumi-v2
+2026-10-12T16:01:07.2813074Z Removing SSH command configuration
+2026-10-12T16:01:07.2824623Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T16:01:07.3137583Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :\""
+2026-10-12T16:01:07.9240079Z Removing HTTP extra header
+2026-10-12T16:01:07.9252557Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T16:01:07.9583584Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "sh -c \"git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :\""
+2026-10-12T16:01:08.5490255Z Removing includeIf entries pointing to credentials config files
+2026-10-12T16:01:08.5501866Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T16:01:08.5822671Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2026-10-12T16:01:09.2020252Z Cleaning up orphan processes

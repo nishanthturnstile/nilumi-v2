@@ -1,0 +1,117 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.10kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 383B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 11.73kB 0.0s done
+#4 DONE 0.0s
+
+#5 [build  1/19] FROM docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#5 resolve docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 0.0s done
+#5 DONE 0.0s
+
+#6 [build 17/19] COPY apps ./apps
+#6 CACHED
+
+#7 [build 12/19] COPY packages/api-client/package.json ./packages/api-client/
+#7 CACHED
+
+#8 [build 10/19] COPY packages/db/package.json ./packages/db/
+#8 CACHED
+
+#9 [build 13/19] COPY packages/ui/package.json ./packages/ui/
+#9 CACHED
+
+#10 [build 18/19] RUN node tooling/scripts/pnpm-local.mjs run build
+#10 CACHED
+
+#11 [build  2/19] WORKDIR /workspace
+#11 CACHED
+
+#12 [build  8/19] COPY apps/client/package.json ./apps/client/
+#12 CACHED
+
+#13 [build  3/19] COPY package.json pnpm-lock.yaml pnpm-workspace.yaml biome.json ./
+#13 CACHED
+
+#14 [build  4/19] COPY patches ./patches
+#14 CACHED
+
+#15 [build 11/19] COPY packages/server/package.json ./packages/server/
+#15 CACHED
+
+#16 [build 16/19] COPY packages ./packages
+#16 CACHED
+
+#17 [build  5/19] COPY tooling/scripts/ci-prepare.mjs tooling/scripts/pnpm-local.mjs tooling/scripts/process.mjs ./tooling/scripts/
+#17 CACHED
+
+#18 [build  6/19] COPY apps/api/package.json ./apps/api/
+#18 CACHED
+
+#19 [build 14/19] RUN node tooling/scripts/ci-prepare.mjs     && node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+#19 CACHED
+
+#20 [build  7/19] COPY apps/worker/package.json ./apps/worker/
+#20 CACHED
+
+#21 [build  9/19] COPY packages/contracts/package.json ./packages/contracts/
+#21 CACHED
+
+#22 [build 15/19] COPY tooling ./tooling
+#22 CACHED
+
+#23 [build 19/19] RUN node tooling/scripts/package-runtime.mjs api /out/api     && node tooling/scripts/package-runtime.mjs worker /out/worker
+#23 CACHED
+
+#24 [export 1/1] RUN node tooling/scripts/pnpm-local.mjs --filter @nilumi/client exec expo export --platform web
+#24 1.614 Using src/app as the root directory for Expo Router.
+#24 2.018 Expo Autolinking module resolution enabled
+#24 4.377 Starting Metro Bundler
+#24 4.377 
+#24 4.417 Static rendering is enabled. Learn more: https://docs.expo.dev/router/web/static-rendering/
+#24 70.85 λ Bundled 71016ms node_modules/.pnpm/_4c8de158e5b8d60fb42c84f967289168/node_modules/@expo/router-server/node/render.js (1482 modules)
+#24 71.90 Web Bundled 72064ms node_modules/.pnpm/_bbd36ab4def23a21ef25d3d70fecd00b/node_modules/expo-router/entry.js (1450 modules)
+#24 72.31 
+#24 72.31 › web bundles (1):
+#24 72.34 _expo/static/js/web/entry-fe1c0c7c9c221fa60d682eae4f975e62.js (2.7MB)
+#24 72.34 
+#24 72.34 › Static routes (3):
+#24 72.35 / (index) (1.7MB)
+#24 72.35 /_sitemap (17KB)
+#24 72.35 /+not-found (17KB)
+#24 72.41 
+#24 72.41 Exported: dist
+#24 DONE 73.1s
+
+#25 [web 2/4] WORKDIR /app
+#25 CACHED
+
+#26 [web 3/4] COPY --from=export --chown=node:node /workspace/apps/client/dist ./public
+#26 DONE 0.2s
+
+#27 [web 4/4] COPY --chown=node:node infra/docker/web-server.mjs ./web-server.mjs
+#27 DONE 0.2s
+
+#28 exporting to image
+#28 exporting layers
+#28 exporting layers 1.0s done
+#28 exporting manifest sha256:778b28f745b35a7ea4df0cc6466478185407a6355ae02147f747c41533d0a1a9 0.0s done
+#28 exporting config sha256:e6feb79ca68656415eeff597b505d85c3c2c16519670683db031f3d3fd5c6c8a 0.0s done
+#28 exporting attestation manifest sha256:27e664a5e52f8aef3b8afe41e4785c24d6960dfa8e83e8ca2fca59e7e8024d23 0.0s done
+#28 exporting manifest list sha256:84a648fc4d4e70403615471f65598dad2e8538f51659f2ff6991ca392c6201d1
+#28 exporting manifest list sha256:84a648fc4d4e70403615471f65598dad2e8538f51659f2ff6991ca392c6201d1 0.0s done
+#28 naming to docker.io/library/nilumi-setup06-web:c941e03d504abd1024c43e1dc7a47e8c205bb431 done
+#28 unpacking to docker.io/library/nilumi-setup06-web:c941e03d504abd1024c43e1dc7a47e8c205bb431 0.2s done
+#28 DONE 1.4s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/suoer29gcym3m43fl5g7sn5bn

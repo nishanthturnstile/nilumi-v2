@@ -66,7 +66,8 @@ export async function auditDependencies() {
   };
   const destination = join(
     root,
-    "docs/development/evidence/setup-06-2026-10-12/dependency-audit.json",
+    process.env.NILUMI_DEPENDENCY_AUDIT_OUTPUT ??
+      "docs/development/evidence/setup-06-2026-10-12/dependency-audit.json",
   );
   mkdirSync(join(root, "docs/development/evidence/setup-06-2026-10-12"), { recursive: true });
   writeFileSync(destination, `${JSON.stringify(output, null, 2)}\n`);

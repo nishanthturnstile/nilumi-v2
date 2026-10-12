@@ -1,0 +1,15 @@
+{
+  "platform": "win32",
+  "checks": [
+    "Seaweed S3 synthetic put/read/delete and service reachability",
+    "repeatable provision and checked migration",
+    "runtime identities, grants and privileged role rejection",
+    "test-only forced RLS denies missing context; commit/rollback clear pooled settings",
+    "pending migration and missing grant fail readiness without runtime repair",
+    "restricted enqueue, supervision and eligible synthetic job survive consumer restart",
+    "local SMTP captured by Mailpit; synthetic SMS/AI/speech have no live effects",
+    "API listener failure closes prepared dependencies and exits safely",
+    "independent worker process restart recovers eligible synthetic job",
+    "host API ready endpoint and worker heartbeat reach dependencies; pending migration returns 503"
+  ]
+}

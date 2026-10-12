@@ -1,0 +1,2 @@
+Audited 58 exact dependency selections; all non-latest selections have explicit constraints.
+$ node tooling/scripts/tasks.mjs audit:dependencies

@@ -1,0 +1,93 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 3.10kB 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 383B done
+#3 DONE 0.0s
+
+#4 [build  1/19] FROM docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20
+#4 resolve docker.io/library/node:24.21.0-bookworm-slim@sha256:d6aa754f16b3197301076f047b5def2f02ea1dbbc2ca920407d46d7ec7f87b20 0.1s done
+#4 DONE 0.1s
+
+#5 [internal] load build context
+#5 transferring context: 8.86kB 0.0s done
+#5 DONE 0.1s
+
+#6 [build  4/19] COPY patches ./patches
+#6 CACHED
+
+#7 [build 14/19] RUN node tooling/scripts/ci-prepare.mjs     && node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+#7 CACHED
+
+#8 [build  7/19] COPY apps/worker/package.json ./apps/worker/
+#8 CACHED
+
+#9 [build 13/19] COPY packages/ui/package.json ./packages/ui/
+#9 CACHED
+
+#10 [build 16/19] COPY packages ./packages
+#10 CACHED
+
+#11 [build 11/19] COPY packages/server/package.json ./packages/server/
+#11 CACHED
+
+#12 [build 12/19] COPY packages/api-client/package.json ./packages/api-client/
+#12 CACHED
+
+#13 [build 17/19] COPY apps ./apps
+#13 CACHED
+
+#14 [build  6/19] COPY apps/api/package.json ./apps/api/
+#14 CACHED
+
+#15 [build  9/19] COPY packages/contracts/package.json ./packages/contracts/
+#15 CACHED
+
+#16 [build 18/19] RUN node tooling/scripts/pnpm-local.mjs run build
+#16 CACHED
+
+#17 [build  5/19] COPY tooling/scripts/ci-prepare.mjs tooling/scripts/pnpm-local.mjs tooling/scripts/process.mjs ./tooling/scripts/
+#17 CACHED
+
+#18 [build 15/19] COPY tooling ./tooling
+#18 CACHED
+
+#19 [build 10/19] COPY packages/db/package.json ./packages/db/
+#19 CACHED
+
+#20 [build  2/19] WORKDIR /workspace
+#20 CACHED
+
+#21 [build  3/19] COPY package.json pnpm-lock.yaml pnpm-workspace.yaml biome.json ./
+#21 CACHED
+
+#22 [build  8/19] COPY apps/client/package.json ./apps/client/
+#22 CACHED
+
+#23 [build 19/19] RUN node tooling/scripts/package-runtime.mjs api /out/api     && node tooling/scripts/package-runtime.mjs worker /out/worker
+#23 CACHED
+
+#24 [worker 2/3] WORKDIR /app
+#24 CACHED
+
+#25 [worker 3/3] COPY --from=build --chown=node:node /out/worker ./
+#25 CACHED
+
+#26 exporting to image
+#26 exporting layers done
+#26 exporting manifest sha256:4c233b7e2ea582b429ceea7f69d3654c5f39abf9fc72badd741c8e00dae14adf 0.0s done
+#26 exporting config sha256:00e5bb067f50c2adb7b77a77b36eb71c71cdb68ab19b91e951fff2229a6bc59f 0.0s done
+#26 exporting attestation manifest sha256:4360ff49153e32752406ab59e3c0896569588f3568ab80f270ad086983c8e663 0.0s done
+#26 exporting manifest list sha256:e9536209a2b5ec47f841549613820927c92d912e88d3a411b4ce8ebfb24f014a
+#26 exporting manifest list sha256:e9536209a2b5ec47f841549613820927c92d912e88d3a411b4ce8ebfb24f014a 0.0s done
+#26 naming to docker.io/library/nilumi-setup06-worker:c941e03d504abd1024c43e1dc7a47e8c205bb431 done
+#26 unpacking to docker.io/library/nilumi-setup06-worker:c941e03d504abd1024c43e1dc7a47e8c205bb431 0.0s done
+#26 DONE 0.2s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/nqk2aywbldi2qr3xabnsc5k6q

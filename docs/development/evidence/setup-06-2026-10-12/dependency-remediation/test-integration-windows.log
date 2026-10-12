@@ -1,0 +1,17 @@
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+PASS: Seaweed S3 synthetic put/read/delete and service reachability
+PASS: repeatable provision and checked migration
+PASS: runtime identities, grants and privileged role rejection
+PASS: test-only forced RLS denies missing context; commit/rollback clear pooled settings
+PASS: pending migration and missing grant fail readiness without runtime repair
+PASS: restricted enqueue, supervision and eligible synthetic job survive consumer restart
+PASS: local SMTP captured by Mailpit; synthetic SMS/AI/speech have no live effects
+PASS: API listener failure closes prepared dependencies and exits safely
+PASS: independent worker process restart recovers eligible synthetic job
+PASS: host API ready endpoint and worker heartbeat reach dependencies; pending migration returns 503
+$ node tooling/scripts/tasks.mjs test:integration

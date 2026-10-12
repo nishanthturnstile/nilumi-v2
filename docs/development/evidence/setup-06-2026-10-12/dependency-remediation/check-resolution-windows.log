@@ -1,0 +1,70 @@
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 5m ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: C:\Users\Nishanth Murugan\AppData\Local\pnpm\store\v11
+  Virtual store is at:             ../../../../../../../../pnpm/nv2-3c72be01
+Progress: resolved 120, reused 120, downloaded 0, added 105
+Progress: resolved 188, reused 188, downloaded 0, added 173
+Progress: resolved 235, reused 235, downloaded 0, added 220
+Progress: resolved 260, reused 260, downloaded 0, added 245
+Progress: resolved 311, reused 311, downloaded 0, added 296
+Progress: resolved 370, reused 370, downloaded 0, added 355
+Progress: resolved 408, reused 408, downloaded 0, added 393
+Progress: resolved 445, reused 445, downloaded 0, added 430
+Progress: resolved 471, reused 471, downloaded 0, added 456
+Progress: resolved 488, reused 488, downloaded 0, added 473
+Progress: resolved 529, reused 529, downloaded 0, added 514
+Progress: resolved 572, reused 572, downloaded 0, added 557
+Progress: resolved 607, reused 607, downloaded 0, added 592
+Progress: resolved 658, reused 658, downloaded 0, added 643
+Progress: resolved 699, reused 699, downloaded 0, added 684
+Progress: resolved 746, reused 746, downloaded 0, added 731
+Progress: resolved 799, reused 799, downloaded 0, added 784
+Progress: resolved 862, reused 862, downloaded 0, added 847
+Progress: resolved 904, reused 904, downloaded 0, added 889
+Progress: resolved 945, reused 945, downloaded 0, added 931
+Progress: resolved 989, reused 989, downloaded 0, added 977
+Progress: resolved 1021, reused 1021, downloaded 0, added 1012
+Progress: resolved 1047, reused 1047, downloaded 0, added 1038
+Progress: resolved 1075, reused 1074, downloaded 0, added 1066
+Packages: +1100
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1100, reused 1100, downloaded 0, added 1100, done
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @playwright/test 1.64.0
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
++ vite 8.3.4
++ vitest 5.0.3
+
+Done in 37.3s using pnpm v12.11.2
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+Public declarations and deliberate type/ambient/export errors verified with classic5.
+Public declarations and deliberate type/ambient/export errors verified with classic6.
+Public declarations and deliberate type/ambient/export errors verified with native7.
+Dependencies are up to date
+android Expo export: actual public entries and synthetic TSX verified.
+web Expo export: actual public entries and synthetic TSX verified.
+$ node tooling/scripts/tasks.mjs check:resolution
+Dependency validation is unreliable in offline-mode

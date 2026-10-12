@@ -1,0 +1,18 @@
+{
+  "api": {
+    "imageId": "sha256:69c90907977127d8c65a0ded16348f5860d8ed571f7e29950fb988fd9334d1c9",
+    "packages": 88,
+    "flagged": []
+  },
+  "worker": {
+    "imageId": "sha256:e9536209a2b5ec47f841549613820927c92d912e88d3a411b4ce8ebfb24f014a",
+    "packages": 45,
+    "flagged": []
+  },
+  "lock": {
+    "esbuild018Absent": true,
+    "uuid7Absent": true,
+    "sprintfAbsent": true,
+    "decoderPatchPresent": true
+  }
+}

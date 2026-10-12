@@ -1,0 +1,71 @@
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (354.0892ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (2459.7014ms)
+✔ unreexported public source participates in complete closure (250.2307ms)
+✔ unused illegal manifest dependency and package cycles fail (254.2206ms)
+✔ source policy allows only the two exact public env reads (3.7592ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (1.7742ms)
+✔ API parser defaults safely and has no connection side effects (12.8074ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (9.0039ms)
+✔ worker and migration roles cannot be substituted (6.3598ms)
+✔ public URLs and variable allowlist follow deployment mode (2.7999ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (53.4166ms)
+✔ patched decoder preserves CommonJS, plus handling and multilingual query semantics (5.4867ms)
+✔ malformed UTF-8 retains tolerant decoding without recursive splitting (1.758ms)
+✔ malformed attacker queries finish inside an isolated bounded process (2350.5339ms)
+✔ xcode uses patched CommonJS UUID and retains its 24-character ID contract (134.9543ms)
+✔ Istanbul loads ordinary and extended YAML configuration without the sprintf dependency (100.2944ms)
+✔ Drizzle SQL generation and config transformation work with patched nested esbuild (2125.8805ms)
+Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+✔ routine preflight accepts a checkout after the historical foundation snapshot (610.9742ms)
+✔ test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs (10.2923ms)
+✔ blank private templates fail configuration; infrastructure reset guards fail closed (3.8094ms)
+✔ Pino removes OTP, content and credentials while retaining codes and request IDs (2157.7226ms)
+✔ store ownership keeps foreign and unmarked directories intact (204.9515ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.658ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (56.5064ms)
+✔ argument arrays preserve spaces and shell metacharacters (213.2752ms)
+✔ child failure and interruption produce non-success results (234.5394ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (46.6616ms)
+✔ process roots reject missing config without printing values (3185.946ms)
+✔ worker process refuses unavailable dependencies without leaking credentials (1033.2261ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (248.4914ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (25.898ms)
+✔ invalid handler output fails response validation with a safe Problem (5.5295ms)
+✔ generated transport round-trips real loopback health and validates data (35.9269ms)
+✔ development health CORS allows only documented loopback web origins (10.4078ms)
+✔ health CORS is disabled outside explicitly selected development mode (15.5953ms)
+✔ schema generation is deterministic and independent of process config (16.4364ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (9.3642ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (30.0287ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6503.4484
+
+ RUN  v5.0.3 C:/Users/Nishanth Murugan/projects/nishanth - projects win/nilumi-v2
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  21:27:46
+   Duration  1.83s (import 72%, tests 18%, transform 10%)
+
+$ node tooling/scripts/tasks.mjs test
+PASS tests/deep-link-security.test.tsx
+PASS tests/primitives.test.tsx
+
+Test Suites: 2 passed, 2 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        4.866 s, estimated 14 s
+Ran all test suites.
