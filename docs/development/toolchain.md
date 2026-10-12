@@ -113,3 +113,13 @@ image digests remain the qualified selections above. Android uses Temurin
 **25.0.4.1+1**, clean generated Gradle **9.3.1**, API 36, Build-Tools 36.0.0/35.0.0,
 NDK 27.1.12297006 and two workers/3 GiB heap. Local Android clean build passes;
 real GitHub qualification is recorded separately in setup-validation.md.
+
+CI explicitly prepares SDK command-line tools **23.0**, build **16111833**,
+using the official fixed archive and SHA-256
+`0877a1d048fe4a24efe2eff536ca4223f7adeb58648bb81909d33c446918cfa8`.
+The official repository XML's SHA-1 and archive size were independently verified
+before recording the stronger SHA-256 pin. The `_latest.zip` suffix is part of
+that fixed build-number filename, not a floating selection. Runtime image tags
+remain digest-pinned. The exact Temurin Linux archive is independently pinned
+in `ci-java-prepare.mjs` because setup-java rejects the four-part-plus-build
+selector; it installs the verified local archive with a SemVer cache label.

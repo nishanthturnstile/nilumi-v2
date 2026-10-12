@@ -181,7 +181,8 @@ jobs:
       - run: node tooling/scripts/pnpm-local.mjs run build
       - name: Explicit Android SDK preparation
         run: |
-          sdkmanager 'platforms;android-36' 'build-tools;36.0.0' 'build-tools;35.0.0' 'ndk;27.1.12297006' 'cmake;3.22.1'
+          node tooling/scripts/ci-android-prepare.mjs
+          .cache/android-sdk-tools/cmdline-tools/bin/sdkmanager --sdk_root="$ANDROID_HOME" 'platforms;android-36' 'build-tools;36.0.0' 'build-tools;35.0.0' 'ndk;27.1.12297006' 'cmake;3.22.1'
       - name: Clean CNG and x86_64 debug build
         run: |
           set -o pipefail
