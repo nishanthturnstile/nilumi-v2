@@ -1,0 +1,24 @@
+{
+  "name": "@nilumi/contracts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "typecheck": "node ../../tooling/scripts/typescript.mjs typecheck @nilumi/contracts",
+    "build": "node ../../tooling/scripts/typescript.mjs build @nilumi/contracts"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  }
+}

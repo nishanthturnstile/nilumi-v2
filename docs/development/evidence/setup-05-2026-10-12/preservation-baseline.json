@@ -1,0 +1,758 @@
+{
+  "files": [
+    {
+      "path": "docs/core/architecture.md",
+      "sha256": "EDF7D090AC69764639CD3C798E9EE2F753F0F77FBC5590F5790A69C4955A8882"
+    },
+    {
+      "path": "docs/core/DESIGN-SYSTEM.md",
+      "sha256": "DEE24B3D74A7FF1CDF8C1579F2846DF9CADD06B5F78CB45835B1D4DD5C28B187"
+    },
+    {
+      "path": "docs/core/product-plan.md",
+      "sha256": "02A3B401D1EA826C70DF414F83D24AE2F3318C658D5D0EDB0A6FF958BB212328"
+    },
+    {
+      "path": "docs/core/requirements-and-features.md",
+      "sha256": "86A117C7E64167926ED1CF6E7653A6CF8297B8A9E8CD276CE4FE94478F1B6FB3"
+    },
+    {
+      "path": "docs/core/tech-stack.md",
+      "sha256": "C1E688A200D0C887C90248DB210FA35AA6BD906180AEA171185664674F0F976F"
+    },
+    {
+      "path": "docs/development/evidence/2026-10-12-android-emulator.png",
+      "sha256": "D675D0F7BFF6FEBDD4C0FFBDE8AF9BDAF0CEEF1C5E60447A60819565157062D8"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-drive-alias.log",
+      "sha256": "A7E07F2DE0422E13E1991BF9AC6844416C441FD5619D36EFD3BF1E89DF28994B"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-final-matrix-success.log",
+      "sha256": "3F4CB3F4F564885C91032FCB616077671DDA7638C40635C368DB8859467BDE9D"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-java25-success.log",
+      "sha256": "CF6F687F48786D4B97492F1255ED2B809E9C2AEFBD6CBA7D2284383F8BE669F4"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-manifest.json",
+      "sha256": "E3DAF3D4C9B450D6DB5694B02BC717CABDAF5661D86C1F0F16E5F7DE2B899363"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-original-path.log",
+      "sha256": "04B9CE486498C99BD6D8BBB57DC6FF53F073422F0144E8BD6A26FF22AF31B976"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-sdk-alias-default-package-length.log",
+      "sha256": "3DD0DAE4943E7278AEE477BD8B5793938DB3D66D9F60D6C1597622BBE9A0E525"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-sdk-alias-short-package-length.log",
+      "sha256": "A0386C5F397C8FC894B10F575F42AF5D1B1213B1581F9981BF59EDE74E761635"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-short-store-sdk-original.log",
+      "sha256": "4F688C68480A0438D2F7918172447EB7A61821B759EB35C27C334D70283D1B8E"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-user-store-native-access.log",
+      "sha256": "9F74E3E2F7851D2A77E6AF3750CAC06E63871FB81B98BD1C458DEE3462FDBA6D"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-build-user-store.log",
+      "sha256": "23B438B43908D718FEAC85EA4676ED0DB3C9FB34C07D5DF30D634B04936D2CC2"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/android-runtime.png",
+      "sha256": "05D9E4C4AE4CD4E21CF536EBEE87B42455FC8133798FD47FEEB11DAD40960AEE"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-biome.json",
+      "sha256": "9957570EEEAA4CB50DAB7E58B65A74A32EE0EB6F8E441C418FACD20A5D3741BB"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-bootstrap.sql",
+      "sha256": "9C409F3E191C4C11A18D7890EF63BDBBED60D588AD401360D7FA86AAEDF80ABD"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-client-types.ts",
+      "sha256": "FDEAC6384883D2B6DC8AC7DF472EF2FADF7E9EAC676767E87B1F1B566075703F"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-drizzle.config.ts",
+      "sha256": "34B0B916FFD9E84703C22904EE5BA3BADD868BF4655EB567B8C8FF15C595B728"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-generated.ts",
+      "sha256": "5187B2276F65D2FA3511EF5F76369DEBD3B12C90515B1D166F0A863E7F8F9968"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-infra-probe.mjs",
+      "sha256": "D1D8B2EB06398F313F1FCEFA2D0044C933E96D6738D1C84497323F904D079A64"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-package.json",
+      "sha256": "51E73D7F4F13A2EDDC326532204F441607D4950D187FDA48615AE2ED8529E9BB"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-pnpm-lock.yaml",
+      "sha256": "8EFE94E20F11314CFD30944F4D62BAE4AB7324B49F424FB2033033EF0FCE7119"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-pnpm-settings.yaml",
+      "sha256": "45A57EAD0B761EFC155330A6EF8A022368E76C3897CE7B40A190F1A92BE92BB5"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-probe.ts",
+      "sha256": "798A7798D4FFFFF7653B915EFC93AEC72D6F10220D275C3554E16EFE3E41F609"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-provider.test.ts",
+      "sha256": "8B0D4650C74B83FFA8F083CB31E57AC1EDE09F044E315B3164987464FBE3DBB4"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-schema.ts",
+      "sha256": "330460046796E42D9A8818A7ADDC24841552CF3CDFD992A364E9D87F6B6FC863"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/backend-tsconfig.json",
+      "sha256": "E05A31E8559CCD00062F16AE80188ACAAC719ABAC246C616B1B59ACF27FEB05C"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-app.json",
+      "sha256": "0A46E356D1D4E7D6D7C8318FADC930CC85D2D66D9A2FBBD124892B452EAB12F1"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-biome.json",
+      "sha256": "9957570EEEAA4CB50DAB7E58B65A74A32EE0EB6F8E441C418FACD20A5D3741BB"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-contract-probe.ts",
+      "sha256": "CB8529461DE3E711839427C803FE8BBFEDBBD68CB2031E320EEFA42AA572454D"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-jest.config.cjs",
+      "sha256": "954AE31E7FDEC2730A7B94B0A38E1D5F0EB85CBFE1E85F600BD8258541820812"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-layout.tsx",
+      "sha256": "232B0C9BA260936D5D1F1BB2D656B3A2581D17C44494998F9095DA08BFFF1321"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-maestro.yaml",
+      "sha256": "EE1B6DA37E88F5A1FEE17B6A7123B252CA20E3E3823E2A7DB45619BC55146152"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-package.json",
+      "sha256": "83DEEC72E08494EF46CB77C664000E587F8B9E1C7A9A7599C7407D1C574D3AE8"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-pnpm-lock.yaml",
+      "sha256": "B9D23F8553B89416DC440720808762953251D44F839F32524FB211EE12127077"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-pnpm-settings.yaml",
+      "sha256": "95FF27DD9D22E7F94EB5ACDBFFABC1EAE3C9DB6175E5F5F5AF3C22835F95582B"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-primitives.test.tsx",
+      "sha256": "4EA13532578FA8449AD5DFFD2ADCF2393509898A5673F1239340A6F47F99B27E"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-screen.tsx",
+      "sha256": "79DA93440FABCBEFDCED954E497B53C588C0A04522D1F9B45751225B5C167218"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-tamagui.config.ts",
+      "sha256": "0888A2A7EB7057E9E0973186C6B2FF8243354D8696BF727D00AFB778A17CB4D4"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-tsconfig.json",
+      "sha256": "712583FF9CDB4B4E4F9B000A4A56D68DB8DC1921CBFBC36D490A3A9F2BE3DD72"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-web-probe.mjs",
+      "sha256": "514E6B75ABA19B1F47B8F34F3C6250B1DE21BDAA0FD24F132A7DED02AF87762F"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/client-with-windows-cxx-staging.cjs",
+      "sha256": "0CD45B8046C8153FCAA1F592141E7495B888CB9A47544DF68E600EBEC43361DB"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/linux-backend-probe.log",
+      "sha256": "9884467E2B94A48D0B177D0D3A7F66D6EC2430B0BE0D457B811E4A76ADAE1B01"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/maestro-app-result.xml",
+      "sha256": "EDBEFC3B0BAB26069223D068A153010D0DD7862E8065295EF93A55C89C1AA661"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/maestro-settings-result.xml",
+      "sha256": "517D5BAB08B502AD787CA7A6A3F83EA08813736049E6D187EB55E907D1E9ADE8"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/maestro-settings.yaml",
+      "sha256": "9D43B665C85B0E1F6022099CB424FB7114E3DF2BAFEF99256796A09F1B808CA1"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/qualification-compose.yaml",
+      "sha256": "AF017CC8B23E279D660C2EBC5E42EC41F97D73A37881096D624F17D6C10A5C26"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/qualification-openapi.json",
+      "sha256": "BF4A94CEB0EE605692C3C6EEB5B751329C9D4A80B0F577F2207E8FD841638EB6"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/README.md",
+      "sha256": "C75CFC58D6804E626DF34FA87C4877427AA9A2055A328C984196FA2B6E0E1439"
+    },
+    {
+      "path": "docs/development/evidence/setup-02-2026-10-12/web-probe.png",
+      "sha256": "EAF78D37A9CE40DA0769FF2937F8DE728197EE9999D91626E9D52B9E5917416A"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/dependency-audit.json",
+      "sha256": "C03397254933F109E54E42E0F5B794EB8F25EE9BE2B0FAED01672238F44F771D"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/linux-acceptance.json",
+      "sha256": "65AA044168A6ACC816F757DA497A295A1E664A3EE0509BE926B6E572F7A47332"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/linux-checks.log",
+      "sha256": "DB6588488C04411EDCEC4920E75E35CDC15B51ACB960E242D28C56D06F039936"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/preservation-baseline.json",
+      "sha256": "397B902FE00E45794CD0F54C404749EE9B1633C8C8A171CC29135A5C66AF3000"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/README.md",
+      "sha256": "B41236BADA9F0DBD7149F5032D87BA67C569810B5941A159ED42D0ADF8454CF4"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/resolution-linux.json",
+      "sha256": "DB7C6DD49936658EC39C8626BC49D9542AF2551C871EA1FC49A0E0BC38D1D17A"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/resolution-win32.json",
+      "sha256": "20E4B2F32235E6B60760085F8AF8D021FDB8977EC9E5E3D322CDFDD9A4A1AF2E"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/windows-acceptance.json",
+      "sha256": "7C2E6C29A92E3E683A8BA7008891A4CBF4E0EE9F292C0AEB5DAC03C9C9BDCF3F"
+    },
+    {
+      "path": "docs/development/evidence/setup-03-2026-10-12/windows-checks.log",
+      "sha256": "2A101DAB73E3409D0047661C9EA31FFDF327FA1C121B5780D4D4BE351A2E5205"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-app.json",
+      "sha256": "0A46E356D1D4E7D6D7C8318FADC930CC85D2D66D9A2FBBD124892B452EAB12F1"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-biome.json",
+      "sha256": "9957570EEEAA4CB50DAB7E58B65A74A32EE0EB6F8E441C418FACD20A5D3741BB"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-contract-probe.ts",
+      "sha256": "CB8529461DE3E711839427C803FE8BBFEDBBD68CB2031E320EEFA42AA572454D"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-jest.config.cjs",
+      "sha256": "954AE31E7FDEC2730A7B94B0A38E1D5F0EB85CBFE1E85F600BD8258541820812"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-layout.tsx",
+      "sha256": "232B0C9BA260936D5D1F1BB2D656B3A2581D17C44494998F9095DA08BFFF1321"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-maestro.yaml",
+      "sha256": "EE1B6DA37E88F5A1FEE17B6A7123B252CA20E3E3823E2A7DB45619BC55146152"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-package.json",
+      "sha256": "7C6ED835AFC6350F23A69838E1695EDA6D96328EC8C7CBEBDA33E3FEF5F0E341"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-pnpm-lock.yaml",
+      "sha256": "F29026C6CBFAA07DE6165F387DB84C18DC0A24741915B2136FE90478131C60C0"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-pnpm-workspace.yaml",
+      "sha256": "2412F099BF5603ADBA31DE154815E347E46DC26BA8DAC928B369D396BC10CCB6"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-primitives.test.tsx",
+      "sha256": "4B21559D5E00B27C00E4C9E0A3C22CC6C97C33BFDC46BDA096EE323A0053332F"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-screen.tsx",
+      "sha256": "B85B961F6811FB6C662C2BA535613C9A4D5A4C4352A5519341380978540EAE52"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-tamagui.config.ts",
+      "sha256": "94EAC3983BE99B6BA7C39242744D183317A8A2F075975CD19F8865FD0BA9FF10"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-tsconfig.json",
+      "sha256": "712583FF9CDB4B4E4F9B000A4A56D68DB8DC1921CBFBC36D490A3A9F2BE3DD72"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-web-probe.mjs",
+      "sha256": "514E6B75ABA19B1F47B8F34F3C6250B1DE21BDAA0FD24F132A7DED02AF87762F"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/client-with-windows-cxx-staging.cjs",
+      "sha256": "0CD45B8046C8153FCAA1F592141E7495B888CB9A47544DF68E600EBEC43361DB"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/README.md",
+      "sha256": "57CDCCF9EF9491076A1800FC291A1EA2CF2A91402A15BAB537E9C28656D6C31E"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/repro-incomplete.config.ts.txt",
+      "sha256": "3B572F8458FA6D7B0DB7CE7F6452EFC0D1A92C93FAD1338E287BF8BACF356DAC"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/repro-screen.tsx.txt",
+      "sha256": "41950C8F885DBACC6DB61EED7490F808509ABCB69383CE2FAD8BA1B4BACAFB3F"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-android-build.log",
+      "sha256": "974BCE32670C6AFBA64E6657100319E7D6A2D04514DED8B66F35AE97C1DBC513"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-android.png",
+      "sha256": "F24877706BB9AA95AB8D80266EF26BBAB26859C326E8B4970A6D5BE898B349A6"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-biome.log",
+      "sha256": "CB718DB16E32FCD850BD54114A77B1DC1E6BDE023D39362D8EE3418CC81B5B65"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-build-manifest.json",
+      "sha256": "5271D147AB0ADC8E9C2373A452B6602ACB6E82B0BEEBE6880200B16405F1546B"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-dist-tags.json",
+      "sha256": "8901AEE9B865DEE4B239E89F975F2F0468B13AB422975061F906BB8A156DD251"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-doctor.log",
+      "sha256": "034E6A035EBC285318478D08AC2B1F6B182022E50EEDA2DED136E0081D2F5A80"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-expo-check.log",
+      "sha256": "3B47E85D27D2DE36267A75EBB6564B5E4F839E57A0B0B01556AF9427B198F899"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-fixed-logcat.txt",
+      "sha256": "92DCDE9462D8E1EB4B19C8BD764BC183D1C9BE7E25773AB98F8329C21D98ED5A"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-fixed-maestro.log",
+      "sha256": "B825EB894E00E25CBE905C5E30DE5D79D0A48FC4A8E087A1D57B8382D851AFE6"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-fixed-maestro.xml",
+      "sha256": "20ABDCAE1966F2E36C53EEAAF1114711FBC1A46B59A2D3A3D3DEAE8D2129A29D"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-install.log",
+      "sha256": "E6F46264BBB092AE39E7ED2DDBC267E38269B821BE7948391790FD1656A0FD03"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-jest.log",
+      "sha256": "F9EEA78EBC416864C3877A3BF9470315FB517A4270DFF9DCE84C69CE59BD0A1E"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-original-error.txt",
+      "sha256": "B343B9DF1CE22C6A1F0B079316B2822405073A490AE6A19CF1D40F0A1E3141EC"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-original-maestro.xml",
+      "sha256": "1D97BF327FB8143E81E79B099E5695C0202DADC334418CD807BE91230C775C48"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-radius-repro-logcat.txt",
+      "sha256": "2C1AF98834C93188774DB3CE572101ECDACE55639728E1910A175B1E8E6C08D5"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-typecheck.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-web-export.log",
+      "sha256": "1DB7DA0C334FCBADFB43826C47B2622FAC849D31689E04367B1347245E625EAD"
+    },
+    {
+      "path": "docs/development/evidence/tamagui-3-2026-10-12/tamagui3-web.png",
+      "sha256": "8012EB92C3906D4CE385D5AE8DE4BAD975A9EA2EA24FCC412E62567E14B120BF"
+    },
+    {
+      "path": "docs/development/setup-03-validation.md",
+      "sha256": "3A44D24522228DEC1EA533EB210C5B924DDFFE84E13219EA253EA5DFEB9AECA7"
+    },
+    {
+      "path": "docs/development/setup-02-qualification.md",
+      "sha256": "584602A8E36CF620260649B838312D7C1BBFE4C1615D8C458C36A2487435A116"
+    },
+    {
+      "path": "docs/development/tamagui-3-qualification.md",
+      "sha256": "452C6D0215A02CE0F6EABC8D637392855635E2DCEAF82F9AB31522FD49E9B5D8"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/android-build.log",
+      "sha256": "0D09EF72A626282771592C10651CBE10523DC30EDF0749D49379424DCDD6E917"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/android.png",
+      "sha256": "7254F55407005171DF070FD8A9B5818D592901B7693958B3DED7ABC8C7AF283F"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/dependency-audit.json",
+      "sha256": "C23D11C1DEDFA971E40ACF84DD0DBE713CFD4B7F1BF1BEF19E68C422550464BC"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/expo-install.log",
+      "sha256": "84C1F37B6B2E952E9A9E7F755145AA99DE39F672184FD73FF59BB6CF23829F59"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/linux-acceptance.json",
+      "sha256": "2E163C8C841B6FA2A3808BBA5B3354F7B36F8B9FEE3AFDB3C2F01D7D1CB0FAAE"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/linux-checks.log",
+      "sha256": "E4307FD880E8D5235955790769FFD5F929D4C0B41400841FC29F4B9838BDC2ED"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/maestro-component-check.log",
+      "sha256": "D286AC12CDCB8C556B555C1A97B2F76109BB8F8812DA049C9D46B8505A87B0AB"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/metro-reload-result.json",
+      "sha256": "3066C2D827A19936373989263054D1760FD16AFF8ED0D97F47ABF835BCA67705"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/metro-reload.log",
+      "sha256": "CC0FC0AA8028E618D6D6FABDF273C443E45BFCAAC4B797FAE0D156EDCBDFA98A"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/native-build.json",
+      "sha256": "264133F20FBEA67A5FCC10B51261FAD1B0C1D34FE245F1F66ABAB23B67960705"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/preservation-baseline.json",
+      "sha256": "3C57C8A6B02CA6DDCEC2F5B9C83DBB7DD8602FCCBE51B8CFDD8605042A4A741E"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/README.md",
+      "sha256": "46A031D9D0710CF6C0D5F7ACCD71FE4D44B5C9068607E5E48E4F7392D7D449B1"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/resolution-linux.json",
+      "sha256": "930E9ED1671DEA7737784D8A0EC20BE4BFAC45FA9EF1748634B12A484F93812C"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/resolution-win32.json",
+      "sha256": "5B65F7555035598017598A1F6DE6002249950BBDBFEB9253DC01F195FD547D67"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/web-dark.png",
+      "sha256": "8212A3B1911038B4E7CB4BAC9486079A1C63190222A4E91E307550937D04FA7D"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/web-export.log",
+      "sha256": "0E216D2AE24EF774391BBDA25733FC23E41CA7E8696DED5C13925E1DA74B4806"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/web-light.png",
+      "sha256": "388414ABE82C88278D2734F25E80651A06954BE27D7558C5C8365FC44FD81792"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/web-runtime.json",
+      "sha256": "CCF52345E3B707611A6494EA02CD1E111498C08031FED25C3BF7D5A24C485C38"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/windows-acceptance.json",
+      "sha256": "1007126B967B0B29EDA9F27EF16EDEF7C172F8CD021B11D706B7F0D37F400789"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/windows-check.log",
+      "sha256": "8C5C1D4BA227F997AA20DFCC61F5AF35B26F7F430A04DA7185F1E4A31A96BBB1"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/windows-compat.log",
+      "sha256": "4B68DE7486ABD42D9023AEF86E76318025D589B582B08C28D39E53846EB09D67"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/windows-frozen-install.log",
+      "sha256": "35EFB4A5B20DDDB1947AA92C665434981CE9BE4728DE810433BE8EA34DDEBA86"
+    },
+    {
+      "path": "docs/development/evidence/setup-04-2026-10-12/windows-tests.log",
+      "sha256": "A8A65D9844E583CCACF26370C7034DCA74A924931434B13EAFF1EDDEE70DB165"
+    }
+  ],
+  "indexHash": "7DD4D4A09BFE149337DAC5C8DD0B4F358F4FF16CC81DE9887531B0E309A18774",
+  "staged": [
+    "100644 bfc08400208d4b3c5a267643b2a7bb7b4a1950f0 0\t.dependency-cruiser.cjs",
+    "100644 1014ba78880c899e842b397cb89a878be4671f7d 0\t.editorconfig",
+    "100644 96ee0f42e168d2c94841f9a1c02a283fee050538 0\t.gitattributes",
+    "100644 5b01139f2070cab97d5c0090548fded441823b0d 0\t.github/PULL_REQUEST_TEMPLATE.md",
+    "100644 021184824e1f1d939cdcd0f74695185cbd7720fb 0\t.gitignore",
+    "100644 df6ae3370f9f89272d88629c442cf554d6c1f9fb 0\t.node-version",
+    "100644 eb10ce73db73869ddf38563cb2e2b26990c39d14 0\t.vscode/settings.json",
+    "100644 2c30ba5ae918d30738b69abc39f49b3ddb09fb3e 0\tAGENTS.md",
+    "100644 78c76a934ac4bdd93f7de1e26d66e070e2d3b5e8 0\tCONTRIBUTING.md",
+    "100644 6a547daa58e718ef34b715f9bbaf327e5ddcc02d 0\tREADME.md",
+    "100644 d90e12bfef5b69eddeb05c323a56fd87c803f4f6 0\tapps/api/.env.example",
+    "100644 3b81c527beff27bf7ef52c25454edd0bc1616b94 0\tapps/api/biome.json",
+    "100644 e893d9245f11b9a4cfe8c56d7be933137fbff12b 0\tapps/api/package.json",
+    "100644 2787782ba4524ea10e6a443591e30e023453d8a4 0\tapps/api/src/app.ts",
+    "100644 1b3bcfc1abd4cb05ae3f3cc42321eaea767447d9 0\tapps/api/src/config/env.ts",
+    "100644 46a059cd035b731a9059cdccd9334efb4fcdee4b 0\tapps/api/src/index.ts",
+    "100644 c0363c3659b71c8f6dfa2782803651e9b53e83d4 0\tapps/api/src/main.ts",
+    "100644 bf2f20c565621ff856392764c45d57d7370625af 0\tapps/api/src/openapi.ts",
+    "100644 0532021523dd2474f1ae42c66e4be7b853fbd6f1 0\tapps/api/tsconfig.build.json",
+    "100644 671495711ad1802c417d49062a09964dd86ec086 0\tapps/api/tsconfig.json",
+    "100644 b7bab82edcbdd548bbb4381d44900db61258993c 0\tapps/client/.env.example",
+    "100644 1be21e2ddaa641bfde1bdb774508dadb3b667eb0 0\tapps/client/app.config.ts",
+    "100644 677d559b94ba7c63d41a7bf6ffa0a3eb11f2de95 0\tapps/client/assets/fonts/NotoSansTamil-OFL.txt",
+    "100644 c8210f08ca3cece05b4f7baa428afe8e1abe3293 0\tapps/client/assets/fonts/Nunito-OFL.txt",
+    "100644 de0a78a2aea8404c5c6dccda444c2ef5614fd966 0\tapps/client/assets/fonts/noto-sans-tamil-500.ttf",
+    "100644 882fbf207ec06914e68090dd293e858cfd464caa 0\tapps/client/assets/fonts/noto-sans-tamil-600.ttf",
+    "100644 6221aede9dbfc630486c81f3e82a755389272b03 0\tapps/client/assets/fonts/noto-sans-tamil-750.ttf",
+    "100644 93e9ee4fe047920db7ed4aa9549f4274ccb9afd8 0\tapps/client/assets/fonts/noto-sans-tamil-800.ttf",
+    "100644 a6993ebb18dfb1007cb5112512c23de183dc63d6 0\tapps/client/assets/fonts/nunito-500.ttf",
+    "100644 06f29ea7c5470dc8be1e301076b78a28c869994e 0\tapps/client/assets/fonts/nunito-600.ttf",
+    "100644 9dcf14d2cd8a95f77369581b249918b64982d8aa 0\tapps/client/assets/fonts/nunito-750.ttf",
+    "100644 6f4ccde075bafe47a6d23a61fbe9d489bfa1881b 0\tapps/client/assets/fonts/nunito-800.ttf",
+    "100644 78c9810819776e135d314adc0ff26eda7bec8b38 0\tapps/client/assets/icons/Phosphor-LICENSE.txt",
+    "100644 0fce0c3b3e8710775da8245b912bcf4fb8af5371 0\tapps/client/assets/icons/flask-duotone.svg",
+    "100644 86bfc65744d11519c20fe130f87569cc958ca13a 0\tapps/client/assets/provenance.json",
+    "100644 30b20e3b5f0f470947ba9480d90587ba07c137b4 0\tapps/client/assets/template/LICENSE.txt",
+    "100644 5ffefc5bb57a3d7b39ec6ff4e96979226522cc49 0\tapps/client/assets/template/android-icon-background.png",
+    "100644 3a9e5016dca4804f37ba410ba49e70055e1ccad2 0\tapps/client/assets/template/android-icon-foreground.png",
+    "100644 77484ebdbca253297baea4a7d416233aa47a45c0 0\tapps/client/assets/template/android-icon-monochrome.png",
+    "100644 408bd746615785760b09e6f23fa8378d3e614331 0\tapps/client/assets/template/favicon.png",
+    "100644 7165a53c7475d846df195bc570482459d61bad67 0\tapps/client/assets/template/icon.png",
+    "100644 03d6f6b6c6727954aec1d8206222769afd178d8d 0\tapps/client/assets/template/splash-icon.png",
+    "100644 2af9f93f16b58c009de566b7591b9c12dd751707 0\tapps/client/babel.config.cjs",
+    "100644 3b81c527beff27bf7ef52c25454edd0bc1616b94 0\tapps/client/biome.json",
+    "100644 f61ba75aa4bc205de404d9838c1810dce61562c1 0\tapps/client/maestro/component-check.yaml",
+    "100644 b4b494ab4551ca9de10602626bba9da27d7c30ae 0\tapps/client/metro.config.cjs",
+    "100644 484477f700194115865ef56dc92db0e9ba652f35 0\tapps/client/package.json",
+    "100644 3acd5481748a51ad0a4e11d35c3beb6fe6d09fa0 0\tapps/client/plugins/with-windows-cxx-staging.cjs",
+    "100644 2a83ee16c9ab6eb87151e0e71793f363d4a1cd04 0\tapps/client/src/app/_layout.tsx",
+    "100644 c43c1e312ea459c23377b3ef9ec4a1b4dbacca17 0\tapps/client/src/app/index.tsx",
+    "100644 ef6141279d04e4a072b7e0924146c2a367fb2568 0\tapps/client/src/assets.d.ts",
+    "100644 a08089b137aa09b2444dd74d7f0a66f9a08b6788 0\tapps/client/src/config/env.ts",
+    "100644 e6394b247e71f08454a02a1ef1f42bbd0d945d35 0\tapps/client/src/expo-env.d.ts",
+    "100644 682e00b322923a62bea6593fbdf1634b3c88cc8a 0\tapps/client/src/providers.tsx",
+    "100644 78ae7a9396371fa80e8b2804d1e2ff1397b8acbc 0\tapps/client/tsconfig.json",
+    "100644 a9540e92ff3f1539d8074010e9aa1c13f237a8e8 0\tapps/worker/.env.example",
+    "100644 3b81c527beff27bf7ef52c25454edd0bc1616b94 0\tapps/worker/biome.json",
+    "100644 c348969011ec46e7528816cb406a2bd8a3c37733 0\tapps/worker/package.json",
+    "100644 db112d80f7044e88af2838b55b0d4adfea0bf5e1 0\tapps/worker/src/config/env.ts",
+    "100644 46a059cd035b731a9059cdccd9334efb4fcdee4b 0\tapps/worker/src/index.ts",
+    "100644 4796df608862c2683acce20d2ee0e692919454f1 0\tapps/worker/src/main.ts",
+    "100644 2f3216987c581455dc1e74aebbef7c41a40ecb6c 0\tapps/worker/src/worker.ts",
+    "100644 0532021523dd2474f1ae42c66e4be7b853fbd6f1 0\tapps/worker/tsconfig.build.json",
+    "100644 671495711ad1802c417d49062a09964dd86ec086 0\tapps/worker/tsconfig.json",
+    "100644 56779cc869f04ffcfd0377fe7ecad0a5263ed42a 0\tbiome.json",
+    "100644 37150a1b928e7e091348fdda39b1c1161235c603 0\tdocs/core/DESIGN-SYSTEM.md",
+    "100644 792a45b592ed9c4070ddb2c87b74322bafa25816 0\tdocs/core/architecture.md",
+    "100644 1bf38544e4e7a6d178673b37d193d8f0cfe56b6e 0\tdocs/core/product-plan.md",
+    "100644 3d2e2b8b1f9641f2d86ed06cb0e1310ab45db2c3 0\tdocs/core/requirements-and-features.md",
+    "100644 f9018a6114384f3dcf655dc00811c5b89b647ec6 0\tdocs/core/tech-stack.md",
+    "100644 8ad39bc9b9a6ec8a2a3d56eaa0be00c79fa0c353 0\tdocs/development/README.md",
+    "100644 5f63179a5abe39172b8f6c54eed02028538bccdc 0\tdocs/development/evidence/2026-10-12-android-emulator.png",
+    "100644 8f899e1f340ac29cb84cbe12b06bee2d7a90843b 0\tdocs/development/evidence/setup-02-2026-10-12/README.md",
+    "100644 2820b069a876823074edc8a9ad6142330c0ae66a 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-drive-alias.log",
+    "100644 43f3ed4207b9562e2a602454cb97be53051bb496 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-final-matrix-success.log",
+    "100644 0f09ce42b5f229a261eb5110baadd6b92df0bca5 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-java25-success.log",
+    "100644 27dab23cc3c1fc6f8126f435cc495448cc867d8f 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-manifest.json",
+    "100644 d5699de620bdc5b29301b0eef1ceb1821a960f8c 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-original-path.log",
+    "100644 f345eb851a5ab372957713a78ef8334747620044 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-sdk-alias-default-package-length.log",
+    "100644 093c4dd8e5e3e33c58407f7b586e684bf585dbb0 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-sdk-alias-short-package-length.log",
+    "100644 cca24f27971a09d2a60ce6ed8d3e1b3c55ba8feb 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-short-store-sdk-original.log",
+    "100644 c1183cdd42cbc708b443d9531ae48171d837f07a 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-user-store-native-access.log",
+    "100644 020f2763f39c2167a379742cf4b3b40e4d03b861 0\tdocs/development/evidence/setup-02-2026-10-12/android-build-user-store.log",
+    "100644 09e1baae8c1c38d252d03ccb52501dab0c02baf1 0\tdocs/development/evidence/setup-02-2026-10-12/android-runtime.png",
+    "100644 04f38ad8e9f3cad1e09abaf49a7ef41f87e42dcc 0\tdocs/development/evidence/setup-02-2026-10-12/backend-biome.json",
+    "100644 e0b480af04f7bc9b6f238f4cec8bd4fbbd385184 0\tdocs/development/evidence/setup-02-2026-10-12/backend-bootstrap.sql",
+    "100644 7ebb06e2fe4b039d9a4ba202d0666b065d4b62f0 0\tdocs/development/evidence/setup-02-2026-10-12/backend-client-types.ts",
+    "100644 3d633cb38f720753e7de3809eefea6a9257aea50 0\tdocs/development/evidence/setup-02-2026-10-12/backend-drizzle.config.ts",
+    "100644 3e6ed5bbc0f8797d1751e3c92c4fc5032126b504 0\tdocs/development/evidence/setup-02-2026-10-12/backend-generated.ts",
+    "100644 555b1ac95098177bdfcb1abe76fb7abed1a57f63 0\tdocs/development/evidence/setup-02-2026-10-12/backend-infra-probe.mjs",
+    "100644 036171056d1d40dc563a823088bcc41a200c47bf 0\tdocs/development/evidence/setup-02-2026-10-12/backend-package.json",
+    "100644 250cc52c1284f3975e3aa1e7dd440b2a39a0aac0 0\tdocs/development/evidence/setup-02-2026-10-12/backend-pnpm-lock.yaml",
+    "100644 ac125d96ea3b2bff2536868dd68271cb44c8b10a 0\tdocs/development/evidence/setup-02-2026-10-12/backend-pnpm-settings.yaml",
+    "100644 8651002630101b84a6b2e0330f155d9b743a8c8c 0\tdocs/development/evidence/setup-02-2026-10-12/backend-probe.ts",
+    "100644 d41761267ea99354d01e55759eed1ef3e5e763a9 0\tdocs/development/evidence/setup-02-2026-10-12/backend-provider.test.ts",
+    "100644 f3f6d2e29803ebb1699739f6f9603187f426a018 0\tdocs/development/evidence/setup-02-2026-10-12/backend-schema.ts",
+    "100644 015d2b3c8c3a5d4e40e0e0afb20bfdc6199eeb53 0\tdocs/development/evidence/setup-02-2026-10-12/backend-tsconfig.json",
+    "100644 797424fd06ae142a322fae2aab268e4d4d20bdd9 0\tdocs/development/evidence/setup-02-2026-10-12/client-app.json",
+    "100644 04f38ad8e9f3cad1e09abaf49a7ef41f87e42dcc 0\tdocs/development/evidence/setup-02-2026-10-12/client-biome.json",
+    "100644 2857c80dd3b3ecd64202676aad77c8c1a5d6e630 0\tdocs/development/evidence/setup-02-2026-10-12/client-contract-probe.ts",
+    "100644 9e26e7dffb3f63d10b08d1643a14844867131639 0\tdocs/development/evidence/setup-02-2026-10-12/client-jest.config.cjs",
+    "100644 c0d8153d6c95df0ba2ddcf72e41c6fd03881ea49 0\tdocs/development/evidence/setup-02-2026-10-12/client-layout.tsx",
+    "100644 b05674b2da76c5b25620227dabfde17b5e019b2c 0\tdocs/development/evidence/setup-02-2026-10-12/client-maestro.yaml",
+    "100644 8c520d65fcf76eef8319b0dad0794946585d5878 0\tdocs/development/evidence/setup-02-2026-10-12/client-package.json",
+    "100644 6ceb6c47dd3e7ebd8744a263f7feb7a288e9d005 0\tdocs/development/evidence/setup-02-2026-10-12/client-pnpm-lock.yaml",
+    "100644 06ae3113b05d8f6f64717c952dfc35931eed6278 0\tdocs/development/evidence/setup-02-2026-10-12/client-pnpm-settings.yaml",
+    "100644 8c9c767cbfe6b803fa84d700446777dc2f315083 0\tdocs/development/evidence/setup-02-2026-10-12/client-primitives.test.tsx",
+    "100644 a6630cc27efda10fa64656458c73002ef0ccc4e1 0\tdocs/development/evidence/setup-02-2026-10-12/client-screen.tsx",
+    "100644 0ca8f69b1b2a4d5bdf2e52ef77bba2217b2d36ea 0\tdocs/development/evidence/setup-02-2026-10-12/client-tamagui.config.ts",
+    "100644 b9567f6052d70ca2c9035e33667fded3cc4ed71f 0\tdocs/development/evidence/setup-02-2026-10-12/client-tsconfig.json",
+    "100644 48ab6b8343688f5c26194a801b50865f741c1135 0\tdocs/development/evidence/setup-02-2026-10-12/client-web-probe.mjs",
+    "100644 342f3e2d84546b3b78aa7f88e8e25a35ffd409c0 0\tdocs/development/evidence/setup-02-2026-10-12/client-with-windows-cxx-staging.cjs",
+    "100644 85c461c91c5517c8b2b3a58daaa2b88cbc51bac9 0\tdocs/development/evidence/setup-02-2026-10-12/linux-backend-probe.log",
+    "100644 0fda1b759ab3f64b04ffef7cb5b532ea475fa4dd 0\tdocs/development/evidence/setup-02-2026-10-12/maestro-app-result.xml",
+    "100644 a0346646fe285522f9c303a35cb231099543e740 0\tdocs/development/evidence/setup-02-2026-10-12/maestro-settings-result.xml",
+    "100644 e10dbc35e3cd3054b3d1dbbf6c7a150575989471 0\tdocs/development/evidence/setup-02-2026-10-12/maestro-settings.yaml",
+    "100644 a441a04837f730dc96372e2ede97d201d3a5c040 0\tdocs/development/evidence/setup-02-2026-10-12/qualification-compose.yaml",
+    "100644 d4447132a057de27aad41ba6d41b63344a03f9ad 0\tdocs/development/evidence/setup-02-2026-10-12/qualification-openapi.json",
+    "100644 0017360ad14b1d27b3c1feee3cb3da7514354274 0\tdocs/development/evidence/setup-02-2026-10-12/web-probe.png",
+    "100644 d66e884ee63f938dfee1d43d4c7e7e7c447caf24 0\tdocs/development/evidence/setup-03-2026-10-12/README.md",
+    "100644 3a5f8449b065c349cab1d595fb91f522f7c666ef 0\tdocs/development/evidence/setup-03-2026-10-12/dependency-audit.json",
+    "100644 b7097f8ae8eac01fa83faffca3593f59f29613bc 0\tdocs/development/evidence/setup-03-2026-10-12/linux-acceptance.json",
+    "100644 3e16669506ef4402c3aafdd185d482d382a82a20 0\tdocs/development/evidence/setup-03-2026-10-12/linux-checks.log",
+    "100644 e3dab3850e83ac1b391f01129cf95604beb0795d 0\tdocs/development/evidence/setup-03-2026-10-12/preservation-baseline.json",
+    "100644 4e78c341ecb415de2903fe5ebfabd07fe7bc084d 0\tdocs/development/evidence/setup-03-2026-10-12/resolution-linux.json",
+    "100644 2f67fa0e9f5018659160a7b8906edbc5bec0e9d4 0\tdocs/development/evidence/setup-03-2026-10-12/resolution-win32.json",
+    "100644 797ef5941f6d75102cd3744c79c644c5dcb1124a 0\tdocs/development/evidence/setup-03-2026-10-12/windows-acceptance.json",
+    "100644 f635b89f381a2f91f0887282891353f7031e168f 0\tdocs/development/evidence/setup-03-2026-10-12/windows-checks.log",
+    "100644 2aa55accccddfe4eed5b84f17f6099bffe700094 0\tdocs/development/evidence/setup-04-2026-10-12/README.md",
+    "100644 db8585b206dca880713d8c0b50d1be353eaa0fb6 0\tdocs/development/evidence/setup-04-2026-10-12/android-build.log",
+    "100644 8d655fc5dca426bdc249a2c728042675fd9e6e0b 0\tdocs/development/evidence/setup-04-2026-10-12/android.png",
+    "100644 302ec45d2b3be0640e766b54f3b18ff27a8faa83 0\tdocs/development/evidence/setup-04-2026-10-12/dependency-audit.json",
+    "100644 6f921399fd4a0c20403be62b1bd12727fb19fca6 0\tdocs/development/evidence/setup-04-2026-10-12/expo-install.log",
+    "100644 6197c55715d53a646828ea368165a02968d28ace 0\tdocs/development/evidence/setup-04-2026-10-12/linux-acceptance.json",
+    "100644 36f5e1368046808b8c2979acff37d3a4ed92c7d7 0\tdocs/development/evidence/setup-04-2026-10-12/linux-checks.log",
+    "100644 c02a0568ce5144f5f373c054878713e5285d477d 0\tdocs/development/evidence/setup-04-2026-10-12/maestro-component-check.log",
+    "100644 0242b1eec98b592d60eed783a5772f772e46d043 0\tdocs/development/evidence/setup-04-2026-10-12/metro-reload-result.json",
+    "100644 c98c5da0b97a18d8ba86f3491dfb11dda713f785 0\tdocs/development/evidence/setup-04-2026-10-12/metro-reload.log",
+    "100644 81fb3b842d32bd84a3f7f4df7ada7eec9dfd37fc 0\tdocs/development/evidence/setup-04-2026-10-12/native-build.json",
+    "100644 378729c4e18cd3032c2c0216f2f6c86ca48507fd 0\tdocs/development/evidence/setup-04-2026-10-12/preservation-baseline.json",
+    "100644 411fe55960f75a3f989849fcdac6d127a1ba510c 0\tdocs/development/evidence/setup-04-2026-10-12/resolution-linux.json",
+    "100644 dae8afc5deef09e47fc3f8420a441f653b4b0d8e 0\tdocs/development/evidence/setup-04-2026-10-12/resolution-win32.json",
+    "100644 1bb3af6b1299de65a8fffdb2a2975e1078e43371 0\tdocs/development/evidence/setup-04-2026-10-12/web-dark.png",
+    "100644 ee921781316bedc70dc52d9b04b770e978026f98 0\tdocs/development/evidence/setup-04-2026-10-12/web-export.log",
+    "100644 b37ca1710bebe543115ff39b70d30a307a3e4b38 0\tdocs/development/evidence/setup-04-2026-10-12/web-light.png",
+    "100644 66c7f309d2b9ace705d13211194db4ebe25ee9f6 0\tdocs/development/evidence/setup-04-2026-10-12/web-runtime.json",
+    "100644 635a618c8cb618354444e92c7e3ed3cd5034aeba 0\tdocs/development/evidence/setup-04-2026-10-12/windows-acceptance.json",
+    "100644 07516cc6a52f2509d888cc140c9e554e43ed43b1 0\tdocs/development/evidence/setup-04-2026-10-12/windows-check.log",
+    "100644 9624a05a2eab009172b63bef346f07eb35318265 0\tdocs/development/evidence/setup-04-2026-10-12/windows-compat.log",
+    "100644 27dcd98fc050e719be60733cad9df729c26329bd 0\tdocs/development/evidence/setup-04-2026-10-12/windows-frozen-install.log",
+    "100644 5f2cdd233264b4ef17cce00c30101d9cb788054b 0\tdocs/development/evidence/setup-04-2026-10-12/windows-tests.log",
+    "100644 cae145113d3424022946be1ed8ecfccbe737f97e 0\tdocs/development/evidence/tamagui-3-2026-10-12/README.md",
+    "100644 797424fd06ae142a322fae2aab268e4d4d20bdd9 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-app.json",
+    "100644 04f38ad8e9f3cad1e09abaf49a7ef41f87e42dcc 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-biome.json",
+    "100644 2857c80dd3b3ecd64202676aad77c8c1a5d6e630 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-contract-probe.ts",
+    "100644 9e26e7dffb3f63d10b08d1643a14844867131639 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-jest.config.cjs",
+    "100644 c0d8153d6c95df0ba2ddcf72e41c6fd03881ea49 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-layout.tsx",
+    "100644 b05674b2da76c5b25620227dabfde17b5e019b2c 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-maestro.yaml",
+    "100644 08584da3bf19afbe43b6bbe43bda6f35a47c3801 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-package.json",
+    "100644 ba5eb15ff7d79566e4577675c854d3ee244a0987 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-pnpm-lock.yaml",
+    "100644 04a4e7b9b16e75438b0b8aed91ac3f8066e55ebf 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-pnpm-workspace.yaml",
+    "100644 1e497eba7a69275dcd39c4406a13fe9623d0639e 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-primitives.test.tsx",
+    "100644 8921e0a3809b9302c9795734b814b7a06ca44176 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-screen.tsx",
+    "100644 52261f85ff319ed9ece410141c131613aeff840c 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-tamagui.config.ts",
+    "100644 b9567f6052d70ca2c9035e33667fded3cc4ed71f 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-tsconfig.json",
+    "100644 48ab6b8343688f5c26194a801b50865f741c1135 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-web-probe.mjs",
+    "100644 342f3e2d84546b3b78aa7f88e8e25a35ffd409c0 0\tdocs/development/evidence/tamagui-3-2026-10-12/client-with-windows-cxx-staging.cjs",
+    "100644 8b2cc7afad12dbbe692aa63532899f00a115e6cb 0\tdocs/development/evidence/tamagui-3-2026-10-12/repro-incomplete.config.ts.txt",
+    "100644 d0638c97a1b539972467ff674742582a6c4edbb7 0\tdocs/development/evidence/tamagui-3-2026-10-12/repro-screen.tsx.txt",
+    "100644 5194abb8803fcbe464c1f0704a8d50a6ea5019bb 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-android-build.log",
+    "100644 3c32ebee0e09767abc25e0686bd41385edd786b1 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-android.png",
+    "100644 d2736385ab00c03f147f3e98c928ec9157f09f4c 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-biome.log",
+    "100644 ba400176f6c961d7af4f0cf36c4ea71942f79fdd 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-build-manifest.json",
+    "100644 4b24bbae0d43db12932726897831e1c0f8e10fa2 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-dist-tags.json",
+    "100644 befafb556a054897536664c0bda26657f0ff15b5 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-doctor.log",
+    "100644 017f692ff17f9741bf46a8bb420c7c4d01834e8a 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-expo-check.log",
+    "100644 bc798e1566e3b126600035efba4c0fae0daa9130 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-fixed-logcat.txt",
+    "100644 87c9e44fc439344c5a54ab75f3f904d5886db758 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-fixed-maestro.log",
+    "100644 74eddd89f1e63d0cc090a5c9517f5fdecb968fc2 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-fixed-maestro.xml",
+    "100644 3c4aa67bf226a1772e4ca9d90f22d4f37813fc43 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-install.log",
+    "100644 4d21c3076e85c95185327ce6658af6be2a62a27c 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-jest.log",
+    "100644 5b8ccb7093012cd3ca25b2295a6b0ade98d3643b 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-original-error.txt",
+    "100644 bc84de2c2f209d1890c871b4d1b5d954995eb124 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-original-maestro.xml",
+    "100644 89e996ca50d6d4b49053eb141a55f35eccf7edb4 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-radius-repro-logcat.txt",
+    "100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-typecheck.log",
+    "100644 aca46b06e9d737a7de77e990e29c44b8c6819727 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-web-export.log",
+    "100644 49eddba5614829d97cd3670b463a8ea4aa1b551e 0\tdocs/development/evidence/tamagui-3-2026-10-12/tamagui3-web.png",
+    "100644 7b5a087f4b9254bea35e8a0b11550390c7be0843 0\tdocs/development/setup-02-qualification.md",
+    "100644 9ac6f527e425e860351a861342e2f82955958768 0\tdocs/development/setup-03-validation.md",
+    "100644 70206564865a3e73886b5a1ae2dd2facca08bbd1 0\tdocs/development/setup-04-runbook.md",
+    "100644 b18c4183e72ae080bb40648383969e45dcbadae1 0\tdocs/development/setup-04-validation.md",
+    "100644 de3a9fcd4996dc8004cf9eb5ce43478ba74d8873 0\tdocs/development/setup-validation.md",
+    "100644 d13fef7593b908dbb290df9159f2d04741238c9c 0\tdocs/development/tamagui-3-qualification.md",
+    "100644 8f40389f30797c2e5fc81b01a3203ba789ebf156 0\tdocs/development/toolchain.md",
+    "100644 e051c1dfc6da6a2b2c36d4988c0d97c3d9549f36 0\tdocs/development/workspace-standards.md",
+    "100644 c751af1bb6fbf615bdf37b709705c21b96efb4d8 0\tdocs/implementation/001-development-environment-and-project-foundation.md",
+    "100644 35b65944a43b7c3ed8276f171e2014c7ced53759 0\tdocs/implementation/IMPLEMENTATION-PLAN-TEMPLATE.md",
+    "100644 b1ad5817f84dc6031df20cc6d9b0ebffe8f60268 0\tdocs/implementation/setup-03-workspace-and-standards.md",
+    "100644 8dc327cee62b4c2e698a8954a6e5f67f53f314ed 0\tdocs/implementation/setup-04-shells-and-contracts.md",
+    "100644 31f863c63764138bfa7e0c94eb8f8779440b24be 0\tpackage.json",
+    "100644 3b81c527beff27bf7ef52c25454edd0bc1616b94 0\tpackages/api-client/biome.json",
+    "100644 889fed10a2d7f225b5ebaa489bb128fa8bf50ced 0\tpackages/api-client/package.json",
+    "100644 dd42c57e6083c11d37e7cbcf95ea2917acb51ef8 0\tpackages/api-client/src/generated/schema.ts",
+    "100644 a584f0e915148d63eec32f0cdb99ce72af879c17 0\tpackages/api-client/src/index.ts",
+    "100644 0532021523dd2474f1ae42c66e4be7b853fbd6f1 0\tpackages/api-client/tsconfig.build.json",
+    "100644 8eb07cf5c24bf6fe5cfadf6f7fc1ff305578dec7 0\tpackages/api-client/tsconfig.json",
+    "100644 3b81c527beff27bf7ef52c25454edd0bc1616b94 0\tpackages/contracts/biome.json",
+    "100644 8c104467a3179f453ca3c9457b808bba69c143bc 0\tpackages/contracts/generated/openapi.json",
+    "100644 499c99fc4eddacc9ff19a20d27a026a16d57e785 0\tpackages/contracts/package.json",
+    "100644 45a1a6bc5507d078b120f66362aeda95432b2bcb 0\tpackages/contracts/src/index.ts",
+    "100644 0532021523dd2474f1ae42c66e4be7b853fbd6f1 0\tpackages/contracts/tsconfig.build.json",
+    "100644 8eb07cf5c24bf6fe5cfadf6f7fc1ff305578dec7 0\tpackages/contracts/tsconfig.json",
+    "100644 f8c657332ff23245ee3ba4f441430bc0ef64cb83 0\tpackages/db/.env.example",
+    "100644 3b81c527beff27bf7ef52c25454edd0bc1616b94 0\tpackages/db/biome.json",
+    "100644 cd03711c2d8ab2f7386539ad76c14c450718e023 0\tpackages/db/package.json",
+    "100644 4bf69238236760795a22ff92700bb2bad19337bb 0\tpackages/db/src/config/migration-env.ts",
+    "100644 46a059cd035b731a9059cdccd9334efb4fcdee4b 0\tpackages/db/src/index.ts",
+    "100644 0532021523dd2474f1ae42c66e4be7b853fbd6f1 0\tpackages/db/tsconfig.build.json",
+    "100644 671495711ad1802c417d49062a09964dd86ec086 0\tpackages/db/tsconfig.json",
+    "100644 3b81c527beff27bf7ef52c25454edd0bc1616b94 0\tpackages/server/biome.json",
+    "100644 5c5f756642d9251577888a341dc3b9b4cb2338c6 0\tpackages/server/package.json",
+    "100644 46a059cd035b731a9059cdccd9334efb4fcdee4b 0\tpackages/server/src/index.ts",
+    "100644 0532021523dd2474f1ae42c66e4be7b853fbd6f1 0\tpackages/server/tsconfig.build.json",
+    "100644 671495711ad1802c417d49062a09964dd86ec086 0\tpackages/server/tsconfig.json",
+    "100644 3b81c527beff27bf7ef52c25454edd0bc1616b94 0\tpackages/ui/biome.json",
+    "100644 743d0c498375d45c535f6d785640dda0a3712177 0\tpackages/ui/package.json",
+    "100644 2101f5498d276ded8409647f4863c31272bf3b1a 0\tpackages/ui/src/index.ts",
+    "100644 944fd46058aeb3c40dcf7238e954c3ef5bc3ec76 0\tpackages/ui/src/primitives.tsx",
+    "100644 5e807fc2800fd09cba0f872ccff5c94712740491 0\tpackages/ui/src/tamagui-config.ts",
+    "100644 34d5887b9152f8c6de0e9370d7c0f6304b2cf0a0 0\tpackages/ui/src/tokens.ts",
+    "100644 301b84db7f0ef764b023b7f4a27cb1d8482dd5cc 0\tpackages/ui/tsconfig.json",
+    "100644 d24fa2063248bb487dbf15d362a51ed193bd695a 0\tpnpm-lock.yaml",
+    "100644 2606395aecdcf6682e717697c88dc8bdcb12056d 0\tpnpm-workspace.yaml",
+    "100644 7e5ae94a7eabad22b8fcabca48366e0b31c96bb8 0\ttooling/dependency-policy.json",
+    "100644 187c063cf0e488746bcb4d5f3a9c6b273ea2e818 0\ttooling/scripts/android.mjs",
+    "100644 25bd96c1a2f1a7fc11bcf6d36f11a24bb0164cae 0\ttooling/scripts/audit-dependencies.mjs",
+    "100644 70a3356fd56a2948df1bde740840c28880176449 0\ttooling/scripts/boundaries.mjs",
+    "100644 4fa7b68055e69275df6c2b03dbe43c0655d6e3d4 0\ttooling/scripts/config-check.mjs",
+    "100644 086ba827e0605661cd0fc3ffd6c5f8d07c4f68d8 0\ttooling/scripts/contracts.mjs",
+    "100644 3be53ec984c887c33a61e190975143e7e6c131c0 0\ttooling/scripts/expo-install.mjs",
+    "100644 faf68ec2f015addcc92d932325fdda560aafc24a 0\ttooling/scripts/instantiate-fonts.py",
+    "100644 8cce10c2902e9ed1ecc7956c382602fc6a309b93 0\ttooling/scripts/linux.mjs",
+    "100644 9af5619240defcc4a609ec7abe1b9cb6fc9ebc0c 0\ttooling/scripts/pnpm-local.mjs",
+    "100644 778dfe2bc921dead55643d16655b40e138f264f0 0\ttooling/scripts/preflight.mjs",
+    "100644 982af622e090790770942c626266d534b5db2070 0\ttooling/scripts/process.mjs",
+    "100644 3b7f1126852ffd443a073b4c2744ff53cc20b284 0\ttooling/scripts/resolution.mjs",
+    "100644 6e8d650a495333009a4c29716b8b73482ce74f82 0\ttooling/scripts/tasks.mjs",
+    "100644 1e9d482ee9fa86570a19ea68bf73acf678d5572e 0\ttooling/scripts/typescript.mjs",
+    "100644 a626c5cbe5b0ce4abdd5581b78c0a66372f9bb4d 0\ttooling/scripts/workspace.mjs",
+    "100644 58ff0771e5b871a09b427e03c694d21f7dd8c9ee 0\ttooling/tests/boundaries.test.mjs",
+    "100644 c11d85ba3321a66bd8b6c1cd771ef9f85c117c1e 0\ttooling/tests/configuration.test.mjs",
+    "100644 7dcdfc6c1b87c9230ac58c3ec858bc4e55603af6 0\ttooling/tests/launchers.test.mjs",
+    "100644 045410a06645bb33106375bafc58c8d87c5ed4cc 0\ttooling/tests/shells.test.mjs",
+    "100644 075c792343562f7f7569030539f6712792c102dd 0\ttooling/typescript/compiler-selection.json",
+    "100644 66019e6144bd089691a4287c671c79d4e2329315 0\ttooling/typescript/strict.json"
+  ]
+}

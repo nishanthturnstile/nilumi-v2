@@ -1,0 +1,28 @@
+{
+  "name": "@nilumi/api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@fastify/swagger": "9.9.2",
+    "@fastify/type-provider-zod": "1.0.1",
+    "@nilumi/contracts": "workspace:*",
+    "@nilumi/db": "workspace:*",
+    "@nilumi/server": "workspace:*",
+    "fastify": "5.12.5",
+    "openapi-types": "12.1.3",
+    "pino": "10.4.0",
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "24.19.2",
+    "openapi-typescript": "7.13.0",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "typecheck": "node ../../tooling/scripts/typescript.mjs typecheck @nilumi/api",
+    "build": "node ../../tooling/scripts/typescript.mjs build @nilumi/api",
+    "start": "node dist/main.js"
+  }
+}

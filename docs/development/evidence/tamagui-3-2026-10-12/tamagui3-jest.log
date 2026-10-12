@@ -1,0 +1,9 @@
+PASS tests/primitives.test.tsx (5.662 s)
+  √ v3 styled input and button execute synthetic native interaction (82 ms)
+  √ v3 unstyled imports expose working input and press behavior (8 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        5.926 s, estimated 9 s
+Ran all test suites.

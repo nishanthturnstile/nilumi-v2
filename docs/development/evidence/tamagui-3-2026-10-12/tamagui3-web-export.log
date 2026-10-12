@@ -1,0 +1,22 @@
+Starting Metro Bundler
+
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+Static rendering is enabled. Learn more: https://docs.expo.dev/router/web/static-rendering/
+| (node:14656) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+| (node:14656) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+| (Use `node --trace-warnings ...` to show where the warning was created)
+λ Bundled 73838ms ..\..\..\..\..\..\..\pnpm\nq02c\_4c8de158e5b8d60fb42c84f967289168\node_modules\@expo\router-server\node\render.js (1450 modules)
+Web Bundled 74919ms ..\..\..\..\..\..\..\pnpm\nq02c\_2abe16532b1de2128dc86adf197e888a\node_modules\expo-router\entry.js (1398 modules)
+
+› web bundles (3):
+_expo/static/js/web/entry-542dce3e42436e9e5ea58b20f5fe5510.js (2.2MB)
+_expo/static/js/web/Network-15cec8b25f41fd28fecf3663e0e3b4f4.js (2.6KB)
+_expo/static/js/web/WebBrowser-50fe4cfeecdda54c1750e4029d587356.js (8.3KB)
+
+› Static routes (3):
+/ (index) (1.6MB)
+/_sitemap (17KB)
+/+not-found (17KB)
+
+Exported: dist

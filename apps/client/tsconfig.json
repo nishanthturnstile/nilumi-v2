@@ -1,0 +1,9 @@
+{
+  "extends": ["expo/tsconfig.base", "../../tooling/typescript/strict.json"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "types": ["react", "expo/types"],
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

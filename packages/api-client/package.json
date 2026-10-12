@@ -1,0 +1,25 @@
+{
+  "name": "@nilumi/api-client",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@nilumi/contracts": "workspace:*",
+    "openapi-fetch": "0.17.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "typecheck": "node ../../tooling/scripts/typescript.mjs typecheck @nilumi/api-client",
+    "build": "node ../../tooling/scripts/typescript.mjs build @nilumi/api-client"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "packages": {
+    "@nilumi/contracts": {
+      "compiler": "native7",
+      "reason": null,
+      "evidence": null
+    },
+    "@nilumi/db": {
+      "compiler": "native7",
+      "reason": null,
+      "evidence": null
+    },
+    "@nilumi/api-client": {
+      "compiler": "native7",
+      "reason": null,
+      "evidence": null
+    },
+    "@nilumi/server": {
+      "compiler": "native7",
+      "reason": null,
+      "evidence": null
+    },
+    "@nilumi/api": {
+      "compiler": "native7",
+      "reason": null,
+      "evidence": null
+    },
+    "@nilumi/worker": {
+      "compiler": "native7",
+      "reason": null,
+      "evidence": null
+    },
+    "@nilumi/ui": {
+      "compiler": "native7",
+      "reason": null,
+      "evidence": null
+    },
+    "@nilumi/client": {
+      "compiler": "native7",
+      "reason": null,
+      "evidence": null
+    }
+  }
+}

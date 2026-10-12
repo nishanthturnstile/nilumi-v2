@@ -1,0 +1,31 @@
+appId: dev.nilumi.shell
+---
+- launchApp
+- openLink: "nilumi-dev://expo-development-client/?url=http%3A%2F%2F127.0.0.1%3A8082"
+- extendedWaitUntil:
+    visible: "Continue|Internal component check.*"
+    timeout: 120000
+- runFlow:
+    when:
+      visible: "Continue"
+    commands:
+      - tapOn: "Continue"
+- runFlow:
+    when:
+      visible: "Open React Native dev menu"
+    commands:
+      - pressKey: Back
+- extendedWaitUntil:
+    visible: "Internal component check · development only"
+    timeout: 120000
+- tapOn:
+    id: "component-check-field"
+- inputText: "fixture-input-04"
+- assertVisible: ".*fixture-input-04.*"
+- pressKey: Back
+- tapOn: "Check interaction"
+- scrollUntilVisible:
+    element:
+      text: "Interaction checked.*"
+    direction: DOWN
+- assertVisible: "Interaction checked.*"

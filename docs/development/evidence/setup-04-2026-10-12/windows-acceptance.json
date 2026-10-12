@@ -1,0 +1,28 @@
+{
+  "platform": "win32",
+  "node": "24.21.0",
+  "pnpm": "12.11.2",
+  "primaryCompiler": "native7 7.0.2",
+  "checks": [
+    "frozen-install",
+    "check",
+    "typecheck",
+    "boundaries",
+    "test (26/26)",
+    "contracts:generate",
+    "contracts:check",
+    "typecheck:compat",
+    "check:resolution",
+    "expo-compatibility",
+    "clean-cng-android-dev-build",
+    "maestro-component-check",
+    "metro-refresh",
+    "web-export",
+    "edge-runtime"
+  ],
+  "preservation": {
+    "protectedFiles": 101,
+    "stagedBlobs": 186,
+    "indexUnchanged": true
+  }
+}

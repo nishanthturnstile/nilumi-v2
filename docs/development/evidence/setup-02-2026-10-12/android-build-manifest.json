@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-12",
+  "architecture": "x86_64",
+  "targetSdk": 36,
+  "tamagui": "2.7.7",
+  "apkSha256": "63eb3d7bc96e88ce383e0df0e42e5a32f79c0e8de0e808e44700a86eda3cdb4f",
+  "agp": "8.12.0",
+  "jvm": "Temurin 25.0.4.1",
+  "gradle": "9.3.1",
+  "compileSdk": 36
+}

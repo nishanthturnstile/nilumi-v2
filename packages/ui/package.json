@@ -1,0 +1,48 @@
+{
+  "name": "@nilumi/ui",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "tamagui": "3.0.3",
+    "@tamagui/core": "3.0.3",
+    "@tamagui/config": "3.0.3"
+  },
+  "peerDependencies": {
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-web": "0.21.4",
+    "react-native-safe-area-context": "5.7.0",
+    "react-native-reanimated": "4.5.1",
+    "react-native-worklets": "0.10.1",
+    "react-native-gesture-handler": "2.32.0"
+  },
+  "devDependencies": {
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-web": "0.21.4",
+    "react-native-safe-area-context": "5.7.0",
+    "react-native-reanimated": "4.5.1",
+    "react-native-worklets": "0.10.1",
+    "react-native-gesture-handler": "2.32.0",
+    "@biomejs/biome": "2.5.15",
+    "typescript": "6.0.3",
+    "@types/react": "19.2.18",
+    "@babel/core": "7.29.7",
+    "babel-preset-expo": "57.0.14",
+    "@react-native/metro-config": "0.86.3",
+    "expo-doctor": "1.20.4"
+  },
+  "scripts": {
+    "typecheck": "node ../../tooling/scripts/typescript.mjs typecheck @nilumi/ui"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "react-native": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  }
+}

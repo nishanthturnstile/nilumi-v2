@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-12T12:13:50.864Z",
+  "platform": "win32",
+  "compilers": [
+    "5.9.3",
+    "6.0.3",
+    "7.0.2"
+  ],
+  "nodeImports": "passed",
+  "artifacts": [
+    {
+      "platform": "android",
+      "sourceMaps": 1,
+      "publicEntries": 3,
+      "backendSources": 0,
+      "privateSentinelAbsent": true
+    },
+    {
+      "platform": "web",
+      "sourceMaps": 1,
+      "publicEntries": 3,
+      "backendSources": 0,
+      "privateSentinelAbsent": true
+    }
+  ],
+  "limitations": "Synthetic TSX/package entry resolution only; no shared UI rendering, APK, service or device qualification."
+}

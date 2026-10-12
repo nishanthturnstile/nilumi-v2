@@ -1,0 +1,97 @@
+COMMAND install --frozen-lockfile
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 27m ago)
+Lockfile is up to date, resolution step is skipped
+Done in 125ms using pnpm v12.11.2
+
+COMMAND run check
+Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.
+Checked 64 files in 42ms. No fixes applied.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+$ node tooling/scripts/tasks.mjs check
+
+COMMAND run test
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (138.7927ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (1338.7261ms)
+✔ unreexported public source participates in complete closure (109.6533ms)
+✔ unused illegal manifest dependency and package cycles fail (124.5058ms)
+✔ source policy allows only the two exact public env reads (2.1721ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (0.8132ms)
+✔ API parser defaults safely and has no connection side effects (3.4587ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (4.0095ms)
+✔ worker and migration roles cannot be substituted (1.7947ms)
+✔ public URLs and variable allowlist follow deployment mode (1.6781ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (8.0728ms)
+✔ store ownership keeps foreign and unmarked directories intact (49.6458ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.3027ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (25.5508ms)
+✔ argument arrays preserve spaces and shell metacharacters (86.885ms)
+✔ child failure and interruption produce non-success results (141.4394ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (25.4728ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2077.7325
+$ node tooling/scripts/tasks.mjs test
+
+COMMAND run typecheck:compat
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+build: @nilumi/contracts → classic5 5.9.3
+build: @nilumi/db → classic5 5.9.3
+build: @nilumi/api-client → classic5 5.9.3
+build: @nilumi/server → classic5 5.9.3
+build: @nilumi/api → classic5 5.9.3
+build: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/contracts → classic5 5.9.3
+typecheck: @nilumi/db → classic5 5.9.3
+typecheck: @nilumi/api-client → classic5 5.9.3
+typecheck: @nilumi/server → classic5 5.9.3
+typecheck: @nilumi/api → classic5 5.9.3
+typecheck: @nilumi/worker → classic5 5.9.3
+typecheck: @nilumi/ui → classic6 6.0.3
+typecheck: @nilumi/client → classic6 6.0.3
+$ node tooling/scripts/tasks.mjs typecheck:compat
+
+COMMAND run format:check
+Checked 64 files in 21ms. No fixes applied.
+$ biome format .
+
+COMMAND run config:check --target client --env-file apps/client/.env.example
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+client configuration is valid; values are not displayed.
+$ node tooling/scripts/tasks.mjs config:check --target client --env-file apps/client/.env.example
+

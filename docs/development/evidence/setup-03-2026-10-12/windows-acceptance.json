@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-12T09:34:39.210Z",
+  "platform": "win32",
+  "node": "24.21.0",
+  "pnpm": "12.11.2",
+  "compiler": "7.0.2",
+  "behaviorTests": 17,
+  "checks": [
+    "install --frozen-lockfile",
+    "run check",
+    "run test",
+    "run typecheck:compat",
+    "run format:check",
+    "run config:check --target client --env-file apps/client/.env.example"
+  ],
+  "lockSha256": "2754879A7DCD6C582B09A0EAF3596F08E01A6734D5CACE6A1E48DB45434F49C8",
+  "preservation": {
+    "protectedFiles": 93,
+    "stagedBlobs": 5,
+    "indexUnchanged": true
+  }
+}

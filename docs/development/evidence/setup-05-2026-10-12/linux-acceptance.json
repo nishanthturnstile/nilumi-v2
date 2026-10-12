@@ -1,0 +1,21 @@
+{
+  "platform": "linux",
+  "node": "24.21.0",
+  "pnpm": "12.11.2",
+  "checks": [
+    "frozen-install",
+    "check",
+    "test",
+    "test:integration",
+    "contracts:generate",
+    "contracts:check",
+    "typecheck:compat",
+    "check:resolution",
+    "web-export"
+  ],
+  "preservation": {
+    "protectedFiles": 124,
+    "stagedBlobs": 255,
+    "indexUnchanged": true
+  }
+}

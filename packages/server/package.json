@@ -1,0 +1,28 @@
+{
+  "name": "@nilumi/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@nilumi/contracts": "workspace:*",
+    "@nilumi/db": "workspace:*",
+    "nodemailer": "10.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "24.19.2",
+    "@types/nodemailer": "8.0.2",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "typecheck": "node ../../tooling/scripts/typescript.mjs typecheck @nilumi/server",
+    "build": "node ../../tooling/scripts/typescript.mjs build @nilumi/server"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  }
+}

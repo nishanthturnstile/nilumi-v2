@@ -1,0 +1,7 @@
+› Installing 1 other package using pnpm
+› Using 57.0.19 instead of ~57.0.19 for expo-dev-client because this version was explicitly provided. Packages excluded from dependency validation should be listed in expo.install.exclude in package.json. Learn more: https://docs.expo.dev/more/expo-cli/#configuring-dependency-validation
+> pnpm add expo-dev-client@57.0.19
+✓ Lockfile passes supply-chain policies (verified 2m ago)
+Lockfile is up to date, resolution step is skipped
+Already up to date
+Done in 969ms using pnpm v12.11.2

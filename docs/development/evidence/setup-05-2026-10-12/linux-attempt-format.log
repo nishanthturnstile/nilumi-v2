@@ -1,0 +1,76 @@
+Scope: all 9 workspace projects
+? Verifying lockfile against supply-chain policies (949 entries)...
+Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /root/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 843, reused 0, downloaded 188, added 160
+Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+Progress: resolved 843, reused 0, downloaded 247, added 224
+Progress: resolved 843, reused 0, downloaded 337, added 320
+Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+Progress: resolved 843, reused 0, downloaded 484, added 480
+Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+Progress: resolved 843, reused 0, downloaded 574, added 576
+[WARN] Tarball download average speed 10 KiB/s (size 13 KiB) is below 50 KiB/s: https://registry.npmjs.org/@fastify/ajv-compiler/-/ajv-compiler-4.0.7.tgz (GET)
+Progress: resolved 843, reused 0, downloaded 766, added 739
+Progress: resolved 843, reused 0, downloaded 815, added 800
+Progress: resolved 843, reused 0, downloaded 823, added 800
+[WARN] Tarball download average speed 49 KiB/s (size 194 KiB) is below 50 KiB/s: https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz (GET)
+Progress: resolved 843, reused 0, downloaded 827, added 800
+✓ Lockfile passes supply-chain policies (949 entries in 12.2s)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 843, reused 0, downloaded 830, added 832
+Downloading @biomejs/cli-linux-x64@2.5.15: 6.94 MB/24.65 MB
+Downloading @biomejs/cli-linux-x64@2.5.15: 10.32 MB/24.65 MB
+Downloading @biomejs/cli-linux-x64@2.5.15: 16.56 MB/24.65 MB
+Packages: +843
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 843, reused 0, downloaded 841, added 843, done
+.../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.18.20/node_modules/esbuild postinstall$ node install.js
+.../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+.../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+.../esbuild@0.18.20/node_modules/esbuild postinstall: Done
+
+devDependencies:
++ @biomejs/biome 2.5.15
++ @nilumi/typescript-native <- typescript 7.0.2
++ @types/node 24.19.2
++ dependency-cruiser 18.6.0
++ typescript 5.9.3
+
+Done in 15.3s using pnpm v12.11.2
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 3s ago)
+Lockfile is up to date, resolution step is skipped
+Done in 106ms using pnpm v12.11.2
+Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.
+Checked 98 files in 61ms. No fixes applied.
+Found 1 error.
+debconf: delaying package configuration, since apt-utils is not installed
+$ node tooling/scripts/tasks.mjs check
+tooling/scripts/infra.mjs format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    48 48 │         "-f",
+    49 49 │         "infra/compose/compose.yaml",
+    50    │ - ······...(command·!==·"infra:up"·||·args.includes("--diagnostics")·?·["--profile",·"diagnostics"]·:·[]),
+       50 │ + ······...(command·!==·"infra:up"·||·args.includes("--diagnostics")
+       51 │ + ········?·["--profile",·"diagnostics"]
+       52 │ + ········:·[]),
+    51 53 │         ...(command === "infra:up"
+    52 54 │           ? ["up", "-d", "--wait", "--pull", "never"]
+  
+
+check ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+Command failed (1): /workspace/.local/tools/pnpm-12.11.2/pnpm
+[ELIFECYCLE] Command failed with exit code 1.
