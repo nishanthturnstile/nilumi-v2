@@ -1,0 +1,15 @@
+{
+  "sha": "186451175a6a0845f4ec462f6f0f48ada9565a64",
+  "checks": [
+    "release-only image migration/queue provisioning job completes before runtime startup",
+    "non-root read-only images start with restricted roles; API health/ready, worker heartbeat, web export and API proxy pass",
+    "workspace exports, migration artifact and production dependency closure verified; development tooling absent",
+    "pending migration fails image readiness without runtime repair",
+    "all images stop with exit 0 on SIGTERM; runtime logs contain no credentials"
+  ],
+  "images": {
+    "api": "sha256:eaa319c711646c56a46cf10326a40cbba2ca899ca5ad3a06d144498f17854e83",
+    "worker": "sha256:3100bdf43a59d3bd1a3295c178175dc4d0a9baac3aa4f941c2302ee42e963174",
+    "web": "sha256:7df351119fada7b567f44932388b87ff66053529ff86c2be4bf098e87a216879"
+  }
+}
