@@ -137,6 +137,12 @@ the actual JVM version is the verified archive's four-part version, printed in
 the job log. This avoids setup-java rejecting a four-part-plus-build selector,
 without resolving a range or substituting another JVM.
 
+The Android launcher preserves caller JVM options and adds command-scoped
+`--enable-native-access=ALL-UNNAMED` on both hosts. The first Linux Android
+compile exposed AGP/CMake rejecting the Java 25 restricted-native-access warning;
+Windows already qualified this flag. Windows retains its separate short SDK/CXX
+paths and Java socket directory. No JDK downgrade or global JVM change is used.
+
 Android may skip only when the change detector proves no relevant change. An
 unknown base builds conservatively; an unavailable base/detector failure fails
 the Linux gate. A failed/cancelled dependency makes the aggregate fail.

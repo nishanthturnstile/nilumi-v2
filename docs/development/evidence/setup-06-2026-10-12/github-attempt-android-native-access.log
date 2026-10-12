@@ -1,0 +1,1285 @@
+﻿2026-10-12T14:37:48.4835351Z Current runner version: '2.337.0'
+2026-10-12T14:37:48.4860043Z ##[group]Runner Image Provisioner
+2026-10-12T14:37:48.4860885Z Hosted Compute Agent
+2026-10-12T14:37:48.4861567Z Version: 20261002.596
+2026-10-12T14:37:48.4862199Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-12T14:37:48.4863359Z Build Date: 2026-10-02T22:28:27Z
+2026-10-12T14:37:48.4864134Z Worker ID: {1dbee940-40f5-4a1b-aa10-3bedea76cd47}
+2026-10-12T14:37:48.4864854Z Region: westus
+2026-10-12T14:37:48.4865459Z Cloud: Azure
+2026-10-12T14:37:48.4866003Z ##[endgroup]
+2026-10-12T14:37:48.4867581Z ##[group]Operating System
+2026-10-12T14:37:48.4868279Z Ubuntu
+2026-10-12T14:37:48.4868792Z 24.04.5
+2026-10-12T14:37:48.4869365Z LTS
+2026-10-12T14:37:48.4869880Z ##[endgroup]
+2026-10-12T14:37:48.4870414Z ##[group]Runner Image
+2026-10-12T14:37:48.4871118Z Image: ubuntu-24.04
+2026-10-12T14:37:48.4871689Z Version: 20261004.327.1
+2026-10-12T14:37:48.4873217Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-12T14:37:48.4874799Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-12T14:37:48.4875876Z ##[endgroup]
+2026-10-12T14:37:48.4876987Z ##[group]GITHUB_TOKEN Permissions
+2026-10-12T14:37:48.4878888Z Contents: read
+2026-10-12T14:37:48.4879496Z Metadata: read
+2026-10-12T14:37:48.4880162Z ##[endgroup]
+2026-10-12T14:37:48.4882288Z Secret source: Actions
+2026-10-12T14:37:48.4883681Z Cache mode: write
+2026-10-12T14:37:48.4884415Z Prepare workflow directory
+2026-10-12T14:37:48.5282497Z Prepare all required actions
+2026-10-12T14:37:48.5333169Z Getting action download info
+2026-10-12T14:37:48.9284464Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-12T14:37:49.0410019Z Download action repository 'actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+2026-10-12T14:37:49.5136901Z Download action repository 'actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6' (SHA:de7274f081f381c8f8158605e0321c36c376e2e6)
+2026-10-12T14:37:50.0851146Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-10-12T14:37:50.6822482Z Complete job name: Android debug smoke
+2026-10-12T14:37:50.7802134Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-12T14:37:50.7804211Z with:
+2026-10-12T14:37:50.7805194Z   persist-credentials: false
+2026-10-12T14:37:50.7806314Z   repository: nishanthturnstile/nilumi-v2
+2026-10-12T14:37:50.7816468Z   token: ***
+2026-10-12T14:37:50.7817409Z   ssh-strict: true
+2026-10-12T14:37:50.7818292Z   ssh-user: git
+2026-10-12T14:37:50.7819202Z   clean: true
+2026-10-12T14:37:50.7820105Z   sparse-checkout-cone-mode: true
+2026-10-12T14:37:50.7821139Z   fetch-depth: 1
+2026-10-12T14:37:50.7822095Z   fetch-tags: false
+2026-10-12T14:37:50.7823162Z   show-progress: true
+2026-10-12T14:37:50.7824136Z   lfs: false
+2026-10-12T14:37:50.7824977Z   submodules: false
+2026-10-12T14:37:50.7825893Z   set-safe-directory: true
+2026-10-12T14:37:50.7827006Z   allow-unsafe-pr-checkout: false
+2026-10-12T14:37:50.7828397Z env:
+2026-10-12T14:37:50.7829233Z   CI: 1
+2026-10-12T14:37:50.7830035Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:37:50.7831053Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:37:50.7832038Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:37:50.7833347Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:37:50.7834626Z ##[endgroup]
+2026-10-12T14:37:50.8987201Z Syncing repository: nishanthturnstile/nilumi-v2
+2026-10-12T14:37:50.8991231Z ##[group]Getting Git version info
+2026-10-12T14:37:50.8993749Z Working directory is '/home/runner/work/nilumi-v2/nilumi-v2'
+2026-10-12T14:37:50.8996998Z [command]/usr/bin/git version
+2026-10-12T14:37:50.9030616Z git version 2.55.0
+2026-10-12T14:37:50.9057404Z ##[endgroup]
+2026-10-12T14:37:50.9066353Z Temporarily overriding HOME='/home/runner/work/_temp/d75684a3-4ff8-480f-8992-626c9ae1bd95' before making global git config changes
+2026-10-12T14:37:50.9071204Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T14:37:50.9075047Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilumi-v2/nilumi-v2
+2026-10-12T14:37:50.9131988Z Deleting the contents of '/home/runner/work/nilumi-v2/nilumi-v2'
+2026-10-12T14:37:50.9135936Z ##[group]Determining repository object format
+2026-10-12T14:37:50.9138634Z ##[endgroup]
+2026-10-12T14:37:50.9140786Z ##[group]Initializing the repository
+2026-10-12T14:37:50.9143166Z [command]/usr/bin/git init /home/runner/work/nilumi-v2/nilumi-v2
+2026-10-12T14:37:50.9258381Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-12T14:37:50.9261495Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-12T14:37:50.9264695Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-12T14:37:50.9267076Z hint: call:
+2026-10-12T14:37:50.9268220Z hint:
+2026-10-12T14:37:50.9269730Z hint: 	git config --global init.defaultBranch <name>
+2026-10-12T14:37:50.9271593Z hint:
+2026-10-12T14:37:50.9273506Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-12T14:37:50.9276540Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-12T14:37:50.9278951Z hint:
+2026-10-12T14:37:50.9280416Z hint: 	git branch -m <name>
+2026-10-12T14:37:50.9282245Z hint:
+2026-10-12T14:37:50.9284914Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-12T14:37:50.9288444Z Initialized empty Git repository in /home/runner/work/nilumi-v2/nilumi-v2/.git/
+2026-10-12T14:37:50.9294039Z [command]/usr/bin/git remote add origin https://github.com/nishanthturnstile/nilumi-v2
+2026-10-12T14:37:50.9329240Z ##[endgroup]
+2026-10-12T14:37:50.9331556Z ##[group]Disabling automatic garbage collection
+2026-10-12T14:37:50.9334023Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-12T14:37:50.9365897Z ##[endgroup]
+2026-10-12T14:37:50.9368484Z ##[group]Setting up auth
+2026-10-12T14:37:50.9370123Z Removing SSH command configuration
+2026-10-12T14:37:50.9372965Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T14:37:50.9416814Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T14:37:50.9807441Z Removing HTTP extra header
+2026-10-12T14:37:50.9814995Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T14:37:50.9854290Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T14:37:51.0078785Z Removing includeIf entries pointing to credentials config files
+2026-10-12T14:37:51.0083474Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T14:37:51.0129666Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T14:37:51.0357011Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-12T14:37:51.0397530Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git.path /home/runner/work/_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config
+2026-10-12T14:37:51.0432951Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config
+2026-10-12T14:37:51.0469183Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config
+2026-10-12T14:37:51.0507410Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config
+2026-10-12T14:37:51.0542064Z ##[endgroup]
+2026-10-12T14:37:51.0545061Z ##[group]Fetching the repository
+2026-10-12T14:37:51.0550036Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +43a0500907c2d714f7f6903bfd79e78ec2297c8c:refs/remotes/pull/2/merge
+2026-10-12T14:37:52.1272916Z From https://github.com/nishanthturnstile/nilumi-v2
+2026-10-12T14:37:52.1274301Z  * [new ref]         43a0500907c2d714f7f6903bfd79e78ec2297c8c -> pull/2/merge
+2026-10-12T14:37:52.1278685Z ##[endgroup]
+2026-10-12T14:37:52.1279768Z ##[group]Determining the checkout info
+2026-10-12T14:37:52.1280969Z ##[endgroup]
+2026-10-12T14:37:52.1286316Z [command]/usr/bin/git sparse-checkout disable
+2026-10-12T14:37:52.1343963Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-12T14:37:52.1377202Z ##[group]Checking out the ref
+2026-10-12T14:37:52.1381437Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/2/merge
+2026-10-12T14:37:52.1770690Z Note: switching to 'refs/remotes/pull/2/merge'.
+2026-10-12T14:37:52.1771245Z 
+2026-10-12T14:37:52.1771643Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-12T14:37:52.1772483Z changes and commit them, and you can discard any commits you make in this
+2026-10-12T14:37:52.1773228Z state without impacting any branches by switching back to a branch.
+2026-10-12T14:37:52.1773554Z 
+2026-10-12T14:37:52.1773774Z If you want to create a new branch to retain commits you create, you may
+2026-10-12T14:37:52.1774281Z do so (now or later) by using -c with the switch command. Example:
+2026-10-12T14:37:52.1774576Z 
+2026-10-12T14:37:52.1774711Z   git switch -c <new-branch-name>
+2026-10-12T14:37:52.1774936Z 
+2026-10-12T14:37:52.1775069Z Or undo this operation with:
+2026-10-12T14:37:52.1775260Z 
+2026-10-12T14:37:52.1775375Z   git switch -
+2026-10-12T14:37:52.1775539Z 
+2026-10-12T14:37:52.1775794Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-12T14:37:52.1776138Z 
+2026-10-12T14:37:52.1776718Z HEAD is now at 43a0500 Merge 477d586a58cb663f7578937c48457002833328d7 into f471e4f08d2d8e6cd677b6bae355bb573afec6bd
+2026-10-12T14:37:52.1784387Z ##[endgroup]
+2026-10-12T14:37:52.1833073Z [command]/usr/bin/git log -1 --format=%H
+2026-10-12T14:37:52.1861249Z 43a0500907c2d714f7f6903bfd79e78ec2297c8c
+2026-10-12T14:37:52.1870961Z ##[group]Removing auth
+2026-10-12T14:37:52.1871515Z Removing SSH command configuration
+2026-10-12T14:37:52.1875202Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T14:37:52.1910501Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T14:37:52.2134735Z Removing HTTP extra header
+2026-10-12T14:37:52.2139156Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T14:37:52.2177287Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T14:37:52.2424137Z Removing includeIf entries pointing to credentials config files
+2026-10-12T14:37:52.2430049Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T14:37:52.2466173Z includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git.path
+2026-10-12T14:37:52.2467401Z includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git/worktrees/*.path
+2026-10-12T14:37:52.2468633Z includeif.gitdir:/github/workspace/.git.path
+2026-10-12T14:37:52.2469622Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-12T14:37:52.2484649Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git.path
+2026-10-12T14:37:52.2509338Z /home/runner/work/_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config
+2026-10-12T14:37:52.2521110Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-e88b03c9\-68a6\-4f64\-921d\-171737ff9b16\.config
+2026-10-12T14:37:52.2563818Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git/worktrees/*.path
+2026-10-12T14:37:52.2597293Z /home/runner/work/_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config
+2026-10-12T14:37:52.2606998Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/nilumi-v2/nilumi-v2/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-e88b03c9\-68a6\-4f64\-921d\-171737ff9b16\.config
+2026-10-12T14:37:52.2648284Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-12T14:37:52.2686947Z /github/runner_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config
+2026-10-12T14:37:52.2696871Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-e88b03c9\-68a6\-4f64\-921d\-171737ff9b16\.config
+2026-10-12T14:37:52.2738979Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-12T14:37:52.2769077Z /github/runner_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config
+2026-10-12T14:37:52.2843326Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-e88b03c9\-68a6\-4f64\-921d\-171737ff9b16\.config
+2026-10-12T14:37:52.2890857Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T14:37:52.3132872Z Removing credentials config '/home/runner/work/_temp/git-credentials-e88b03c9-68a6-4f64-921d-171737ff9b16.config'
+2026-10-12T14:37:52.3143866Z ##[endgroup]
+2026-10-12T14:37:52.3395741Z ##[group]Run actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
+2026-10-12T14:37:52.3396164Z with:
+2026-10-12T14:37:52.3396376Z   node-version: 24.21.0
+2026-10-12T14:37:52.3396631Z   package-manager-cache: false
+2026-10-12T14:37:52.3396895Z   check-latest: false
+2026-10-12T14:37:52.3399592Z   token: ***
+2026-10-12T14:37:52.3399798Z env:
+2026-10-12T14:37:52.3399983Z   CI: 1
+2026-10-12T14:37:52.3400174Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:37:52.3400392Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:37:52.3400626Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:37:52.3400924Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:37:52.3401225Z ##[endgroup]
+2026-10-12T14:37:52.4644368Z Found in cache @ /opt/hostedtoolcache/node/24.21.0/x64
+2026-10-12T14:37:52.5519185Z ##[group]Environment details
+2026-10-12T14:37:52.9407466Z node: v24.21.0
+2026-10-12T14:37:52.9408715Z npm: 11.19.0
+2026-10-12T14:37:52.9409565Z yarn: 1.22.22
+2026-10-12T14:37:52.9411981Z ##[endgroup]
+2026-10-12T14:37:52.9551318Z ##[group]Run node tooling/scripts/ci-java-prepare.mjs
+2026-10-12T14:37:52.9551816Z node tooling/scripts/ci-java-prepare.mjs
+2026-10-12T14:37:52.9818902Z shell: /usr/bin/bash -e {0}
+2026-10-12T14:37:52.9819254Z env:
+2026-10-12T14:37:52.9819489Z   CI: 1
+2026-10-12T14:37:52.9819729Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:37:52.9820013Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:37:52.9820307Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:37:52.9820689Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:37:52.9821101Z ##[endgroup]
+2026-10-12T14:37:54.1255284Z Prepared checksum-verified Temurin 25.0.4.1+1 Linux x64 archive.
+2026-10-12T14:37:54.1670692Z ##[group]Run actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6
+2026-10-12T14:37:54.1671205Z with:
+2026-10-12T14:37:54.1671766Z   distribution: jdkfile
+2026-10-12T14:37:54.1672098Z   java-version: 25.0.4
+2026-10-12T14:37:54.1672514Z   jdk-file: .cache/temurin-25.0.4.1_1.tar.gz
+2026-10-12T14:37:54.1673271Z   overwrite-settings: false
+2026-10-12T14:37:54.1673637Z   force-download: true
+2026-10-12T14:37:54.1674034Z   java-package: jdk
+2026-10-12T14:37:54.1674343Z   check-latest: false
+2026-10-12T14:37:54.1674706Z   set-default: true
+2026-10-12T14:37:54.1675025Z   server-id: github
+2026-10-12T14:37:54.1675353Z   mvn-repositories-include-central: true
+2026-10-12T14:37:54.1701042Z   mvn-repositories-prioritize-central: true
+2026-10-12T14:37:54.1701409Z   cache-read-only: false
+2026-10-12T14:37:54.1701694Z   job-status: success
+2026-10-12T14:37:54.1704696Z   token: ***
+2026-10-12T14:37:54.1704951Z   show-download-progress: false
+2026-10-12T14:37:54.1705262Z   problem-matcher: true
+2026-10-12T14:37:54.1705492Z env:
+2026-10-12T14:37:54.1705672Z   CI: 1
+2026-10-12T14:37:54.1705861Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:37:54.1706079Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:37:54.1706310Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:37:54.1706615Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:37:54.1706921Z ##[endgroup]
+2026-10-12T14:37:54.2452462Z ##[group]Installed distributions
+2026-10-12T14:37:54.2499922Z Java 25.0.4 was not found in tool-cache. Trying to unpack JDK file...
+2026-10-12T14:37:54.2501081Z Extracting Java from '/home/runner/work/nilumi-v2/nilumi-v2/.cache/temurin-25.0.4.1_1.tar.gz'
+2026-10-12T14:37:54.2653672Z [command]/usr/bin/tar --use-compress-program /usr/bin/pigz -d -x --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/4a4b64b7-926f-4788-b28f-309be1f83562 -f /home/runner/work/nilumi-v2/nilumi-v2/.cache/temurin-25.0.4.1_1.tar.gz
+2026-10-12T14:37:55.4780920Z Setting Java 25.0.4 as the default
+2026-10-12T14:37:55.4788076Z 
+2026-10-12T14:37:55.4788440Z Java configuration:
+2026-10-12T14:37:55.4790430Z   Distribution: jdkfile
+2026-10-12T14:37:55.4790918Z   Version: 25.0.4
+2026-10-12T14:37:55.4792018Z   Path: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:37:55.4792416Z 
+2026-10-12T14:37:55.4794724Z ##[endgroup]
+2026-10-12T14:37:55.4828117Z Creating settings.xml with server-id: github
+2026-10-12T14:37:55.4830539Z Creating toolchains.xml for JDK version 25.0.4 from jdkfile
+2026-10-12T14:37:55.4835977Z Writing to /home/runner/.m2/settings.xml
+2026-10-12T14:37:55.4840301Z Writing to /home/runner/.m2/toolchains.xml
+2026-10-12T14:37:55.4851793Z Configured MAVEN_ARGS to include -ntp to suppress Maven transfer progress logs. Set 'show-download-progress: true' to keep the download progress output.
+2026-10-12T14:37:55.4965335Z ##[group]Run java -version
+2026-10-12T14:37:55.4965634Z java -version
+2026-10-12T14:37:55.5028807Z shell: /usr/bin/bash -e {0}
+2026-10-12T14:37:55.5029065Z env:
+2026-10-12T14:37:55.5029254Z   CI: 1
+2026-10-12T14:37:55.5029444Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:37:55.5029660Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:37:55.5029896Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:37:55.5030216Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:37:55.5030621Z   JAVA_HOME: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:37:55.5031055Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:37:55.5031440Z   MAVEN_ARGS: -ntp
+2026-10-12T14:37:55.5031650Z ##[endgroup]
+2026-10-12T14:37:55.5384783Z openjdk version "25.0.4.1" 2026-08-18 LTS
+2026-10-12T14:37:55.5394613Z OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS)
+2026-10-12T14:37:55.5396311Z OpenJDK 64-Bit Server VM Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+2026-10-12T14:37:55.5477366Z ##[group]Run node tooling/scripts/ci-prepare.mjs
+2026-10-12T14:37:55.5477766Z node tooling/scripts/ci-prepare.mjs
+2026-10-12T14:37:55.5541499Z shell: /usr/bin/bash -e {0}
+2026-10-12T14:37:55.5541749Z env:
+2026-10-12T14:37:55.5541930Z   CI: 1
+2026-10-12T14:37:55.5542117Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:37:55.5542378Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:37:55.5543057Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:37:55.5543356Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:37:55.5543743Z   JAVA_HOME: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:37:55.5544166Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:37:55.5544515Z   MAVEN_ARGS: -ntp
+2026-10-12T14:37:55.5544722Z ##[endgroup]
+2026-10-12T14:37:56.1996561Z ##[group]Run node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+2026-10-12T14:37:56.1997131Z node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+2026-10-12T14:37:56.2061716Z shell: /usr/bin/bash -e {0}
+2026-10-12T14:37:56.2061988Z env:
+2026-10-12T14:37:56.2062174Z   CI: 1
+2026-10-12T14:37:56.2062359Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:37:56.2062773Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:37:56.2063022Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:37:56.2063324Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:37:56.2063735Z   JAVA_HOME: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:37:56.2064163Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:37:56.2064514Z   MAVEN_ARGS: -ntp
+2026-10-12T14:37:56.2064724Z ##[endgroup]
+2026-10-12T14:37:56.2787397Z Scope: all 9 workspace projects
+2026-10-12T14:37:56.3475394Z ? Verifying lockfile against supply-chain policies (1221 entries)...
+2026-10-12T14:37:56.5289539Z Downloading expo-file-system@57.0.7: 0.00 B/7.23 MB
+2026-10-12T14:37:56.5429621Z Packages are hard linked from the content-addressable store to the virtual store.
+2026-10-12T14:37:56.5431051Z   Content-addressable store is at: /home/runner/.local/share/pnpm/store/v11
+2026-10-12T14:37:56.5432913Z   Virtual store is at:             node_modules/.pnpm
+2026-10-12T14:37:56.5597955Z Downloading @rolldown/binding-linux-x64-gnu@1.2.13: 0.00 B/8.18 MB
+2026-10-12T14:37:56.6259066Z Downloading hermes-compiler@250829098.0.17: 0.00 B/19.18 MB
+2026-10-12T14:37:56.8851752Z Downloading @typescript/typescript-linux-x64@7.0.2: 0.00 B/9.66 MB
+2026-10-12T14:37:56.9575080Z Downloading expo-modules-core@57.0.21: 0.00 B/30.79 MB
+2026-10-12T14:37:57.9580878Z Progress: resolved 1105, reused 0, downloaded 452, added 448
+2026-10-12T14:37:58.2624277Z Downloading @expo-google-fonts/material-symbols@0.4.49: 0.00 B/8.87 MB
+2026-10-12T14:37:58.5454129Z Downloading @biomejs/cli-linux-x64@2.5.15: 0.00 B/24.65 MB
+2026-10-12T14:37:59.5497382Z Progress: resolved 1105, reused 0, downloaded 795, added 799
+2026-10-12T14:37:59.7858330Z ✓ Lockfile passes supply-chain policies (1221 entries in 3.4s)
+2026-10-12T14:37:59.7871249Z Lockfile is up to date, resolution step is skipped
+2026-10-12T14:38:00.7866443Z Progress: resolved 1105, reused 0, downloaded 1081, added 1056
+2026-10-12T14:38:01.8062246Z Progress: resolved 1105, reused 0, downloaded 1099, added 1105
+2026-10-12T14:38:01.8218706Z Packages: +1105
+2026-10-12T14:38:01.8219492Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-10-12T14:38:02.0123359Z Progress: resolved 1105, reused 0, downloaded 1099, added 1105, done
+2026-10-12T14:38:02.0275120Z .../esbuild@0.18.20/node_modules/esbuild postinstall$ node install.js
+2026-10-12T14:38:02.0276602Z .../esbuild@0.25.12/node_modules/esbuild postinstall$ node install.js
+2026-10-12T14:38:02.0277567Z .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+2026-10-12T14:38:02.1022242Z .../esbuild@0.18.20/node_modules/esbuild postinstall: Done
+2026-10-12T14:38:02.1025165Z .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+2026-10-12T14:38:02.1165293Z .../esbuild@0.25.12/node_modules/esbuild postinstall: Done
+2026-10-12T14:38:02.2225983Z 
+2026-10-12T14:38:02.2226616Z devDependencies:
+2026-10-12T14:38:02.2227099Z + @biomejs/biome 2.5.15
+2026-10-12T14:38:02.2227646Z + @nilumi/typescript-native <- typescript 7.0.2
+2026-10-12T14:38:02.2228061Z + @playwright/test 1.64.0
+2026-10-12T14:38:02.2228486Z + @types/node 24.19.2
+2026-10-12T14:38:02.2228864Z + dependency-cruiser 18.6.0
+2026-10-12T14:38:02.2229638Z + typescript 5.9.3
+2026-10-12T14:38:02.2230011Z + vite 8.3.4
+2026-10-12T14:38:02.2230457Z + vitest 5.0.3
+2026-10-12T14:38:02.2230654Z 
+2026-10-12T14:38:02.2790050Z Done in 6s using pnpm v12.11.2
+2026-10-12T14:38:02.3131463Z ##[group]Run node tooling/scripts/pnpm-local.mjs run build
+2026-10-12T14:38:02.3131942Z node tooling/scripts/pnpm-local.mjs run build
+2026-10-12T14:38:02.3196187Z shell: /usr/bin/bash -e {0}
+2026-10-12T14:38:02.3196481Z env:
+2026-10-12T14:38:02.3196730Z   CI: 1
+2026-10-12T14:38:02.3196992Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:38:02.3197244Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:38:02.3197513Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:38:02.3197860Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:38:02.3198308Z   JAVA_HOME: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:38:02.3198804Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:38:02.3199221Z   MAVEN_ARGS: -ntp
+2026-10-12T14:38:02.3199461Z ##[endgroup]
+2026-10-12T14:38:02.3921204Z $ node tooling/scripts/tasks.mjs build
+2026-10-12T14:38:02.4715922Z build: @nilumi/contracts → native7 7.0.2
+2026-10-12T14:38:02.6052214Z build: @nilumi/db → native7 7.0.2
+2026-10-12T14:38:02.8138910Z build: @nilumi/api-client → native7 7.0.2
+2026-10-12T14:38:02.9504332Z build: @nilumi/server → native7 7.0.2
+2026-10-12T14:38:03.1515350Z build: @nilumi/api → native7 7.0.2
+2026-10-12T14:38:03.4530190Z build: @nilumi/worker → native7 7.0.2
+2026-10-12T14:38:03.5750625Z ##[group]Run node tooling/scripts/ci-android-prepare.mjs
+2026-10-12T14:38:03.5751089Z node tooling/scripts/ci-android-prepare.mjs
+2026-10-12T14:38:03.5751896Z .cache/android-sdk-tools/cmdline-tools/bin/sdkmanager --sdk_root="$ANDROID_HOME" 'platforms;android-36' 'build-tools;36.0.0' 'build-tools;35.0.0' 'ndk;27.1.12297006' 'cmake;3.22.1'
+2026-10-12T14:38:03.5816495Z shell: /usr/bin/bash -e {0}
+2026-10-12T14:38:03.5816750Z env:
+2026-10-12T14:38:03.5816930Z   CI: 1
+2026-10-12T14:38:03.5817133Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:38:03.5817345Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:38:03.5817570Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:38:03.5817863Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:38:03.5818260Z   JAVA_HOME: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:38:03.5818672Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:38:03.5819022Z   MAVEN_ARGS: -ntp
+2026-10-12T14:38:03.5819282Z ##[endgroup]
+2026-10-12T14:38:06.9728603Z Prepared checksum-verified Android command-line tools 23.0, build 16111833.
+2026-10-12T14:38:07.0079672Z WARNING: The SDK Manager CLI tool (sdkmanager) is deprecated. Android CLI will be used instead.
+2026-10-12T14:38:07.0081882Z The 'android' binary can also be found in the cmdline-tools directory, and 'android sdk' is the replacement for 'sdkmanager'.
+2026-10-12T14:38:07.0084434Z To learn more about the Android CLI and how to use it, see the documentation (https://d.android.com/tools/agents/android-cli)
+2026-10-12T14:38:07.0085804Z 
+2026-10-12T14:38:07.0185309Z Downloading Android CLI...
+2026-10-12T14:38:08.0962932Z Unpacking embedded installation...
+2026-10-12T14:38:08.9734564Z 
+2026-10-12T14:38:08.9747867Z Terms of Service and License Agreement for the Android Software Development Kit
+2026-10-12T14:38:08.9748616Z 
+2026-10-12T14:38:08.9749256Z https://developer.android.com/studio/terms
+2026-10-12T14:38:08.9749547Z 
+2026-10-12T14:38:08.9750851Z Google collects usage data for the Android CLI, such as commands, sub-commands, and flags used. This data does not include custom parameters or identifiable information. This information helps improve the tool and is collected in accordance with Google's Privacy Policy.
+2026-10-12T14:38:08.9751883Z 
+2026-10-12T14:38:08.9752174Z https://policies.google.com/privacy
+2026-10-12T14:38:08.9752478Z 
+2026-10-12T14:38:08.9753064Z Disable Android CLI metrics collection by using the --no-metrics flag.
+2026-10-12T14:38:08.9753437Z 
+2026-10-12T14:38:08.9754475Z Tip: For the best experience using Android CLI with agents, we strongly recommend running android init to install the necessary skills and resources.
+2026-10-12T14:38:10.2696089Z 
+2026-10-12T14:38:15.7268416Z https://dl.google.com/android/repository/android-ndk-r27b-linux.zip...
+2026-10-12T14:38:16.3276911Z 
+2026-10-12T14:38:16.6099019Z https://dl.google.com/android/repository/cmake-3.22.1-linux.zip...
+2026-10-12T14:38:16.7246185Z 
+2026-10-12T14:38:28.8879254Z Unzipping ndk/27.1.12297006......
+2026-10-12T14:38:29.3769334Z 
+2026-10-12T14:38:29.8693439Z Unzipping cmake/3.22.1......
+2026-10-12T14:38:30.3110560Z Oct 12, 2026 2:38:30 PM java.util.prefs.FileSystemPreferences setupUserRoot
+2026-10-12T14:38:30.3131581Z INFO: Created user preferences directory.
+2026-10-12T14:38:30.7688855Z ##[group]Run set -o pipefail
+2026-10-12T14:38:30.7689418Z set -o pipefail
+2026-10-12T14:38:30.7690220Z node tooling/scripts/pnpm-local.mjs run android:dev-build 2>&1 | tee android-debug-build.log
+2026-10-12T14:38:30.7776670Z shell: /usr/bin/bash -e {0}
+2026-10-12T14:38:30.7776932Z env:
+2026-10-12T14:38:30.7777116Z   CI: 1
+2026-10-12T14:38:30.7777307Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:38:30.7777521Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:38:30.7777747Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:38:30.7778052Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:38:30.7778442Z   JAVA_HOME: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:38:30.7778866Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:38:30.7779222Z   MAVEN_ARGS: -ntp
+2026-10-12T14:38:30.7779431Z ##[endgroup]
+2026-10-12T14:38:30.8807692Z $ node tooling/scripts/android.mjs
+2026-10-12T14:38:31.5293543Z - Creating native directory (./android)
+2026-10-12T14:38:31.6071580Z ✔ Created native directory
+2026-10-12T14:38:31.6076286Z - Updating package.json
+2026-10-12T14:38:31.6161111Z ✔ Updated package.json | no changes
+2026-10-12T14:38:31.6162432Z - Running prebuild
+2026-10-12T14:38:33.9587915Z ✔ Finished prebuild
+2026-10-12T14:38:34.0679643Z Downloading https://services.gradle.org/distributions/gradle-9.3.1-bin.zip
+2026-10-12T14:38:35.7701073Z .............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+2026-10-12T14:38:36.9402314Z 
+2026-10-12T14:38:36.9404220Z Welcome to Gradle 9.3.1!
+2026-10-12T14:38:36.9405111Z 
+2026-10-12T14:38:36.9405902Z Here are the highlights of this release:
+2026-10-12T14:38:36.9406850Z  - Test reporting improvements
+2026-10-12T14:38:36.9409089Z  - Error and warning improvements
+2026-10-12T14:38:36.9410371Z  - Build authoring improvements
+2026-10-12T14:38:36.9410742Z 
+2026-10-12T14:38:36.9414451Z For more details see https://docs.gradle.org/9.3.1/release-notes.html
+2026-10-12T14:38:36.9415024Z 
+2026-10-12T14:38:37.0435554Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+2026-10-12T14:38:38.1405981Z Daemon will be stopped at the end of the build 
+2026-10-12T14:39:24.9414020Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:39:24.9421958Z > Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:39:24.9423753Z > Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:39:25.1395073Z > Task :gradle-plugin:settings-plugin:pluginDescriptors
+2026-10-12T14:39:25.1406898Z > Task :gradle-plugin:settings-plugin:processResources
+2026-10-12T14:39:25.1408430Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:39:25.1409861Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:pluginDescriptors
+2026-10-12T14:39:25.1410998Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:processResources
+2026-10-12T14:39:38.1393657Z > Task :gradle-plugin:shared:compileKotlin
+2026-10-12T14:39:38.1401101Z > Task :gradle-plugin:shared:compileJava NO-SOURCE
+2026-10-12T14:39:38.1402375Z > Task :gradle-plugin:shared:processResources NO-SOURCE
+2026-10-12T14:39:38.1403866Z > Task :gradle-plugin:shared:classes UP-TO-DATE
+2026-10-12T14:39:38.1405055Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:processResources NO-SOURCE
+2026-10-12T14:39:38.2394340Z > Task :gradle-plugin:shared:jar
+2026-10-12T14:39:38.2396365Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileKotlin
+2026-10-12T14:39:38.2401019Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileJava NO-SOURCE
+2026-10-12T14:39:38.2404008Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:classes UP-TO-DATE
+2026-10-12T14:39:38.2405383Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:jar
+2026-10-12T14:39:48.3410608Z > Task :gradle-plugin:settings-plugin:compileKotlin
+2026-10-12T14:39:48.3413688Z > Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+2026-10-12T14:39:48.3443334Z > Task :gradle-plugin:settings-plugin:classes
+2026-10-12T14:39:48.4404064Z > Task :gradle-plugin:settings-plugin:jar
+2026-10-12T14:39:49.3394704Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileKotlin
+2026-10-12T14:39:49.4394619Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileJava NO-SOURCE
+2026-10-12T14:39:49.4395995Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:classes
+2026-10-12T14:39:49.4397351Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:jar
+2026-10-12T14:40:05.6414098Z > Task :expo-gradle-plugin:expo-autolinking-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:40:05.6416278Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:40:05.6418217Z > Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:40:06.4401918Z > Task :expo-dev-launcher-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:40:06.4443577Z > Task :expo-dev-launcher-gradle-plugin:pluginDescriptors
+2026-10-12T14:40:06.4444798Z > Task :expo-dev-launcher-gradle-plugin:processResources
+2026-10-12T14:40:06.4473739Z > Task :expo-module-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:40:06.4500403Z > Task :expo-module-gradle-plugin:pluginDescriptors
+2026-10-12T14:40:06.5409863Z > Task :expo-module-gradle-plugin:processResources
+2026-10-12T14:40:11.2404310Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileKotlin
+2026-10-12T14:40:11.2464017Z > Task :expo-gradle-plugin:expo-autolinking-plugin:compileKotlin
+2026-10-12T14:40:11.2475539Z > Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors
+2026-10-12T14:40:11.2483546Z > Task :expo-gradle-plugin:expo-autolinking-plugin:compileJava NO-SOURCE
+2026-10-12T14:40:11.2496106Z > Task :gradle-plugin:react-native-gradle-plugin:processResources
+2026-10-12T14:40:11.2497290Z > Task :expo-gradle-plugin:expo-autolinking-plugin:pluginDescriptors
+2026-10-12T14:40:11.2505016Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileJava NO-SOURCE
+2026-10-12T14:40:11.2506320Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:pluginDescriptors
+2026-10-12T14:40:11.2524173Z > Task :expo-gradle-plugin:expo-autolinking-plugin:processResources
+2026-10-12T14:40:11.2525388Z > Task :expo-gradle-plugin:expo-autolinking-plugin:classes
+2026-10-12T14:40:11.2526666Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:processResources
+2026-10-12T14:40:11.2527751Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:classes
+2026-10-12T14:40:11.3414276Z > Task :expo-gradle-plugin:expo-autolinking-plugin:jar
+2026-10-12T14:40:11.3443572Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:jar
+2026-10-12T14:40:15.6394590Z > Task :gradle-plugin:react-native-gradle-plugin:compileKotlin
+2026-10-12T14:40:15.6400919Z > Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+2026-10-12T14:40:15.6402849Z > Task :gradle-plugin:react-native-gradle-plugin:classes
+2026-10-12T14:40:15.7409086Z > Task :gradle-plugin:react-native-gradle-plugin:jar
+2026-10-12T14:40:16.6411282Z > Task :expo-dev-launcher-gradle-plugin:compileKotlin
+2026-10-12T14:40:16.7411617Z > Task :expo-dev-launcher-gradle-plugin:compileJava NO-SOURCE
+2026-10-12T14:40:16.7443888Z > Task :expo-dev-launcher-gradle-plugin:classes
+2026-10-12T14:40:16.7483528Z > Task :expo-dev-launcher-gradle-plugin:jar
+2026-10-12T14:40:17.3398041Z 
+2026-10-12T14:40:17.3401502Z > Task :expo-module-gradle-plugin:compileKotlin
+2026-10-12T14:40:17.3404659Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/expo-module-gradle-plugin/src/main/kotlin/expo/modules/plugin/android/AndroidLibraryExtension.kt:9:24 'var targetSdk: Int?' is deprecated. Will be removed from library DSL in v9.0. Use testOptions.targetSdk or/and lint.targetSdk instead.
+2026-10-12T14:40:17.3406394Z 
+2026-10-12T14:40:17.3406677Z > Task :expo-module-gradle-plugin:compileJava NO-SOURCE
+2026-10-12T14:40:17.3407188Z > Task :expo-module-gradle-plugin:classes
+2026-10-12T14:40:17.3407612Z > Task :expo-module-gradle-plugin:jar
+2026-10-12T14:40:27.1404289Z 
+2026-10-12T14:40:27.1433960Z > Configure project :
+2026-10-12T14:40:27.1464863Z [ExpoRootProject] Using the following versions:
+2026-10-12T14:40:27.1483299Z   - buildTools:  36.0.0
+2026-10-12T14:40:27.1513196Z   - minSdk:      24
+2026-10-12T14:40:27.1543214Z   - compileSdk:  36
+2026-10-12T14:40:27.1575291Z   - targetSdk:   36
+2026-10-12T14:40:27.1603254Z   - ndk:         27.1.12297006
+2026-10-12T14:40:27.1633265Z   - kotlin:      2.1.20
+2026-10-12T14:40:27.1663250Z   - ksp:         2.1.20-2.0.1
+2026-10-12T14:40:30.6393034Z 
+2026-10-12T14:40:30.6399826Z > Configure project :app
+2026-10-12T14:40:30.6401198Z  ℹ️  Applying gradle plugin 'expo-max-sdk-override-plugin'
+2026-10-12T14:40:30.6404678Z   [expo-max-sdk-override-plugin] This plugin will find all permissions declared with `android:maxSdkVersion`. If there exists a declaration with the `android:maxSdkVersion` annotation and another one without, the plugin will remove the annotation from the final merged manifest. In order to see a log with the changes run a clean build of the app.
+2026-10-12T14:40:30.6407785Z  ℹ️  Applying gradle plugin 'expo-dev-launcher-gradle-plugin'
+2026-10-12T14:40:32.6393529Z 
+2026-10-12T14:40:32.6395318Z > Configure project :expo
+2026-10-12T14:40:32.6396008Z 
+2026-10-12T14:40:32.6396454Z Using expo modules
+2026-10-12T14:40:32.6397407Z   - expo-log-box (57.0.4)
+2026-10-12T14:40:32.6398279Z   - expo-constants (57.0.21)
+2026-10-12T14:40:32.6399108Z   - expo-dev-client (57.0.19)
+2026-10-12T14:40:33.0394611Z   - expo-dev-launcher (57.0.20)
+2026-10-12T14:40:33.5404294Z   - expo-dev-menu (57.0.19)
+2026-10-12T14:40:33.6424212Z   - expo-dev-menu-interface (57.0.0)
+2026-10-12T14:40:33.8398033Z   - expo-json-utils (57.0.2)
+2026-10-12T14:40:33.9393895Z   - expo-manifests (57.0.2)
+2026-10-12T14:40:44.4396903Z 
+2026-10-12T14:40:44.4405710Z > Configure project :expo-modules-core
+2026-10-12T14:40:44.4407194Z Linking react-native-worklets native libs into expo-modules-core build tasks
+2026-10-12T14:40:44.4408547Z task ':react-native-worklets:mergeDebugNativeLibs'
+2026-10-12T14:40:44.4409691Z task ':react-native-worklets:mergeReleaseNativeLibs'
+2026-10-12T14:40:44.4410413Z 
+2026-10-12T14:40:44.4410892Z > Configure project :expo
+2026-10-12T14:40:44.4412046Z   - expo-modules-core (57.0.21)
+2026-10-12T14:40:44.5398633Z   - expo-updates-interface (57.0.2)
+2026-10-12T14:40:44.5411392Z   - [📦] expo-dom-webview (57.0.1)
+2026-10-12T14:40:44.5412433Z   - [📦] expo-ui (57.0.22)
+2026-10-12T14:40:44.5413779Z   - [📦] expo-asset (57.0.19)
+2026-10-12T14:40:44.5415182Z   - [📦] expo-file-system (57.0.7)
+2026-10-12T14:40:44.5416188Z   - [📦] expo-font (57.0.4)
+2026-10-12T14:40:44.5417147Z   - [📦] expo-keep-awake (57.0.2)
+2026-10-12T14:40:44.5418092Z   - [📦] expo-linking (57.0.12)
+2026-10-12T14:40:44.5419035Z   - [📦] expo-router (57.0.25)
+2026-10-12T14:40:44.5420016Z   - [📦] expo-splash-screen (57.0.9)
+2026-10-12T14:40:44.5421029Z   - [📦] expo-status-bar (57.0.1)
+2026-10-12T14:40:44.5422006Z   - [📦] expo-system-ui (57.0.4)
+2026-10-12T14:40:44.5422900Z 
+2026-10-12T14:41:11.5395576Z Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+2026-10-12T14:42:05.0408720Z 
+2026-10-12T14:42:05.0409889Z > Task :expo:generatePackagesList
+2026-10-12T14:42:05.0410785Z > Task :expo:preBuild
+2026-10-12T14:42:05.5394081Z > Task :expo-constants:createExpoConfig
+2026-10-12T14:42:05.5395698Z > Task :expo-constants:preBuild
+2026-10-12T14:42:05.5396934Z > Task :expo-dev-client:preBuild UP-TO-DATE
+2026-10-12T14:42:05.5426264Z > Task :expo-dev-launcher:preBuild UP-TO-DATE
+2026-10-12T14:42:05.5426949Z > Task :expo-dev-menu:preBuild UP-TO-DATE
+2026-10-12T14:42:05.5427640Z > Task :expo-dev-menu-interface:preBuild UP-TO-DATE
+2026-10-12T14:42:05.5428317Z > Task :expo-json-utils:preBuild UP-TO-DATE
+2026-10-12T14:42:05.5428930Z > Task :expo-log-box:preBuild UP-TO-DATE
+2026-10-12T14:42:05.5429530Z > Task :expo-manifests:preBuild UP-TO-DATE
+2026-10-12T14:42:05.5431247Z > Task :expo-modules-core:preBuild UP-TO-DATE
+2026-10-12T14:42:05.5443467Z > Task :expo-updates-interface:preBuild UP-TO-DATE
+2026-10-12T14:42:05.7393886Z > Task :react-native-gesture-handler:generateCodegenSchemaFromJavaScript
+2026-10-12T14:42:06.1417311Z > Task :react-native-gesture-handler:generateCodegenArtifactsFromSchema
+2026-10-12T14:42:06.1453426Z > Task :react-native-gesture-handler:preBuild
+2026-10-12T14:42:06.1454382Z > Task :react-native-masked-view_masked-view:preBuild UP-TO-DATE
+2026-10-12T14:42:06.2393968Z > Task :react-native-reanimated:assertMinimalReactNativeVersionTask
+2026-10-12T14:42:06.3393792Z > Task :react-native-reanimated:assertWorkletsVersionTask
+2026-10-12T14:42:06.6394012Z > Task :react-native-reanimated:generateCodegenSchemaFromJavaScript
+2026-10-12T14:42:07.0434242Z > Task :react-native-reanimated:generateCodegenArtifactsFromSchema
+2026-10-12T14:42:07.1396643Z > Task :react-native-reanimated:prepareReanimatedHeadersForPrefabs
+2026-10-12T14:42:07.2393657Z > Task :react-native-reanimated:preBuild
+2026-10-12T14:42:07.3394021Z > Task :react-native-safe-area-context:generateCodegenSchemaFromJavaScript
+2026-10-12T14:42:07.5394264Z > Task :react-native-safe-area-context:generateCodegenArtifactsFromSchema
+2026-10-12T14:42:07.5394972Z > Task :react-native-safe-area-context:preBuild
+2026-10-12T14:42:07.7393901Z > Task :react-native-screens:generateCodegenSchemaFromJavaScript
+2026-10-12T14:42:07.9396072Z > Task :react-native-screens:generateCodegenArtifactsFromSchema
+2026-10-12T14:42:07.9403128Z > Task :react-native-screens:preBuild
+2026-10-12T14:42:08.1393713Z > Task :react-native-svg:generateCodegenSchemaFromJavaScript
+2026-10-12T14:42:08.3393351Z > Task :react-native-svg:generateCodegenArtifactsFromSchema
+2026-10-12T14:42:08.3394464Z > Task :react-native-svg:preBuild
+2026-10-12T14:42:08.3395605Z > Task :react-native-worklets:assertMinimalReactNativeVersionTask
+2026-10-12T14:42:08.4394214Z > Task :react-native-worklets:generateCodegenSchemaFromJavaScript
+2026-10-12T14:42:08.6424300Z > Task :react-native-worklets:generateCodegenArtifactsFromSchema
+2026-10-12T14:42:08.6425490Z > Task :react-native-worklets:prepareWorkletsHeadersForPrefabs
+2026-10-12T14:42:08.6426399Z > Task :react-native-worklets:preBuild
+2026-10-12T14:42:08.6427092Z > Task :expo:preDebugBuild
+2026-10-12T14:42:11.2394070Z > Task :expo:writeDebugAarMetadata
+2026-10-12T14:42:11.2394958Z > Task :expo-constants:preDebugBuild
+2026-10-12T14:42:11.2395785Z > Task :expo-constants:writeDebugAarMetadata
+2026-10-12T14:42:11.2396689Z > Task :expo-dev-client:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:11.2397574Z > Task :expo-dev-client:writeDebugAarMetadata
+2026-10-12T14:42:11.2398478Z > Task :expo-dev-launcher:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:11.2400617Z > Task :expo-dev-launcher:writeDebugAarMetadata
+2026-10-12T14:42:11.2401682Z > Task :expo-dev-menu:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:11.2403076Z > Task :expo-dev-menu:writeDebugAarMetadata
+2026-10-12T14:42:11.2404290Z > Task :expo-dev-menu-interface:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:11.2408014Z > Task :expo-dev-menu-interface:writeDebugAarMetadata
+2026-10-12T14:42:11.2408819Z > Task :expo-json-utils:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:11.8395675Z > Task :expo-json-utils:writeDebugAarMetadata
+2026-10-12T14:42:14.7443980Z > Task :expo-log-box:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:14.7448288Z > Task :expo-log-box:writeDebugAarMetadata
+2026-10-12T14:42:14.7449132Z > Task :expo-manifests:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:14.7450255Z > Task :expo-manifests:writeDebugAarMetadata
+2026-10-12T14:42:14.7451066Z > Task :expo-modules-core:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:14.7451906Z > Task :expo-modules-core:writeDebugAarMetadata
+2026-10-12T14:42:14.7452985Z > Task :expo-updates-interface:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:14.7453909Z > Task :expo-updates-interface:writeDebugAarMetadata
+2026-10-12T14:42:14.7454760Z > Task :react-native-gesture-handler:preDebugBuild
+2026-10-12T14:42:14.7455669Z > Task :react-native-gesture-handler:writeDebugAarMetadata
+2026-10-12T14:42:14.7456722Z > Task :react-native-masked-view_masked-view:preDebugBuild UP-TO-DATE
+2026-10-12T14:42:14.7457850Z > Task :react-native-masked-view_masked-view:writeDebugAarMetadata
+2026-10-12T14:42:14.7458843Z > Task :react-native-reanimated:preDebugBuild
+2026-10-12T14:42:14.7459701Z > Task :react-native-reanimated:writeDebugAarMetadata
+2026-10-12T14:42:14.7460576Z > Task :react-native-safe-area-context:preDebugBuild
+2026-10-12T14:42:14.7461499Z > Task :react-native-safe-area-context:writeDebugAarMetadata
+2026-10-12T14:42:14.7462344Z > Task :react-native-screens:preDebugBuild
+2026-10-12T14:42:14.7463336Z > Task :react-native-screens:writeDebugAarMetadata
+2026-10-12T14:42:14.7464112Z > Task :react-native-svg:preDebugBuild
+2026-10-12T14:42:14.7464859Z > Task :react-native-svg:writeDebugAarMetadata
+2026-10-12T14:42:14.7465617Z > Task :react-native-worklets:preDebugBuild
+2026-10-12T14:42:14.7466429Z > Task :react-native-worklets:writeDebugAarMetadata
+2026-10-12T14:42:14.7467202Z > Task :expo:generateDebugResValues
+2026-10-12T14:42:14.7467882Z > Task :expo:generateDebugResources
+2026-10-12T14:42:14.8394132Z > Task :expo:packageDebugResources
+2026-10-12T14:42:14.8395565Z > Task :expo-constants:generateDebugResValues
+2026-10-12T14:42:14.8396652Z > Task :expo-constants:generateDebugResources
+2026-10-12T14:42:14.8397437Z > Task :expo-constants:packageDebugResources
+2026-10-12T14:42:14.8398119Z > Task :expo-dev-client:generateDebugResValues
+2026-10-12T14:42:14.8398792Z > Task :expo-dev-client:generateDebugResources
+2026-10-12T14:42:14.8399469Z > Task :expo-dev-client:packageDebugResources
+2026-10-12T14:42:14.8400166Z > Task :expo-dev-launcher:generateDebugResValues
+2026-10-12T14:42:14.8400845Z > Task :expo-dev-launcher:generateDebugResources
+2026-10-12T14:42:14.9393743Z > Task :expo-dev-launcher:packageDebugResources
+2026-10-12T14:42:14.9394576Z > Task :expo-dev-menu:generateDebugResValues
+2026-10-12T14:42:14.9395490Z > Task :expo-dev-menu:generateDebugResources
+2026-10-12T14:42:15.0395842Z > Task :expo-dev-menu:packageDebugResources
+2026-10-12T14:42:15.0396760Z > Task :expo-dev-menu-interface:generateDebugResValues
+2026-10-12T14:42:15.0397563Z > Task :expo-dev-menu-interface:generateDebugResources
+2026-10-12T14:42:15.0398346Z > Task :expo-dev-menu-interface:packageDebugResources
+2026-10-12T14:42:15.0399727Z > Task :expo-json-utils:generateDebugResValues
+2026-10-12T14:42:15.0400428Z > Task :expo-json-utils:generateDebugResources
+2026-10-12T14:42:15.0401122Z > Task :expo-json-utils:packageDebugResources
+2026-10-12T14:42:15.0401780Z > Task :expo-log-box:generateDebugResValues
+2026-10-12T14:42:15.0402422Z > Task :expo-log-box:generateDebugResources
+2026-10-12T14:42:15.0403350Z > Task :expo-log-box:packageDebugResources
+2026-10-12T14:42:15.0404014Z > Task :expo-manifests:generateDebugResValues
+2026-10-12T14:42:15.0404700Z > Task :expo-manifests:generateDebugResources
+2026-10-12T14:42:15.0405388Z > Task :expo-manifests:packageDebugResources
+2026-10-12T14:42:15.0406106Z > Task :expo-modules-core:generateDebugResValues
+2026-10-12T14:42:15.0407085Z > Task :expo-modules-core:generateDebugResources
+2026-10-12T14:42:15.0407826Z > Task :expo-modules-core:packageDebugResources
+2026-10-12T14:42:15.0408539Z > Task :expo-updates-interface:generateDebugResValues
+2026-10-12T14:42:15.0409267Z > Task :expo-updates-interface:generateDebugResources
+2026-10-12T14:42:15.0410016Z > Task :expo-updates-interface:packageDebugResources
+2026-10-12T14:42:15.1394846Z > Task :react-native-gesture-handler:generateDebugResValues
+2026-10-12T14:42:15.1395821Z > Task :react-native-gesture-handler:generateDebugResources
+2026-10-12T14:42:15.1396583Z > Task :react-native-gesture-handler:packageDebugResources
+2026-10-12T14:42:15.1397292Z > Task :react-native-masked-view_masked-view:generateDebugResValues
+2026-10-12T14:42:15.1398068Z > Task :react-native-masked-view_masked-view:generateDebugResources
+2026-10-12T14:42:15.1398774Z > Task :react-native-masked-view_masked-view:packageDebugResources
+2026-10-12T14:42:15.1399507Z > Task :react-native-reanimated:generateDebugResValues
+2026-10-12T14:42:15.1400382Z > Task :react-native-reanimated:generateDebugResources
+2026-10-12T14:42:15.1401000Z > Task :react-native-reanimated:packageDebugResources
+2026-10-12T14:42:15.1401642Z > Task :react-native-safe-area-context:generateDebugResValues
+2026-10-12T14:42:15.1402801Z > Task :react-native-safe-area-context:generateDebugResources
+2026-10-12T14:42:15.1403871Z > Task :react-native-safe-area-context:packageDebugResources
+2026-10-12T14:42:15.1404667Z > Task :react-native-screens:generateDebugResValues
+2026-10-12T14:42:15.2433970Z > Task :react-native-screens:generateDebugResources
+2026-10-12T14:42:15.2434928Z > Task :app:generateAutolinkingNewArchitectureFiles
+2026-10-12T14:42:15.2435734Z > Task :app:generateAutolinkingPackageList
+2026-10-12T14:42:15.2436546Z > Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+2026-10-12T14:42:15.2437409Z > Task :app:generateCodegenArtifactsFromSchema SKIPPED
+2026-10-12T14:42:15.2438226Z > Task :react-native-screens:packageDebugResources
+2026-10-12T14:42:15.2439030Z > Task :react-native-svg:generateDebugResValues
+2026-10-12T14:42:15.2439773Z > Task :app:generateReactNativeEntryPoint
+2026-10-12T14:42:15.2440371Z > Task :app:preBuild
+2026-10-12T14:42:15.2440839Z > Task :app:preDebugBuild
+2026-10-12T14:42:15.2441488Z > Task :react-native-svg:generateDebugResources
+2026-10-12T14:42:15.2442280Z > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+2026-10-12T14:42:15.2443466Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:15.2444342Z > Task :react-native-svg:packageDebugResources
+2026-10-12T14:42:15.2445169Z > Task :react-native-worklets:generateDebugResValues
+2026-10-12T14:42:15.2445989Z > Task :react-native-worklets:generateDebugResources
+2026-10-12T14:42:15.2446718Z > Task :app:generateDebugBuildConfig
+2026-10-12T14:42:15.2447454Z > Task :react-native-worklets:packageDebugResources
+2026-10-12T14:42:15.2448175Z > Task :expo:extractDeepLinksDebug
+2026-10-12T14:42:29.9393892Z > Task :expo:processDebugManifest
+2026-10-12T14:42:29.9413648Z > Task :expo-constants:extractDeepLinksDebug
+2026-10-12T14:42:30.0397909Z > Task :expo-constants:processDebugManifest
+2026-10-12T14:42:30.0398966Z > Task :expo-dev-client:extractDeepLinksDebug
+2026-10-12T14:42:30.0399931Z > Task :expo-dev-client:processDebugManifest
+2026-10-12T14:42:30.0413782Z > Task :expo-dev-launcher:extractDeepLinksDebug
+2026-10-12T14:42:30.0414793Z > Task :expo-dev-launcher:processDebugManifest
+2026-10-12T14:42:30.0415663Z > Task :expo-dev-menu:extractDeepLinksDebug
+2026-10-12T14:42:30.0416489Z > Task :expo-dev-menu:processDebugManifest
+2026-10-12T14:42:30.0417434Z > Task :expo-dev-menu-interface:extractDeepLinksDebug
+2026-10-12T14:42:30.0418385Z > Task :expo-dev-menu-interface:processDebugManifest
+2026-10-12T14:42:30.0419302Z > Task :expo-json-utils:extractDeepLinksDebug
+2026-10-12T14:42:30.0420145Z > Task :expo-json-utils:processDebugManifest
+2026-10-12T14:42:30.1416977Z > Task :expo-log-box:extractDeepLinksDebug
+2026-10-12T14:42:30.1418223Z > Task :expo-log-box:processDebugManifest
+2026-10-12T14:42:30.1419260Z > Task :expo-manifests:extractDeepLinksDebug
+2026-10-12T14:42:30.1433335Z > Task :expo-manifests:processDebugManifest
+2026-10-12T14:42:30.1434189Z > Task :expo-modules-core:extractDeepLinksDebug
+2026-10-12T14:42:30.1434670Z 
+2026-10-12T14:42:30.1435294Z > Task :expo-modules-core:processDebugManifest
+2026-10-12T14:42:30.1437197Z /home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/AndroidManifest.xml:8:9-11:45 Warning:
+2026-10-12T14:42:30.1439539Z 	meta-data#com.facebook.soloader.enabled@android:value was tagged at AndroidManifest.xml:8 to replace other declarations but no other declaration present
+2026-10-12T14:42:30.1440665Z 
+2026-10-12T14:42:30.1461227Z > Task :expo-updates-interface:extractDeepLinksDebug
+2026-10-12T14:42:30.1462353Z > Task :expo-updates-interface:processDebugManifest
+2026-10-12T14:42:30.1471820Z > Task :react-native-gesture-handler:extractDeepLinksDebug
+2026-10-12T14:42:30.1473957Z > Task :react-native-gesture-handler:processDebugManifest
+2026-10-12T14:42:30.1474848Z > Task :react-native-masked-view_masked-view:extractDeepLinksDebug
+2026-10-12T14:42:30.1475792Z > Task :react-native-masked-view_masked-view:processDebugManifest
+2026-10-12T14:42:30.2393473Z > Task :react-native-reanimated:extractDeepLinksDebug
+2026-10-12T14:42:30.2398538Z > Task :react-native-reanimated:processDebugManifest
+2026-10-12T14:42:30.2399785Z > Task :react-native-safe-area-context:extractDeepLinksDebug
+2026-10-12T14:42:30.2400539Z 
+2026-10-12T14:42:30.2401106Z > Task :react-native-safe-area-context:processDebugManifest
+2026-10-12T14:42:30.2403999Z package="com.th3rdwave.safeareacontext" found in source AndroidManifest.xml: /home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_63a5cb5facfacb281aaf1339136542ab/node_modules/react-native-safe-area-context/android/src/main/AndroidManifest.xml.
+2026-10-12T14:42:30.2406993Z Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+2026-10-12T14:42:30.2410215Z Recommendation: remove package="com.th3rdwave.safeareacontext" from the source AndroidManifest.xml: /home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_63a5cb5facfacb281aaf1339136542ab/node_modules/react-native-safe-area-context/android/src/main/AndroidManifest.xml.
+2026-10-12T14:42:30.2412234Z 
+2026-10-12T14:42:30.2412933Z > Task :react-native-screens:extractDeepLinksDebug
+2026-10-12T14:42:30.2413855Z > Task :react-native-screens:processDebugManifest
+2026-10-12T14:42:30.2414750Z > Task :react-native-svg:extractDeepLinksDebug
+2026-10-12T14:42:30.2415590Z > Task :react-native-svg:processDebugManifest
+2026-10-12T14:42:30.2416487Z > Task :react-native-worklets:extractDeepLinksDebug
+2026-10-12T14:42:30.2417418Z > Task :react-native-worklets:processDebugManifest
+2026-10-12T14:42:30.6393413Z > Task :expo:compileDebugLibraryResources
+2026-10-12T14:42:30.9401104Z > Task :expo:parseDebugLocalResources
+2026-10-12T14:42:31.0394997Z > Task :expo:generateDebugRFile
+2026-10-12T14:42:31.0395773Z > Task :expo-constants:compileDebugLibraryResources
+2026-10-12T14:42:31.0396549Z > Task :expo-constants:parseDebugLocalResources
+2026-10-12T14:42:31.0397026Z > Task :expo-constants:generateDebugRFile
+2026-10-12T14:42:31.0397812Z > Task :expo-dev-client:compileDebugLibraryResources
+2026-10-12T14:42:31.0398262Z > Task :expo-dev-client:parseDebugLocalResources
+2026-10-12T14:42:31.0398647Z > Task :expo-dev-client:generateDebugRFile
+2026-10-12T14:42:31.1404289Z > Task :expo-dev-launcher:compileDebugLibraryResources
+2026-10-12T14:42:31.1433704Z > Task :expo-dev-launcher:parseDebugLocalResources
+2026-10-12T14:42:31.1438678Z > Task :expo-dev-launcher:generateDebugRFile
+2026-10-12T14:42:31.2430211Z > Task :expo-dev-menu:compileDebugLibraryResources
+2026-10-12T14:42:31.2432380Z > Task :expo-dev-menu:parseDebugLocalResources
+2026-10-12T14:42:31.2433503Z > Task :expo-dev-menu:generateDebugRFile
+2026-10-12T14:42:31.2434805Z > Task :expo-dev-menu-interface:compileDebugLibraryResources
+2026-10-12T14:42:31.2435905Z > Task :expo-dev-menu-interface:parseDebugLocalResources
+2026-10-12T14:42:31.2436863Z > Task :expo-dev-menu-interface:generateDebugRFile
+2026-10-12T14:42:31.2437801Z > Task :expo-json-utils:compileDebugLibraryResources
+2026-10-12T14:42:31.2438717Z > Task :expo-json-utils:parseDebugLocalResources
+2026-10-12T14:42:31.2439572Z > Task :expo-json-utils:generateDebugRFile
+2026-10-12T14:42:31.2440415Z > Task :expo-log-box:compileDebugLibraryResources
+2026-10-12T14:42:31.2441297Z > Task :expo-log-box:parseDebugLocalResources
+2026-10-12T14:42:31.3397870Z > Task :expo-log-box:generateDebugRFile
+2026-10-12T14:42:31.3425476Z > Task :expo-manifests:compileDebugLibraryResources
+2026-10-12T14:42:31.3453794Z > Task :expo-manifests:parseDebugLocalResources
+2026-10-12T14:42:31.3454737Z > Task :expo-manifests:generateDebugRFile
+2026-10-12T14:42:31.3455727Z > Task :expo-modules-core:compileDebugLibraryResources
+2026-10-12T14:42:31.3456776Z > Task :expo-modules-core:parseDebugLocalResources
+2026-10-12T14:42:31.3457681Z > Task :expo-modules-core:generateDebugRFile
+2026-10-12T14:42:31.3465668Z > Task :expo-updates-interface:compileDebugLibraryResources
+2026-10-12T14:42:31.3467113Z > Task :expo-updates-interface:parseDebugLocalResources
+2026-10-12T14:42:31.3469435Z > Task :expo-updates-interface:generateDebugRFile
+2026-10-12T14:42:31.3483780Z > Task :react-native-gesture-handler:compileDebugLibraryResources
+2026-10-12T14:42:31.3484809Z > Task :react-native-gesture-handler:parseDebugLocalResources
+2026-10-12T14:42:31.3485809Z > Task :react-native-gesture-handler:generateDebugRFile
+2026-10-12T14:42:31.3486926Z > Task :react-native-masked-view_masked-view:compileDebugLibraryResources
+2026-10-12T14:42:31.3488189Z > Task :react-native-masked-view_masked-view:parseDebugLocalResources
+2026-10-12T14:42:31.3489213Z > Task :react-native-masked-view_masked-view:generateDebugRFile
+2026-10-12T14:42:31.3490141Z > Task :react-native-reanimated:compileDebugLibraryResources
+2026-10-12T14:42:31.3491097Z > Task :react-native-reanimated:parseDebugLocalResources
+2026-10-12T14:42:31.4396987Z > Task :react-native-reanimated:generateDebugRFile
+2026-10-12T14:42:31.4414022Z > Task :react-native-safe-area-context:compileDebugLibraryResources
+2026-10-12T14:42:31.4440921Z > Task :react-native-safe-area-context:parseDebugLocalResources
+2026-10-12T14:42:31.4470128Z > Task :react-native-safe-area-context:generateDebugRFile
+2026-10-12T14:42:31.4471620Z > Task :react-native-screens:compileDebugLibraryResources
+2026-10-12T14:42:31.4472969Z > Task :react-native-screens:parseDebugLocalResources
+2026-10-12T14:42:31.4473973Z > Task :react-native-screens:generateDebugRFile
+2026-10-12T14:42:31.4474964Z > Task :react-native-svg:compileDebugLibraryResources
+2026-10-12T14:42:31.4475962Z > Task :react-native-svg:parseDebugLocalResources
+2026-10-12T14:42:31.5412923Z > Task :react-native-svg:generateDebugRFile
+2026-10-12T14:42:31.5414079Z > Task :react-native-worklets:compileDebugLibraryResources
+2026-10-12T14:42:31.5415361Z > Task :react-native-worklets:parseDebugLocalResources
+2026-10-12T14:42:31.5416245Z > Task :react-native-worklets:generateDebugRFile
+2026-10-12T14:42:31.5417257Z > Task :expo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:31.5418143Z > Task :expo:generateDebugBuildConfig
+2026-10-12T14:42:31.5419522Z > Task :expo-constants:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:31.5420534Z > Task :expo-constants:generateDebugBuildConfig
+2026-10-12T14:42:31.5421621Z > Task :expo-modules-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:31.5422882Z > Task :expo-modules-core:generateDebugBuildConfig
+2026-10-12T14:42:31.5424060Z > Task :react-native-worklets:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:31.5425184Z > Task :react-native-worklets:generateDebugBuildConfig
+2026-10-12T14:42:34.9393696Z > Task :app:checkDebugAarMetadata
+2026-10-12T14:42:34.9423539Z > Task :app:generateDebugResValues
+2026-10-12T14:42:35.2414411Z > Task :app:mapDebugSourceSetPaths
+2026-10-12T14:42:35.2443359Z > Task :app:generateDebugResources
+2026-10-12T14:42:37.4393427Z > Task :react-native-worklets:compileDebugKotlin
+2026-10-12T14:42:37.4394315Z > Task :react-native-worklets:javaPreCompileDebug
+2026-10-12T14:42:39.5393747Z > Task :app:mergeDebugResources
+2026-10-12T14:42:39.6403970Z > Task :app:packageDebugResources
+2026-10-12T14:42:39.6424676Z > Task :app:parseDebugLocalResources
+2026-10-12T14:42:39.6455970Z > Task :app:createDebugCompatibleScreenManifests
+2026-10-12T14:42:39.6464404Z > Task :app:extractDeepLinksDebug
+2026-10-12T14:42:40.2403296Z 
+2026-10-12T14:42:40.2433639Z > Task :app:processDebugMainManifest
+2026-10-12T14:42:40.2435306Z /home/runner/work/nilumi-v2/nilumi-v2/apps/client/android/app/src/debug/AndroidManifest.xml:6:5-162 Warning:
+2026-10-12T14:42:40.2464329Z 	application@android:usesCleartextTraffic was tagged at AndroidManifest.xml:6 to replace other declarations but no other declaration present
+2026-10-12T14:42:40.2491830Z /home/runner/work/nilumi-v2/nilumi-v2/apps/client/android/app/src/debug/AndroidManifest.xml Warning:
+2026-10-12T14:42:40.2524129Z 	provider#expo.modules.filesystem.FileSystemFileProvider@android:authorities was tagged at AndroidManifest.xml:0 to replace other declarations but no other declaration present
+2026-10-12T14:42:40.3405356Z 
+2026-10-12T14:42:40.3433807Z > Task :app:expoDebugOverrideMaxSdkConflicts
+2026-10-12T14:42:40.3444119Z ---------- Expo Max Sdk Override Plugin ----------
+2026-10-12T14:42:40.3473626Z >>> No 'android:maxSdkVersion' conflicts found
+2026-10-12T14:42:40.3486395Z --------------------------------------------------
+2026-10-12T14:42:40.4392946Z 
+2026-10-12T14:42:40.4408834Z > Task :app:processDebugManifest
+2026-10-12T14:42:40.4433575Z > Task :app:processDebugManifestForPackage
+2026-10-12T14:42:43.2423961Z > Task :app:processDebugResources
+2026-10-12T14:42:43.2426420Z > Task :expo-modules-core:javaPreCompileDebug
+2026-10-12T14:42:43.2453490Z > Task :expo-constants:javaPreCompileDebug
+2026-10-12T14:42:43.2483774Z > Task :expo-dev-client:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:43.4394027Z > Task :expo-dev-client:dataBindingMergeDependencyArtifactsDebug
+2026-10-12T14:42:43.5393910Z > Task :expo-dev-client:dataBindingGenBaseClassesDebug
+2026-10-12T14:42:43.5403608Z > Task :expo-dev-client:generateDebugBuildConfig
+2026-10-12T14:42:43.5404543Z > Task :expo-dev-client:javaPreCompileDebug
+2026-10-12T14:42:43.5405625Z > Task :expo-dev-launcher:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:47.0393680Z > Task :react-native-worklets:compileDebugJavaWithJavac
+2026-10-12T14:42:47.1402391Z > Task :expo-dev-launcher:dataBindingMergeDependencyArtifactsDebug
+2026-10-12T14:42:47.2396188Z > Task :react-native-worklets:bundleLibCompileToJarDebug
+2026-10-12T14:42:48.1394825Z > Task :expo-dev-launcher:dataBindingGenBaseClassesDebug
+2026-10-12T14:42:48.1396049Z > Task :expo-dev-launcher:generateDebugBuildConfig
+2026-10-12T14:42:48.1397385Z > Task :expo-dev-launcher:checkApolloVersions
+2026-10-12T14:42:48.2396589Z > Task :expo-dev-launcher:generateServiceApolloOptions
+2026-10-12T14:42:50.2394593Z 
+2026-10-12T14:42:50.2424742Z > Task :expo-dev-launcher:generateServiceApolloSources
+2026-10-12T14:42:50.2438563Z w: /home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/graphql/GetBranches.graphql: (21, 11): Apollo: Use of deprecated field `runtimeVersion`
+2026-10-12T14:42:50.2484648Z w: /home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/graphql/GetBranches.graphql: (34, 3): Apollo: Variable `platform` is unused
+2026-10-12T14:42:50.2489035Z w: /home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/graphql/GetUpdates.graphql: (14, 11): Apollo: Use of deprecated field `runtimeVersion`
+2026-10-12T14:42:50.2512987Z 
+2026-10-12T14:42:50.2523975Z > Task :expo-dev-menu:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:50.2563493Z > Task :expo-dev-menu:generateDebugBuildConfig
+2026-10-12T14:42:50.2606504Z > Task :expo-dev-menu-interface:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:50.2608219Z > Task :expo-dev-menu-interface:generateDebugBuildConfig
+2026-10-12T14:42:50.2609033Z > Task :expo-dev-menu-interface:javaPreCompileDebug
+2026-10-12T14:42:50.2609914Z > Task :expo-json-utils:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:50.2610729Z > Task :expo-json-utils:generateDebugBuildConfig
+2026-10-12T14:42:50.2611318Z > Task :expo-json-utils:javaPreCompileDebug
+2026-10-12T14:42:50.2612037Z > Task :expo-manifests:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:50.2612952Z > Task :expo-manifests:generateDebugBuildConfig
+2026-10-12T14:42:50.2613498Z > Task :expo-manifests:javaPreCompileDebug
+2026-10-12T14:42:50.2613994Z > Task :expo-dev-menu:javaPreCompileDebug
+2026-10-12T14:42:50.2614769Z > Task :expo-updates-interface:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:50.3434133Z > Task :expo-updates-interface:generateDebugBuildConfig
+2026-10-12T14:42:50.3453606Z > Task :expo-updates-interface:javaPreCompileDebug
+2026-10-12T14:42:50.3483613Z > Task :expo-dev-launcher:javaPreCompileDebug
+2026-10-12T14:42:50.3484793Z > Task :expo-log-box:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:50.3485920Z > Task :expo-log-box:generateDebugBuildConfig
+2026-10-12T14:42:50.3486846Z > Task :expo-log-box:javaPreCompileDebug
+2026-10-12T14:42:50.3487724Z > Task :expo:javaPreCompileDebug
+2026-10-12T14:42:50.3488993Z > Task :react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:50.3490442Z > Task :react-native-gesture-handler:generateDebugBuildConfig
+2026-10-12T14:42:50.3491881Z > Task :react-native-reanimated:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:42:50.3493500Z > Task :react-native-reanimated:generateDebugBuildConfig
+2026-10-12T14:42:53.5403042Z 
+2026-10-12T14:42:53.5433563Z > Task :react-native-reanimated:compileDebugKotlin
+2026-10-12T14:42:53.5465680Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.kt:13:8 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:42:53.5495162Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.kt:58:95 'fun resolveCustomDirectEventName(eventName: String): String?' is deprecated.
+2026-10-12T14:42:53.5526413Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.kt:234:29 'fun receiveEvent(surfaceId: Int, targetTag: Int, eventName: String, canCoalesceEvent: Boolean, customCoalesceKey: Int, params: WritableMap?, category: Int): Unit' is deprecated. Use the overload with eventTimestamp parameter instead.
+2026-10-12T14:42:53.5555180Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/ReanimatedPackage.kt:5:8 'class ReactInstanceManager : Any' is deprecated. Deprecated in Java.
+2026-10-12T14:42:53.5585304Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/ReanimatedPackage.kt:60:73 'class ReactInstanceManager : Any' is deprecated. Deprecated in Java.
+2026-10-12T14:42:53.5616370Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/ReanimatedPackage.kt:61:63 'val reactNativeHost: ReactNativeHost' is deprecated. You should not use ReactNativeHost directly in the New Architecture. Use ReactHost instead.
+2026-10-12T14:42:53.5645738Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/EventHandler.kt:7:8 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:42:53.5675839Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/EventHandler.kt:25:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:42:53.5705896Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/EventHandler.kt:38:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:42:53.5721038Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/EventHandler.kt:48:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:42:53.5765867Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/EventHandler.kt:57:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:42:53.5779254Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/NoopEventHandler.kt:8:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:42:53.5795976Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/NoopEventHandler.kt:20:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:42:53.5835185Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/NoopEventHandler.kt:29:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:42:53.5866575Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/nativeProxy/NoopEventHandler.kt:37:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:42:53.5895847Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_559eca740ca9fc361dc2c9ff75787e0b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/sensor/ReanimatedSensor.kt:28:26 'val defaultDisplay: Display!' is deprecated. Deprecated in Java.
+2026-10-12T14:42:53.5917225Z 
+2026-10-12T14:42:53.5917976Z > Task :react-native-reanimated:javaPreCompileDebug
+2026-10-12T14:42:54.6444025Z > Task :react-native-reanimated:compileDebugJavaWithJavac
+2026-10-12T14:42:54.7393726Z > Task :react-native-reanimated:bundleLibCompileToJarDebug
+2026-10-12T14:42:54.7396219Z > Task :react-native-svg:generateDebugBuildConfig
+2026-10-12T14:42:54.7397168Z > Task :react-native-svg:javaPreCompileDebug
+2026-10-12T14:43:02.6403298Z 
+2026-10-12T14:43:02.6423880Z > Task :react-native-svg:compileDebugJavaWithJavac
+2026-10-12T14:43:02.6453379Z Note: Some input files use or override a deprecated API.
+2026-10-12T14:43:02.6483360Z Note: Recompile with -Xlint:deprecation for details.
+2026-10-12T14:43:02.6513383Z Note: Some input files use unchecked or unsafe operations.
+2026-10-12T14:43:02.6543300Z Note: Recompile with -Xlint:unchecked for details.
+2026-10-12T14:43:03.0392950Z 
+2026-10-12T14:43:03.0413802Z > Task :react-native-svg:bundleLibCompileToJarDebug
+2026-10-12T14:43:09.0392220Z 
+2026-10-12T14:43:09.0394859Z > Task :react-native-gesture-handler:compileDebugKotlin
+2026-10-12T14:43:09.0398448Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_c85b68c9faeab974e8e6a969a2e5d909/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/Extensions.kt:8:8 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:43:09.0404184Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_c85b68c9faeab974e8e6a969a2e5d909/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/Extensions.kt:13:29 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:43:09.0409581Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_c85b68c9faeab974e8e6a969a2e5d909/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/Extensions.kt:14:32 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:43:09.1393082Z 
+2026-10-12T14:43:09.1404098Z > Task :react-native-gesture-handler:javaPreCompileDebug
+2026-10-12T14:43:09.9394177Z > Task :react-native-gesture-handler:compileDebugJavaWithJavac
+2026-10-12T14:43:09.9413670Z > Task :react-native-gesture-handler:bundleLibCompileToJarDebug
+2026-10-12T14:43:09.9434821Z > Task :react-native-masked-view_masked-view:generateDebugBuildConfig
+2026-10-12T14:43:09.9450921Z > Task :react-native-masked-view_masked-view:javaPreCompileDebug
+2026-10-12T14:43:10.3393908Z 
+2026-10-12T14:43:10.3406038Z > Task :react-native-masked-view_masked-view:compileDebugJavaWithJavac
+2026-10-12T14:43:10.3422054Z Note: /home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_b3266aa379e7413ea72bc174d5c26e6b/node_modules/@react-native-masked-view/masked-view/android/src/main/java/org/reactnative/maskedview/RNCMaskedViewPackage.java uses or overrides a deprecated API.
+2026-10-12T14:43:10.3424804Z Note: Recompile with -Xlint:deprecation for details.
+2026-10-12T14:43:10.3425425Z 
+2026-10-12T14:43:10.3426170Z > Task :react-native-masked-view_masked-view:bundleLibCompileToJarDebug
+2026-10-12T14:43:10.3428200Z > Task :react-native-safe-area-context:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:43:10.3429618Z > Task :react-native-safe-area-context:generateDebugBuildConfig
+2026-10-12T14:43:12.1437270Z 
+2026-10-12T14:43:12.1440849Z > Task :react-native-safe-area-context:compileDebugKotlin
+2026-10-12T14:43:12.1444990Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_63a5cb5facfacb281aaf1339136542ab/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaProviderManager.kt:39:19 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:12.1450827Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_63a5cb5facfacb281aaf1339136542ab/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:9:8 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:43:12.1456747Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_63a5cb5facfacb281aaf1339136542ab/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:50:54 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:43:12.1461714Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_63a5cb5facfacb281aaf1339136542ab/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaView.kt:59:23 'val uiImplementation: UIImplementation!' is deprecated. Deprecated in Java.
+2026-10-12T14:43:12.1467201Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_63a5cb5facfacb281aaf1339136542ab/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewShadowNode.kt:9:32 'class LayoutShadowNode : ReactShadowNodeImpl' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+2026-10-12T14:43:12.1472988Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_63a5cb5facfacb281aaf1339136542ab/node_modules/react-native-safe-area-context/android/src/main/java/com/th3rdwave/safeareacontext/SafeAreaViewShadowNode.kt:110:61 'class NativeViewHierarchyOptimizer : Any' is deprecated. This class is part of Legacy Architecture and will be removed in a future release.
+2026-10-12T14:43:12.1475681Z 
+2026-10-12T14:43:12.1476293Z > Task :react-native-safe-area-context:javaPreCompileDebug
+2026-10-12T14:43:12.6394422Z > Task :react-native-safe-area-context:compileDebugJavaWithJavac
+2026-10-12T14:43:12.6423789Z > Task :react-native-safe-area-context:bundleLibCompileToJarDebug
+2026-10-12T14:43:12.6457262Z > Task :react-native-screens:checkKotlinGradlePluginConfigurationErrors SKIPPED
+2026-10-12T14:43:12.6474502Z > Task :react-native-screens:generateDebugBuildConfig
+2026-10-12T14:43:17.2394261Z > Task :expo-modules-core:compileDebugKotlin
+2026-10-12T14:43:19.9397926Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/apploader/AppLoaderProvider.kt:34:52 Unchecked cast of 'Class<*>!' to 'Class<out HeadlessAppLoader>'.
+2026-10-12T14:43:19.9402278Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/AppContext.kt:14:8 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:43:19.9408403Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/AppContext.kt:22:8 'typealias ErrorManagerModule = JSLoggerModule' is deprecated. Use JSLoggerModule instead.
+2026-10-12T14:43:19.9412997Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/AppContext.kt:61:13 'val hostingRuntimeContext: MainRuntime' is deprecated. Use AppContext.runtimeContext instead.
+2026-10-12T14:43:19.9419805Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/AppContext.kt:271:21 'typealias ErrorManagerModule = JSLoggerModule' is deprecated. Use JSLoggerModule instead.
+2026-10-12T14:43:19.9426458Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/AppContext.kt:380:21 'val DEFAULT: Int' is deprecated. UIManagerType.DEFAULT will be deleted in the next release of React Native. Use [LEGACY] instead.
+2026-10-12T14:43:19.9431005Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/AppContext.kt:381:10 'class UIManagerModule : ReactContextBaseJavaModule, LifecycleEventListener, UIManager' is deprecated. Deprecated in Java.
+2026-10-12T14:43:19.9436153Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/defaultmodules/NativeModulesProxyModule.kt:16:5 'fun Constants(legacyConstantsProvider: () -> Map<String, Any?>): Unit' is deprecated. Use `Constant` or `Property` instead.
+2026-10-12T14:43:19.9441270Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/events/KModuleEventEmitterWrapper.kt:99:21 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:19.9446504Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/events/KModuleEventEmitterWrapper.kt:108:21 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:19.9451004Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/views/ViewDefinitionBuilder.kt:470:16 'val errorManager: JSLoggerModule?' is deprecated. Use AppContext.jsLogger instead.
+2026-10-12T14:43:19.9456056Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/views/ViewDefinitionBuilder.kt:470:30 'fun reportExceptionToLogBox(codedException: CodedException): Unit' is deprecated. Use appContext.jsLogger.error(...) instead.
+2026-10-12T14:43:19.9460458Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/views/ViewManagerDefinition.kt:41:16 'val errorManager: JSLoggerModule?' is deprecated. Use AppContext.jsLogger instead.
+2026-10-12T14:43:19.9465223Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_65714c22ae566fbb17c99c56464f67e6/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/views/ViewManagerDefinition.kt:41:30 'fun reportExceptionToLogBox(codedException: CodedException): Unit' is deprecated. Use appContext.jsLogger.error(...) instead.
+2026-10-12T14:43:22.2393521Z 
+2026-10-12T14:43:22.2443088Z > Task :expo-modules-core:compileDebugJavaWithJavac
+2026-10-12T14:43:22.2473328Z Note: Some input files use or override a deprecated API.
+2026-10-12T14:43:22.2493381Z Note: Recompile with -Xlint:deprecation for details.
+2026-10-12T14:43:24.9419748Z 
+2026-10-12T14:43:24.9423757Z > Task :expo-modules-core:bundleLibCompileToJarDebug
+2026-10-12T14:43:25.9403157Z 
+2026-10-12T14:43:25.9433854Z > Task :expo-constants:compileDebugKotlin
+2026-10-12T14:43:25.9436954Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_58a6796238653d2adea5ca12eaf86d68/node_modules/expo-constants/android/src/main/java/expo/modules/constants/ConstantsModule.kt:13:5 'fun Constants(legacyConstantsProvider: () -> Map<String, Any?>): Unit' is deprecated. Use `Constant` or `Property` instead.
+2026-10-12T14:43:26.1393294Z 
+2026-10-12T14:43:26.1424083Z > Task :expo-constants:compileDebugJavaWithJavac
+2026-10-12T14:43:26.1453579Z > Task :expo-constants:bundleLibCompileToJarDebug
+2026-10-12T14:43:26.1483485Z > Task :expo-dev-client:compileDebugKotlin NO-SOURCE
+2026-10-12T14:43:26.4397663Z > Task :expo-dev-client:compileDebugJavaWithJavac
+2026-10-12T14:43:26.4433864Z > Task :expo-dev-client:bundleLibCompileToJarDebug
+2026-10-12T14:43:26.4463598Z > Task :expo-dev-menu-interface:compileDebugKotlin NO-SOURCE
+2026-10-12T14:43:26.6414077Z > Task :expo-dev-menu-interface:compileDebugJavaWithJavac
+2026-10-12T14:43:26.6415512Z > Task :expo-dev-menu-interface:bundleLibCompileToJarDebug
+2026-10-12T14:43:26.9393216Z > Task :expo-json-utils:compileDebugKotlin
+2026-10-12T14:43:27.1405853Z > Task :expo-json-utils:compileDebugJavaWithJavac
+2026-10-12T14:43:27.1413703Z > Task :expo-json-utils:bundleLibCompileToJarDebug
+2026-10-12T14:43:27.8393172Z 
+2026-10-12T14:43:27.8426409Z > Task :expo-manifests:compileDebugKotlin
+2026-10-12T14:43:27.8445985Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_d5f68eea6abcf5146885c97ef9fee444/node_modules/expo-manifests/android/src/main/java/expo/modules/manifests/core/EmbeddedManifest.kt:19:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:43:27.8465341Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_d5f68eea6abcf5146885c97ef9fee444/node_modules/expo-manifests/android/src/main/java/expo/modules/manifests/core/EmbeddedManifest.kt:19:86 'fun getLegacyID(): String' is deprecated. Prefer scopeKey or projectId depending on use case.
+2026-10-12T14:43:27.8469954Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_d5f68eea6abcf5146885c97ef9fee444/node_modules/expo-manifests/android/src/main/java/expo/modules/manifests/core/ExpoUpdatesManifest.kt:16:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:43:27.8505206Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_d5f68eea6abcf5146885c97ef9fee444/node_modules/expo-manifests/android/src/main/java/expo/modules/manifests/core/Manifest.kt:13:3 Deprecations and opt-ins on a method overridden from 'Any' may not be reported.
+2026-10-12T14:43:27.8535318Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_d5f68eea6abcf5146885c97ef9fee444/node_modules/expo-manifests/android/src/main/java/expo/modules/manifests/core/Manifest.kt:15:12 'fun getRawJson(): JSONObject' is deprecated. Prefer to use specific field getters.
+2026-10-12T14:43:28.0401046Z 
+2026-10-12T14:43:28.0413984Z > Task :expo-manifests:compileDebugJavaWithJavac
+2026-10-12T14:43:28.0428122Z > Task :expo-manifests:bundleLibCompileToJarDebug
+2026-10-12T14:43:30.8399642Z 
+2026-10-12T14:43:30.8413588Z > Task :react-native-screens:compileDebugKotlin
+2026-10-12T14:43:30.8445633Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:70:9 The corresponding parameter in the supertype 'BaseReactPackage' is named 'name'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.8467103Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:71:9 The corresponding parameter in the supertype 'BaseReactPackage' is named 'reactContext'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.8506405Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/RNScreensPackage.kt:83:17 'constructor(name: String, className: String, canOverrideExistingModule: Boolean, needsEagerInit: Boolean, hasConstants: Boolean, isCxxModule: Boolean, isTurboModule: Boolean): ReactModuleInfo' is deprecated. This constructor is deprecated and will be removed in the future. Use ReactModuleInfo(String, String, boolean, boolean, boolean, boolean)].
+2026-10-12T14:43:30.8515557Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:54:77 Unchecked cast of '(CoordinatorLayout.Behavior<View!>?..CoordinatorLayout.Behavior<*>?)' to 'BottomSheetBehavior<Screen>'.
+2026-10-12T14:43:30.8535570Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:59:33 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8565551Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/Screen.kt:516:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8595601Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainer.kt:250:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8625627Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenContainer.kt:260:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8652204Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:225:37 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8685554Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:242:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8695405Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:258:22 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8715559Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenFragment.kt:327:22 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8755572Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenModalFragment.kt:180:22 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8775626Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStack.kt:120:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8785851Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:173:18 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8815202Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:230:31 'var targetElevation: Float' is deprecated. Deprecated in Java.
+2026-10-12T14:43:30.8845177Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:233:13 'fun setHasOptionsMenu(p0: Boolean): Unit' is deprecated. Deprecated in Java.
+2026-10-12T14:43:30.8875916Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:443:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:43:30.8895249Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:450:22 'fun onPrepareOptionsMenu(p0: Menu): Unit' is deprecated. Deprecated in Java.
+2026-10-12T14:43:30.8925714Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:453:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:43:30.8935519Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackFragment.kt:458:22 'fun onCreateOptionsMenu(p0: Menu, p1: MenuInflater): Unit' is deprecated. Deprecated in Java.
+2026-10-12T14:43:30.8965703Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.kt:199:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.8995600Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenStackHeaderConfig.kt:209:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.9019109Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:48:42 'fun replaceSystemWindowInsets(p0: Int, p1: Int, p2: Int, p3: Int): @NonNull() WindowInsetsCompat' is deprecated. Deprecated in Java.
+2026-10-12T14:43:30.9045063Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:49:39 'val systemWindowInsetLeft: Int' is deprecated. Deprecated in Java.
+2026-10-12T14:43:30.9049359Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:51:39 'val systemWindowInsetRight: Int' is deprecated. Deprecated in Java.
+2026-10-12T14:43:30.9078724Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt:52:39 'val systemWindowInsetBottom: Int' is deprecated. Deprecated in Java.
+2026-10-12T14:43:30.9107433Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreensModule.kt:100:14 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.9135693Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchBarView.kt:137:29 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.9140869Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:7:8 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+2026-10-12T14:43:30.9165756Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:25:13 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+2026-10-12T14:43:30.9175876Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:32:9 The corresponding parameter in the supertype 'ReactViewGroup' is named 'left'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9205828Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:33:9 The corresponding parameter in the supertype 'ReactViewGroup' is named 'top'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9228297Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:34:9 The corresponding parameter in the supertype 'ReactViewGroup' is named 'right'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9265940Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:35:9 The corresponding parameter in the supertype 'ReactViewGroup' is named 'bottom'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9286613Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:71:9 The corresponding parameter in the supertype 'RootView' is named 'childView'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9305768Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:72:9 The corresponding parameter in the supertype 'RootView' is named 'ev'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9325784Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:79:46 The corresponding parameter in the supertype 'RootView' is named 'ev'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9355895Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:83:9 The corresponding parameter in the supertype 'RootView' is named 'childView'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9361302Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:84:9 The corresponding parameter in the supertype 'RootView' is named 'ev'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9394365Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/BottomSheetDialogRootView.kt:95:34 The corresponding parameter in the supertype 'RootView' is named 't'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9399655Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:64:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchX'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9405684Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:65:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchY'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9410949Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:69:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchX'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9416419Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/bottomsheet/DimmingView.kt:70:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchY'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9421909Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/common/event/BaseEventEmitter.kt:12:38 'fun getEventDispatcherForReactTag(context: ReactContext, reactTag: Int): EventDispatcher?' is deprecated. reactTag is no longer needed.
+2026-10-12T14:43:30.9427619Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:64:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchX'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9463280Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:65:9 The corresponding parameter in the supertype 'ReactCompoundView' is named 'touchY'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9468727Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:69:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchX'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9474486Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/dimmingview/DimmingView.kt:70:9 The corresponding parameter in the supertype 'ReactCompoundViewGroup' is named 'touchY'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9479971Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:11:8 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+2026-10-12T14:43:30.9485406Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:39:33 'fun getEventDispatcher(context: ReactContext, uiManagerType: Int): EventDispatcher?' is deprecated. UIManagerType is no longer needed.
+2026-10-12T14:43:30.9516307Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetContentView.kt:44:13 'object ReactFeatureFlags : Any' is deprecated. Use com.facebook.react.internal.featureflags.ReactNativeFeatureFlags instead.
+2026-10-12T14:43:30.9521972Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/modals/formsheet/FormSheetHostViewManager.kt:38:9 The corresponding parameter in the supertype 'FormSheetHostViewManager' is named 'view'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9527988Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/gamma/tabs/host/TabsHostViewManager.kt:44:9 The corresponding parameter in the supertype 'TabsHostViewManager' is named 'view'. This may cause problems when calling this function with named arguments.
+2026-10-12T14:43:30.9533574Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_4f26510b1d0e38333b19667fc5ca66d7/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/safearea/SafeAreaView.kt:143:45 'fun consumeDisplayCutout(): @NonNull() WindowInsetsCompat' is deprecated. Deprecated in Java.
+2026-10-12T14:43:31.6423373Z 
+2026-10-12T14:43:31.6452396Z > Task :expo-updates-interface:compileDebugKotlin
+2026-10-12T14:43:31.7393565Z > Task :expo-updates-interface:compileDebugJavaWithJavac
+2026-10-12T14:43:31.8423919Z > Task :expo-updates-interface:bundleLibCompileToJarDebug
+2026-10-12T14:43:33.0424160Z > Task :expo-log-box:compileDebugKotlin
+2026-10-12T14:43:33.9394045Z > Task :expo-log-box:compileDebugJavaWithJavac
+2026-10-12T14:43:33.9423711Z > Task :expo-log-box:bundleLibCompileToJarDebug
+2026-10-12T14:43:33.9424539Z > Task :react-native-screens:javaPreCompileDebug
+2026-10-12T14:43:35.0414010Z > Task :react-native-screens:compileDebugJavaWithJavac
+2026-10-12T14:43:35.0443605Z > Task :react-native-screens:bundleLibCompileToJarDebug
+2026-10-12T14:43:35.0473296Z > Task :app:javaPreCompileDebug
+2026-10-12T14:43:35.1402445Z > Task :app:mergeDebugShaders
+2026-10-12T14:43:35.1439397Z > Task :app:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.1460746Z > Task :app:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.1466811Z > Task :expo:mergeDebugShaders
+2026-10-12T14:43:35.1493535Z > Task :expo:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.1525983Z > Task :expo:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.1547507Z > Task :expo:mergeDebugAssets
+2026-10-12T14:43:35.1593212Z > Task :expo-constants:mergeDebugShaders
+2026-10-12T14:43:35.1593964Z > Task :expo-constants:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.1594756Z > Task :expo-constants:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.1595483Z > Task :expo-constants:mergeDebugAssets
+2026-10-12T14:43:35.1596108Z > Task :expo-dev-client:mergeDebugShaders
+2026-10-12T14:43:35.1596805Z > Task :expo-dev-client:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.1597547Z > Task :expo-dev-client:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.1598207Z > Task :expo-dev-client:mergeDebugAssets
+2026-10-12T14:43:35.1598835Z > Task :expo-dev-launcher:mergeDebugShaders
+2026-10-12T14:43:35.1599567Z > Task :expo-dev-launcher:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.1600350Z > Task :expo-dev-launcher:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.1601060Z > Task :expo-dev-launcher:mergeDebugAssets
+2026-10-12T14:43:35.1601676Z > Task :expo-dev-menu:mergeDebugShaders
+2026-10-12T14:43:35.1602334Z > Task :expo-dev-menu:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.1603309Z > Task :expo-dev-menu:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.1603989Z > Task :expo-dev-menu:mergeDebugAssets
+2026-10-12T14:43:35.2403946Z > Task :expo-dev-menu-interface:mergeDebugShaders
+2026-10-12T14:43:35.2420713Z > Task :expo-dev-menu-interface:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.2421596Z > Task :expo-dev-menu-interface:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.2422363Z > Task :expo-dev-menu-interface:mergeDebugAssets
+2026-10-12T14:43:35.2423217Z > Task :expo-json-utils:mergeDebugShaders
+2026-10-12T14:43:35.2423863Z > Task :expo-json-utils:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.2424574Z > Task :expo-json-utils:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.2425226Z > Task :expo-json-utils:mergeDebugAssets
+2026-10-12T14:43:35.2463056Z > Task :expo-log-box:mergeDebugShaders
+2026-10-12T14:43:35.2463785Z > Task :expo-log-box:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.2489247Z > Task :expo-log-box:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.2489933Z > Task :expo-log-box:mergeDebugAssets
+2026-10-12T14:43:35.2490525Z > Task :expo-manifests:mergeDebugShaders
+2026-10-12T14:43:35.2491531Z > Task :expo-manifests:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.2492270Z > Task :expo-manifests:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.2493200Z > Task :expo-manifests:mergeDebugAssets
+2026-10-12T14:43:35.2494273Z > Task :expo-modules-core:mergeDebugShaders
+2026-10-12T14:43:35.2494992Z > Task :expo-modules-core:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.2495765Z > Task :expo-modules-core:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.2496463Z > Task :expo-modules-core:mergeDebugAssets
+2026-10-12T14:43:35.2497124Z > Task :expo-updates-interface:mergeDebugShaders
+2026-10-12T14:43:35.2497929Z > Task :expo-updates-interface:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.2499033Z > Task :expo-updates-interface:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.2499959Z > Task :expo-updates-interface:mergeDebugAssets
+2026-10-12T14:43:35.2501019Z > Task :react-native-gesture-handler:mergeDebugShaders
+2026-10-12T14:43:35.2501705Z > Task :react-native-gesture-handler:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.2502880Z > Task :react-native-gesture-handler:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.2503545Z > Task :react-native-gesture-handler:mergeDebugAssets
+2026-10-12T14:43:35.3402504Z > Task :react-native-masked-view_masked-view:mergeDebugShaders
+2026-10-12T14:43:35.3421288Z > Task :react-native-masked-view_masked-view:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.3448452Z > Task :react-native-masked-view_masked-view:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.3477205Z > Task :react-native-masked-view_masked-view:mergeDebugAssets
+2026-10-12T14:43:35.3513428Z > Task :react-native-reanimated:mergeDebugShaders
+2026-10-12T14:43:35.3543761Z > Task :react-native-reanimated:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.3573603Z > Task :react-native-reanimated:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.3603262Z > Task :react-native-reanimated:mergeDebugAssets
+2026-10-12T14:43:35.3604321Z > Task :react-native-safe-area-context:mergeDebugShaders
+2026-10-12T14:43:35.3633392Z > Task :react-native-safe-area-context:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.3663417Z > Task :react-native-safe-area-context:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.3664566Z > Task :react-native-safe-area-context:mergeDebugAssets
+2026-10-12T14:43:35.3693357Z > Task :react-native-screens:mergeDebugShaders
+2026-10-12T14:43:35.3723349Z > Task :react-native-screens:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.3753396Z > Task :react-native-screens:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.3754547Z > Task :react-native-screens:mergeDebugAssets
+2026-10-12T14:43:35.3783341Z > Task :react-native-svg:mergeDebugShaders
+2026-10-12T14:43:35.3813254Z > Task :react-native-svg:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.3824323Z > Task :react-native-svg:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.3843276Z > Task :react-native-svg:mergeDebugAssets
+2026-10-12T14:43:35.3873361Z > Task :react-native-worklets:mergeDebugShaders
+2026-10-12T14:43:35.3874299Z > Task :react-native-worklets:compileDebugShaders NO-SOURCE
+2026-10-12T14:43:35.3903825Z > Task :react-native-worklets:generateDebugAssets UP-TO-DATE
+2026-10-12T14:43:35.3933351Z > Task :react-native-worklets:mergeDebugAssets
+2026-10-12T14:43:35.6393431Z > Task :app:mergeDebugAssets
+2026-10-12T14:43:35.7394035Z > Task :app:compressDebugAssets
+2026-10-12T14:43:35.7423858Z > Task :react-native-gesture-handler:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:35.7453460Z > Task :react-native-reanimated:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:35.7483323Z > Task :react-native-svg:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:35.7484151Z > Task :react-native-worklets:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:37.6394560Z 
+2026-10-12T14:43:37.6398663Z > Task :expo-dev-menu:compileDebugKotlin
+2026-10-12T14:43:37.6434043Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/com/facebook/react/devsupport/DevMenuSettingsBase.kt:6:8 'class PreferenceManager : Any' is deprecated. Deprecated in Java.
+2026-10-12T14:43:37.6440612Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/com/facebook/react/devsupport/DevMenuSettingsBase.kt:18:51 'class PreferenceManager : Any' is deprecated. Deprecated in Java.
+2026-10-12T14:43:37.6446366Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/com/facebook/react/devsupport/DevMenuSettingsBase.kt:18:69 'static fun getDefaultSharedPreferences(p0: Context!): SharedPreferences!' is deprecated. Deprecated in Java.
+2026-10-12T14:43:37.6453961Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/com/facebook/react/devsupport/DevMenuSettingsBase.kt:51:13 This code uses error suppression for 'NOTHING_TO_OVERRIDE'. While it might compile and work, the compiler behavior is UNSPECIFIED and WILL NOT BE PRESERVED. Please report your use case to the Kotlin issue tracker instead: https://kotl.in/issue
+2026-10-12T14:43:37.6490694Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/com/facebook/react/devsupport/DevMenuSettingsBase.kt:58:13 This code uses error suppression for 'NOTHING_TO_OVERRIDE'. While it might compile and work, the compiler behavior is UNSPECIFIED and WILL NOT BE PRESERVED. Please report your use case to the Kotlin issue tracker instead: https://kotl.in/issue
+2026-10-12T14:43:37.6514639Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/expo/modules/devmenu/compose/ui/AppInfo.kt:64:5 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:37.6535832Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/expo/modules/devmenu/compose/ui/MenuButton.kt:33:5 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:37.6546497Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/expo/modules/devmenu/compose/ui/Onboarding.kt:70:5 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:37.6570473Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_085f2a22e900c902001e35b99bb27c37/node_modules/expo-dev-menu/android/src/debug/java/expo/modules/devmenu/compose/ui/SystemSection.kt:52:3 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:40.3393247Z 
+2026-10-12T14:43:40.3433850Z > Task :react-native-safe-area-context:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:40.5394113Z > Task :expo-dev-menu:compileDebugJavaWithJavac
+2026-10-12T14:43:40.5395464Z > Task :expo-dev-menu:bundleLibCompileToJarDebug
+2026-10-12T14:43:40.6393025Z > Task :react-native-screens:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.2405783Z > Task :expo-constants:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.2433675Z > Task :expo-dev-client:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.2446256Z > Task :expo-dev-menu:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.3414049Z > Task :expo-dev-menu-interface:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.3443441Z > Task :expo-json-utils:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.3444209Z > Task :expo-log-box:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.3444917Z > Task :expo-manifests:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.4393795Z > Task :expo-modules-core:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:44.4414096Z > Task :expo-updates-interface:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:54.7397269Z 
+2026-10-12T14:43:54.7423820Z > Task :expo-dev-launcher:compileDebugKotlin
+2026-10-12T14:43:54.7455542Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/models/BranchViewModel.kt:80:31 'val runtimeVersion: String' is deprecated. Use 'runtime' field .
+2026-10-12T14:43:54.7479099Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/screens/BranchScreen.kt:59:9 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7498818Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/screens/BranchScreen.kt:113:13 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7538889Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/screens/HomeScreen.kt:53:5 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7552856Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/screens/SettingsScreen.kt:345:11 'fun TextField(value: String, onValueChange: (String) -> Unit, modifier: Modifier = ..., editable: Boolean = ..., cursorBrush: Brush = ..., textStyle: TextStyle = ..., textAlign: TextAlign = ..., lineHeight: TextUnit = ..., fontSize: TextUnit = ..., letterSpacing: TextUnit = ..., fontWeight: FontWeight? = ..., fontFamily: FontFamily? = ..., singleLine: Boolean = ..., minLines: Int = ..., maxLines: Int = ..., keyboardActions: KeyboardActions = ..., keyboardOptions: KeyboardOptions = ..., visualTransformation: VisualTransformation = ..., interactionSource: MutableInteractionSource? = ..., textColor: Color = ..., content: @Composable() ComposableFunction1<TextFieldScope, Unit>): Unit' is deprecated. This will go to 2.0. Stateless TextFields in Compose do not work correctly in all languages and cause duplication characters and unexpected behaviors.
+2026-10-12T14:43:54.7578953Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/ActionButton.kt:32:3 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7618077Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/AppHeader.kt:98:7 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7625807Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/AppLoadingErrorDialog.kt:35:26 'fun rememberDialogState(initiallyVisible: Boolean = ...): DialogState' is deprecated. This will go away in 2.0. Use Dialog from the com.composeunstyled package.
+2026-10-12T14:43:54.7646582Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/AppLoadingErrorDialog.kt:55:3 'fun Dialog(state: DialogState, properties: DialogProperties = ..., onDismiss: () -> Unit = ..., content: @Composable() ComposableFunction1<DialogScope, Unit>): Unit' is deprecated. This will go away in 2.0. Use Dialog from the com.composeunstyled package.
+2026-10-12T14:43:54.7676210Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/AppLoadingErrorDialog.kt:56:5 'fun DialogScope.Scrim(modifier: Modifier = ..., scrimColor: Color = ..., enter: EnterTransition = ..., exit: ExitTransition = ...): Unit' is deprecated. This will go away in 2.0. Use Dialog from the com.composeunstyled package.
+2026-10-12T14:43:54.7707482Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/AppLoadingErrorDialog.kt:58:5 'fun DialogScope.DialogPanel(modifier: Modifier = ..., enter: EnterTransition = ..., exit: ExitTransition = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., content: @Composable() ComposableFunction0<Unit>): Unit' is deprecated. This will go away in 2.0. Use Dialog from the com.composeunstyled package.
+2026-10-12T14:43:54.7728863Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/AppLoadingErrorDialog.kt:81:11 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7776108Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/AppLoadingErrorDialog.kt:104:21 'fun rememberDialogState(initiallyVisible: Boolean = ...): DialogState' is deprecated. This will go away in 2.0. Use Dialog from the com.composeunstyled package.
+2026-10-12T14:43:54.7808826Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/DevelopmentSession.kt:131:5 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7828941Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/FetchDevelopmentServersButton.kt:27:5 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7859185Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/RunningAppCard.kt:43:5 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7870790Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/ScanQRCodeButton.kt:26:5 'fun Button(onClick: () -> Unit, enabled: Boolean = ..., shape: Shape = ..., backgroundColor: Color = ..., contentColor: Color = ..., contentPadding: PaddingValues = ..., borderColor: Color = ..., borderWidth: Dp = ..., modifier: Modifier = ..., role: Role = ..., indication: Indication? = ..., interactionSource: MutableInteractionSource? = ..., horizontalArrangement: Arrangement.Horizontal = ..., verticalAlignment: Alignment.Vertical = ..., content: @Composable() ComposableFunction1<RowScope, Unit>): Unit' is deprecated. Use UnstyledButton instead.
+2026-10-12T14:43:54.7911488Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/compose/ui/ServerUrlInput.kt:62:5 'fun TextField(value: String, onValueChange: (String) -> Unit, modifier: Modifier = ..., editable: Boolean = ..., cursorBrush: Brush = ..., textStyle: TextStyle = ..., textAlign: TextAlign = ..., lineHeight: TextUnit = ..., fontSize: TextUnit = ..., letterSpacing: TextUnit = ..., fontWeight: FontWeight? = ..., fontFamily: FontFamily? = ..., singleLine: Boolean = ..., minLines: Int = ..., maxLines: Int = ..., keyboardActions: KeyboardActions = ..., keyboardOptions: KeyboardOptions = ..., visualTransformation: VisualTransformation = ..., interactionSource: MutableInteractionSource? = ..., textColor: Color = ..., content: @Composable() ComposableFunction1<TextFieldScope, Unit>): Unit' is deprecated. This will go to 2.0. Stateless TextFields in Compose do not work correctly in all languages and cause duplication characters and unexpected behaviors.
+2026-10-12T14:43:54.7945698Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/launcher/DevLauncherActivity.kt:10:5 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+2026-10-12T14:43:54.7965322Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/launcher/DevLauncherActivity.kt:24:5 'fun overridePendingTransition(p0: Int, p1: Int): Unit' is deprecated. Deprecated in Java.
+2026-10-12T14:43:54.7984880Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/launcher/DevLauncherRecentlyOpenedAppsRegistry.kt:33:47 Unchecked cast of 'MutableMap<Any?, Any?>' to 'MutableMap<String, Any>'.
+2026-10-12T14:43:54.8016654Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/launcher/DevLauncherRecentlyOpenedAppsRegistry.kt:51:27 'fun getRawJson(): JSONObject' is deprecated. Prefer to use specific field getters.
+2026-10-12T14:43:54.8038765Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/modules/DevLauncherModule.kt:14:29 'fun getRawJson(): JSONObject' is deprecated. Prefer to use specific field getters.
+2026-10-12T14:43:54.8086773Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/react/DevLauncherBridgelessDevSupportManager.kt:44:38 This code uses error suppression for 'NOTHING_TO_OVERRIDE'. While it might compile and work, the compiler behavior is UNSPECIFIED and WILL NOT BE PRESERVED. Please report your use case to the Kotlin issue tracker instead: https://kotl.in/issue
+2026-10-12T14:43:54.8096420Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/debug/java/expo/modules/devlauncher/react/DevLauncherDevSupportManagerFactory.kt:16:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:43:54.8101880Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_68cd0f6a090bdbaa25a793ba10ba7752/node_modules/expo-dev-launcher/android/src/main/java/expo/modules/devlauncher/DevLauncherPackage.kt:15:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:43:56.4392121Z 
+2026-10-12T14:43:56.4393390Z > Task :react-native-masked-view_masked-view:bundleLibRuntimeToJarDebug
+2026-10-12T14:43:56.6434341Z > Task :expo-dev-launcher:compileDebugJavaWithJavac
+2026-10-12T14:43:56.7403971Z > Task :expo-dev-launcher:bundleLibCompileToJarDebug
+2026-10-12T14:43:58.7403816Z > Task :expo-dev-launcher:bundleLibRuntimeToJarDebug
+2026-10-12T14:44:00.1413184Z 
+2026-10-12T14:44:00.1443913Z > Task :expo:compileDebugKotlin
+2026-10-12T14:44:00.1475856Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_a709f79bc193324922bea38b6e4685da/node_modules/expo/android/src/main/java/expo/modules/ExpoModulesPackage.kt:34:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:44:00.1505138Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_a709f79bc193324922bea38b6e4685da/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:22:8 'class ReactInstanceManager : Any' is deprecated. Deprecated in Java.
+2026-10-12T14:44:00.1535899Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_a709f79bc193324922bea38b6e4685da/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:102:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:44:00.1565308Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_a709f79bc193324922bea38b6e4685da/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:102:43 'class ReactInstanceManager : Any' is deprecated. Deprecated in Java.
+2026-10-12T14:44:00.1595262Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_a709f79bc193324922bea38b6e4685da/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:103:21 'val reactInstanceManager: ReactInstanceManager' is deprecated. Deprecated in Java.
+2026-10-12T14:44:00.1625675Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_a709f79bc193324922bea38b6e4685da/node_modules/expo/android/src/main/java/expo/modules/fetch/ExpoFetchModule.kt:33:39 'constructor(reactContext: ReactContext): ForwardingCookieHandler' is deprecated. Use the default constructor.
+2026-10-12T14:44:00.1684186Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_a709f79bc193324922bea38b6e4685da/node_modules/expo/android/src/main/java/expo/modules/fetch/NativeResponse.kt:44:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+2026-10-12T14:44:00.1689014Z w: file:///home/runner/work/nilumi-v2/nilumi-v2/node_modules/.pnpm/_a709f79bc193324922bea38b6e4685da/node_modules/expo/android/src/main/java/expo/modules/fetch/NativeResponse.kt:46:11 'fun deallocate(): Unit' is deprecated. Use sharedObjectDidRelease() instead.
+2026-10-12T14:44:01.3394013Z 
+2026-10-12T14:44:01.3395019Z > Task :expo:compileDebugJavaWithJavac
+2026-10-12T14:44:01.3396241Z > Task :expo:bundleLibCompileToJarDebug
+2026-10-12T14:44:02.4393903Z > Task :app:compileDebugKotlin
+2026-10-12T14:44:03.0394171Z > Task :app:compileDebugJavaWithJavac
+2026-10-12T14:44:03.0395086Z > Task :expo:bundleLibRuntimeToJarDebug
+2026-10-12T14:44:04.8393225Z > Task :app:desugarDebugFileDependencies
+2026-10-12T14:44:04.9393368Z > Task :app:transformDebugClassesWithAsm
+2026-10-12T14:44:05.3409761Z > Task :app:dexBuilderDebug
+2026-10-12T14:44:05.3413492Z > Task :app:processDebugJavaRes
+2026-10-12T14:44:05.3414246Z > Task :expo:processDebugJavaRes
+2026-10-12T14:44:05.3414995Z > Task :expo-constants:processDebugJavaRes
+2026-10-12T14:44:05.3415845Z > Task :expo-dev-client:processDebugJavaRes NO-SOURCE
+2026-10-12T14:44:05.4394510Z > Task :expo-dev-launcher:processDebugJavaRes
+2026-10-12T14:44:05.4413578Z > Task :expo-dev-menu:processDebugJavaRes
+2026-10-12T14:44:05.4433697Z > Task :expo-dev-menu-interface:processDebugJavaRes NO-SOURCE
+2026-10-12T14:44:05.4434624Z > Task :expo-json-utils:processDebugJavaRes
+2026-10-12T14:44:05.4435391Z > Task :expo-log-box:processDebugJavaRes
+2026-10-12T14:44:05.4436164Z > Task :expo-manifests:processDebugJavaRes
+2026-10-12T14:44:05.4436924Z > Task :expo-modules-core:processDebugJavaRes
+2026-10-12T14:44:05.4437733Z > Task :expo-updates-interface:processDebugJavaRes
+2026-10-12T14:44:05.4438618Z > Task :react-native-gesture-handler:processDebugJavaRes
+2026-10-12T14:44:05.4439699Z > Task :react-native-masked-view_masked-view:processDebugJavaRes NO-SOURCE
+2026-10-12T14:44:05.5393492Z > Task :react-native-reanimated:processDebugJavaRes
+2026-10-12T14:44:05.5395919Z > Task :react-native-safe-area-context:processDebugJavaRes
+2026-10-12T14:44:05.5396982Z > Task :react-native-screens:processDebugJavaRes
+2026-10-12T14:44:05.5399433Z > Task :react-native-svg:processDebugJavaRes NO-SOURCE
+2026-10-12T14:44:05.5400451Z > Task :react-native-worklets:processDebugJavaRes
+2026-10-12T14:44:08.0393478Z > Task :react-native-worklets:configureCMakeDebug[x86_64] FAILED
+2026-10-12T14:44:08.2392888Z > Task :app:mergeDebugJavaResource
+2026-10-12T14:44:08.3394167Z 
+2026-10-12T14:44:08.3396380Z [Incubating] Problems report is available at: file:///home/runner/work/nilumi-v2/nilumi-v2/apps/client/android/build/reports/problems/problems-report.html
+2026-10-12T14:44:08.3397693Z 
+2026-10-12T14:44:08.3398133Z FAILURE: Build failed with an exception.
+2026-10-12T14:44:08.3398659Z 
+2026-10-12T14:44:08.3399037Z * What went wrong:
+2026-10-12T14:44:08.3399967Z Execution failed for task ':react-native-worklets:configureCMakeDebug[x86_64]'.
+2026-10-12T14:44:08.3401120Z > WARNING: A restricted method in java.lang.System has been called
+2026-10-12T14:44:08.3401750Z 
+2026-10-12T14:44:08.3402049Z * Try:
+2026-10-12T14:44:08.3402966Z > Run with --stacktrace option to get the stack trace.
+2026-10-12T14:44:08.3403934Z > Run with --info or --debug option to get more log output.
+2026-10-12T14:44:08.3405030Z > Run with --scan to get full insights from a Build Scan (powered by Develocity).
+2026-10-12T14:44:08.3406034Z > Get more help at https://help.gradle.org.
+2026-10-12T14:44:08.3406562Z 
+2026-10-12T14:44:08.3407367Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+2026-10-12T14:44:08.3408127Z 
+2026-10-12T14:44:08.3409248Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+2026-10-12T14:44:08.3410656Z 
+2026-10-12T14:44:08.3411983Z For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+2026-10-12T14:44:08.3413389Z 
+2026-10-12T14:44:08.3413757Z BUILD FAILED in 5m 34s
+2026-10-12T14:44:08.3414392Z 404 actionable tasks: 404 executed
+2026-10-12T14:44:08.7926731Z Command failed (1): ./gradlew
+2026-10-12T14:44:08.7971112Z [ELIFECYCLE] Command failed with exit code 1.
+2026-10-12T14:44:08.8048258Z ##[error]Process completed with exit code 1.
+2026-10-12T14:44:08.8145335Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+2026-10-12T14:44:08.8145767Z with:
+2026-10-12T14:44:08.8146046Z   name: android-debug-43a0500907c2d714f7f6903bfd79e78ec2297c8c
+2026-10-12T14:44:08.8146541Z   path: android-debug-build.log
+apps/client/android/app/build/outputs/apk/debug/*.apk
+
+2026-10-12T14:44:08.8146962Z   retention-days: 14
+2026-10-12T14:44:08.8147179Z   if-no-files-found: warn
+2026-10-12T14:44:08.8147426Z   compression-level: 6
+2026-10-12T14:44:08.8147638Z   overwrite: false
+2026-10-12T14:44:08.8147848Z   include-hidden-files: false
+2026-10-12T14:44:08.8148078Z   archive: true
+2026-10-12T14:44:08.8148265Z env:
+2026-10-12T14:44:08.8148435Z   CI: 1
+2026-10-12T14:44:08.8148618Z   EXPO_NO_DOTENV: 1
+2026-10-12T14:44:08.8148819Z   EXPO_NO_TELEMETRY: 1
+2026-10-12T14:44:08.8149034Z   EXPO_PUBLIC_NILUMI_ENV: test
+2026-10-12T14:44:08.8149319Z   EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+2026-10-12T14:44:08.8149716Z   JAVA_HOME: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:44:08.8150125Z   JAVA_HOME_25_X64: /opt/hostedtoolcache/Java_jdkfile_jdk/25.0.4/x64
+2026-10-12T14:44:08.8150460Z   MAVEN_ARGS: -ntp
+2026-10-12T14:44:08.8150657Z ##[endgroup]
+2026-10-12T14:44:09.0748125Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-10-12T14:44:09.0751021Z The least common ancestor is /home/runner/work/nilumi-v2/nilumi-v2. This will be the root directory of the artifact
+2026-10-12T14:44:09.0752942Z With the provided path, there will be 1 file uploaded
+2026-10-12T14:44:09.0754457Z Artifact name is valid!
+2026-10-12T14:44:09.0755234Z Root directory input is valid!
+2026-10-12T14:44:09.4750328Z Uploading artifact: android-debug-43a0500907c2d714f7f6903bfd79e78ec2297c8c.zip
+2026-10-12T14:44:09.4791361Z Beginning upload of artifact content to blob storage
+2026-10-12T14:44:09.8071247Z Uploaded bytes 10727
+2026-10-12T14:44:09.9007644Z Finished uploading artifact content to blob storage!
+2026-10-12T14:44:09.9008923Z SHA256 digest of uploaded artifact is 87d8b287510687b558526d750529c12626b950e82579bdb0102ee3be7063249d
+2026-10-12T14:44:09.9009847Z Finalizing artifact upload
+2026-10-12T14:44:10.3219462Z Artifact android-debug-43a0500907c2d714f7f6903bfd79e78ec2297c8c successfully finalized. Artifact ID 11754451481
+2026-10-12T14:44:10.3221622Z Artifact android-debug-43a0500907c2d714f7f6903bfd79e78ec2297c8c has been successfully uploaded! Final size is 10727 bytes. Artifact ID is 11754451481
+2026-10-12T14:44:10.3224037Z Artifact download URL: https://github.com/nishanthturnstile/nilumi-v2/actions/runs/38263991069/artifacts/11754451481
+2026-10-12T14:44:10.3428391Z Post job cleanup.
+2026-10-12T14:44:10.4323550Z Post job cleanup.
+2026-10-12T14:44:10.5211514Z [command]/usr/bin/git version
+2026-10-12T14:44:10.5272449Z git version 2.55.0
+2026-10-12T14:44:10.5315473Z Temporarily overriding HOME='/home/runner/work/_temp/af380ed7-a39e-4fed-94de-1f796dac76c4' before making global git config changes
+2026-10-12T14:44:10.5316983Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-12T14:44:10.5320882Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nilumi-v2/nilumi-v2
+2026-10-12T14:44:10.5369374Z Removing SSH command configuration
+2026-10-12T14:44:10.5370264Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-12T14:44:10.5406728Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-12T14:44:10.5662428Z Removing HTTP extra header
+2026-10-12T14:44:10.5669253Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-12T14:44:10.5712640Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-12T14:44:10.5969418Z Removing includeIf entries pointing to credentials config files
+2026-10-12T14:44:10.5971032Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-12T14:44:10.6007619Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-12T14:44:10.6428022Z Cleaning up orphan processes
