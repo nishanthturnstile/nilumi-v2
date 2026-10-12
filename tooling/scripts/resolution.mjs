@@ -47,6 +47,9 @@ export function copyWorkspace(destination, { git = false } = {}) {
     ".gitattributes",
     ".editorconfig",
     ".node-version",
+    "vitest.config.mjs",
+    "playwright.config.mjs",
+    ".dockerignore",
   ])
     cpSync(join(root, file), join(destination, file));
   for (const file of ["README.md", "CONTRIBUTING.md", "AGENTS.md"])
@@ -297,7 +300,7 @@ export async function checkResolution() {
       "Synthetic TSX/package entry resolution only; no shared UI rendering, APK, service or device qualification.",
   };
   writeFileSync(
-    join(root, `docs/development/evidence/setup-05-2026-10-12/resolution-${process.platform}.json`),
+    join(root, `docs/development/evidence/setup-06-2026-10-12/resolution-${process.platform}.json`),
     `${JSON.stringify(evidence, null, 2)}\n`,
   );
 }

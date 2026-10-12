@@ -1,0 +1,1011 @@
+{
+  "checkedAt": "2026-10-12T14:21:30.603Z",
+  "policy": "latest compatible stable",
+  "packages": [
+    {
+      "name": "@babel/core",
+      "selected": "7.29.7",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "8.0.7",
+      "exception": "Latest Babel 7 branch; Expo 57 and native tooling still require Babel 7 plugins.",
+      "published": "2026-05-25T11:16:53.499Z",
+      "engines": {
+        "node": ">=6.9.0"
+      },
+      "peers": {},
+      "integrity": "sha512-RgHBCvtjbOK2gXSNBNIkNoEc9qoVEtau3hj8gEqKQuL3HZAibKarWFEI3Lfm6EYKkLalOh8eSrj9b+ch9H/VBA=="
+    },
+    {
+      "name": "@biomejs/biome",
+      "selected": "2.5.15",
+      "owners": [
+        "nilumi-v2",
+        "@nilumi/contracts",
+        "@nilumi/db",
+        "@nilumi/api-client",
+        "@nilumi/server",
+        "@nilumi/api",
+        "@nilumi/worker",
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "2.5.15",
+      "exception": null,
+      "published": "2026-09-30T15:23:18.673Z",
+      "engines": {
+        "node": ">=14.21.3"
+      },
+      "peers": {},
+      "integrity": "sha512-WZTW4slm/pdkh92K6t/3aEN++44JD1PQ7squ7RCMLI1flHGl43DVOIGXvCjHiZgBMO1V4uYxoFNtqrIA4qGuIQ=="
+    },
+    {
+      "name": "@fastify/swagger",
+      "selected": "9.9.2",
+      "owners": [
+        "@nilumi/api"
+      ],
+      "latest": "9.9.2",
+      "exception": null,
+      "published": "2026-10-09T15:38:19.302Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-ayxItVgf/1axBvw33lqsA5ns02YMpT1r59G/HCJraRNWWBzvLgN+oiCBPhuzTiN67TvctlCYkG0+40WLKYuusQ=="
+    },
+    {
+      "name": "@fastify/type-provider-zod",
+      "selected": "1.0.1",
+      "owners": [
+        "@nilumi/api"
+      ],
+      "latest": "1.0.1",
+      "exception": null,
+      "published": "2026-10-12T11:02:37.490Z",
+      "engines": {},
+      "peers": {
+        "zod": ">=4.2.0",
+        "fastify": "^5.5.0",
+        "openapi-types": "^12.1.3",
+        "@fastify/swagger": ">=9.5.1"
+      },
+      "integrity": "sha512-HIKc7haObb6zbZCrfMFx82qH10AVYTfYuc3W5ulAWtXHoweXjg2Q2Tw3aNlAuVVeanfMZ2bw2NiIu1DfEp213Q=="
+    },
+    {
+      "name": "@jest/globals",
+      "selected": "29.7.0",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "30.5.2",
+      "exception": "Same exact family as selected Jest 29.7.0; revisit with native preset.",
+      "published": "2023-09-12T06:43:54.076Z",
+      "engines": {
+        "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
+      },
+      "peers": {},
+      "integrity": "sha512-mpiz3dutLbkW2MNFubUGUEVLkTGiqW6yLVTA+JbP6fI6J5iL9Y0Nlg8k95pcF8ctKwCS7WVxteBs29hhfAotzQ=="
+    },
+    {
+      "name": "@playwright/test",
+      "selected": "1.64.0",
+      "owners": [
+        "nilumi-v2"
+      ],
+      "latest": "1.64.0",
+      "exception": null,
+      "published": "2026-10-07T20:44:27.702Z",
+      "engines": {
+        "node": ">=20"
+      },
+      "peers": {},
+      "integrity": "sha512-oTN9FNYuN6bqQMwiho6jJKLCG2/QOYCixGXuCjRmzOq23eODeukuY2XiAVoVpAECbuezMt1MHQjAiQxK8F+Y+g=="
+    },
+    {
+      "name": "@react-native/jest-preset",
+      "selected": "0.86.3",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "0.87.1",
+      "exception": "Exact React Native 0.86.3 family required by Expo 57; revisit with Expo native family.",
+      "published": "2026-08-24T13:30:57.956Z",
+      "engines": {
+        "node": ">= 20.19.4"
+      },
+      "peers": {
+        "react": "^19.2.3"
+      },
+      "integrity": "sha512-oMmBwXUpTgJvGlcXQQPuiQLykoM8jsWYp6RwdJ2NWyIWzJcGp1rmSr3XV7istoIcUt0wdOVLtQs0A0nDm9ND+A=="
+    },
+    {
+      "name": "@react-native/metro-config",
+      "selected": "0.86.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "0.87.1",
+      "exception": "Match the Expo-selected RN version.",
+      "published": "2026-08-24T13:30:52.037Z",
+      "engines": {
+        "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0"
+      },
+      "peers": {},
+      "integrity": "sha512-qdzDMepV2xdUhsO4XC7idnnbt8K6+Hd59AjeK9y4KS86fxSQq5oL0TAbqUuajDGR7beNQoYTuS6AowN/zP0oaQ=="
+    },
+    {
+      "name": "@tamagui/config",
+      "selected": "3.0.3",
+      "owners": [
+        "@nilumi/ui"
+      ],
+      "latest": "3.0.3",
+      "exception": null,
+      "published": "2026-10-11T10:45:12.350Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-rbVu21Lq3v3vLUefi3Dv0vbQ5U78gdRGGEK4bLekscaWz6SadMiJ0tFH6aEIGc+p6/bFaeFDjbuzUzIYtzrxfQ=="
+    },
+    {
+      "name": "@tamagui/core",
+      "selected": "3.0.3",
+      "owners": [
+        "@nilumi/ui"
+      ],
+      "latest": "3.0.3",
+      "exception": null,
+      "published": "2026-10-11T10:42:41.038Z",
+      "engines": {},
+      "peers": {
+        "react": ">=19"
+      },
+      "integrity": "sha512-nbDSpEgGTLYbD7kVtlSIwRdiZjAaq2bSeJ4SHPOPQr99x/K35h6lQ/+PzRIXBzf6rB4eX8theqnigQG5cNTvEQ=="
+    },
+    {
+      "name": "@testing-library/react-native",
+      "selected": "14.1.0",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "14.1.0",
+      "exception": null,
+      "published": "2026-10-08T10:18:46.027Z",
+      "engines": {
+        "node": "^22.13.0 || >=24"
+      },
+      "peers": {
+        "jest": ">=29.0.0",
+        "react": ">=19.0.0",
+        "react-native": ">=0.78",
+        "test-renderer": "^1.0.0"
+      },
+      "integrity": "sha512-tWOam5U3aUE8XqStdWAN/OuUUdGRzh/vJMg7SfCaqXNKx7orRh04590Jp4JbORctYjORoRYfJSg04I2//wnxYw=="
+    },
+    {
+      "name": "@types/node",
+      "selected": "24.19.2",
+      "owners": [
+        "nilumi-v2",
+        "@nilumi/db",
+        "@nilumi/server",
+        "@nilumi/api",
+        "@nilumi/worker"
+      ],
+      "latest": "26.6.5",
+      "exception": "Match the selected Node 24 runtime; revisit with an explicitly qualified runtime-major upgrade.",
+      "published": "2026-10-09T18:44:25.189Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ=="
+    },
+    {
+      "name": "@types/nodemailer",
+      "selected": "8.0.2",
+      "owners": [
+        "@nilumi/server"
+      ],
+      "latest": "8.0.2",
+      "exception": null,
+      "published": "2026-09-15T20:36:24.078Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-c7M5ox8p0nEOfbJ2E9Qcmt8/QCu/VzsiAhzBiZbvky2PhKZDHpKB3sQHBM5MEZNkCfBOaS6S9//AGPRTNB7IaA=="
+    },
+    {
+      "name": "@types/pg",
+      "selected": "8.23.1",
+      "owners": [
+        "@nilumi/db"
+      ],
+      "latest": "8.23.1",
+      "exception": null,
+      "published": "2026-08-17T20:10:18.296Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-fKVHpikPdg4GKks3JuLEhvwSyvwzF23hnabPy6DD8ljVbC7+6J5dQzdv4arV6jqq57djnMgs1HKBxX4P8aBI3A=="
+    },
+    {
+      "name": "@types/react",
+      "selected": "19.2.18",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "19.3.0",
+      "exception": "Latest React 19.2 type patch matches the Expo-selected React 19.2 runtime; revisit with Expo's React family.",
+      "published": "2026-07-30T21:54:03.456Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-AnzbBERsrLKtk2XSfTbYRLjQPdy116Sty4q+T+Bp3IC4l6jNBvreVPAHmpq9qhXQM7CXZPjLVmGMw9sy+hxQ3w=="
+    },
+    {
+      "name": "babel-jest",
+      "selected": "29.7.0",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "30.5.2",
+      "exception": "Exact Jest 29 transformer family required by Expo native preset; revisit with Expo Jest 30 support.",
+      "published": "2023-09-12T06:43:51.168Z",
+      "engines": {
+        "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
+      },
+      "peers": {
+        "@babel/core": "^7.8.0"
+      },
+      "integrity": "sha512-BrvGY3xZSwEcCzKvKsCi2GgHqDqsYkOP4/by5xCgIwGXQxIEh+8ew3gmrE1y7XRR6LHZIj6yLYnUi/mm2KXKBg=="
+    },
+    {
+      "name": "babel-preset-expo",
+      "selected": "57.0.14",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "57.0.14",
+      "exception": null,
+      "published": "2026-10-06T12:09:29.704Z",
+      "engines": {},
+      "peers": {
+        "expo": "*",
+        "expo-widgets": "^57.0.23",
+        "react-refresh": ">=0.14.0 <1.0.0",
+        "@babel/runtime": "^7.20.0"
+      },
+      "integrity": "sha512-ALhPgXS0pvMcuORYh3THz4qYhQlOsRIw6FB+AbawM81tvP9V9pZpiK+Au9wihyYIb/Hdv2Z7Zwud4tFXF1ysJQ=="
+    },
+    {
+      "name": "dependency-cruiser",
+      "selected": "18.6.0",
+      "owners": [
+        "nilumi-v2"
+      ],
+      "latest": "18.6.0",
+      "exception": null,
+      "published": "2026-10-11T19:35:10.681Z",
+      "engines": {
+        "node": "^22||^24||>=26"
+      },
+      "peers": {},
+      "integrity": "sha512-It7NW5AmCDBCLMq7I91Nfu8VRKzrIE6S+M/FMQzALDceJ0B1PWRHo77q9YJg/HwyBBEWHVtOuTptIQki+xecOw=="
+    },
+    {
+      "name": "drizzle-kit",
+      "selected": "0.31.11",
+      "owners": [
+        "@nilumi/db"
+      ],
+      "latest": "0.31.11",
+      "exception": null,
+      "published": "2026-09-21T10:06:58.727Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-YCYqxTLIB2OCqf6w9/Vef13baBVbwQIPcbT4Y56AfO6B9ajZhDhD8Jkveg/hJvT/iuMloKD/IYYkyMMNhr7Kqg=="
+    },
+    {
+      "name": "drizzle-orm",
+      "selected": "0.45.4",
+      "owners": [
+        "@nilumi/db"
+      ],
+      "latest": "0.45.4",
+      "exception": null,
+      "published": "2026-10-08T10:50:41.953Z",
+      "engines": {},
+      "peers": {
+        "pg": ">=8",
+        "gel": ">=2",
+        "knex": "*",
+        "kysely": "*",
+        "mysql2": ">=2",
+        "sql.js": ">=1",
+        "sqlite3": ">=5",
+        "postgres": ">=3",
+        "@types/pg": "*",
+        "bun-types": "*",
+        "@netlify/db": ">=0.4.0",
+        "expo-sqlite": ">=14.0.0",
+        "@types/sql.js": "*",
+        "@libsql/client": ">=0.10.0",
+        "@prisma/client": "*",
+        "@upstash/redis": ">=1.34.7",
+        "better-sqlite3": ">=7",
+        "@xata.io/client": "*",
+        "@vercel/postgres": ">=0.8.0",
+        "@opentelemetry/api": "^1.4.1",
+        "@libsql/client-wasm": ">=0.10.0",
+        "@electric-sql/pglite": ">=0.2.0",
+        "@planetscale/database": ">=1.13",
+        "@tidbcloud/serverless": "*",
+        "@types/better-sqlite3": "*",
+        "@aws-sdk/client-rds-data": ">=3",
+        "@neondatabase/serverless": ">=0.10.0",
+        "@cloudflare/workers-types": ">=4",
+        "@op-engineering/op-sqlite": ">=2"
+      },
+      "integrity": "sha512-NiM1YZpJ2UxyeE67DpDDZ+Tsw4YLX3trSlkNT7Tm9eKoUNb1LvaAaQzXgYQsWs+AQ9TUmmwMmBOCXuqqxUWKKQ=="
+    },
+    {
+      "name": "expo",
+      "selected": "57.0.27",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.27",
+      "exception": null,
+      "published": "2026-10-06T12:10:58.345Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-dom": "*",
+        "react-native": "*",
+        "react-native-web": "*",
+        "@expo/dom-webview": "*",
+        "@expo/metro-runtime": "*",
+        "react-native-webview": "*"
+      },
+      "integrity": "sha512-Jc3nByHsmzjakvIrqV3/3viVj+jFw1OCfMc+WpClemwL3/hSrS7ktkVCACSTI7/j+1uH+eHmBJwe1kujDLMnbQ=="
+    },
+    {
+      "name": "expo-constants",
+      "selected": "57.0.21",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.21",
+      "exception": null,
+      "published": "2026-10-06T12:10:52.271Z",
+      "engines": {},
+      "peers": {
+        "expo": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-D5fV2GELYGbNkoiEVZZp5zrUXZDaAx6ZzErDzGirm3jCjOhaE8iU/GyJiB0ZQE+K4Bg8gY82nIQ/RZR8CJLVjA=="
+    },
+    {
+      "name": "expo-dev-client",
+      "selected": "57.0.19",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.19",
+      "exception": null,
+      "published": "2026-09-11T11:32:24.298Z",
+      "engines": {},
+      "peers": {
+        "expo": "*"
+      },
+      "integrity": "sha512-7giMK6BLL685GECHem2UAQvS473ImZLi5l+Q5tq+XSyv6I9UNVPs0p07mKwgBzq8z7DR3d4nTl702ziFxTjO3Q=="
+    },
+    {
+      "name": "expo-doctor",
+      "selected": "1.20.4",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "1.20.4",
+      "exception": null,
+      "published": "2026-08-26T20:04:51.396Z",
+      "engines": {
+        "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0"
+      },
+      "peers": {},
+      "integrity": "sha512-Jm1lIqVdO8br9wiqTg5QhJ1u4zLWAhoue4bXsEuzW543vC3XY+U0cpEOmiLkvJhTTgZgIK+24l4i8VzyZ2VLMg=="
+    },
+    {
+      "name": "expo-font",
+      "selected": "57.0.4",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.4",
+      "exception": null,
+      "published": "2026-09-11T11:31:54.373Z",
+      "engines": {},
+      "peers": {
+        "expo": "*",
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-7WOMC2oA6xCfOm8bbofqWn2bIqyWFm7YLEnpc/gA1MJH0Ll0TfT/3+CqRkoW2eNRWMS8sxrz5WukUmSvmNquHA=="
+    },
+    {
+      "name": "expo-linking",
+      "selected": "57.0.12",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.12",
+      "exception": null,
+      "published": "2026-10-06T12:09:57.269Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-oKLva5FOBx4txZa9LFu6RaHGAy1lFCyoOM91uU9H+gZi1iskjuSxV12GgS9H+yGGe2aSLufh6IfwSWrjEIsOuA=="
+    },
+    {
+      "name": "expo-router",
+      "selected": "57.0.25",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.25",
+      "exception": null,
+      "published": "2026-10-06T12:10:55.270Z",
+      "engines": {},
+      "peers": {
+        "expo": "*",
+        "react": "*",
+        "react-dom": "*",
+        "expo-linking": "^57.0.12",
+        "react-native": "*",
+        "@expo/log-box": "^57.0.4",
+        "expo-constants": "^57.0.21",
+        "react-native-web": "*",
+        "@expo/metro-runtime": "^57.0.16",
+        "react-native-screens": "^4.26.0",
+        "react-native-reanimated": "*",
+        "react-server-dom-webpack": "~19.0.4 || ~19.1.5 || ~19.2.4",
+        "react-native-gesture-handler": "*",
+        "@testing-library/react-native": ">= 13.2.0",
+        "react-native-safe-area-context": ">= 5.4.0"
+      },
+      "integrity": "sha512-S/xWUGeVqMozG8gFJT0CHOVErZEbQnsAEAqlBIvHJSUZPH0hBcxy2kduUrV7ZDLNI4xCPIlOJ4SI29X/1z/hxw=="
+    },
+    {
+      "name": "expo-splash-screen",
+      "selected": "57.0.9",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.9",
+      "exception": null,
+      "published": "2026-09-11T11:28:29.259Z",
+      "engines": {},
+      "peers": {
+        "expo": "*"
+      },
+      "integrity": "sha512-7cKDn7uBwg0RkcmY015/5j9st4msWJ4zQiPmQdVZoppW3cFSbv05n7xhM6CjUU466Tx4VRTqDF21HuIHkmnEtA=="
+    },
+    {
+      "name": "expo-status-bar",
+      "selected": "57.0.1",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.1",
+      "exception": null,
+      "published": "2026-07-15T10:03:18.392Z",
+      "engines": {},
+      "peers": {
+        "expo": "*",
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-Xwaq1gAoVRWx5dPG5VhT5RSbnI9OilhZnO5qoPBnUaBAa5VzRzfdS8q0/bsPt0jR2DKLtGuP0bQ6efMJ4RIMDg=="
+    },
+    {
+      "name": "expo-system-ui",
+      "selected": "57.0.4",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.4",
+      "exception": null,
+      "published": "2026-09-11T11:28:07.622Z",
+      "engines": {},
+      "peers": {
+        "expo": "*",
+        "react-native": "*",
+        "react-native-web": "*"
+      },
+      "integrity": "sha512-z//rxQJzhTNA1PcKrUtWmrd21jAS3nEDu1b0n8B/7LTTR933OcsZYP1HnbaZifuo2ZH/h7nce2Ow61WZ1Ig2bg=="
+    },
+    {
+      "name": "fastify",
+      "selected": "5.12.5",
+      "owners": [
+        "@nilumi/api"
+      ],
+      "latest": "5.12.5",
+      "exception": null,
+      "published": "2026-09-16T07:37:06.302Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-OB2k1dlxs5/NAABqeKV2FUHkSD2BbENsCak8yULVcymn3fHIPDVa9TI3SDnJSWYSllZmSYuZXy2gTnsT+Sut1A=="
+    },
+    {
+      "name": "jest",
+      "selected": "29.7.0",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "30.5.2",
+      "exception": "Expo 57 native Jest preset depends on Jest 29 watcher; revisit with Expo preset support for Jest 30.",
+      "published": "2023-09-12T06:44:08.561Z",
+      "engines": {
+        "node": "^14.15.0 || ^16.10.0 || >=18.0.0"
+      },
+      "peers": {
+        "node-notifier": "^8.0.1 || ^9.0.0 || ^10.0.0"
+      },
+      "integrity": "sha512-NIy3oAFp9shda19hy4HK0HRTWKtPJmGdnvywu01nOqNC2vZg+Z+fvJDxpMQA88eb2I9EcafcdjYgsDthnYTvGw=="
+    },
+    {
+      "name": "jest-expo",
+      "selected": "57.0.5",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "57.0.5",
+      "exception": null,
+      "published": "2026-08-26T19:58:08.009Z",
+      "engines": {},
+      "peers": {
+        "expo": "*",
+        "react-native": "*",
+        "react-server-dom-webpack": "~19.0.4 || ~19.1.5 || ~19.2.4",
+        "@react-native/jest-preset": "^0.86.3"
+      },
+      "integrity": "sha512-U08fwjaDBwnnbKnZcOA0WQbHfKqOWTCGku+IdCaekrLZmfbbZr3P1WqEsXHo6ntidQ3DmW+TT6G1aOp+ChYfKA=="
+    },
+    {
+      "name": "nodemailer",
+      "selected": "10.1.0",
+      "owners": [
+        "@nilumi/server"
+      ],
+      "latest": "10.1.0",
+      "exception": null,
+      "published": "2026-10-10T07:05:41.512Z",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "peers": {},
+      "integrity": "sha512-fXW8AulB25aOTuwfRYV6lqHyfz2VM4rr4SGXH03mE7x5znEUpzL5mu6anARUpZN7744Ziwkmr4AxSLPJsBQspg=="
+    },
+    {
+      "name": "openapi-fetch",
+      "selected": "0.17.0",
+      "owners": [
+        "@nilumi/api-client"
+      ],
+      "latest": "0.17.0",
+      "exception": null,
+      "published": "2026-02-11T16:02:21.454Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-PsbZR1wAPcG91eEthKhN+Zn92FMHxv+/faECIwjXdxfTODGSGegYv0sc1Olz+HYPvKOuoXfp+0pA2XVt2cI0Ig=="
+    },
+    {
+      "name": "openapi-types",
+      "selected": "12.1.3",
+      "owners": [
+        "@nilumi/api"
+      ],
+      "latest": "12.1.3",
+      "exception": null,
+      "published": "2023-05-24T22:26:38.839Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-N4YtSYJqghVu4iek2ZUvcN/0aqH1kRDuNqzcycDxhOUpg7GdvLa2F3DgS6yBNhInhv2r/6I0Flkn7CqL8+nIcw=="
+    },
+    {
+      "name": "openapi-typescript",
+      "selected": "7.13.0",
+      "owners": [
+        "@nilumi/api"
+      ],
+      "latest": "7.13.0",
+      "exception": null,
+      "published": "2026-02-11T16:02:25.378Z",
+      "engines": {},
+      "peers": {
+        "typescript": "^5.x"
+      },
+      "integrity": "sha512-EFP392gcqXS7ntPvbhBzbF8TyBA+baIYEm791Hy5YkjDYKTnk/Tn5OQeKm5BIZvJihpp8Zzr4hzx0Irde1LNGQ=="
+    },
+    {
+      "name": "pg",
+      "selected": "8.23.1",
+      "owners": [
+        "@nilumi/db"
+      ],
+      "latest": "8.23.1",
+      "exception": null,
+      "published": "2026-09-30T15:39:58.489Z",
+      "engines": {
+        "node": ">= 16.0.0"
+      },
+      "peers": {
+        "pg-native": ">=3.0.1"
+      },
+      "integrity": "sha512-aL96AHANtWjPLDOLqnhx+ngp9+UK7ETEU8VJrDCGvsSSi/mGLcWYsS6Herg7lmaBJe4uwrfqsa7gTEFaSizDoQ=="
+    },
+    {
+      "name": "pg-boss",
+      "selected": "12.37.1",
+      "owners": [
+        "@nilumi/db"
+      ],
+      "latest": "12.37.1",
+      "exception": null,
+      "published": "2026-10-08T15:56:14.199Z",
+      "engines": {
+        "node": ">=22.12.0"
+      },
+      "peers": {
+        "@opentelemetry/api": "^1.9.0"
+      },
+      "integrity": "sha512-LghWeOIbMCiLcTY3+8MInXaJ0wk0AOkbeUZ8oE+cGO0uoheGSW3GK57eDqEbrDGpwTIpX9BVphvdvWEDYTcJ9A=="
+    },
+    {
+      "name": "pino",
+      "selected": "10.4.0",
+      "owners": [
+        "@nilumi/api",
+        "@nilumi/worker"
+      ],
+      "latest": "10.4.0",
+      "exception": null,
+      "published": "2026-10-02T18:18:54.863Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-bk1ZMTwG/Vymx+zPoa28MhNzucFvXJWp3csrSuxuHPSMeUettaCoQ5Jvg07mtC4JGNpcfTwz41oVCnNgBK9+vA=="
+    },
+    {
+      "name": "react",
+      "selected": "19.2.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "19.3.0",
+      "exception": "Expo 57 bundled exact React pin, including matching native test renderer; revisit with Expo's supported pair.",
+      "published": "2025-12-11T22:55:28.598Z",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peers": {},
+      "integrity": "sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA=="
+    },
+    {
+      "name": "react-dom",
+      "selected": "19.2.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "19.3.0",
+      "exception": "Match Expo 57's exact React pin; revisit with the Expo pair.",
+      "published": "2025-12-11T22:55:37.826Z",
+      "engines": {},
+      "peers": {
+        "react": "^19.2.3"
+      },
+      "integrity": "sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg=="
+    },
+    {
+      "name": "react-native",
+      "selected": "0.86.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "0.87.1",
+      "exception": "Expo 57 targets RN 0.86.3; revisit with a qualified Expo SDK update.",
+      "published": "2026-08-24T16:16:06.034Z",
+      "engines": {
+        "node": "^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0"
+      },
+      "peers": {
+        "react": "^19.2.3",
+        "@types/react": "^19.1.1",
+        "@react-native/jest-preset": "0.86.3"
+      },
+      "integrity": "sha512-JR5s3bM9ezud+Mw24GlNXNfthqPIKwrQgPPJcam+L97t2sKjjEavhCzBn+fyqZZRcM5+XlhYxpTxVkK7e1n38Q=="
+    },
+    {
+      "name": "react-native-gesture-handler",
+      "selected": "2.32.0",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "3.3.0",
+      "exception": "Latest patch within Expo 57's ~2.32.0 constraint.",
+      "published": "2026-06-11T12:51:41.850Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-uYIMOKlKENORq2SABE+jIjbPU+h5I/sQKcq2v16zRq848nwEp1fWRVwML4QWqijc8UcXJC25o54S8GQd4Mf2OA=="
+    },
+    {
+      "name": "react-native-reanimated",
+      "selected": "4.5.1",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "4.7.1",
+      "exception": "Expo 57 bundled exact native dependency; revisit with Expo's native family.",
+      "published": "2026-07-02T18:14:45.684Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "0.83 - 0.86",
+        "react-native-worklets": "0.10.x"
+      },
+      "integrity": "sha512-RnMvtDuR+68ig864gAvZCOdZehqhC5rFmMo0kn+ARfgVSTvFeF6IFLBVgMPUu0KwihaapEyW24WRi6nEyy1kSA=="
+    },
+    {
+      "name": "react-native-safe-area-context",
+      "selected": "5.7.0",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "5.10.1",
+      "exception": "Latest patch within Expo 57's ~5.7.0 constraint.",
+      "published": "2026-02-24T20:53:59.356Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-/9/MtQz8ODphjsLdZ+GZAIcC/RtoqW9EeShf7Uvnfgm/pzYrJ75y3PV/J1wuAV1T5Dye5ygq4EAW20RoBq0ABQ=="
+    },
+    {
+      "name": "react-native-screens",
+      "selected": "4.26.2",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "4.29.0",
+      "exception": "Latest patch in Expo 57's ~4.26.0 native compatibility range; revisit with Expo SDK qualification.",
+      "published": "2026-07-16T16:03:32.446Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-2XnWsZToKj76trGtEZzx5ELD/qOICFEprEeUntImmitQFVUkea27fiWdUSITArI356Y1qynpXZINW+Unbhky/A=="
+    },
+    {
+      "name": "react-native-svg",
+      "selected": "15.15.4",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "15.15.5",
+      "exception": "Exact Expo 57 bundled native SVG pin; revisit with Expo's SDK native-module qualification.",
+      "published": "2026-03-18T09:09:43.950Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "react-native": "*"
+      },
+      "integrity": "sha512-boT/vIRgj6zZKBpfTPJJiYWMbZE9duBMOwPK6kCSTgxsS947IFMOq9OgIFkpWZTB7t229H24pDRkh3W9ZK/J1A=="
+    },
+    {
+      "name": "react-native-web",
+      "selected": "0.21.4",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "0.21.4",
+      "exception": null,
+      "published": "2026-10-08T13:34:10.933Z",
+      "engines": {},
+      "peers": {
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+      },
+      "integrity": "sha512-77B6KlalB4osNIck91TNFixPkYPsTbuNEvw8P7IV+4v4/5wZSBRKZnw0Zhx6YjuauDTz71gc8IW+fVhcBMjr5A=="
+    },
+    {
+      "name": "react-native-worklets",
+      "selected": "0.10.1",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "0.13.0",
+      "exception": "Expo 57 bundled exact dependency and Reanimated peer family.",
+      "published": "2026-07-01T11:25:36.954Z",
+      "engines": {},
+      "peers": {
+        "react": "*",
+        "@babel/core": "*",
+        "react-native": "0.83 - 0.86",
+        "@react-native/metro-config": "*"
+      },
+      "integrity": "sha512-62mRM19bDpfpdI8HLkEErcdOsrAPDtE9lA/sw+5lLRpzBHNhxaoj9QyY2KjXqUmirelxkX4zuPGTC3VdA0feJA=="
+    },
+    {
+      "name": "tamagui",
+      "selected": "3.0.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "3.0.3",
+      "exception": null,
+      "published": "2026-10-11T10:41:42.317Z",
+      "engines": {},
+      "peers": {
+        "react": ">=19",
+        "react-native-safe-area-context": "*"
+      },
+      "integrity": "sha512-FqHaUJHSUDkLco765XzVQR+izvOzBToDnJwMutabVHXAt2oR83ibO3wM4DY0ZECPJpU+5MqaznUzeVEDzxp52g=="
+    },
+    {
+      "name": "test-renderer",
+      "selected": "1.2.0",
+      "owners": [
+        "@nilumi/client"
+      ],
+      "latest": "1.3.1",
+      "exception": "Latest renderer compatible with Expo React 19.2.3: 1.3.x requires react-reconciler 0.34 / React ^19.3.0. 1.2.0 uses reconciler 0.33 / React ^19.2.0. Revisit with Expo React family.",
+      "published": "2026-04-16T21:43:09.430Z",
+      "engines": {},
+      "peers": {
+        "react": "^19.0.0"
+      },
+      "integrity": "sha512-JYiEGbgBGtmHAWX8Kf99gGRL1HtjcRVHLrmJNTZL4vFs9XrnWcuL45Iszw/pO4094+JR7havSrN+ds6YTOpSQA=="
+    },
+    {
+      "name": "typescript",
+      "selected": "5.9.3",
+      "owners": [
+        "nilumi-v2",
+        "@nilumi/contracts",
+        "@nilumi/db",
+        "@nilumi/api-client",
+        "@nilumi/server",
+        "@nilumi/api",
+        "@nilumi/worker"
+      ],
+      "latest": "7.0.2",
+      "exception": "Compiler-API compatibility: openapi-typescript requires ^5.x; dependency-cruiser requires <7. Revisit when their APIs support native TypeScript.",
+      "published": "2025-09-30T21:19:38.784Z",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peers": {},
+      "integrity": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="
+    },
+    {
+      "name": "typescript",
+      "selected": "6.0.3",
+      "owners": [
+        "@nilumi/ui",
+        "@nilumi/client"
+      ],
+      "latest": "7.0.2",
+      "exception": "Qualified Expo classic compiler and TypeScript 7 comparison; revisit after Expo/compiler integration qualification.",
+      "published": "2026-04-16T23:38:27.905Z",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peers": {},
+      "integrity": "sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw=="
+    },
+    {
+      "name": "typescript",
+      "selected": "7.0.2",
+      "owners": [
+        "nilumi-v2"
+      ],
+      "latest": "7.0.2",
+      "exception": null,
+      "published": "2026-07-08T15:55:18.431Z",
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "peers": {},
+      "integrity": "sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA=="
+    },
+    {
+      "name": "vite",
+      "selected": "8.3.4",
+      "owners": [
+        "nilumi-v2"
+      ],
+      "latest": "8.3.4",
+      "exception": null,
+      "published": "2026-10-08T12:07:04.441Z",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "peers": {
+        "tsx": "^4.8.1",
+        "jiti": ">=1.21.0",
+        "less": "^4.0.0",
+        "sass": "^1.70.0",
+        "yaml": "^2.4.2",
+        "stylus": ">=0.54.8",
+        "terser": "^5.16.0",
+        "esbuild": "^0.27.0 || ^0.28.0",
+        "sugarss": "^5.0.0",
+        "@types/node": "^20.19.0 || >=22.12.0",
+        "sass-embedded": "^1.70.0",
+        "@vitejs/devtools": "^0.7.1"
+      },
+      "integrity": "sha512-IftLE8phJhdNRIGNEV4JCCvfNScoZQVfcXaN8TQropWGJtOHcu+iAB9pHcuGvmEb/kddw0LBe/jS8ztdC6xdiQ=="
+    },
+    {
+      "name": "vitest",
+      "selected": "5.0.3",
+      "owners": [
+        "nilumi-v2"
+      ],
+      "latest": "5.0.4",
+      "exception": "Latest mature compatible release at SETUP-06 qualification; 5.0.4 published today fails the 1440-minute supply-chain age policy. Revisit after maturation and independent qualification.",
+      "published": "2026-09-30T11:30:42.429Z",
+      "engines": {
+        "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+      },
+      "peers": {
+        "vite": "^6.4.0 || ^7.0.0 || ^8.0.0",
+        "jsdom": "*",
+        "happy-dom": "*",
+        "@vitest/ui": "5.0.3",
+        "@types/node": "^22.0.0 || >=24.0.0",
+        "@edge-runtime/vm": "*",
+        "@opentelemetry/api": "^1.9.0",
+        "@vitest/coverage-v8": "5.0.3",
+        "@vitest/browser-preview": "5.0.3",
+        "@vitest/coverage-istanbul": "5.0.3",
+        "@vitest/browser-playwright": "5.0.3",
+        "@vitest/browser-webdriverio": "^5.0.0-beta.5 || >=5.0.0"
+      },
+      "integrity": "sha512-xMw97S3rjdtj5dkVat7jCsqWBpvchs3RlpQctUqwJD0KkERk40vz2fJ77lDwW/Vzh/pk18eItYAzkodhSes3jQ=="
+    },
+    {
+      "name": "zod",
+      "selected": "4.6.6",
+      "owners": [
+        "@nilumi/contracts",
+        "@nilumi/db",
+        "@nilumi/api",
+        "@nilumi/worker",
+        "@nilumi/client"
+      ],
+      "latest": "4.6.6",
+      "exception": null,
+      "published": "2026-10-11T16:18:23.878Z",
+      "engines": {},
+      "peers": {},
+      "integrity": "sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA=="
+    }
+  ]
+}

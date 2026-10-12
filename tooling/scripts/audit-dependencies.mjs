@@ -66,9 +66,9 @@ export async function auditDependencies() {
   };
   const destination = join(
     root,
-    "docs/development/evidence/setup-05-2026-10-12/dependency-audit.json",
+    "docs/development/evidence/setup-06-2026-10-12/dependency-audit.json",
   );
-  mkdirSync(join(root, "docs/development/evidence/setup-05-2026-10-12"), { recursive: true });
+  mkdirSync(join(root, "docs/development/evidence/setup-06-2026-10-12"), { recursive: true });
   writeFileSync(destination, `${JSON.stringify(output, null, 2)}\n`);
   console.log(
     `Audited ${records.length} exact dependency selections; all non-latest selections have explicit constraints.`,

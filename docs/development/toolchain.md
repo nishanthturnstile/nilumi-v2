@@ -89,3 +89,27 @@ Disposable Compose probes passed PostgreSQL/auth/queue, S3 upload/read/delete an
 The optional development collector is `otel/opentelemetry-collector-contrib:0.162.0@sha256:39923a8e431bd1f57be82411999d389fcfe40857492e4365456d97a4c1f74be6`. Its stable release and multi-platform index digest were checked against the [official release](https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.162.0) and Docker manifest; Linux/amd64 validation, health and synthetic OTLP ingestion pass. It has no external exporter or application SDK auto-instrumentation.
 
 See [SETUP-05 validation](setup-05-validation.md), [the runbook](setup-05-runbook.md) and [its new evidence](evidence/setup-05-2026-10-12/README.md) for actual runtime grants, dependency reachability, readiness and restart recovery. The earlier probe matrices remain historical evidence, not product readiness.
+
+## SETUP-06 test and artifact tooling
+
+12 October 2026. Backend Vitest **5.0.3** / Vite **8.3.4**, Playwright **1.64.0**,
+Jest / Babel Jest / Jest globals **29.7.0**, jest-expo **57.0.5**, native Jest preset
+**0.86.3**, RNTL **14.1.0**, and test-renderer **1.2.0** are exact workspace pins.
+The 58-selection audit lives in SETUP-06 evidence. Vitest 5.0.4 was published today
+and fails the existing maturity policy; no age exception was forced. Renderer
+1.3.x requires reconciler 0.34 / React 19.3, outside Expo 57; 1.2.0 uses reconciler
+0.33 / React 19.2. Strict peers remain enabled. Jest 30 still conflicts with the
+Expo preset's Jest 29 watcher family. Revisit these constraints with compatible
+upstream families, not transitive overrides.
+
+OpenAPI compatibility uses oasdiff **1.33.0**, explicit checksum-verified preparation,
+and warning-or-higher rejection. Its release and platform archive checksums are
+committed in `tooling/contracts/checker.json`; unchanged/removal qualification and
+byte-drift output are retained. Action versions **checkout 7.0.1**, **setup-node
+7.1.0**, **upload-artifact 7.0.2**, and **setup-java 6.0.1** were resolved from their
+official release tag objects and pinned to full commit SHAs. Linux CI targets
+Ubuntu 24.04; Windows targets Windows 2025. Node/pnpm/native7/Biome and runtime
+image digests remain the qualified selections above. Android uses Temurin
+**25.0.4.1+1**, clean generated Gradle **9.3.1**, API 36, Build-Tools 36.0.0/35.0.0,
+NDK 27.1.12297006 and two workers/3 GiB heap. Local Android clean build passes;
+real GitHub qualification is recorded separately in setup-validation.md.

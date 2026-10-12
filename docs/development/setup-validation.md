@@ -74,3 +74,44 @@ Output: `{"platform":"linux","arch":"x64","node":"v24.21.0"}`. The locally inspe
 - Record the exact iPhone OS and perform actual Safari/PWA checks in SETUP-07.
 
 No manifests, workspace, application source or generated Android project were added. SETUP-03–07 remain unstarted; full F01–F13 completion is not claimed.
+
+## SETUP-06 qualification — 12 October 2026
+
+The preceding sections retain the original preflight observations. SETUP-03–05
+are implemented with separate retained evidence. SETUP-06 CI, images, contract
+compatibility and manual release scaffolding are now implemented; **GitHub
+acceptance remains pending until actual required jobs are observed green**.
+
+| Check | Observed result |
+|---|---|
+| Windows frozen install/check/native7/boundaries | Pass |
+| Windows Node behavior tests / API Vitest / native Jest+RNTL | 32 / 2 / 2 pass |
+| Windows restricted-role integration | Pass; actual isolated API/auth/worker/queue roles |
+| Fresh Linux frozen install/check/test/integration/contracts | Pass; independent modules in pinned Node container |
+| Classic compiler comparisons/public export closure | Fresh Linux pass |
+| Generated schema/type byte drift | Pass; negative drift in both outputs rejected and restored |
+| oasdiff 1.33.0 vs PR base `f471e4f08d2d8e6cd677b6bae355bb573afec6bd` | Pass; removed v1 endpoint negative qualification fails as expected |
+| Windows Playwright exported shell/direct-link/reload/API forwarding | 2 pass |
+| Non-root API/worker/web packaging and health/ready/shutdown | Pass on local Linux engine; exact IDs in image-smoke.json |
+| Clean CNG Windows Android x86_64 debug build | Pass, Java 25.0.4.1 / Gradle 9.3.1; 660 tasks, BUILD SUCCESSFUL |
+| Protected `main` | Applied: up-to-date PR, `Foundation required`, enforced admins, resolved conversations, no force/deletion |
+| Real GitHub Linux + Windows + integration/browser/images/Android | Pending real workflow run and job URLs |
+
+New evidence is under [SETUP-06](evidence/setup-06-2026-10-12/README.md).
+The clean local Android build log is
+[android-debug-build.log](evidence/setup-06-2026-10-12/android-debug-build.log);
+prior local emulator/Metro interaction evidence remains in SETUP-04 and is not
+counted as a new physical-device/iPhone qualification. Packaging attempts that
+failed legacy offline resolution and declaration-only dependency lookup, and
+the initial Linux Jest transform-path failure, are retained separately from the
+passing results. Strict peers/age checks were retained; test-renderer 1.2.0 is the
+latest compatible React 19.2 selection, and mature Vitest 5.0.3 is selected.
+
+Git Credential Manager's existing GitHub session permits pushes/API operations
+without writing or displaying its token; `gh` has no independently stored login.
+The existing GitHub repository reports `private=false`; its visibility was
+preserved. All eight workspace packages remain private. No provider/deployment
+secrets, signing, auto-deployment, pilot/production migrations or OTA were added.
+Earlier dependency-security limitations remain separate from this functional
+foundation qualification. SETUP-07 device checks and product/pilot readiness
+remain unfinished.

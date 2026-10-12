@@ -15,7 +15,13 @@
     "react-native-reanimated@4.5.1": "Expo 57 bundled exact native dependency; revisit with Expo's native family.",
     "react-native-worklets@0.10.1": "Expo 57 bundled exact dependency and Reanimated peer family.",
     "react-native-gesture-handler@2.32.0": "Latest patch within Expo 57's ~2.32.0 constraint.",
-    "react-native-safe-area-context@5.7.0": "Latest patch within Expo 57's ~5.7.0 constraint."
+    "react-native-safe-area-context@5.7.0": "Latest patch within Expo 57's ~5.7.0 constraint.",
+    "jest@29.7.0": "Expo 57 native Jest preset depends on Jest 29 watcher; revisit with Expo preset support for Jest 30.",
+    "@jest/globals@29.7.0": "Same exact family as selected Jest 29.7.0; revisit with native preset.",
+    "@react-native/jest-preset@0.86.3": "Exact React Native 0.86.3 family required by Expo 57; revisit with Expo native family.",
+    "babel-jest@29.7.0": "Exact Jest 29 transformer family required by Expo native preset; revisit with Expo Jest 30 support.",
+    "vitest@5.0.3": "Latest mature compatible release at SETUP-06 qualification; 5.0.4 published today fails the 1440-minute supply-chain age policy. Revisit after maturation and independent qualification.",
+    "test-renderer@1.2.0": "Latest renderer compatible with Expo React 19.2.3: 1.3.x requires react-reconciler 0.34 / React ^19.3.0. 1.2.0 uses reconciler 0.33 / React ^19.2.0. Revisit with Expo React family."
   },
   "freshReleaseExceptions": {
     "@fastify/type-provider-zod@1.0.1": "Exact stable patch reviewed against Fastify/Zod/Swagger peers; schema, failure and codegen tests required on Windows/Linux in SETUP-04.",

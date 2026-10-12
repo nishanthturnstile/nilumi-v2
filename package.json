@@ -32,13 +32,28 @@
     "db:provision": "node tooling/scripts/tasks.mjs db:provision",
     "db:migrate": "node tooling/scripts/tasks.mjs db:migrate",
     "test:integration": "node tooling/scripts/tasks.mjs test:integration",
-    "diagnostics:check": "node tooling/scripts/tasks.mjs diagnostics:check"
+    "diagnostics:check": "node tooling/scripts/tasks.mjs diagnostics:check",
+    "test:backend": "node tooling/scripts/tasks.mjs test:backend",
+    "test:native": "node tooling/scripts/tasks.mjs test:native",
+    "test:web": "node tooling/scripts/tasks.mjs test:web",
+    "web:export": "node tooling/scripts/tasks.mjs web:export",
+    "contracts:compat": "node tooling/scripts/tasks.mjs contracts:compat",
+    "contracts:qualify": "node tooling/scripts/tasks.mjs contracts:qualify",
+    "build:containers": "node tooling/scripts/tasks.mjs build:containers",
+    "test:containers": "node tooling/scripts/tasks.mjs test:containers",
+    "release:record": "node tooling/scripts/tasks.mjs release:record",
+    "release:migrate": "node tooling/scripts/tasks.mjs release:migrate",
+    "contracts:prepare": "node tooling/scripts/contract-compat.mjs prepare",
+    "contracts:qualify-drift": "node tooling/scripts/contract-drift.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
     "typescript": "5.9.3",
     "@types/node": "24.19.2",
     "@nilumi/typescript-native": "npm:typescript@7.0.2",
-    "dependency-cruiser": "18.6.0"
+    "dependency-cruiser": "18.6.0",
+    "vitest": "5.0.3",
+    "vite": "8.3.4",
+    "@playwright/test": "1.64.0"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "checker": "1.33.0",
+  "unchanged": "accepted",
+  "removedEndpoint": "rejected",
+  "output": "[{\"id\":\"api-path-removed-without-deprecation\",\"text\":\"api path removed without deprecation\",\"level\":3,\"operation\":\"GET\",\"operationId\":\"getHealth\",\"path\":\"/api/v1/health\",\"section\":\"paths\",\"baseSource\":{\"file\":\"C:\\\\Users\\\\Nishanth Murugan\\\\projects\\\\nishanth - projects win\\\\nilumi-v2\\\\packages\\\\contracts\\\\generated\\\\openapi.json\"},\"fingerprint\":\"68a01024a79d\"}]\n"
+}

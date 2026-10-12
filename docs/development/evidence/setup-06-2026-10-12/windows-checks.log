@@ -1,0 +1,164 @@
+install --frozen-lockfile
+Scope: all 9 workspace projects
+✓ Lockfile passes supply-chain policies (verified 13m ago)
+Lockfile is up to date, resolution step is skipped
+Done in 1.1s using pnpm v12.11.2
+run check
+Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+Checked 119 files in 213ms. No fixes applied.
+Found 2 infos.
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/contracts → native7 7.0.2
+typecheck: @nilumi/db → native7 7.0.2
+typecheck: @nilumi/api-client → native7 7.0.2
+typecheck: @nilumi/server → native7 7.0.2
+typecheck: @nilumi/api → native7 7.0.2
+typecheck: @nilumi/worker → native7 7.0.2
+typecheck: @nilumi/ui → native7 7.0.2
+typecheck: @nilumi/client → native7 7.0.2
+Manifest, authored-source closure, AST policies and resolved dependency graph pass.
+Contract drift check passes.
+$ node tooling/scripts/tasks.mjs check
+tooling\scripts\containers.mjs:177:55 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i Template literals are preferred over string concatenation.
+  
+    175 │     );
+    176 │     mkdirSync(evidence, { recursive: true });
+  > 177 │     writeFileSync(join(evidence, "image-smoke.json"), JSON.stringify(result, null, 2) + "\n");
+        │                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    178 │     console.log("Container health/readiness/packaging/shutdown smoke passes.");
+    179 │   } finally {
+  
+  i Unsafe fix: Use a template literal.
+  
+    175 175 │       );
+    176 176 │       mkdirSync(evidence, { recursive: true });
+    177     │ - ····writeFileSync(join(evidence,·"image-smoke.json"),·JSON.stringify(result,·null,·2)·+·"\n");
+        177 │ + ····writeFileSync(join(evidence,·"image-smoke.json"),·`${JSON.stringify(result,·null,·2)}\n`);
+    178 178 │       console.log("Container health/readiness/packaging/shutdown smoke passes.");
+    179 179 │     } finally {
+  
+
+tooling\scripts\release.mjs:56:5 lint/style/useTemplate  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  i Template literals are preferred over string concatenation.
+  
+    54 │   writeFileSync(
+    55 │     join(destination, "manifest.json"),
+  > 56 │     JSON.stringify(
+       │     ^^^^^^^^^^^^^^^
+  > 57 │       { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+  > 58 │       null,
+  > 59 │       2,
+  > 60 │     ) + "\n",
+       │     ^^^^^^^^
+    61 │     { flag: "wx" },
+    62 │   );
+  
+  i Unsafe fix: Use a template literal.
+  
+    54 54 │     writeFileSync(
+    55 55 │       join(destination, "manifest.json"),
+    56    │ - ····JSON.stringify(
+       56 │ + ····`${JSON.stringify(
+    57 57 │         { id, sha, images, contracts, deployment: "manual-only; not deployed" },
+    58 58 │         null,
+    59 59 │         2,
+    60    │ - ····)·+·"\n",
+       60 │ + ····)}\n`,
+    61 61 │       { flag: "wx" },
+    62 62 │     );
+  
+
+run test
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/db → native7 7.0.2
+build: @nilumi/api-client → native7 7.0.2
+build: @nilumi/server → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+build: @nilumi/worker → native7 7.0.2
+✔ permitted manifest and authored-source graph passes (307.7886ms)
+✔ real checker rejects direct, erased, reexported, dynamic, computed, alias and escaped edges (2651.0417ms)
+✔ unreexported public source participates in complete closure (284.657ms)
+✔ unused illegal manifest dependency and package cycles fail (324.3868ms)
+✔ source policy allows only the two exact public env reads (4.259ms)
+✔ future domain restrictions and resolved dist ownership cannot be bypassed (2.3943ms)
+✔ API parser defaults safely and has no connection side effects (8.3219ms)
+✔ missing and malformed inputs fail without rejected values in diagnostics (7.1417ms)
+✔ worker and migration roles cannot be substituted (4.6056ms)
+✔ public URLs and variable allowlist follow deployment mode (2.7158ms)
+✔ optional and explicit files, inherited precedence and unrelated variables (26.1556ms)
+Node/pnpm/compiler pins, package tooling and ignored outputs pass.
+✔ routine preflight accepts a checkout after the historical foundation snapshot (592.0932ms)
+✔ test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs (11.3932ms)
+✔ blank private templates fail configuration; infrastructure reset guards fail closed (3.3722ms)
+✔ Pino removes OTP, content and credentials while retaining codes and request IDs (3028.0715ms)
+✔ store ownership keeps foreign and unmarked directories intact (72.751ms)
+✔ child environment drops bootstrap overrides and preserves user options (0.4565ms)
+✔ internal store ownership survives pnpm replacing its dependency directory (40.4096ms)
+✔ argument arrays preserve spaces and shell metacharacters (144.8179ms)
+✔ child failure and interruption produce non-success results (251.0277ms)
+✔ all selections route to pinned native7 independently of ambiguous tsc bins (67.4297ms)
+✔ process roots reject missing config without printing values (3819.3675ms)
+✔ worker process refuses unavailable dependencies without leaking credentials (1458.3195ms)
+✔ liveness survives unready dependencies; errors contain no inputs or caller request ID (375.1771ms)
+✔ readiness reflects injected dependencies, fails closed and aborts bounded probes (43.1758ms)
+✔ invalid handler output fails response validation with a safe Problem (9.3959ms)
+✔ generated transport round-trips real loopback health and validates data (65.7282ms)
+✔ development health CORS allows only documented loopback web origins (22.2087ms)
+✔ health CORS is disabled outside explicitly selected development mode (24.5409ms)
+✔ schema generation is deterministic and independent of process config (29.6892ms)
+✔ worker heartbeat responds to readiness loss and shutdown is idempotent (9.775ms)
+✔ worker bounds startup and stuck shutdown and cannot become ready after stopping (22.4148ms)
+ℹ tests 32
+ℹ suites 0
+ℹ pass 32
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7864.8123
+
+ RUN  v5.0.3 C:/Users/Nishanth Murugan/projects/nishanth - projects win/nilumi-v2
+
+
+ Test Files  1 passed (1)
+      Tests  2 passed (2)
+   Start at  19:49:55
+   Duration  2.39s (import 70%, tests 17%, transform 10%, worker 3%)
+
+$ node tooling/scripts/tasks.mjs test
+PASS tests/primitives.test.tsx (56.547 s)
+  √ native field and button render mixed text and execute callbacks (196 ms)
+  √ native controls expose disabled, busy and error states (22 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        67.615 s
+Ran all test suites.
+run contracts:check
+build: @nilumi/contracts → native7 7.0.2
+build: @nilumi/api → native7 7.0.2
+Contract drift check passes.
+$ node tooling/scripts/tasks.mjs contracts:check
+run contracts:qualify
+Checker qualification passes: unchanged accepted; removed v1 endpoint rejected.
+$ node tooling/scripts/tasks.mjs contracts:qualify
+run contracts:qualify-drift
+Contract drift check passes.
+Contract drift check passes.
+Byte drift in both generated artifacts is rejected; originals restored and pass.
+$ node tooling/scripts/contract-drift.mjs
+run contracts:compat f471e4f08d2d8e6cd677b6bae355bb573afec6bd
+OpenAPI compatibility passes against exact PR base.
+$ node tooling/scripts/tasks.mjs contracts:compat f471e4f08d2d8e6cd677b6bae355bb573afec6bd
+run audit:dependencies
+Audited 58 exact dependency selections; all non-latest selections have explicit constraints.
+$ node tooling/scripts/tasks.mjs audit:dependencies

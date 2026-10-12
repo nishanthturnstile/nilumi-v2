@@ -28,8 +28,51 @@ async function types() {
   await compile("typecheck");
 }
 await main(async () => {
-  const [command, ...args] = process.argv.slice(2);
+  const [command, ...inputArgs] = process.argv.slice(2);
+  const args = inputArgs[0] === "--" ? inputArgs.slice(1) : inputArgs;
   switch (command) {
+    case "build:containers":
+    case "test:containers":
+      await (await import("./containers.mjs"))[
+        command === "build:containers" ? "buildContainers" : "smokeContainers"
+      ]();
+      break;
+    case "release:record":
+    case "release:migrate":
+      await (await import("./release.mjs")).release(command, args);
+      break;
+    case "contracts:compat":
+      await (await import("./contract-compat.mjs")).compatibility(
+        args[0] ?? process.env.NILUMI_CONTRACT_BASE_SHA,
+      );
+      break;
+    case "contracts:qualify":
+      await (await import("./contract-compat.mjs")).qualifyChecker();
+      break;
+    case "web:export":
+      await compile("build");
+      await pnpm(["--filter", "@nilumi/client", "exec", "expo", "export", "--platform", "web"], {
+        env: {
+          ...process.env,
+          EXPO_NO_DOTENV: "1",
+          EXPO_NO_TELEMETRY: "1",
+          EXPO_PUBLIC_NILUMI_ENV: "test",
+          EXPO_PUBLIC_API_BASE_URL: process.env.EXPO_PUBLIC_API_BASE_URL ?? "http://127.0.0.1:8082",
+        },
+      });
+      break;
+    case "test:backend":
+      await compile("build");
+      await pnpm(["exec", "vitest", "run"]);
+      break;
+    case "test:native":
+      await pnpm(["--filter", "@nilumi/client", "exec", "jest", "--runInBand"], {
+        env: { ...process.env, EXPO_NO_DOTENV: "1", EXPO_NO_TELEMETRY: "1" },
+      });
+      break;
+    case "test:web":
+      await pnpm(["exec", "playwright", "test"]);
+      break;
     case "diagnostics:check":
       await (await import("./diagnostics.mjs")).diagnostics();
       break;
@@ -85,6 +128,10 @@ await main(async () => {
         .filter((name) => name.endsWith(".test.mjs"))
         .map((name) => `tooling/tests/${name}`);
       await run(process.execPath, ["--test", ...tests]);
+      await pnpm(["exec", "vitest", "run"]);
+      await pnpm(["--filter", "@nilumi/client", "exec", "jest", "--runInBand"], {
+        env: { ...process.env, EXPO_NO_DOTENV: "1", EXPO_NO_TELEMETRY: "1" },
+      });
       break;
     }
     case "config:check":

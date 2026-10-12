@@ -348,7 +348,7 @@ export async function integration() {
   const sandbox = await startSandbox();
   try {
     const result = await integrationSuite(sandbox.host);
-    const evidence = join(root, "docs/development/evidence/setup-05-2026-10-12");
+    const evidence = join(root, "docs/development/evidence/setup-06-2026-10-12");
     mkdirSync(evidence, { recursive: true });
     writeFileSync(
       join(evidence, `integration-${process.platform}.json`),

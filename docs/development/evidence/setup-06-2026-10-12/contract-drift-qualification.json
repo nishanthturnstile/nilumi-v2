@@ -1,0 +1,8 @@
+{
+  "unchanged": "accepted",
+  "byteDriftRejected": [
+    "packages/contracts/generated/openapi.json",
+    "packages/api-client/src/generated/schema.ts"
+  ],
+  "restored": "passes"
+}

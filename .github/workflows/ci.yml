@@ -1,0 +1,196 @@
+name: Foundation CI
+on:
+  pull_request:
+    branches: [main, development]
+  push:
+    branches: [main, development, 'codex/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: foundation-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+env:
+  CI: '1'
+  EXPO_NO_DOTENV: '1'
+  EXPO_NO_TELEMETRY: '1'
+  EXPO_PUBLIC_NILUMI_ENV: test
+  EXPO_PUBLIC_API_BASE_URL: http://127.0.0.1:8082
+jobs:
+  linux:
+    name: Linux foundation
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    outputs:
+      android: ${{ steps.changes.outputs.android }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.21.0'
+      - run: node tooling/scripts/ci-prepare.mjs
+      - run: node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+      - run: node tooling/scripts/pnpm-local.mjs run check
+      - run: node tooling/scripts/pnpm-local.mjs run test
+      - run: node tooling/scripts/pnpm-local.mjs run contracts:generate
+      - run: node tooling/scripts/pnpm-local.mjs run contracts:check
+      - run: node tooling/scripts/pnpm-local.mjs run contracts:qualify-drift
+      - run: git diff --exit-code -- packages/contracts/generated/openapi.json packages/api-client/src/generated/schema.ts
+      - run: node tooling/scripts/pnpm-local.mjs run contracts:prepare
+      - run: node tooling/scripts/pnpm-local.mjs run contracts:qualify
+      - name: Compare v1 against exact PR base
+        if: github.event_name == 'pull_request'
+        env:
+          NILUMI_CONTRACT_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: node tooling/scripts/pnpm-local.mjs run contracts:compat
+      - run: node tooling/scripts/pnpm-local.mjs run web:export
+      - id: changes
+        env:
+          NILUMI_CHANGE_BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node tooling/scripts/ci-native-change.mjs
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: contracts-web-${{ github.sha }}
+          path: |
+            packages/contracts/generated/openapi.json
+            packages/api-client/src/generated/schema.ts
+            apps/client/dist
+            docs/development/evidence/setup-06-2026-10-12/contract-compat.json
+          retention-days: 90
+  windows:
+    name: Windows smoke
+    runs-on: windows-2025
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.21.0'
+      - run: node tooling/scripts/ci-prepare.mjs
+      - run: node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+      - run: node tooling/scripts/pnpm-local.mjs run check
+      - run: node tooling/scripts/pnpm-local.mjs run test
+      - run: node tooling/scripts/pnpm-local.mjs run contracts:check
+  integration:
+    name: Restricted role integration
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.21.0'
+      - run: node tooling/scripts/ci-prepare.mjs
+      - run: node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+      - run: node tooling/scripts/ci-services.mjs
+      - run: node tooling/scripts/pnpm-local.mjs run test:integration
+      - run: node tooling/scripts/pnpm-local.mjs run test:backend
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: restricted-roles-${{ github.sha }}
+          path: docs/development/evidence/setup-06-2026-10-12/integration-linux.json
+  browser:
+    name: Web shell browser
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.21.0'
+      - run: node tooling/scripts/ci-prepare.mjs
+      - run: node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+      - run: node tooling/scripts/pnpm-local.mjs exec playwright install --with-deps chromium
+      - run: node tooling/scripts/pnpm-local.mjs run web:export
+      - run: node tooling/scripts/pnpm-local.mjs run test:web
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: browser-${{ github.sha }}
+          path: |
+            .cache/playwright-report
+            .cache/playwright-results
+  containers:
+    name: Linux image smoke
+    env:
+      NILUMI_EVIDENCE_DIRECTORY: docs/development/evidence/setup-06-2026-10-12
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.21.0'
+      - run: node tooling/scripts/ci-prepare.mjs
+      - run: node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+      - run: node tooling/scripts/pnpm-local.mjs run build
+      - run: node tooling/scripts/ci-services.mjs
+      - run: node tooling/scripts/pnpm-local.mjs run build:containers
+      - run: node tooling/scripts/pnpm-local.mjs run test:containers
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: image-smoke-${{ github.sha }}
+          path: |
+            docs/development/evidence/setup-06-2026-10-12/image-build-*.log
+            docs/development/evidence/setup-06-2026-10-12/image-smoke.json
+  android:
+    name: Android debug smoke
+    needs: linux
+    if: needs.linux.outputs.android == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.21.0'
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '25.0.4.1+1'
+      - run: node tooling/scripts/ci-prepare.mjs
+      - run: node tooling/scripts/pnpm-local.mjs install --frozen-lockfile
+      - run: node tooling/scripts/pnpm-local.mjs run build
+      - name: Explicit Android SDK preparation
+        run: |
+          sdkmanager 'platforms;android-36' 'build-tools;36.0.0' 'build-tools;35.0.0' 'ndk;27.1.12297006' 'cmake;3.22.1'
+      - name: Clean CNG and x86_64 debug build
+        run: |
+          set -o pipefail
+          node tooling/scripts/pnpm-local.mjs run android:dev-build 2>&1 | tee android-debug-build.log
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: android-debug-${{ github.sha }}
+          path: |
+            android-debug-build.log
+            apps/client/android/app/build/outputs/apk/debug/*.apk
+          retention-days: 14
+  required:
+    name: Foundation required
+    if: always()
+    needs: [linux, windows, integration, browser, containers, android]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Enforce every required result, including conditional Android
+        env:
+          RESULTS: ${{ toJSON(needs) }}
+        run: |
+          node -e 'const n=JSON.parse(process.env.RESULTS);for(const k of ["linux","windows","integration","browser","containers"])if(n[k].result!=="success")process.exit(1);if(n.linux.outputs.android==="true"&&n.android.result!=="success")process.exit(1);if(n.linux.outputs.android!=="true"&&n.android.result!=="skipped")process.exit(1);'
