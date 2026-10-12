@@ -8,6 +8,13 @@ import { parseApiEnv } from "../../apps/api/dist/config/env.js";
 import { parseWorkerEnv } from "../../apps/worker/dist/config/env.js";
 import { createTestTransports } from "../../packages/server/dist/index.js";
 import { guardDisposable } from "../scripts/infra.mjs";
+import { preflight } from "../scripts/preflight.mjs";
+
+test("routine preflight accepts a checkout after the historical foundation snapshot", async () => {
+  // The committed checkout has a different index and authored sources from the
+  // old transition snapshot. Routine validation must still work after commits.
+  await preflight();
+});
 
 const db = (role) => `postgresql://${role}:synthetic-password@127.0.0.1:1/synthetic`;
 test("test transports fail startup in pilot/production; synthetic adapters accept only fixture IDs", async () => {

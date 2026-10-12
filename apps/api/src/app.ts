@@ -19,7 +19,7 @@ export interface AppDependencies {
 }
 
 export function buildApp(
-  config: Pick<Configuration, "LOG_LEVEL">,
+  config: Pick<Configuration, "LOG_LEVEL"> & Partial<Pick<Configuration, "NILUMI_ENV">>,
   dependencies: AppDependencies = {},
 ) {
   const app = Fastify({
@@ -86,6 +86,15 @@ export function buildApp(
     routes.get(
       "/api/v1/health",
       {
+        // The local web shell is served separately. This exception is limited to
+        // public liveness; future authenticated routes retain same-origin policy.
+        onRequest: async (request, reply) => {
+          if (config.NILUMI_ENV !== "development" || request.method !== "GET") return;
+          reply.header("Vary", "Origin");
+          const origin = request.headers.origin;
+          if (origin === "http://localhost:8082" || origin === "http://127.0.0.1:8082")
+            reply.header("Access-Control-Allow-Origin", origin);
+        },
         schema: {
           operationId: "getHealth",
           querystring: z.strictObject({}),

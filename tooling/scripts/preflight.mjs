@@ -8,6 +8,7 @@ import { manifest, packages } from "./workspace.mjs";
 
 export const hashFile = (path) =>
   createHash("sha256").update(readFileSync(path)).digest("hex").toUpperCase();
+// Opt-in audit of the original foundation transition, not a routine checkout check.
 export async function preservationCheck() {
   const baseline = readJson(
     join(root, "docs/development/evidence/setup-05-2026-10-12/preservation-baseline.json"),
@@ -35,7 +36,7 @@ export async function preservationCheck() {
     indexUnchanged: true,
   };
 }
-export async function preflight({ preservation = true } = {}) {
+export async function preflight() {
   if (process.versions.node !== nodeVersion)
     throw new Error(`Use Node ${nodeVersion}; current ${process.versions.node}.`);
   if (readJson(join(root, "package.json")).packageManager !== `pnpm@${pnpmVersion}`)
@@ -66,6 +67,5 @@ export async function preflight({ preservation = true } = {}) {
     );
     if (result.code) throw new Error(`Sensitive/generated path is not ignored: ${path}`);
   }
-  if (preservation) await preservationCheck();
-  console.log("Node/pnpm/compiler pins, package tooling, ignored outputs and preservation pass.");
+  console.log("Node/pnpm/compiler pins, package tooling and ignored outputs pass.");
 }

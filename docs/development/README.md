@@ -14,7 +14,7 @@ On Linux, explicitly prepare the manager with the same script or the native-arti
 
 | Command | Behavior |
 |---|---|
-| `setup:check` | Pins, package tooling, ignored output and preservation |
+| `setup:check` | Pins, package tooling and ignored output |
 | `check` | Preflight + Biome + native7 types/build + boundaries |
 | `test` | Synthetic configuration, ownership, process and boundary behavior |
 | `typecheck:compat` | Classic5/6 comparisons; TS6 stable type ordering |
@@ -44,6 +44,6 @@ For a host/web fixture use `http://127.0.0.1:3001`. Follow the SETUP-04/05 runbo
 
 Missing manager/store ownership or moved checkout: run explicit prepare; never delete a foreign store. A dependency-verification mismatch requires explicit install. Maturity exceptions are exact qualified/reviewed versions; prune changes may require a second frozen install to synchronize pnpm's installed metadata. Never suppress peer checks.
 
-The original `.git/index` hash and staged blobs are checked independently. Core/evidence hashes must remain unchanged; only planned parent/toolchain annotations are exempt. No Git staging/commit occurred. A separate clean Linux checkout can later install normally; this preservation guard belongs to the current foundation transition.
+Historical foundation snapshots retain the original `.git/index` hash, staged blobs and protected-file hashes as evidence. The exported `preservationCheck` is an opt-in audit of that original transition; it is expected to reject later commits or staged work and is excluded from routine preflight and Linux acceptance. Routine checks work in committed and freshly cloned checkouts. Preserve core documents, historical evidence and unrelated staged work when making changes; do not refresh historical snapshots to make a check pass.
 
 Windows native build handoff remains the tested SDK junction, separate short CXX staging, command-scoped Java socket/native-access flags and IPv4 Metro options from SETUP-02. Preserve existing JVM/Node options; implement/requalify the actual CNG wrapper during SETUP-04.

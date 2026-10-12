@@ -145,6 +145,61 @@ test("generated transport round-trips real loopback health and validates data", 
   assert.deepEqual(credentials, ["omit", "same-origin"]);
 });
 
+test("development health CORS allows only documented loopback web origins", async (t) => {
+  const app = buildApp({ LOG_LEVEL: "silent", NILUMI_ENV: "development" });
+  t.after(() => app.close());
+  for (const origin of ["http://localhost:8082", "http://127.0.0.1:8082"]) {
+    for (const url of ["/api/v1/health", "/api/v1/health?unexpected=value"]) {
+      const response = await app.inject({ url, headers: { origin } });
+      assert.equal(response.statusCode, url.includes("?") ? 400 : 200);
+      assert.equal(response.headers["access-control-allow-origin"], origin);
+      assert.equal(response.headers.vary, "Origin");
+      assert.equal(response.headers["cache-control"], "no-store");
+      assert.equal(response.headers["access-control-allow-credentials"], undefined);
+    }
+    for (const [method, url] of [
+      ["GET", "/api/v1/ready"],
+      ["HEAD", "/api/v1/health"],
+      ["OPTIONS", "/api/v1/health"],
+      ["GET", "/unknown"],
+    ]) {
+      const response = await app.inject({ method, url, headers: { origin } });
+      assert.equal(response.headers["access-control-allow-origin"], undefined);
+    }
+  }
+  for (const origin of [
+    "http://localhost:8083",
+    "https://localhost:8082",
+    "http://localhost.example.invalid:8082",
+    "https://example.invalid",
+    "null",
+    undefined,
+  ]) {
+    const response = await app.inject({
+      url: "/api/v1/health",
+      headers: origin ? { origin } : {},
+    });
+    assert.equal(response.statusCode, 200);
+    assert.equal(response.headers["access-control-allow-origin"], undefined);
+  }
+});
+
+test("health CORS is disabled outside explicitly selected development mode", async () => {
+  for (const mode of [undefined, "test", "pilot", "production"]) {
+    const app = buildApp({ LOG_LEVEL: "silent", ...(mode ? { NILUMI_ENV: mode } : {}) });
+    try {
+      const response = await app.inject({
+        url: "/api/v1/health",
+        headers: { origin: "http://localhost:8082" },
+      });
+      assert.equal(response.statusCode, 200);
+      assert.equal(response.headers["access-control-allow-origin"], undefined);
+    } finally {
+      await app.close();
+    }
+  }
+});
+
 test("schema generation is deterministic and independent of process config", async () => {
   const first = await generateOpenApi();
   assert.deepEqual(await generateOpenApi(), first);

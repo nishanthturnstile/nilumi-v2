@@ -43,7 +43,7 @@ node tooling/scripts/pnpm-local.mjs run typecheck:compat
 node tooling/scripts/pnpm-local.mjs run check:resolution
 EXPO_NO_DOTENV=1 EXPO_NO_TELEMETRY=1 EXPO_PUBLIC_NILUMI_ENV=test EXPO_PUBLIC_API_BASE_URL=http://127.0.0.1:3001 node tooling/scripts/pnpm-local.mjs --filter @nilumi/client exec expo export --platform web
 cp docs/development/evidence/setup-05-2026-10-12/resolution-linux.json /out/resolution-linux.json
-node --input-type=module -e "import {writeFileSync} from 'node:fs'; import {preservationCheck} from './tooling/scripts/preflight.mjs'; writeFileSync('/out/linux-acceptance.json', JSON.stringify({platform:process.platform,node:process.versions.node,pnpm:'12.11.2',checks:['frozen-install','check','test','test:integration','contracts:generate','contracts:check','typecheck:compat','check:resolution','web-export'],preservation:await preservationCheck()},null,2));"
+node --input-type=module -e "import {writeFileSync} from 'node:fs'; writeFileSync('/out/linux-acceptance.json', JSON.stringify({platform:process.platform,node:process.versions.node,pnpm:'12.11.2',checks:['frozen-install','check','test','test:integration','contracts:generate','contracts:check','typecheck:compat','check:resolution','web-export']},null,2));"
 `;
   let result;
   try {

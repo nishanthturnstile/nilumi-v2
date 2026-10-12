@@ -43,6 +43,6 @@ For web:
 node tooling/scripts/pnpm-local.mjs --filter @nilumi/client exec expo export --platform web
 ```
 
-Serve `apps/client/dist` through a local HTTP server to inspect hydration. This is a static shell export, not a deployed PWA or a qualified iPhone installation. Keep all fonts/licences bundled; asset preparation is explicit, local-only after downloading the pinned sources, and never runs during checks.
+Serve `apps/client/dist` through a local HTTP server on port 8082 to inspect hydration. With `NILUMI_ENV=development`, the API health endpoint permits browser reads from exactly `http://localhost:8082` and `http://127.0.0.1:8082`; configure the client's public API base URL as `http://127.0.0.1:3001`. Stop Metro before serving the static export on the same port. This development CORS exception covers only `GET /api/v1/health`, supplies no credential permission and is disabled in test/pilot/production. Readiness and future authenticated routes retain the same-origin policy. This is a static shell export, not a deployed PWA or a qualified iPhone installation. Keep all fonts/licences bundled; asset preparation is explicit, local-only after downloading the pinned sources, and never runs during checks.
 
 Follow [the implementation notes](../implementation/setup-04-shells-and-contracts.md) and [validation report](setup-04-validation.md) for limitations and acceptance evidence. Product authorization, authentication cookies/CSRF, tenant cache isolation, queue recovery, provider calls and distribution remain later work.
